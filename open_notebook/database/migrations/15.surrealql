@@ -1,0 +1,16 @@
+-- Migration 15: Quiz feature
+-- Adds quiz table for source-based quiz generation
+
+DEFINE TABLE IF NOT EXISTS quiz SCHEMAFULL;
+
+DEFINE FIELD source ON TABLE quiz TYPE record<source>;
+DEFINE FIELD title ON TABLE quiz TYPE string;
+DEFINE FIELD questions ON TABLE quiz TYPE array;
+DEFINE FIELD questions.* ON TABLE quiz TYPE object;
+DEFINE FIELD questions.*.question ON TABLE quiz TYPE string;
+DEFINE FIELD questions.*.options ON TABLE quiz TYPE array;
+DEFINE FIELD questions.*.options.* ON TABLE quiz TYPE string;
+DEFINE FIELD questions.*.answer ON TABLE quiz TYPE string;
+DEFINE FIELD questions.*.explanation ON TABLE quiz TYPE string;
+DEFINE FIELD created ON TABLE quiz TYPE datetime DEFAULT time::now();
+DEFINE FIELD updated ON TABLE quiz TYPE datetime VALUE time::now();
