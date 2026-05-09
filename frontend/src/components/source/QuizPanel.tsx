@@ -256,24 +256,33 @@ export function QuizPanel({ sourceId }: QuizPanelProps) {
                 </p>
 
                 <div className="space-y-3">
-                  {question.options.map((option, idx) => {
-                    const letter = getOptionLetter(option) || String.fromCharCode(65 + idx)
-                    const isSelected = selectedAnswers[qIdx] === letter
+                  {(() => {
+                    // Ensure we always show at least 4 options in the UI for consistent layout
+                    const options = [...question.options]
+                    while (options.length < 4) {
+                      const letter = String.fromCharCode(65 + options.length)
+                      options.push(`${letter}. [Option placeholder]`)
+                    }
 
-                    return (
-                      <button
-                        key={idx}
-                        onClick={() => handleSelectOption(qIdx, letter)}
-                        className={`w-full text-left rounded-lg border p-4 transition-all ${
-                          isSelected
-                            ? 'border-primary bg-primary/10 ring-2 ring-primary/30'
-                            : 'border-border hover:border-primary/50 hover:bg-muted/50'
-                        }`}
-                      >
-                        <span className="text-sm">{option}</span>
-                      </button>
-                    )
-                  })}
+                    return options.map((option, idx) => {
+                      const letter = getOptionLetter(option) || String.fromCharCode(65 + idx)
+                      const isSelected = selectedAnswers[qIdx] === letter
+
+                      return (
+                        <button
+                          key={idx}
+                          onClick={() => handleSelectOption(qIdx, letter)}
+                          className={`w-full text-left rounded-lg border p-4 transition-all ${
+                            isSelected
+                              ? 'border-primary bg-primary/10 ring-2 ring-primary/30'
+                              : 'border-border hover:border-primary/50 hover:bg-muted/50'
+                          }`}
+                        >
+                          <span className="text-sm">{option}</span>
+                        </button>
+                      )
+                    })
+                  })()}
                 </div>
               </CardContent>
             </Card>
