@@ -8,7 +8,7 @@ import { LoadingSpinner } from '@/components/common/LoadingSpinner'
 import { EmptyState } from '@/components/common/EmptyState'
 import { AppShell } from '@/components/layout/AppShell'
 import { ConfirmDialog } from '@/components/common/ConfirmDialog'
-import { FileText, Link as LinkIcon, Upload, AlignLeft, Trash2, ArrowUpDown } from 'lucide-react'
+import { FileText, Link as LinkIcon, Upload, AlignLeft, Trash2, ArrowUpDown, Sparkles } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -32,7 +32,7 @@ export default function SourcesPage() {
     source: null
   })
   const router = useRouter()
-  const tableRef = useRef<HTMLTableElement>(null)
+  const gridRef = useRef<HTMLDivElement>(null)
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const offsetRef = useRef(0)
   const loadingMoreRef = useRef(false)
@@ -91,9 +91,9 @@ export default function SourcesPage() {
   }, [sortBy, sortOrder])
 
   useEffect(() => {
-    // Focus the table when component mounts or sources change
-    if (sources.length > 0 && tableRef.current) {
-      tableRef.current.focus()
+    // Focus the tile grid when component mounts or sources change
+    if (sources.length > 0 && gridRef.current) {
+      gridRef.current.focus()
     }
   }, [sources])
 
@@ -148,21 +148,20 @@ export default function SourcesPage() {
     const scrollContainer = scrollContainerRef.current
     if (!scrollContainer) return
 
-    // Find the selected row element
-    const rows = scrollContainer.querySelectorAll('tbody tr')
-    const selectedRow = rows[index] as HTMLElement
-    if (!selectedRow) return
+    const tiles = scrollContainer.querySelectorAll('[data-source-tile]')
+    const selectedTile = tiles[index] as HTMLElement
+    if (!selectedTile) return
 
     const containerRect = scrollContainer.getBoundingClientRect()
-    const rowRect = selectedRow.getBoundingClientRect()
+    const tileRect = selectedTile.getBoundingClientRect()
 
     // Check if row is above visible area
-    if (rowRect.top < containerRect.top) {
-      selectedRow.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    if (tileRect.top < containerRect.top) {
+      selectedTile.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
     // Check if row is below visible area
-    else if (rowRect.bottom > containerRect.bottom) {
-      selectedRow.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    else if (tileRect.bottom > containerRect.bottom) {
+      selectedTile.scrollIntoView({ behavior: 'smooth', block: 'end' })
     }
   }
 
@@ -251,6 +250,10 @@ export default function SourcesPage() {
     }
   }
 
+  const embeddedCount = sources.filter(source => source.embedded).length
+  const linkCount = sources.filter(source => source.asset?.url).length
+  const totalInsights = sources.reduce((total, source) => total + (source.insights_count || 0), 0)
+
   if (loading) {
     return (
       <AppShell>
@@ -285,137 +288,168 @@ export default function SourcesPage() {
 
   return (
     <AppShell>
-      <div className="flex h-full w-full max-w-none flex-col px-6 py-6 lg:px-8">
-        <div className="mb-6 flex-shrink-0">
-          <h1 className="text-2xl font-semibold tracking-normal text-foreground">{t('sources.allSources')}</h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            {t('sources.allSourcesDesc')}
-          </p>
-        </div>
-
-        <div ref={scrollContainerRef} className="flex-1 overflow-auto rounded-lg border border-border/75 bg-card shadow-[0_10px_28px_rgb(70_62_45_/_5%)]">
-          <table
-            ref={tableRef}
-            tabIndex={0}
-            className="w-full min-w-[800px] outline-none table-fixed"
-          >
-            <colgroup>
-              <col className="w-[120px]" />
-              <col className="w-auto" />
-              <col className="w-[140px]" />
-              <col className="w-[100px]" />
-              <col className="w-[100px]" />
-              <col className="w-[100px]" />
-            </colgroup>
-            <thead className="sticky top-0 z-10 bg-card/95 backdrop-blur">
-              <tr className="border-b border-border/75 bg-muted/45">
-                <th className="h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground">
-                  {t('common.type')}
-                </th>
-                <th className="h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground">
-                  {t('common.title')}
-                </th>
-                <th className="hidden h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground sm:table-cell">
+      <div ref={scrollContainerRef} className="h-full overflow-y-auto">
+        <div className="mx-auto flex w-full max-w-[1680px] flex-col gap-5 px-5 py-5 sm:px-6 lg:px-8">
+          <section className="grid auto-rows-[minmax(132px,auto)] gap-4 lg:grid-cols-12">
+            <div className="relative overflow-hidden rounded-xl bg-primary p-6 text-primary-foreground shadow-[0_18px_44px_rgb(70_62_45_/_15%)] lg:col-span-7 lg:row-span-2">
+              <div className="relative z-10 flex h-full min-h-[220px] max-w-2xl flex-col justify-between gap-10">
+                <div>
+                  <div className="mb-5 flex items-center gap-2 text-xs font-medium uppercase text-primary-foreground/65">
+                    <Sparkles className="h-4 w-4" />
+                    {t('navigation.collect')}
+                  </div>
+                  <h1 className="max-w-xl text-4xl font-semibold leading-[0.98] tracking-normal sm:text-5xl">
+                    {t('sources.allSources')}
+                  </h1>
+                  <p className="mt-4 max-w-lg text-sm leading-6 text-primary-foreground/70">
+                    {t('sources.allSourcesDesc')}
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
                   <Button
-                    variant="ghost"
+                    variant="secondary"
                     size="sm"
                     onClick={() => toggleSort('created')}
-                    className="h-8 px-2 text-xs uppercase hover:bg-muted"
+                    className="bg-card text-foreground hover:bg-card/90"
                   >
                     {t('common.created_label')}
                     <ArrowUpDown className={cn(
-                      "ml-2 h-3 w-3",
-                      sortBy === 'created' ? 'opacity-100' : 'opacity-30'
+                      "h-3 w-3",
+                      sortBy === 'created' ? 'opacity-100' : 'opacity-40'
                     )} />
                     {sortBy === 'created' && (
-                      <span className="ml-1 text-xs">
-                        {sortOrder === 'asc' ? '↑' : '↓'}
-                      </span>
+                      <span className="text-xs">{sortOrder === 'asc' ? '↑' : '↓'}</span>
                     )}
                   </Button>
-                </th>
-                <th className="hidden h-11 px-4 text-center align-middle text-xs font-semibold uppercase text-muted-foreground md:table-cell">
-                  {t('sources.insights')}
-                </th>
-                <th className="hidden h-11 px-4 text-center align-middle text-xs font-semibold uppercase text-muted-foreground lg:table-cell">
-                  {t('sources.embedded')}
-                </th>
-                <th className="h-11 px-4 text-right align-middle text-xs font-semibold uppercase text-muted-foreground">
-                  {t('common.actions')}
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {sources.map((source, index) => (
-                <tr
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => toggleSort('updated')}
+                    className="border-white/20 bg-white/10 text-primary-foreground hover:bg-white/15 hover:text-primary-foreground"
+                  >
+                    Updated
+                    <ArrowUpDown className={cn(
+                      "h-3 w-3",
+                      sortBy === 'updated' ? 'opacity-100' : 'opacity-40'
+                    )} />
+                    {sortBy === 'updated' && (
+                      <span className="text-xs">{sortOrder === 'asc' ? '↑' : '↓'}</span>
+                    )}
+                  </Button>
+                </div>
+              </div>
+              <div className="absolute -right-10 -top-12 h-48 w-48 rounded-full border border-white/10" />
+              <div className="absolute bottom-6 right-6 h-24 w-32 rounded-lg border border-white/10 bg-white/5" />
+            </div>
+
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-2">
+              <p className="text-xs font-medium uppercase text-muted-foreground">{t('common.type')}</p>
+              <p className="mt-4 text-4xl font-semibold">{sources.length}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t('sources.allSources')}</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-secondary p-5 lg:col-span-3">
+              <p className="text-xs font-medium uppercase text-muted-foreground">{t('sources.insights')}</p>
+              <p className="mt-4 text-4xl font-semibold">{totalInsights}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Across visible sources</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-3">
+              <p className="text-xs font-medium uppercase text-muted-foreground">{t('sources.embedded')}</p>
+              <p className="mt-4 text-4xl font-semibold">{embeddedCount}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Ready for retrieval</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-2">
+              <p className="text-xs font-medium uppercase text-muted-foreground">Links</p>
+              <p className="mt-4 text-4xl font-semibold">{linkCount}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Web sources</p>
+            </div>
+          </section>
+
+          <div
+            ref={gridRef}
+            tabIndex={0}
+            className="grid auto-rows-[minmax(184px,auto)] grid-cols-1 gap-4 outline-none sm:grid-cols-2 xl:grid-cols-4"
+          >
+            {sources.map((source, index) => {
+              const isSelected = selectedIndex === index
+              const isFeatureTile = index % 9 === 0
+              const isWideTile = index % 5 === 2
+
+              return (
+                <article
                   key={source.id}
+                  data-source-tile
                   onClick={() => handleRowClick(index, source.id)}
                   onMouseEnter={() => setSelectedIndex(index)}
                   className={cn(
-                    "cursor-pointer border-b border-border/60 transition-colors",
-                    selectedIndex === index
-                      ? "bg-accent/75"
-                      : "hover:bg-muted/45"
+                    "group relative flex cursor-pointer flex-col justify-between overflow-hidden rounded-xl border bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-[0_18px_44px_rgb(70_62_45_/_9%)]",
+                    isSelected ? "border-primary/40 bg-accent/60 ring-2 ring-primary/10" : "border-border/70",
+                    isFeatureTile && "sm:col-span-2 xl:row-span-2",
+                    isWideTile && !isFeatureTile && "xl:col-span-2"
                   )}
                 >
-                  <td className="h-14 px-4">
-                    <div className="flex items-center gap-2">
-                      {getSourceIcon(source)}
-                      <Badge variant="secondary" className="text-xs">
-                        {getSourceType(source)}
-                      </Badge>
-                    </div>
-                  </td>
-                  <td className="h-14 px-4">
-                    <div className="flex flex-col overflow-hidden">
-                      <span className="font-medium truncate">
-                        {source.title || t('sources.untitledSource')}
-                      </span>
-                      {source.asset?.url && (
-                        <span className="text-xs text-muted-foreground truncate">
-                          {source.asset.url}
+                  <div>
+                    <div className="mb-7 flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-2">
+                        <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-secondary text-foreground">
+                          {getSourceIcon(source)}
                         </span>
-                      )}
+                        <Badge variant="secondary" className="text-xs">
+                          {getSourceType(source)}
+                        </Badge>
+                      </div>
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={(e) => handleDeleteClick(e, source)}
+                        className="h-8 w-8 text-muted-foreground opacity-0 transition-opacity hover:text-destructive group-hover:opacity-100"
+                      >
+                        <Trash2 className="h-4 w-4" />
+                      </Button>
                     </div>
-                  </td>
-                  <td className="hidden h-14 px-4 text-sm text-muted-foreground sm:table-cell">
-                    {formatDistanceToNow(new Date(source.created), { 
-                      addSuffix: true,
-                      locale: getDateLocale(language)
-                    })}
-                  </td>
-                  <td className="hidden h-14 px-4 text-center md:table-cell">
-                    <span className="text-sm font-medium">{source.insights_count || 0}</span>
-                  </td>
-                  <td className="hidden h-14 px-4 text-center lg:table-cell">
-                    <Badge variant={source.embedded ? "default" : "secondary"} className="text-xs">
-                      {source.embedded ? t('sources.yes') : t('sources.no')}
-                    </Badge>
-                  </td>
-                  <td className="h-14 px-4 text-right">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={(e) => handleDeleteClick(e, source)}
-                      className="text-destructive hover:text-destructive"
-                    >
-                      <Trash2 className="h-4 w-4" />
-                    </Button>
-                  </td>
-                </tr>
-              ))}
-              {loadingMore && (
-                <tr>
-                  <td colSpan={6} className="h-16 text-center">
-                    <div className="flex items-center justify-center">
-                      <LoadingSpinner />
-                      <span className="ml-2 text-muted-foreground">{t('sources.loadingMore')}</span>
+
+                    <h2 className={cn(
+                      "line-clamp-3 font-semibold leading-tight",
+                      isFeatureTile ? "max-w-xl text-3xl" : "text-lg"
+                    )}>
+                      {source.title || t('sources.untitledSource')}
+                    </h2>
+                    {source.asset?.url && (
+                      <p className="mt-3 truncate text-xs text-muted-foreground">
+                        {source.asset.url}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mt-8 grid grid-cols-3 gap-2 text-sm">
+                    <div className="rounded-lg bg-background/70 p-3">
+                      <p className="text-[10px] font-medium uppercase text-muted-foreground">{t('common.created_label')}</p>
+                      <p className="mt-1 truncate font-medium">
+                        {formatDistanceToNow(new Date(source.created), {
+                          addSuffix: true,
+                          locale: getDateLocale(language)
+                        })}
+                      </p>
                     </div>
-                  </td>
-                </tr>
-              )}
-            </tbody>
-          </table>
+                    <div className="rounded-lg bg-background/70 p-3">
+                      <p className="text-[10px] font-medium uppercase text-muted-foreground">{t('sources.insights')}</p>
+                      <p className="mt-1 font-medium">{source.insights_count || 0}</p>
+                    </div>
+                    <div className="rounded-lg bg-background/70 p-3">
+                      <p className="text-[10px] font-medium uppercase text-muted-foreground">{t('sources.embedded')}</p>
+                      <p className="mt-1 font-medium">{source.embedded ? t('sources.yes') : t('sources.no')}</p>
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
+
+            {loadingMore && (
+              <div className="col-span-full flex h-24 items-center justify-center rounded-xl border border-border/70 bg-card">
+                <LoadingSpinner />
+                <span className="ml-2 text-muted-foreground">{t('sources.loadingMore')}</span>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 

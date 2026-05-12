@@ -26,6 +26,33 @@ _version_cache: dict = {
 
 # Cache TTL in seconds (24 hours)
 VERSION_CACHE_TTL = 24 * 60 * 60
+DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS = 10.0
+
+
+def get_database_health_timeout() -> float:
+    """Return the DB health timeout, allowing dev environments to tune it."""
+    raw_timeout = os.getenv("DATABASE_HEALTH_TIMEOUT_SECONDS")
+    if not raw_timeout:
+        return DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS
+
+    try:
+        timeout = float(raw_timeout)
+    except ValueError:
+        logger.warning(
+            "Invalid DATABASE_HEALTH_TIMEOUT_SECONDS value %r; using default %.1fs",
+            raw_timeout,
+            DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS,
+        )
+        return DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS
+
+    if timeout <= 0:
+        logger.warning(
+            "DATABASE_HEALTH_TIMEOUT_SECONDS must be positive; using default %.1fs",
+            DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS,
+        )
+        return DEFAULT_DATABASE_HEALTH_TIMEOUT_SECONDS
+
+    return timeout
 
 
 def get_version() -> str:
@@ -107,13 +134,16 @@ async def check_database_health() -> dict:
         dict with 'status' ("online" | "offline") and optional 'error'
     """
     try:
-        # 2-second timeout for database health check
-        result = await asyncio.wait_for(repo_query("RETURN 1"), timeout=2.0)
+        timeout = get_database_health_timeout()
+        result = await asyncio.wait_for(repo_query("RETURN true;"), timeout=timeout)
         if result:
             return {"status": "online"}
         return {"status": "offline", "error": "Empty result"}
     except asyncio.TimeoutError:
-        logger.warning("Database health check timed out after 2 seconds")
+        logger.warning(
+            "Database health check timed out after %.1f seconds",
+            get_database_health_timeout(),
+        )
         return {"status": "offline", "error": "Health check timeout"}
     except Exception as e:
         logger.warning(f"Database health check failed: {e}")

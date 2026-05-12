@@ -792,9 +792,9 @@ function CredentialItem({
 
   return (
     <>
-      <div className="space-y-3 rounded-lg border border-border/75 bg-background/45 p-4">
-        <div className="flex items-center justify-between">
-          <div className="flex min-w-0 items-center gap-2">
+      <div className="space-y-3 rounded-xl border border-border/75 bg-background/55 p-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex min-w-0 flex-wrap items-center gap-2">
             <span className="font-medium truncate">{credential.name}</span>
             <div className="flex gap-1">
               {credential.modalities.map(mod => (
@@ -992,11 +992,11 @@ function ProviderSection({
   const activeTypes = new Set(providerModels.map(m => m.type))
 
   return (
-    <Card className={cn('overflow-hidden', !hasCredentials ? 'opacity-75' : undefined)}>
+    <Card className={cn('h-full overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_18px_44px_rgb(70_62_45_/_8%)]', !hasCredentials ? 'opacity-75' : undefined)}>
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3 flex-wrap">
-            <CardTitle className="text-lg capitalize">{displayName}</CardTitle>
+            <CardTitle className="text-xl capitalize tracking-normal">{displayName}</CardTitle>
             <div className="flex items-center gap-1">
               {modalities.map((type) => (
                 <Badge
@@ -1144,12 +1144,12 @@ function DefaultModelSelectors({
     .map(c => c.label)
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle>{t('models.defaultAssignments')}</CardTitle>
-        <CardDescription>{t('models.defaultAssignmentsDesc')}</CardDescription>
+    <Card className="overflow-hidden rounded-xl">
+      <CardHeader className="bg-primary pb-10 text-primary-foreground">
+        <CardTitle className="text-2xl font-semibold tracking-normal">{t('models.defaultAssignments')}</CardTitle>
+        <CardDescription className="max-w-2xl text-primary-foreground/65">{t('models.defaultAssignmentsDesc')}</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-6">
+      <CardContent className="-mt-6 space-y-5 px-5 pb-5">
         {missingRequired.length > 0 && (
           <Alert>
             <AlertCircle className="h-4 w-4" />
@@ -1176,19 +1176,19 @@ function DefaultModelSelectors({
             const isValid = currentValue && available.some(m => m.id === currentValue)
 
             return (
-              <div key={config.key} className="space-y-1">
-                <Label htmlFor={config.id} className="text-xs">
+              <div key={config.key} className="rounded-xl border border-border/70 bg-card p-4 shadow-[0_10px_28px_rgb(70_62_45_/_5%)]">
+                <Label htmlFor={config.id} className="text-xs font-semibold uppercase text-muted-foreground">
                   {config.label}
                   {config.required && <span className="text-destructive ml-0.5">*</span>}
                 </Label>
-                <div className="flex gap-1">
+                <div className="mt-4 flex gap-1">
                   <Select
                     value={currentValue || ""}
                     onValueChange={(v) => handleChange(config.key, v)}
                   >
                     <SelectTrigger
                       id={config.id}
-                      className={`h-8 text-xs ${config.required && !isValid && available.length > 0 ? 'border-destructive' : ''}`}
+                      className={`h-9 w-full text-xs ${config.required && !isValid && available.length > 0 ? 'border-destructive' : ''}`}
                     >
                       <SelectValue placeholder={
                         config.required && !isValid && available.length > 0
@@ -1219,8 +1219,8 @@ function DefaultModelSelectors({
         </div>
 
         {/* Advanced models: Transformation, Tools, Large Context */}
-        <div className="border-t pt-3">
-          <p className="text-xs text-muted-foreground mb-3">{t('navigation.advanced')}</p>
+        <div className="rounded-xl border border-border/70 bg-secondary/70 p-4">
+          <p className="mb-3 text-xs font-semibold uppercase text-muted-foreground">{t('navigation.advanced')}</p>
             <div className="grid gap-3 sm:grid-cols-3">
               {advancedConfigs.map(config => {
                 const available = getModelsForType(config.modelType)
@@ -1228,19 +1228,19 @@ function DefaultModelSelectors({
                 const isValid = currentValue && available.some(m => m.id === currentValue)
 
                 return (
-                  <div key={config.key} className="space-y-1">
-                    <Label htmlFor={config.id} className="text-xs">
+                  <div key={config.key} className="rounded-lg bg-card p-4">
+                    <Label htmlFor={config.id} className="text-xs font-semibold uppercase text-muted-foreground">
                       {config.label}
                       {config.required && <span className="text-destructive ml-0.5">*</span>}
                     </Label>
-                    <div className="flex gap-1">
+                    <div className="mt-3 flex gap-1">
                       <Select
                         value={currentValue || ""}
                         onValueChange={(v) => handleChange(config.key, v)}
                       >
                         <SelectTrigger
                           id={config.id}
-                          className={`h-8 text-xs ${config.required && !isValid && available.length > 0 ? 'border-destructive' : ''}`}
+                          className={`h-9 w-full text-xs ${config.required && !isValid && available.length > 0 ? 'border-destructive' : ''}`}
                         >
                           <SelectValue placeholder={
                             config.required && !isValid && available.length > 0
@@ -1336,6 +1336,9 @@ export default function ApiKeysPage() {
     })
   }, [credentialsByProvider])
 
+  const configuredProviderCount = Object.values(credentialsByProvider).filter(list => list.length > 0).length
+  const modelCount = models?.length || 0
+  const credentialCount = credentials?.length || 0
   const isLoading = credentialsLoading || modelsLoading || defaultsLoading
 
   if (isLoading) {
@@ -1351,15 +1354,48 @@ export default function ApiKeysPage() {
   return (
     <AppShell>
       <div className="flex-1 overflow-y-auto">
-        <div className="space-y-6 p-6 lg:p-8">
+        <div className="mx-auto w-full max-w-[1680px] space-y-6 p-5 sm:p-6 lg:p-8">
           {/* Header */}
-          <div>
-            <h1 className="flex items-center gap-2 text-2xl font-semibold tracking-normal">
-              <Key className="h-5 w-5" />
-              {t('apiKeys.title')}
-            </h1>
-            <p className="mt-1 text-sm text-muted-foreground">{t('apiKeys.description')}</p>
-          </div>
+          <section className="grid auto-rows-[minmax(132px,auto)] gap-4 lg:grid-cols-12">
+            <div className="relative overflow-hidden rounded-xl bg-primary p-6 text-primary-foreground shadow-[0_18px_44px_rgb(70_62_45_/_15%)] lg:col-span-7 lg:row-span-2">
+              <div className="relative z-10 flex min-h-[220px] max-w-2xl flex-col justify-between gap-10">
+                <div>
+                  <div className="mb-5 flex items-center gap-2 text-xs font-medium uppercase text-primary-foreground/65">
+                    <Key className="h-4 w-4" />
+                    {t('navigation.manage')}
+                  </div>
+                  <h1 className="max-w-xl text-4xl font-semibold leading-[0.98] tracking-normal sm:text-5xl">
+                    {t('apiKeys.title')}
+                  </h1>
+                  <p className="mt-4 max-w-lg text-sm leading-6 text-primary-foreground/70">
+                    {t('apiKeys.description')}
+                  </p>
+                </div>
+              </div>
+              <div className="absolute -right-10 -top-12 h-48 w-48 rounded-full border border-white/10" />
+              <div className="absolute bottom-6 right-6 h-24 w-32 rounded-lg border border-white/10 bg-white/5" />
+            </div>
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-2">
+              <p className="text-xs font-medium uppercase text-muted-foreground">Providers</p>
+              <p className="mt-4 text-4xl font-semibold">{configuredProviderCount}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Configured</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-secondary p-5 lg:col-span-3">
+              <p className="text-xs font-medium uppercase text-muted-foreground">Models</p>
+              <p className="mt-4 text-4xl font-semibold">{modelCount}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Registered</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-3">
+              <p className="text-xs font-medium uppercase text-muted-foreground">Credentials</p>
+              <p className="mt-4 text-4xl font-semibold">{credentialCount}</p>
+              <p className="mt-1 text-sm text-muted-foreground">Saved configs</p>
+            </div>
+            <div className="rounded-xl border border-border/70 bg-card p-5 shadow-[0_10px_28px_rgb(70_62_45_/_5%)] lg:col-span-2">
+              <p className="text-xs font-medium uppercase text-muted-foreground">Security</p>
+              <p className="mt-4 text-2xl font-semibold">{encryptionReady ? 'Ready' : 'Action'}</p>
+              <p className="mt-1 text-sm text-muted-foreground">{encryptionReady ? 'Encrypted' : 'Required'}</p>
+            </div>
+          </section>
 
           {/* Encryption warning */}
           {!encryptionReady && (
@@ -1383,17 +1419,21 @@ export default function ApiKeysPage() {
           )}
 
           {/* Provider Cards */}
-          <div className="grid gap-4">
-            {sortedProviders.map(provider => (
-              <ProviderSection
+          <div className="grid auto-rows-fr gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {sortedProviders.map((provider, index) => (
+              <div
                 key={provider}
-                provider={provider}
-                credentials={credentialsByProvider[provider] || []}
-                models={models || []}
-                defaults={defaults || null}
-                allCredentials={credentials || []}
-                encryptionReady={encryptionReady}
-              />
+                className={cn(index === 0 && (credentialsByProvider[provider]?.length || 0) > 0 && 'xl:col-span-2')}
+              >
+                <ProviderSection
+                  provider={provider}
+                  credentials={credentialsByProvider[provider] || []}
+                  models={models || []}
+                  defaults={defaults || null}
+                  allCredentials={credentials || []}
+                  encryptionReady={encryptionReady}
+                />
+              </div>
             ))}
           </div>
 
