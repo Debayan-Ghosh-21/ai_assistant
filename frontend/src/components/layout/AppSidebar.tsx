@@ -122,7 +122,7 @@ export function AppSidebar() {
             <div className="relative flex items-center justify-center w-full">
               <Image
                 src="/logo.svg"
-                alt="Open Notebook"
+                alt="Dyslexxy"
                 width={32}
                 height={32}
                 className="transition-opacity group-hover:opacity-0"
@@ -361,7 +361,7 @@ export function AppSidebar() {
                   <LogOut className="h-4 w-4" />
                 </Button>
               </TooltipTrigger>
-               <TooltipContent side="right">{t('common.signOut')}</TooltipContent>
+              <TooltipContent side="right">{t('common.signOut')}</TooltipContent>
             </Tooltip>
           ) : (
             <Button
@@ -369,7 +369,7 @@ export function AppSidebar() {
               className="w-full justify-start gap-3 sidebar-menu-item"
               onClick={logout}
               aria-label={t('common.signOut')}
-             >
+            >
               <LogOut className="h-4 w-4" />
               {t('common.signOut')}
             </Button>

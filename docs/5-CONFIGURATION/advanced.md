@@ -109,7 +109,7 @@ For debugging LLM workflows:
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 LANGCHAIN_API_KEY=your-key
-LANGCHAIN_PROJECT="Open Notebook"
+LANGCHAIN_PROJECT="Dyslexxy"
 ```
 
 Then visit https://smith.langchain.com to see traces.

@@ -32,7 +32,7 @@ export const zhCN = {
     podcast: "播客",
     quickActions: "快捷操作",
     quickActionsDesc: "导航、搜索、提问、主题",
-    appName: "Open Notebook",
+    appName: "Dyslexxy",
     add: "添加",
     remove: "移除",
     confirm: "确认",
@@ -191,7 +191,7 @@ export const zhCN = {
     localDevLabel: "对于本地开发",
   },
   auth: {
-    loginTitle: "Open Notebook",
+    loginTitle: "Dyslexxy",
     loginDesc: "输入密码以访问应用程序",
     passwordPlaceholder: "密码",
     signingIn: "正在登录...",

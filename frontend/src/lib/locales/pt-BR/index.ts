@@ -32,7 +32,7 @@ export const ptBR = {
     podcast: "Podcast",
     quickActions: "Ações rápidas",
     quickActionsDesc: "Navegação, busca, perguntar, tema",
-    appName: "Open Notebook",
+    appName: "Dyslexxy",
     add: "Adicionar",
     remove: "Remover",
     confirm: "Confirmar",
@@ -191,7 +191,7 @@ export const ptBR = {
     localDevLabel: "Para desenvolvimento local",
   },
   auth: {
-    loginTitle: "Open Notebook",
+    loginTitle: "Dyslexxy",
     loginDesc: "Digite sua senha para acessar o aplicativo",
     passwordPlaceholder: "Senha",
     signingIn: "Entrando...",
