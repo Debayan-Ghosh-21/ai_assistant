@@ -285,15 +285,15 @@ export default function SourcesPage() {
 
   return (
     <AppShell>
-      <div className="flex flex-col h-full w-full max-w-none px-6 py-6">
+      <div className="flex h-full w-full max-w-none flex-col px-6 py-6 lg:px-8">
         <div className="mb-6 flex-shrink-0">
-          <h1 className="text-3xl font-bold">{t('sources.allSources')}</h1>
-          <p className="mt-2 text-muted-foreground">
+          <h1 className="text-2xl font-semibold tracking-normal text-foreground">{t('sources.allSources')}</h1>
+          <p className="mt-1 text-sm text-muted-foreground">
             {t('sources.allSourcesDesc')}
           </p>
         </div>
 
-        <div ref={scrollContainerRef} className="flex-1 rounded-md border overflow-auto">
+        <div ref={scrollContainerRef} className="flex-1 overflow-auto rounded-lg border border-border/75 bg-card shadow-[0_10px_28px_rgb(70_62_45_/_5%)]">
           <table
             ref={tableRef}
             tabIndex={0}
@@ -307,20 +307,20 @@ export default function SourcesPage() {
               <col className="w-[100px]" />
               <col className="w-[100px]" />
             </colgroup>
-            <thead className="sticky top-0 bg-background z-10">
-              <tr className="border-b bg-muted/50">
-                <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground">
+            <thead className="sticky top-0 z-10 bg-card/95 backdrop-blur">
+              <tr className="border-b border-border/75 bg-muted/45">
+                <th className="h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground">
                   {t('common.type')}
                 </th>
-                <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground">
+                <th className="h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground">
                   {t('common.title')}
                 </th>
-                <th className="h-12 px-4 text-left align-middle font-medium text-muted-foreground hidden sm:table-cell">
+                <th className="hidden h-11 px-4 text-left align-middle text-xs font-semibold uppercase text-muted-foreground sm:table-cell">
                   <Button
                     variant="ghost"
                     size="sm"
                     onClick={() => toggleSort('created')}
-                    className="h-8 px-2 hover:bg-muted"
+                    className="h-8 px-2 text-xs uppercase hover:bg-muted"
                   >
                     {t('common.created_label')}
                     <ArrowUpDown className={cn(
@@ -334,13 +334,13 @@ export default function SourcesPage() {
                     )}
                   </Button>
                 </th>
-                <th className="h-12 px-4 text-center align-middle font-medium text-muted-foreground hidden md:table-cell">
+                <th className="hidden h-11 px-4 text-center align-middle text-xs font-semibold uppercase text-muted-foreground md:table-cell">
                   {t('sources.insights')}
                 </th>
-                <th className="h-12 px-4 text-center align-middle font-medium text-muted-foreground hidden lg:table-cell">
+                <th className="hidden h-11 px-4 text-center align-middle text-xs font-semibold uppercase text-muted-foreground lg:table-cell">
                   {t('sources.embedded')}
                 </th>
-                <th className="h-12 px-4 text-right align-middle font-medium text-muted-foreground">
+                <th className="h-11 px-4 text-right align-middle text-xs font-semibold uppercase text-muted-foreground">
                   {t('common.actions')}
                 </th>
               </tr>
@@ -352,13 +352,13 @@ export default function SourcesPage() {
                   onClick={() => handleRowClick(index, source.id)}
                   onMouseEnter={() => setSelectedIndex(index)}
                   className={cn(
-                    "border-b transition-colors cursor-pointer",
+                    "cursor-pointer border-b border-border/60 transition-colors",
                     selectedIndex === index
-                      ? "bg-accent"
-                      : "hover:bg-muted/50"
+                      ? "bg-accent/75"
+                      : "hover:bg-muted/45"
                   )}
                 >
-                  <td className="h-12 px-4">
+                  <td className="h-14 px-4">
                     <div className="flex items-center gap-2">
                       {getSourceIcon(source)}
                       <Badge variant="secondary" className="text-xs">
@@ -366,7 +366,7 @@ export default function SourcesPage() {
                       </Badge>
                     </div>
                   </td>
-                  <td className="h-12 px-4">
+                  <td className="h-14 px-4">
                     <div className="flex flex-col overflow-hidden">
                       <span className="font-medium truncate">
                         {source.title || t('sources.untitledSource')}
@@ -378,21 +378,21 @@ export default function SourcesPage() {
                       )}
                     </div>
                   </td>
-                  <td className="h-12 px-4 text-muted-foreground text-sm hidden sm:table-cell">
+                  <td className="hidden h-14 px-4 text-sm text-muted-foreground sm:table-cell">
                     {formatDistanceToNow(new Date(source.created), { 
                       addSuffix: true,
                       locale: getDateLocale(language)
                     })}
                   </td>
-                  <td className="h-12 px-4 text-center hidden md:table-cell">
+                  <td className="hidden h-14 px-4 text-center md:table-cell">
                     <span className="text-sm font-medium">{source.insights_count || 0}</span>
                   </td>
-                  <td className="h-12 px-4 text-center hidden lg:table-cell">
+                  <td className="hidden h-14 px-4 text-center lg:table-cell">
                     <Badge variant={source.embedded ? "default" : "secondary"} className="text-xs">
                       {source.embedded ? t('sources.yes') : t('sources.no')}
                     </Badge>
                   </td>
-                  <td className="h-12 px-4 text-right">
+                  <td className="h-14 px-4 text-right">
                     <Button
                       variant="ghost"
                       size="icon"

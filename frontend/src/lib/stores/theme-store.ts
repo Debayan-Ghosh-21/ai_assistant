@@ -12,8 +12,8 @@ interface ThemeState {
 
 export const useThemeStore = create<ThemeState>()(
   persist(
-    (set, get) => ({
-      theme: 'system',
+    (set) => ({
+      theme: 'light',
       
       setTheme: (theme: Theme) => {
         set({ theme })
@@ -21,7 +21,7 @@ export const useThemeStore = create<ThemeState>()(
         // Apply theme to document immediately
         if (typeof window !== 'undefined') {
           const root = window.document.documentElement
-          const effectiveTheme = theme === 'system' ? get().getSystemTheme() : theme
+          const effectiveTheme = 'light'
           
           root.classList.remove('light', 'dark')
           root.classList.add(effectiveTheme)
@@ -37,8 +37,7 @@ export const useThemeStore = create<ThemeState>()(
       },
       
       getEffectiveTheme: () => {
-        const { theme } = get()
-        return theme === 'system' ? get().getSystemTheme() : theme
+        return 'light'
       }
     }),
     {

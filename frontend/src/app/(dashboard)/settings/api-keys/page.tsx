@@ -57,6 +57,7 @@ import { Credential, CreateCredentialRequest, UpdateCredentialRequest, Discovere
 import { Model, ModelDefaults } from '@/lib/types/models'
 import { MigrationBanner, ModelTestResultDialog } from '@/components/settings'
 import { EmbeddingModelChangeDialog } from '@/components/settings/EmbeddingModelChangeDialog'
+import { cn } from '@/lib/utils'
 
 type ModelType = 'language' | 'embedding' | 'text_to_speech' | 'speech_to_text'
 
@@ -791,9 +792,9 @@ function CredentialItem({
 
   return (
     <>
-      <div className="border rounded-lg p-3 space-y-2">
+      <div className="space-y-3 rounded-lg border border-border/75 bg-background/45 p-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2 min-w-0">
+          <div className="flex min-w-0 items-center gap-2">
             <span className="font-medium truncate">{credential.name}</span>
             <div className="flex gap-1">
               {credential.modalities.map(mod => (
@@ -814,7 +815,7 @@ function CredentialItem({
               </Badge>
             )}
           </div>
-          <div className="flex items-center gap-1 shrink-0">
+          <div className="flex shrink-0 items-center gap-1">
             {testResult && (
               testResult.success
                 ? <Check className="h-4 w-4 text-emerald-500" />
@@ -865,7 +866,7 @@ function CredentialItem({
 
         {/* Linked models grouped by type */}
         {linkedModels.length > 0 && (
-          <div className="space-y-1.5 pt-1">
+          <div className="space-y-2 pt-1">
             {(['language', 'embedding', 'text_to_speech', 'speech_to_text'] as ModelType[])
               .filter(type => linkedModels.some(m => m.type === type))
               .map(type => (
@@ -991,9 +992,9 @@ function ProviderSection({
   const activeTypes = new Set(providerModels.map(m => m.type))
 
   return (
-    <Card className={!hasCredentials ? 'opacity-80' : undefined}>
+    <Card className={cn('overflow-hidden', !hasCredentials ? 'opacity-75' : undefined)}>
       <CardHeader className="pb-3">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-3 flex-wrap">
             <CardTitle className="text-lg capitalize">{displayName}</CardTitle>
             <div className="flex items-center gap-1">
@@ -1350,14 +1351,14 @@ export default function ApiKeysPage() {
   return (
     <AppShell>
       <div className="flex-1 overflow-y-auto">
-        <div className="p-6 space-y-6">
+        <div className="space-y-6 p-6 lg:p-8">
           {/* Header */}
           <div>
-            <h1 className="text-2xl font-bold flex items-center gap-2">
-              <Key className="h-6 w-6" />
+            <h1 className="flex items-center gap-2 text-2xl font-semibold tracking-normal">
+              <Key className="h-5 w-5" />
               {t('apiKeys.title')}
             </h1>
-            <p className="text-muted-foreground mt-1">{t('apiKeys.description')}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{t('apiKeys.description')}</p>
           </div>
 
           {/* Encryption warning */}

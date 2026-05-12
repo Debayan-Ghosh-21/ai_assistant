@@ -108,14 +108,14 @@ export function AppSidebar() {
     <TooltipProvider delayDuration={0}>
       <div
         className={cn(
-          'app-sidebar flex h-full flex-col bg-sidebar border-sidebar-border border-r transition-all duration-300',
-          isCollapsed ? 'w-16' : 'w-64'
+          'app-sidebar flex h-full flex-col border-sidebar-border/80 border-r bg-sidebar transition-all duration-300 ease-out',
+          isCollapsed ? 'w-16' : 'w-72'
         )}
       >
         <div
           className={cn(
-            'flex h-16 items-center group',
-            isCollapsed ? 'justify-center px-2' : 'justify-between px-4'
+            'flex h-16 items-center border-b border-sidebar-border/70 group',
+            isCollapsed ? 'justify-center px-2' : 'justify-between px-5'
           )}
         >
           {isCollapsed ? (
@@ -140,7 +140,7 @@ export function AppSidebar() {
             <>
               <div className="flex items-center gap-2">
                 <Image src="/logo.svg" alt={t('common.appName')} width={32} height={32} />
-                <span className="text-base font-medium text-sidebar-foreground">
+                <span className="text-sm font-semibold text-sidebar-foreground">
                   {t('common.appName')}
                 </span>
               </div>
@@ -148,7 +148,7 @@ export function AppSidebar() {
                 variant="ghost"
                 size="sm"
                 onClick={toggleCollapse}
-                className="text-sidebar-foreground hover:bg-sidebar-accent"
+                className="rounded-full text-sidebar-foreground hover:bg-sidebar-accent"
                 data-testid="sidebar-toggle"
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -160,7 +160,7 @@ export function AppSidebar() {
         <nav
           className={cn(
             'flex-1 space-y-1 py-4',
-            isCollapsed ? 'px-2' : 'px-3'
+            isCollapsed ? 'px-2' : 'px-4'
           )}
         >
           <div
@@ -178,14 +178,14 @@ export function AppSidebar() {
                         onClick={() => setCreateMenuOpen(true)}
                         variant="default"
                         size="sm"
-                        className="w-full justify-center px-2 bg-primary hover:bg-primary/90 text-primary-foreground border-0"
+                        className="w-full justify-center border-0 bg-primary px-2 text-primary-foreground hover:bg-primary/90"
                         aria-label={t('common.create')}
                       >
                         <Plus className="h-4 w-4" />
                       </Button>
                     </DropdownMenuTrigger>
                   </TooltipTrigger>
-                   <TooltipContent side="right">{t('common.create')}</TooltipContent>
+                  <TooltipContent side="right">{t('common.create')}</TooltipContent>
                 </Tooltip>
               ) : (
                 <DropdownMenuTrigger asChild>
@@ -193,8 +193,8 @@ export function AppSidebar() {
                     onClick={() => setCreateMenuOpen(true)}
                     variant="default"
                     size="sm"
-                    className="w-full justify-start bg-primary hover:bg-primary/90 text-primary-foreground border-0"
-                   >
+                    className="w-full justify-start border-0 bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
                     <Plus className="h-4 w-4 mr-2" />
                     {t('common.create')}
                   </Button>
@@ -213,7 +213,7 @@ export function AppSidebar() {
                   }}
                   className="gap-2"
                 >
-                   <FileText className="h-4 w-4" />
+                  <FileText className="h-4 w-4" />
                   {t('common.source')}
                 </DropdownMenuItem>
                 <DropdownMenuItem
@@ -223,7 +223,7 @@ export function AppSidebar() {
                   }}
                   className="gap-2"
                 >
-                   <Book className="h-4 w-4" />
+                  <Book className="h-4 w-4" />
                   {t('common.notebook')}
                 </DropdownMenuItem>
                 <DropdownMenuItem
@@ -233,7 +233,7 @@ export function AppSidebar() {
                   }}
                   className="gap-2"
                 >
-                   <Mic className="h-4 w-4" />
+                  <Mic className="h-4 w-4" />
                   {t('common.podcast')}
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -247,7 +247,7 @@ export function AppSidebar() {
               )}
               <div className="space-y-1">
                 {!isCollapsed && (
-                  <h3 className="mb-2 px-3 text-xs font-semibold uppercase tracking-wider text-sidebar-foreground/60">
+                  <h3 className="mb-2 px-3 text-[10px] font-semibold uppercase text-sidebar-foreground/45">
                     {section.title}
                   </h3>
                 )}
@@ -258,7 +258,7 @@ export function AppSidebar() {
                     <Button
                       variant={isActive ? 'secondary' : 'ghost'}
                       className={cn(
-                        'w-full gap-3 text-sidebar-foreground sidebar-menu-item',
+                        'w-full gap-3 rounded-lg text-sidebar-foreground sidebar-menu-item',
                         isActive && 'bg-sidebar-accent text-sidebar-accent-foreground',
                         isCollapsed ? 'justify-center px-2' : 'justify-start'
                       )}
@@ -300,23 +300,23 @@ export function AppSidebar() {
         >
           {/* Command Palette hint */}
           {!isCollapsed && (
-            <div className="px-3 py-1.5 text-xs text-sidebar-foreground/60">
+            <div className="rounded-lg border border-sidebar-border/70 bg-card/55 px-3 py-2 text-xs text-sidebar-foreground/60">
               <div className="flex items-center justify-between">
-                 <span className="flex items-center gap-1.5">
+                <span className="flex items-center gap-1.5">
                   <Command className="h-3 w-3" />
                   {t('common.quickActions')}
                 </span>
-                <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
+                <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded-md border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground">
                   {isMac ? <span className="text-xs">⌘</span> : <span>Ctrl+</span>}K
                 </kbd>
               </div>
-               <p className="mt-1 text-[10px] text-sidebar-foreground/40">
+              <p className="mt-1 text-[10px] text-sidebar-foreground/40">
                 {t('common.quickActionsDesc')}
               </p>
             </div>
           )}
 
-           <div
+          <div
             className={cn(
               'flex flex-col gap-2',
               isCollapsed ? 'items-center' : 'items-stretch'

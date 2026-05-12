@@ -1,28 +1,64 @@
+name: open-notebook-dev
+
 services:
   surrealdb:
     image: surrealdb/surrealdb:v2
+    command: start --log info --user root --pass root rocksdb:/mydata/mydatabase.db
+    user: root
+    ports:
+      - "8000:8000"
     volumes:
       - ./surreal_data:/mydata
     environment:
-      - SURREAL_EXPERIMENTAL_GRAPHQL=true
-    ports:
-      - "8000:8000"
-    command: start --log info --user root --pass root rocksdb:/mydata/mydatabase.db
-    pull_policy: always
-    user: root
-    restart: always
+      SURREAL_EXPERIMENTAL_GRAPHQL: "true"
+    healthcheck:
+      test: ["CMD", "/surreal", "isready", "--conn", "http://localhost:8000"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+      start_period: 10s
+    restart: unless-stopped
+
   open_notebook:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
+    env_file:
+      - ./docker.env
+    environment:
+      SURREAL_URL: ws://surrealdb:8000/rpc
+      SURREAL_USER: root
+      SURREAL_PASSWORD: root
+      SURREAL_NAMESPACE: open_notebook
+      SURREAL_DATABASE: open_notebook
+      INTERNAL_API_URL: http://localhost:5055
+      NEXT_PUBLIC_API_URL: ""
+      HOSTNAME: 0.0.0.0
+      PORT: "8502"
+      TIKTOKEN_CACHE_DIR: /app/tiktoken-cache
     ports:
       - "8502:8502"
       - "5055:5055"
-    env_file:
-      - ./docker.env
-    depends_on:
-      - surrealdb
     volumes:
+      - .:/app
+      - open_notebook_venv:/app/.venv
+      - open_notebook_node_modules:/app/frontend/node_modules
+      - open_notebook_next:/app/frontend/.next
+      - open_notebook_tiktoken:/app/tiktoken-cache
       - ./notebook_data:/app/data
-    restart: always
-    
+    depends_on:
+      surrealdb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:5055/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  open_notebook_venv:
+  open_notebook_node_modules:
+  open_notebook_next:
+  open_notebook_tiktoken:

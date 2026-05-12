@@ -101,14 +101,17 @@ make stop-all
 # Start with dev profile
 make dev
 
-# Or full stack
-make full
+# Stop the dev stack
+make dev-down
+
+# Follow container logs
+make dev-logs
 ```
 
 ### Configuration Files
 
-- `docker-compose.dev.yml` - Development setup
-- `docker-compose.full.yml` - Full stack setup
+- `docker-compose-dev.yml` - Development setup
+- `Dockerfile.dev` - Development image with Python, Node, uv, and Supervisor
 - `docker-compose.yml` - Base configuration
 
 ### Advantages

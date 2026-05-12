@@ -71,7 +71,7 @@ export function LoginForm() {
   // Show loading while checking if auth is required
   if (!hasHydrated || isCheckingAuth) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
+      <div className="flex min-h-screen items-center justify-center bg-background">
         <LoadingSpinner />
       </div>
     )
@@ -80,8 +80,8 @@ export function LoginForm() {
   // If we still don't know if auth is required (connection error), show error
   if (authRequired === null) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-background p-4">
-        <Card className="w-full max-w-md">
+      <div className="flex min-h-screen items-center justify-center bg-background p-4">
+        <Card className="w-full max-w-md rounded-[2rem] border-white/70 bg-card/95">
           <CardHeader className="text-center">
             <CardTitle>{t('common.connectionError')}</CardTitle>
             <CardDescription>
@@ -138,50 +138,82 @@ export function LoginForm() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background p-4">
-      <Card className="w-full max-w-md">
-        <CardHeader className="text-center">
-          <CardTitle>{t('auth.loginTitle')}</CardTitle>
-          <CardDescription>
-            {t('auth.loginDesc')}
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <Input
-                type="password"
-                placeholder={t('auth.passwordPlaceholder')}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                disabled={isLoading}
-              />
+    <div className="flex min-h-screen items-center justify-center bg-background p-4 sm:p-8">
+      <div className="w-full max-w-[960px] overflow-hidden rounded-[2.5rem] border border-white/70 bg-card/95 shadow-[0_26px_80px_rgba(25,24,21,0.08)]">
+        <div className="grid min-h-[560px] md:grid-cols-[1.08fr_0.92fr]">
+          <section className="flex flex-col justify-between bg-[linear-gradient(180deg,oklch(0.992_0.001_95),oklch(0.962_0.003_95))] p-8 sm:p-10">
+            <div className="flex items-center justify-between gap-3 text-[11px] text-muted-foreground">
+              <span className="font-medium tracking-normal">Open Notebook</span>
+              <span className="rounded-full border bg-card/80 px-3 py-1 text-foreground">
+                Private AI
+              </span>
             </div>
-
-            {error && (
-              <div className="flex items-center gap-2 text-red-600 text-sm">
-                <AlertCircle className="h-4 w-4" />
-                {error}
+            <div className="mx-auto flex max-w-md flex-1 flex-col items-center justify-center py-12 text-center">
+              <div className="mb-5 flex size-16 items-center justify-center rounded-full border border-white/80 bg-card shadow-sm">
+                <span className="text-2xl font-semibold">ON</span>
               </div>
-            )}
+              <h1 className="text-balance text-4xl font-semibold leading-[1.05] tracking-normal text-foreground sm:text-5xl">
+                Your research,
+                <br />
+                shaped quietly.
+              </h1>
+              <p className="mt-5 max-w-sm text-sm leading-6 text-muted-foreground">
+                Sign in to collect sources, build notebooks, and work with your AI assistant.
+              </p>
+            </div>
+            <div className="flex items-center justify-between border-t border-border/70 pt-5 text-[11px] text-muted-foreground">
+              <span>{configInfo ? `${t('common.version')} ${configInfo.version}` : 'Ready'}</span>
+              <span>Local workspace</span>
+            </div>
+          </section>
 
-            <Button
-              type="submit"
-              className="w-full"
-              disabled={isLoading || !password.trim()}
-            >
-              {isLoading ? t('auth.signingIn') : t('auth.signIn')}
-            </Button>
+          <section className="flex items-center justify-center border-t border-border/70 p-6 md:border-l md:border-t-0 sm:p-10">
+            <Card className="w-full max-w-sm border-0 bg-transparent p-0 shadow-none">
+              <CardHeader className="text-center">
+                <CardTitle>{t('auth.loginTitle')}</CardTitle>
+                <CardDescription>
+                  {t('auth.loginDesc')}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <Input
+                      type="password"
+                      placeholder={t('auth.passwordPlaceholder')}
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      disabled={isLoading}
+                    />
+                  </div>
 
-            {configInfo && (
-              <div className="text-xs text-center text-muted-foreground pt-2 border-t">
-                <div>{t('common.version')} {configInfo.version}</div>
-                <div className="font-mono text-[10px]">{configInfo.apiUrl}</div>
-              </div>
-            )}
-          </form>
-        </CardContent>
-      </Card>
+                  {error && (
+                    <div className="flex items-center gap-2 text-red-600 text-sm">
+                      <AlertCircle className="h-4 w-4" />
+                      {error}
+                    </div>
+                  )}
+
+                  <Button
+                    type="submit"
+                    className="w-full"
+                    disabled={isLoading || !password.trim()}
+                  >
+                    {isLoading ? t('auth.signingIn') : t('auth.signIn')}
+                  </Button>
+
+                  {configInfo && (
+                    <div className="text-xs text-center text-muted-foreground pt-2 border-t">
+                      <div>{t('common.version')} {configInfo.version}</div>
+                      <div className="font-mono text-[10px]">{configInfo.apiUrl}</div>
+                    </div>
+                  )}
+                </form>
+              </CardContent>
+            </Card>
+          </section>
+        </div>
+      </div>
     </div>
   )
 }
