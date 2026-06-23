@@ -1,0 +1,4 @@
+-- Migration 16 Down: Remove Accuracy Logs
+-- Drops accuracy_log table
+
+REMOVE TABLE IF NOT EXISTS accuracy_log;

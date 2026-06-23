@@ -2,6 +2,8 @@ import { useQuery, useMutation, useQueryClient, useInfiniteQuery } from '@tansta
 import { useCallback, useMemo } from 'react'
 import { sourcesApi } from '@/lib/api/sources'
 import { QUERY_KEYS } from '@/lib/api/query-client'
+import { sourceChatApi } from '@/lib/api/source-chat'
+import { accuracyApi } from '@/lib/api/accuracy'
 import { useToast } from '@/lib/hooks/use-toast'
 import { useTranslation } from '@/lib/hooks/use-translation'
 import { getApiErrorMessage } from '@/lib/utils/error-handler'
@@ -93,7 +95,18 @@ export function useCreateSource() {
 
   return useMutation({
     mutationFn: (data: CreateSourceRequest) => sourcesApi.create(data),
-    onSuccess: (result: SourceResponse, variables) => {
+    onSuccess: async (result: SourceResponse, variables) => {
+      // Auto-create a source chat session and log accuracy for it
+      try {
+        const sourceId = result.id
+        const sessionTitle = `Chat - ${result.title || 'New Source'}`
+        const chatSession = await sourceChatApi.createSession(sourceId, { title: sessionTitle })
+        await accuracyApi.create(chatSession.id)
+        console.log(`Auto-created source chat session and logged accuracy: ${chatSession.id}`)
+      } catch (err) {
+        console.error('Failed to auto-create source chat and log accuracy:', err)
+      }
+
       // Invalidate queries for all relevant notebooks with immediate refetch
       if (variables.notebooks) {
         variables.notebooks.forEach(notebookId => {

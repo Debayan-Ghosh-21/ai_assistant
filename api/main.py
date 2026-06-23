@@ -14,6 +14,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from api.auth import PasswordAuthMiddleware
 from api.routers import (
+    accuracy_logs,
     auth,
     chat,
     config,
@@ -312,6 +313,7 @@ app.include_router(source_chat.router, prefix="/api", tags=["source-chat"])
 app.include_router(credentials.router, prefix="/api", tags=["credentials"])
 app.include_router(languages.router, prefix="/api", tags=["languages"])
 app.include_router(quiz.router, prefix="/api", tags=["quiz"])
+app.include_router(accuracy_logs.router, prefix="/api", tags=["accuracy-logs"])
 
 
 @app.get("/")

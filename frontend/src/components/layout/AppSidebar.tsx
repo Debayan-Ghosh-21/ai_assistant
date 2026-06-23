@@ -41,6 +41,7 @@ import {
   Plus,
   Wrench,
   Command,
+  BarChart2,
 } from 'lucide-react'
 
 const getNavigation = (t: TFunction) => [
@@ -55,21 +56,22 @@ const getNavigation = (t: TFunction) => [
     items: [
       { name: t('navigation.notebooks'), href: '/notebooks', icon: Book },
       { name: t('navigation.askAndSearch'), href: '/search', icon: Search },
+      { name: t('navigation.analytics') || 'Analytics', href: '/analytics', icon: BarChart2 },
     ],
   },
-  {
-    title: t('navigation.create'),
-    items: [
-      { name: t('navigation.podcasts'), href: '/podcasts', icon: Mic },
-    ],
-  },
+  // {
+  //   title: t('navigation.create'),
+  //   items: [
+  //     { name: t('navigation.podcasts'), href: '/podcasts', icon: Mic },
+  //   ],
+  // },
   {
     title: t('navigation.manage'),
     items: [
       { name: t('navigation.models'), href: '/settings/api-keys', icon: Bot },
-      { name: t('navigation.transformations'), href: '/transformations', icon: Shuffle },
+      // { name: t('navigation.transformations'), href: '/transformations', icon: Shuffle },
       { name: t('navigation.settings'), href: '/settings', icon: Settings },
-      { name: t('navigation.advanced'), href: '/advanced', icon: Wrench },
+      // { name: t('navigation.advanced'), href: '/advanced', icon: Wrench },
     ],
   },
 ] as const
