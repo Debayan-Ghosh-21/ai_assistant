@@ -3,20 +3,31 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { Save, Copy, Loader2, Check } from 'lucide-react'
+import { Save, Copy, Loader2, Check, Target } from 'lucide-react'
 import { useCreateNote } from '@/lib/hooks/use-notes'
+import { useCreateAccuracyLog } from '@/lib/hooks/use-accuracy'
 import { toast } from 'sonner'
 import { useTranslation } from '@/lib/hooks/use-translation'
 
 interface MessageActionsProps {
   content: string
   notebookId?: string
+  chatId?: string | null
 }
 
-export function MessageActions({ content, notebookId }: MessageActionsProps) {
+export function MessageActions({ content, notebookId, chatId }: MessageActionsProps) {
   const { t } = useTranslation()
   const [copySuccess, setCopySuccess] = useState(false)
   const createNote = useCreateNote()
+  const createAccuracyLog = useCreateAccuracyLog()
+
+  const handleLogAccuracy = () => {
+    if (!chatId) {
+      toast.error('No active chat session found to log accuracy.')
+      return
+    }
+    createAccuracyLog.mutate(chatId)
+  }
 
   const handleSaveToNote = () => {
     if (!notebookId) {
@@ -71,6 +82,28 @@ export function MessageActions({ content, notebookId }: MessageActionsProps) {
   return (
     <TooltipProvider>
       <div className="flex gap-1">
+        {chatId && (
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="h-7 px-2"
+                onClick={handleLogAccuracy}
+                disabled={createAccuracyLog.isPending}
+              >
+                {createAccuracyLog.isPending ? (
+                  <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                ) : (
+                  <Target className="h-3.5 w-3.5" />
+                )}
+              </Button>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Log AI Response Accuracy</p>
+            </TooltipContent>
+          </Tooltip>
+        )}
         {notebookId && (
           <Tooltip>
             <TooltipTrigger asChild>

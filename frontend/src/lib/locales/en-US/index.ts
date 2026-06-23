@@ -212,6 +212,7 @@ export const enUS = {
     transformation: "Transformation",
     settings: "Settings",
     advanced: "Advanced",
+    analytics: "Accuracy Analytics",
     nav: "Navigation",
     language: "Toggle language",
     theme: "Theme",

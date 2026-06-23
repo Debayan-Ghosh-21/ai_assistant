@@ -1,0 +1,8 @@
+-- Migration 16: Accuracy Logs
+-- Adds accuracy_log table to store session accuracy metrics
+
+DEFINE TABLE IF NOT EXISTS accuracy_log SCHEMAFULL;
+
+DEFINE FIELD chat_id ON TABLE accuracy_log TYPE string;
+DEFINE FIELD accuracy_score ON TABLE accuracy_log TYPE int;
+DEFINE FIELD created_at ON TABLE accuracy_log TYPE datetime DEFAULT time::now();

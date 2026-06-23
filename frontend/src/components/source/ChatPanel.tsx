@@ -210,6 +210,7 @@ export function ChatPanel({
                       <MessageActions
                         content={message.content}
                         notebookId={notebookId}
+                        chatId={currentSessionId}
                       />
                     )}
                   </div>

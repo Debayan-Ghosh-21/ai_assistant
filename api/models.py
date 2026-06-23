@@ -731,3 +731,29 @@ class QuizResultResponse(BaseModel):
     results: List[Dict[str, Any]] = Field(
         ..., description="Per-question result details"
     )
+
+
+# Accuracy Logs API models
+class AccuracyLogCreate(BaseModel):
+    chat_id: str = Field(..., description="Chat Session ID")
+
+
+class AccuracyLogResponse(BaseModel):
+    id: str
+    chat_id: str
+    accuracy_score: int
+    created_at: str
+
+
+class DailyAverage(BaseModel):
+    date: str
+    avg_score: float
+
+
+class AccuracyStatsResponse(BaseModel):
+    records: List[AccuracyLogResponse]
+    average_score: float
+    min_score: int
+    max_score: int
+    total_logs: int
+    daily_averages: List[DailyAverage]
