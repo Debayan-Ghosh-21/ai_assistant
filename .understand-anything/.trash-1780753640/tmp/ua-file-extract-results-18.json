@@ -1,0 +1,456 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/1-INSTALLATION/docker-compose.md",
+      "language": "markdown",
+      "fileCategory": "infra",
+      "totalLines": 359,
+      "nonEmptyLines": 261,
+      "sections": [
+        {
+          "heading": "Docker Compose Installation (Recommended)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Step 1: Get docker-compose.yml (1 min)",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Step 2: Start Services (2 min)",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Step 3: Verify Installation (1 min)",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Step 4: Configure AI Provider (2 min)",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Step 5: First Notebook (2 min)",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "Adding Ollama (Free Local Models)",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Environment Variables Reference",
+          "level": 2,
+          "line": 189
+        },
+        {
+          "heading": "Common Tasks",
+          "level": 2,
+          "line": 206
+        },
+        {
+          "heading": "Stop Services",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "View Logs",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Restart Services",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Update to Latest Version",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "Remove All Data",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 241
+        },
+        {
+          "heading": "\"Cannot connect to API\" Error",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Port Already in Use",
+          "level": 3,
+          "line": 264
+        },
+        {
+          "heading": "Credential Issues",
+          "level": 3,
+          "line": 278
+        },
+        {
+          "heading": "Database Connection Issues",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "Database Permission Denied (Linux)",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Alternative Setups",
+          "level": 2,
+          "line": 326
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 338
+        },
+        {
+          "heading": "Production Deployment",
+          "level": 2,
+          "line": 347
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 355
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "docs/1-INSTALLATION/from-source.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 180,
+      "nonEmptyLines": 124,
+      "sections": [
+        {
+          "heading": "From Source Installation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quick Setup (10 minutes)",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "1. Clone Repository",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "2. Install Python Dependencies",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "2.1 Alternative: Conda Setup (Optional)",
+          "level": 4,
+          "line": 35
+        },
+        {
+          "heading": "3. Start SurrealDB",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "4. Set Environment Variables",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "5. Start API",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "6. Start Frontend",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "7. Access",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "8. Configure AI Provider",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Development Workflow",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Code Quality",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Run Tests",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "Common Commands",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "Python version too old",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "npm: command not found",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Database connection errors",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Port 5055 already in use",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 177
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": "docs/1-INSTALLATION/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 150,
+      "nonEmptyLines": 103,
+      "sections": [
+        {
+          "heading": "Installation Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Decision: Which Route?",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "🚀 I want the easiest setup (Recommended for most)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "🏠 I want everything in one container (Deprecated)",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "👨‍💻 I want to develop/contribute (Developers only)",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "System Requirements",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Minimum",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Recommended",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "AI Provider Options",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Cloud-Based (Pay-as-you-go)",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Local (Free, Private)",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "Choose a Route",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Pre-Installation Checklist",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Detailed Installation Instructions",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "For Docker Users",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "For Source Installation (Developers)",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "After Installation",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Troubleshooting During Installation",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Need Help?",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Production Deployment",
+          "level": 2,
+          "line": 140
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": "docs/1-INSTALLATION/single-container.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 137,
+      "nonEmptyLines": 106,
+      "sections": [
+        {
+          "heading": "Single Container Installation (Deprecated)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Quick Setup",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "For Local Testing (Docker)",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "For Cloud Platforms",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Limitations vs Docker Compose",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 130
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    }
+  ]
+}

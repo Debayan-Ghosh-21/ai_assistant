@@ -1,0 +1,135 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/3-USER-GUIDE/adding-sources.md",
+      "type": "document",
+      "name": "adding-sources.md",
+      "filePath": "docs/3-USER-GUIDE/adding-sources.md",
+      "summary": "Documentation content for adding-sources.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/api-configuration.md",
+      "type": "document",
+      "name": "api-configuration.md",
+      "filePath": "docs/3-USER-GUIDE/api-configuration.md",
+      "summary": "Documentation content for api-configuration.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/chat-effectively.md",
+      "type": "document",
+      "name": "chat-effectively.md",
+      "filePath": "docs/3-USER-GUIDE/chat-effectively.md",
+      "summary": "Documentation content for chat-effectively.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/citations.md",
+      "type": "document",
+      "name": "citations.md",
+      "filePath": "docs/3-USER-GUIDE/citations.md",
+      "summary": "Documentation content for citations.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/creating-podcasts.md",
+      "type": "document",
+      "name": "creating-podcasts.md",
+      "filePath": "docs/3-USER-GUIDE/creating-podcasts.md",
+      "summary": "Documentation content for creating-podcasts.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/3-USER-GUIDE/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/interface-overview.md",
+      "type": "document",
+      "name": "interface-overview.md",
+      "filePath": "docs/3-USER-GUIDE/interface-overview.md",
+      "summary": "Documentation content for interface-overview.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/search.md",
+      "type": "document",
+      "name": "search.md",
+      "filePath": "docs/3-USER-GUIDE/search.md",
+      "summary": "Documentation content for search.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/transformations.md",
+      "type": "document",
+      "name": "transformations.md",
+      "filePath": "docs/3-USER-GUIDE/transformations.md",
+      "summary": "Documentation content for transformations.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/3-USER-GUIDE/working-with-notes.md",
+      "type": "document",
+      "name": "working-with-notes.md",
+      "filePath": "docs/3-USER-GUIDE/working-with-notes.md",
+      "summary": "Documentation content for working-with-notes.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

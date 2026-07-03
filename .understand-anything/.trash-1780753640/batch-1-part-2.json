@@ -1,0 +1,2953 @@
+{
+  "nodes": [
+    {
+      "id": "file:api/insights_service.py",
+      "type": "file",
+      "name": "insights_service.py",
+      "filePath": "api/insights_service.py",
+      "summary": "Insights service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/insights_service.py:InsightsService",
+      "type": "class",
+      "name": "InsightsService",
+      "filePath": "api/insights_service.py",
+      "lineRange": [
+        13,
+        96
+      ],
+      "summary": "Class implements InsightsService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/main.py",
+      "type": "file",
+      "name": "main.py",
+      "filePath": "api/main.py",
+      "summary": "Parse CORS_ORIGINS env value into a list of origins.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "function",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/main.py:_parse_cors_origins",
+      "type": "function",
+      "name": "_parse_cors_origins",
+      "filePath": "api/main.py",
+      "lineRange": [
+        54,
+        59
+      ],
+      "summary": "Function implements logic for _parse_cors_origins.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:_cors_headers",
+      "type": "function",
+      "name": "_cors_headers",
+      "filePath": "api/main.py",
+      "lineRange": [
+        68,
+        89
+      ],
+      "summary": "Function implements logic for _cors_headers.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:api/main.py:lifespan",
+      "type": "function",
+      "name": "lifespan",
+      "filePath": "api/main.py",
+      "lineRange": [
+        100,
+        155
+      ],
+      "summary": "Function implements logic for lifespan.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/main.py:custom_http_exception_handler",
+      "type": "function",
+      "name": "custom_http_exception_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        202,
+        215
+      ],
+      "summary": "Function implements logic for custom_http_exception_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:not_found_error_handler",
+      "type": "function",
+      "name": "not_found_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        219,
+        224
+      ],
+      "summary": "Function implements logic for not_found_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:invalid_input_error_handler",
+      "type": "function",
+      "name": "invalid_input_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        228,
+        233
+      ],
+      "summary": "Function implements logic for invalid_input_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:authentication_error_handler",
+      "type": "function",
+      "name": "authentication_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        237,
+        242
+      ],
+      "summary": "Function implements logic for authentication_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:rate_limit_error_handler",
+      "type": "function",
+      "name": "rate_limit_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        246,
+        251
+      ],
+      "summary": "Function implements logic for rate_limit_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:configuration_error_handler",
+      "type": "function",
+      "name": "configuration_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        255,
+        260
+      ],
+      "summary": "Function implements logic for configuration_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:network_error_handler",
+      "type": "function",
+      "name": "network_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        264,
+        269
+      ],
+      "summary": "Function implements logic for network_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:external_service_error_handler",
+      "type": "function",
+      "name": "external_service_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        273,
+        278
+      ],
+      "summary": "Function implements logic for external_service_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:open_notebook_error_handler",
+      "type": "function",
+      "name": "open_notebook_error_handler",
+      "filePath": "api/main.py",
+      "lineRange": [
+        282,
+        287
+      ],
+      "summary": "Function implements logic for open_notebook_error_handler.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:root",
+      "type": "function",
+      "name": "root",
+      "filePath": "api/main.py",
+      "lineRange": [
+        318,
+        319
+      ],
+      "summary": "Function implements logic for root.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/main.py:health",
+      "type": "function",
+      "name": "health",
+      "filePath": "api/main.py",
+      "lineRange": [
+        323,
+        324
+      ],
+      "summary": "Function implements logic for health.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/models.py",
+      "type": "file",
+      "name": "models.py",
+      "filePath": "api/models.py",
+      "summary": "Response for async insight creation.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:api/models.py:NotebookCreate",
+      "type": "class",
+      "name": "NotebookCreate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        7,
+        9
+      ],
+      "summary": "Class implements NotebookCreate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NotebookUpdate",
+      "type": "class",
+      "name": "NotebookUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        12,
+        17
+      ],
+      "summary": "Class implements NotebookUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NotebookResponse",
+      "type": "class",
+      "name": "NotebookResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        20,
+        28
+      ],
+      "summary": "Class implements NotebookResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SearchRequest",
+      "type": "class",
+      "name": "SearchRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        32,
+        40
+      ],
+      "summary": "Class implements SearchRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SearchResponse",
+      "type": "class",
+      "name": "SearchResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        43,
+        46
+      ],
+      "summary": "Class implements SearchResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:AskRequest",
+      "type": "class",
+      "name": "AskRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        49,
+        53
+      ],
+      "summary": "Class implements AskRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:AskResponse",
+      "type": "class",
+      "name": "AskResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "Class implements AskResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ModelCreate",
+      "type": "class",
+      "name": "ModelCreate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        62,
+        73
+      ],
+      "summary": "Class implements ModelCreate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ModelResponse",
+      "type": "class",
+      "name": "ModelResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        76,
+        83
+      ],
+      "summary": "Class implements ModelResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:DefaultModelsResponse",
+      "type": "class",
+      "name": "DefaultModelsResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        86,
+        93
+      ],
+      "summary": "Class implements DefaultModelsResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ProviderAvailabilityResponse",
+      "type": "class",
+      "name": "ProviderAvailabilityResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        96,
+        101
+      ],
+      "summary": "Class implements ProviderAvailabilityResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TransformationCreate",
+      "type": "class",
+      "name": "TransformationCreate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        105,
+        114
+      ],
+      "summary": "Class implements TransformationCreate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TransformationUpdate",
+      "type": "class",
+      "name": "TransformationUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        117,
+        128
+      ],
+      "summary": "Class implements TransformationUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TransformationResponse",
+      "type": "class",
+      "name": "TransformationResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        131,
+        139
+      ],
+      "summary": "Class implements TransformationResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TransformationExecuteRequest",
+      "type": "class",
+      "name": "TransformationExecuteRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        142,
+        149
+      ],
+      "summary": "Class implements TransformationExecuteRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TransformationExecuteResponse",
+      "type": "class",
+      "name": "TransformationExecuteResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        152,
+        157
+      ],
+      "summary": "Class implements TransformationExecuteResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:DefaultPromptResponse",
+      "type": "class",
+      "name": "DefaultPromptResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        161,
+        164
+      ],
+      "summary": "Class implements DefaultPromptResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:DefaultPromptUpdate",
+      "type": "class",
+      "name": "DefaultPromptUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        167,
+        170
+      ],
+      "summary": "Class implements DefaultPromptUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NoteCreate",
+      "type": "class",
+      "name": "NoteCreate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        174,
+        180
+      ],
+      "summary": "Class implements NoteCreate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NoteUpdate",
+      "type": "class",
+      "name": "NoteUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        183,
+        186
+      ],
+      "summary": "Class implements NoteUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NoteResponse",
+      "type": "class",
+      "name": "NoteResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        189,
+        196
+      ],
+      "summary": "Class implements NoteResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:EmbedRequest",
+      "type": "class",
+      "name": "EmbedRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        200,
+        205
+      ],
+      "summary": "Class implements EmbedRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:EmbedResponse",
+      "type": "class",
+      "name": "EmbedResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        208,
+        215
+      ],
+      "summary": "Class implements EmbedResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RebuildRequest",
+      "type": "class",
+      "name": "RebuildRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        219,
+        226
+      ],
+      "summary": "Class implements RebuildRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RebuildResponse",
+      "type": "class",
+      "name": "RebuildResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        229,
+        232
+      ],
+      "summary": "Class implements RebuildResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RebuildProgress",
+      "type": "class",
+      "name": "RebuildProgress",
+      "filePath": "api/models.py",
+      "lineRange": [
+        235,
+        238
+      ],
+      "summary": "Class implements RebuildProgress structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RebuildStats",
+      "type": "class",
+      "name": "RebuildStats",
+      "filePath": "api/models.py",
+      "lineRange": [
+        241,
+        245
+      ],
+      "summary": "Class implements RebuildStats structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RebuildStatusResponse",
+      "type": "class",
+      "name": "RebuildStatusResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        248,
+        255
+      ],
+      "summary": "Class implements RebuildStatusResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SettingsResponse",
+      "type": "class",
+      "name": "SettingsResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        259,
+        264
+      ],
+      "summary": "Class implements SettingsResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SettingsUpdate",
+      "type": "class",
+      "name": "SettingsUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        267,
+        272
+      ],
+      "summary": "Class implements SettingsUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:AssetModel",
+      "type": "class",
+      "name": "AssetModel",
+      "filePath": "api/models.py",
+      "lineRange": [
+        276,
+        278
+      ],
+      "summary": "Class implements AssetModel structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceCreate",
+      "type": "class",
+      "name": "SourceCreate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        281,
+        325
+      ],
+      "summary": "Class implements SourceCreate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceUpdate",
+      "type": "class",
+      "name": "SourceUpdate",
+      "filePath": "api/models.py",
+      "lineRange": [
+        328,
+        330
+      ],
+      "summary": "Class implements SourceUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceResponse",
+      "type": "class",
+      "name": "SourceResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        333,
+        349
+      ],
+      "summary": "Class implements SourceResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceListResponse",
+      "type": "class",
+      "name": "SourceListResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        352,
+        366
+      ],
+      "summary": "Class implements SourceListResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ContextConfig",
+      "type": "class",
+      "name": "ContextConfig",
+      "filePath": "api/models.py",
+      "lineRange": [
+        370,
+        376
+      ],
+      "summary": "Class implements ContextConfig structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ContextRequest",
+      "type": "class",
+      "name": "ContextRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        379,
+        383
+      ],
+      "summary": "Class implements ContextRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ContextResponse",
+      "type": "class",
+      "name": "ContextResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        386,
+        390
+      ],
+      "summary": "Class implements ContextResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceInsightResponse",
+      "type": "class",
+      "name": "SourceInsightResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        394,
+        400
+      ],
+      "summary": "Class implements SourceInsightResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:InsightCreationResponse",
+      "type": "class",
+      "name": "InsightCreationResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        403,
+        410
+      ],
+      "summary": "Class implements InsightCreationResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SaveAsNoteRequest",
+      "type": "class",
+      "name": "SaveAsNoteRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        413,
+        414
+      ],
+      "summary": "Class implements SaveAsNoteRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:CreateSourceInsightRequest",
+      "type": "class",
+      "name": "CreateSourceInsightRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        417,
+        423
+      ],
+      "summary": "Class implements CreateSourceInsightRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SourceStatusResponse",
+      "type": "class",
+      "name": "SourceStatusResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        427,
+        433
+      ],
+      "summary": "Class implements SourceStatusResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:ErrorResponse",
+      "type": "class",
+      "name": "ErrorResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        437,
+        439
+      ],
+      "summary": "Class implements ErrorResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SetApiKeyRequest",
+      "type": "class",
+      "name": "SetApiKeyRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        443,
+        505
+      ],
+      "summary": "Class implements SetApiKeyRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/models.py:ApiKeyStatusResponse",
+      "type": "class",
+      "name": "ApiKeyStatusResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        508,
+        521
+      ],
+      "summary": "Class implements ApiKeyStatusResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:TestConnectionResponse",
+      "type": "class",
+      "name": "TestConnectionResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        524,
+        529
+      ],
+      "summary": "Class implements TestConnectionResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:MigrateFromEnvRequest",
+      "type": "class",
+      "name": "MigrateFromEnvRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        532,
+        537
+      ],
+      "summary": "Class implements MigrateFromEnvRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:MigrationResult",
+      "type": "class",
+      "name": "MigrationResult",
+      "filePath": "api/models.py",
+      "lineRange": [
+        540,
+        552
+      ],
+      "summary": "Class implements MigrationResult structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:CreateCredentialRequest",
+      "type": "class",
+      "name": "CreateCredentialRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        557,
+        578
+      ],
+      "summary": "Class implements CreateCredentialRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:UpdateCredentialRequest",
+      "type": "class",
+      "name": "UpdateCredentialRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        581,
+        596
+      ],
+      "summary": "Class implements UpdateCredentialRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:CredentialResponse",
+      "type": "class",
+      "name": "CredentialResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        599,
+        620
+      ],
+      "summary": "Class implements CredentialResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:CredentialDeleteResponse",
+      "type": "class",
+      "name": "CredentialDeleteResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        623,
+        627
+      ],
+      "summary": "Class implements CredentialDeleteResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:DiscoveredModelResponse",
+      "type": "class",
+      "name": "DiscoveredModelResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        630,
+        636
+      ],
+      "summary": "Class implements DiscoveredModelResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:DiscoverModelsResponse",
+      "type": "class",
+      "name": "DiscoverModelsResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        639,
+        644
+      ],
+      "summary": "Class implements DiscoverModelsResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RegisterModelData",
+      "type": "class",
+      "name": "RegisterModelData",
+      "filePath": "api/models.py",
+      "lineRange": [
+        647,
+        652
+      ],
+      "summary": "Class implements RegisterModelData structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RegisterModelsRequest",
+      "type": "class",
+      "name": "RegisterModelsRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        655,
+        658
+      ],
+      "summary": "Class implements RegisterModelsRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:RegisterModelsResponse",
+      "type": "class",
+      "name": "RegisterModelsResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        661,
+        665
+      ],
+      "summary": "Class implements RegisterModelsResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NotebookDeletePreview",
+      "type": "class",
+      "name": "NotebookDeletePreview",
+      "filePath": "api/models.py",
+      "lineRange": [
+        668,
+        677
+      ],
+      "summary": "Class implements NotebookDeletePreview structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:NotebookDeleteResponse",
+      "type": "class",
+      "name": "NotebookDeleteResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        680,
+        686
+      ],
+      "summary": "Class implements NotebookDeleteResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:QuizQuestionSchema",
+      "type": "class",
+      "name": "QuizQuestionSchema",
+      "filePath": "api/models.py",
+      "lineRange": [
+        690,
+        694
+      ],
+      "summary": "Class implements QuizQuestionSchema structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:QuizResponse",
+      "type": "class",
+      "name": "QuizResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        697,
+        703
+      ],
+      "summary": "Class implements QuizResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:GenerateQuizRequest",
+      "type": "class",
+      "name": "GenerateQuizRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        706,
+        718
+      ],
+      "summary": "Class implements GenerateQuizRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:SubmitAnswersRequest",
+      "type": "class",
+      "name": "SubmitAnswersRequest",
+      "filePath": "api/models.py",
+      "lineRange": [
+        721,
+        724
+      ],
+      "summary": "Class implements SubmitAnswersRequest structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/models.py:QuizResultResponse",
+      "type": "class",
+      "name": "QuizResultResponse",
+      "filePath": "api/models.py",
+      "lineRange": [
+        727,
+        733
+      ],
+      "summary": "Class implements QuizResultResponse structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/models_service.py",
+      "type": "file",
+      "name": "models_service.py",
+      "filePath": "api/models_service.py",
+      "summary": "Models service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/models_service.py:ModelsService",
+      "type": "class",
+      "name": "ModelsService",
+      "filePath": "api/models_service.py",
+      "lineRange": [
+        13,
+        108
+      ],
+      "summary": "Class implements ModelsService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/notebook_service.py",
+      "type": "file",
+      "name": "notebook_service.py",
+      "filePath": "api/notebook_service.py",
+      "summary": "Notebook service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/notebook_service.py:NotebookService",
+      "type": "class",
+      "name": "NotebookService",
+      "filePath": "api/notebook_service.py",
+      "lineRange": [
+        13,
+        83
+      ],
+      "summary": "Class implements NotebookService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/notes_service.py",
+      "type": "file",
+      "name": "notes_service.py",
+      "filePath": "api/notes_service.py",
+      "summary": "Notes service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/notes_service.py:NotesService",
+      "type": "class",
+      "name": "NotesService",
+      "filePath": "api/notes_service.py",
+      "lineRange": [
+        13,
+        99
+      ],
+      "summary": "Class implements NotesService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/podcast_api_service.py",
+      "type": "file",
+      "name": "podcast_api_service.py",
+      "filePath": "api/podcast_api_service.py",
+      "summary": "Podcast service layer using API client. This replaces direct httpx calls in the Streamlit pages.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/podcast_api_service.py:PodcastAPIService",
+      "type": "class",
+      "name": "PodcastAPIService",
+      "filePath": "api/podcast_api_service.py",
+      "lineRange": [
+        13,
+        121
+      ],
+      "summary": "Class implements PodcastAPIService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:api/insights_service.py",
+      "target": "class:api/insights_service.py:InsightsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/insights_service.py",
+      "target": "class:api/insights_service.py:InsightsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/insights_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/insights_service.py",
+      "target": "file:open_notebook/domain/notebook.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:_parse_cors_origins",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:_parse_cors_origins",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:_cors_headers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:_cors_headers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:lifespan",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:lifespan",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:custom_http_exception_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:custom_http_exception_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:not_found_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:not_found_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:invalid_input_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:invalid_input_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:authentication_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:authentication_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:rate_limit_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:rate_limit_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:configuration_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:configuration_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:network_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:network_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:external_service_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:external_service_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:open_notebook_error_handler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:open_notebook_error_handler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:root",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:root",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:health",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "function:api/main.py:health",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/auth.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/chat.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/context.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/credentials.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/embedding_rebuild.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/embedding.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/episode_profiles.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/insights.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/languages.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/notebooks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/notes.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/podcasts.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/quiz.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/search.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/settings.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/source_chat.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/sources.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/speaker_profiles.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:api/routers/transformations.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:open_notebook/database/async_migrate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:open_notebook/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/main.py",
+      "target": "file:open_notebook/utils/encryption.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SearchRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SearchRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SearchResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SearchResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AskRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AskRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AskResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AskResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ModelCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ModelCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ModelResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ModelResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultModelsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultModelsResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ProviderAvailabilityResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ProviderAvailabilityResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationExecuteRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationExecuteRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationExecuteResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TransformationExecuteResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultPromptResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultPromptResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultPromptUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DefaultPromptUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NoteResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:EmbedRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:EmbedRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:EmbedResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:EmbedResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildStatusResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RebuildStatusResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SettingsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SettingsResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SettingsUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SettingsUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AssetModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:AssetModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceListResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceListResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ContextResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceInsightResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceInsightResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:InsightCreationResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:InsightCreationResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SaveAsNoteRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SaveAsNoteRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CreateSourceInsightRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CreateSourceInsightRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceStatusResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SourceStatusResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ErrorResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ErrorResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SetApiKeyRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SetApiKeyRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ApiKeyStatusResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:ApiKeyStatusResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TestConnectionResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:TestConnectionResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:MigrateFromEnvRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:MigrateFromEnvRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:MigrationResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:MigrationResult",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CreateCredentialRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CreateCredentialRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:UpdateCredentialRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:UpdateCredentialRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CredentialResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CredentialResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CredentialDeleteResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:CredentialDeleteResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DiscoveredModelResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DiscoveredModelResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DiscoverModelsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:DiscoverModelsResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelsRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelsRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelsResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:RegisterModelsResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookDeletePreview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookDeletePreview",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookDeleteResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:NotebookDeleteResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizQuestionSchema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizQuestionSchema",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:GenerateQuizRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:GenerateQuizRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SubmitAnswersRequest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:SubmitAnswersRequest",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizResultResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models.py",
+      "target": "class:api/models.py:QuizResultResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models_service.py",
+      "target": "class:api/models_service.py:ModelsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/models_service.py",
+      "target": "class:api/models_service.py:ModelsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/models_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/models_service.py",
+      "target": "file:open_notebook/ai/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/notebook_service.py",
+      "target": "class:api/notebook_service.py:NotebookService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/notebook_service.py",
+      "target": "class:api/notebook_service.py:NotebookService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/notebook_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/notebook_service.py",
+      "target": "file:open_notebook/domain/notebook.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/notes_service.py",
+      "target": "class:api/notes_service.py:NotesService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/notes_service.py",
+      "target": "class:api/notes_service.py:NotesService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/notes_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/notes_service.py",
+      "target": "file:open_notebook/domain/notebook.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/podcast_api_service.py",
+      "target": "class:api/podcast_api_service.py:PodcastAPIService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/podcast_api_service.py",
+      "target": "class:api/podcast_api_service.py:PodcastAPIService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/podcast_api_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

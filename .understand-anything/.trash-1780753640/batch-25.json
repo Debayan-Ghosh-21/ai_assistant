@@ -1,0 +1,44 @@
+{
+  "nodes": [
+    {
+      "id": "config:frontend/components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "frontend/components.json",
+      "summary": "Configuration rules and parameters for components.json.",
+      "tags": [
+        "configuration",
+        "settings",
+        "json"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:frontend/package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "frontend/package.json",
+      "summary": "Configuration rules and parameters for package.json.",
+      "tags": [
+        "configuration",
+        "settings",
+        "json"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:frontend/tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "frontend/tsconfig.json",
+      "summary": "Configuration rules and parameters for tsconfig.json.",
+      "tags": [
+        "configuration",
+        "settings",
+        "json"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/5-CONFIGURATION/advanced.md",
+      "type": "document",
+      "name": "advanced.md",
+      "filePath": "docs/5-CONFIGURATION/advanced.md",
+      "summary": "Documentation content for advanced.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/ai-providers.md",
+      "type": "document",
+      "name": "ai-providers.md",
+      "filePath": "docs/5-CONFIGURATION/ai-providers.md",
+      "summary": "Documentation content for ai-providers.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/database.md",
+      "type": "document",
+      "name": "database.md",
+      "filePath": "docs/5-CONFIGURATION/database.md",
+      "summary": "Documentation content for database.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/environment-reference.md",
+      "type": "document",
+      "name": "environment-reference.md",
+      "filePath": "docs/5-CONFIGURATION/environment-reference.md",
+      "summary": "Documentation content for environment-reference.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/5-CONFIGURATION/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/local-stt.md",
+      "type": "document",
+      "name": "local-stt.md",
+      "filePath": "docs/5-CONFIGURATION/local-stt.md",
+      "summary": "Documentation content for local-stt.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/local-tts.md",
+      "type": "document",
+      "name": "local-tts.md",
+      "filePath": "docs/5-CONFIGURATION/local-tts.md",
+      "summary": "Documentation content for local-tts.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/mcp-integration.md",
+      "type": "document",
+      "name": "mcp-integration.md",
+      "filePath": "docs/5-CONFIGURATION/mcp-integration.md",
+      "summary": "Documentation content for mcp-integration.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/ollama.md",
+      "type": "document",
+      "name": "ollama.md",
+      "filePath": "docs/5-CONFIGURATION/ollama.md",
+      "summary": "Documentation content for ollama.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/openai-compatible.md",
+      "type": "document",
+      "name": "openai-compatible.md",
+      "filePath": "docs/5-CONFIGURATION/openai-compatible.md",
+      "summary": "Documentation content for openai-compatible.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/reverse-proxy.md",
+      "type": "document",
+      "name": "reverse-proxy.md",
+      "filePath": "docs/5-CONFIGURATION/reverse-proxy.md",
+      "summary": "Documentation content for reverse-proxy.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/5-CONFIGURATION/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": "docs/5-CONFIGURATION/security.md",
+      "summary": "Documentation content for security.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

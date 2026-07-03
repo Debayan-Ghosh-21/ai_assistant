@@ -1,0 +1,787 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/2-CORE-CONCEPTS/ai-context-rag.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 450,
+      "nonEmptyLines": 339,
+      "sections": [
+        {
+          "heading": "AI Context & RAG - How Open Notebook Uses Your Research",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Problem: Making AI Aware of Your Data",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Traditional Approaches (and their problems)",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Open Notebook's Dual Approach",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "How RAG Works: Three Stages",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Stage 1: Content Preparation",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Stage 2: Query Time (What You Search For)",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "Stage 3: Augmentation (How AI Uses It)",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Two Search Modes: Exact vs. Semantic",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "1. Text Search (Keyword Matching)",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "2. Vector Search (Semantic Similarity)",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "Context Management: Your Control Panel",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "The Three Levels",
+          "level": 3,
+          "line": 202
+        },
+        {
+          "heading": "How It Works",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "Why This Matters",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "The Difference: Chat vs. Ask",
+          "level": 2,
+          "line": 268
+        },
+        {
+          "heading": "Chat: Full-Content Context (NO RAG)",
+          "level": 3,
+          "line": 272
+        },
+        {
+          "heading": "Ask: RAG - Automatic Retrieval",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "What This Means: Privacy by Design",
+          "level": 2,
+          "line": 350
+        },
+        {
+          "heading": "The Audit Trail",
+          "level": 3,
+          "line": 359
+        },
+        {
+          "heading": "How Embeddings Work (Simplified)",
+          "level": 2,
+          "line": 370
+        },
+        {
+          "heading": "The Idea",
+          "level": 3,
+          "line": 374
+        },
+        {
+          "heading": "Why This Works",
+          "level": 3,
+          "line": 387
+        },
+        {
+          "heading": "How Search Works",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "Key Design Decisions",
+          "level": 2,
+          "line": 410
+        },
+        {
+          "heading": "1. Search, Don't Train",
+          "level": 3,
+          "line": 412
+        },
+        {
+          "heading": "2. Explicit Retrieval, Not Implicit Knowledge",
+          "level": 3,
+          "line": 415
+        },
+        {
+          "heading": "3. Multiple Search Types",
+          "level": 3,
+          "line": 418
+        },
+        {
+          "heading": "4. Context as a Permission System",
+          "level": 3,
+          "line": 421
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 426
+        },
+        {
+          "heading": "Chat (Full-Content)",
+          "level": 3,
+          "line": 430
+        },
+        {
+          "heading": "Ask (RAG)",
+          "level": 3,
+          "line": 437
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 32
+      }
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/chat-vs-transformations.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 353,
+      "nonEmptyLines": 263,
+      "sections": [
+        {
+          "heading": "Chat vs. Ask vs. Transformations - Which Tool for Which Job?",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Three Interaction Modes",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. CHAT - Conversational Exploration with Manual Context",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "2. ASK - Automated Comprehensive Search",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "3. TRANSFORMATIONS - Template-Based Processing",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Decision Tree: Which Tool to Use?",
+          "level": 2,
+          "line": 154
+        },
+        {
+          "heading": "Side-by-Side Comparison",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "Workflow Examples",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Example 1: Academic Research",
+          "level": 3,
+          "line": 198
+        },
+        {
+          "heading": "Example 2: Product Research",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Example 3: Policy Analysis",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Context Management: The Control Panel",
+          "level": 2,
+          "line": 264
+        },
+        {
+          "heading": "In CHAT and TRANSFORMATIONS",
+          "level": 3,
+          "line": 268
+        },
+        {
+          "heading": "In ASK",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "Model Selection",
+          "level": 2,
+          "line": 298
+        },
+        {
+          "heading": "CHAT",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "ASK",
+          "level": 3,
+          "line": 307
+        },
+        {
+          "heading": "TRANSFORMATIONS",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "Advanced: Chaining Modes Together",
+          "level": 2,
+          "line": 319
+        },
+        {
+          "heading": "Summary: When to Use Each",
+          "level": 2,
+          "line": 340
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 70,
+      "nonEmptyLines": 42,
+      "sections": [
+        {
+          "heading": "Core Concepts - Understand the Mental Model",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Five Mental Models",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. [Notebooks, Sources, and Notes](notebooks-sources-notes.md)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "2. [AI Context & RAG](ai-context-rag.md)",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "3. [Chat vs. Transformations](chat-vs-transformations.md)",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "4. [Context Management](chat-vs-transformations.md#context-management-the-control-panel)",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "5. [Podcasts Explained](podcasts-explained.md)",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Read This Section If:",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "The Big Picture",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 284,
+      "nonEmptyLines": 206,
+      "sections": [
+        {
+          "heading": "Notebooks, Sources, and Notes - The Container Model",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Three-Layer Structure",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. NOTEBOOKS - The Research Container",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "What Is a Notebook?",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "What Goes In?",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "Why This Matters",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Example",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "2. SOURCES - The Raw Materials",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "What Is a Source?",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "What Can Be a Source?",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "What Happens When You Add a Source?",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Key Properties",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Example",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3. NOTES - The Processed Insights",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "What Is a Note?",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Types of Notes",
+          "level": 3,
+          "line": 136
+        },
+        {
+          "heading": "Manual Notes",
+          "level": 4,
+          "line": 138
+        },
+        {
+          "heading": "AI-Generated Notes",
+          "level": 4,
+          "line": 144
+        },
+        {
+          "heading": "Captured Insights",
+          "level": 4,
+          "line": 150
+        },
+        {
+          "heading": "What Can Notes Contain?",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Why Notes Matter",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "How They Connect: The Data Flow",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Key Design Decisions",
+          "level": 2,
+          "line": 205
+        },
+        {
+          "heading": "1. One Notebook Per Source",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "2. Immutable Sources, Mutable Notes",
+          "level": 3,
+          "line": 214
+        },
+        {
+          "heading": "3. Explicit Context Control",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Mental Models Explained",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "Notebook as Boundaries",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Sources as Evidence",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "Notes as Synthesis",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "Common Questions",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "Can I move a source to a different notebook?",
+          "level": 3,
+          "line": 258
+        },
+        {
+          "heading": "Can a note reference sources from a different notebook?",
+          "level": 3,
+          "line": 261
+        },
+        {
+          "heading": "What if I want to group sources within a notebook?",
+          "level": 3,
+          "line": 264
+        },
+        {
+          "heading": "Can I merge two notebooks?",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 272
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/podcasts-explained.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 426,
+      "nonEmptyLines": 321,
+      "sections": [
+        {
+          "heading": "Podcasts Explained - Research as Audio Dialogue",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Podcasts Matter",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "The Problem",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "The Solution",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "What Makes It Special: Open Notebook vs. Competitors",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Google Notebook LM Podcasts",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Open Notebook Podcasts",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "How Podcast Generation Works",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Stage 1: Content Selection",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Stage 2: Episode Profile",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Stage 3: Speaker Configuration",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "Stage 4: Outline Generation",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "Stage 5: Dialogue Generation",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "Stage 6: Text-to-Speech",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "When Things Go Wrong: Failures & Retry",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "What Happens on Failure",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "How to Retry a Failed Episode",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Common Failure Causes",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Key Architecture Decisions",
+          "level": 2,
+          "line": 191
+        },
+        {
+          "heading": "1. Asynchronous Processing",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "2. Multi-Speaker Support",
+          "level": 3,
+          "line": 198
+        },
+        {
+          "heading": "3. Speaker Customization",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "4. Multiple TTS Providers",
+          "level": 3,
+          "line": 212
+        },
+        {
+          "heading": "5. Local TTS Option",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "Use Cases Show Why This Matters",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "Academic Publishing",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "Content Creation",
+          "level": 3,
+          "line": 241
+        },
+        {
+          "heading": "Educational Content",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Market Research",
+          "level": 3,
+          "line": 261
+        },
+        {
+          "heading": "Knowledge Transfer",
+          "level": 3,
+          "line": 271
+        },
+        {
+          "heading": "The Difference: Active vs. Passive Learning",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "Text-Based Research (Active)",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "Audio Podcast (Passive)",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "How Podcasts Fit Into Your Workflow",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "Advanced: Multiple Podcasts from Same Research",
+          "level": 2,
+          "line": 330
+        },
+        {
+          "heading": "Example: AI Safety Research",
+          "level": 3,
+          "line": 334
+        },
+        {
+          "heading": "Privacy & Data Considerations",
+          "level": 2,
+          "line": 356
+        },
+        {
+          "heading": "Where Your Data Goes",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "Recommendation",
+          "level": 3,
+          "line": 380
+        },
+        {
+          "heading": "Cost Considerations",
+          "level": 2,
+          "line": 387
+        },
+        {
+          "heading": "Cloud TTS Costs",
+          "level": 3,
+          "line": 389
+        },
+        {
+          "heading": "Summary: Why Podcasts Are Special",
+          "level": 2,
+          "line": 405
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 42
+      }
+    }
+  ]
+}

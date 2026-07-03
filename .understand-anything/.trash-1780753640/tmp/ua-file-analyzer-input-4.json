@@ -1,0 +1,291 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "frontend/src/app/(dashboard)/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/CommandPalette.tsx",
+      "language": "typescript",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ContextIndicator.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppSidebar.test.tsx",
+      "language": "typescript",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppSidebar.tsx",
+      "language": "typescript",
+      "sizeLines": 381,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "language": "typescript",
+      "sizeLines": 95,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/MessageActions.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/AddSourceButton.tsx",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/AddSourceDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 634,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/NotebooksStep.tsx",
+      "language": "typescript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/ProcessingStep.tsx",
+      "language": "typescript",
+      "sizeLines": 126,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/accordion.tsx",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox-list.tsx",
+      "language": "typescript",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/checkbox.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/command.tsx",
+      "language": "typescript",
+      "sizeLines": 184,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/form-section.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/popover.tsx",
+      "language": "typescript",
+      "sizeLines": 48,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/radio-group.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/tooltip.tsx",
+      "language": "typescript",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/wizard-container.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-auth.ts",
+      "language": "typescript",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-version-check.ts",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/auth-store.ts",
+      "language": "typescript",
+      "sizeLines": 221,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/sidebar-store.ts",
+      "language": "typescript",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/utils.ts",
+      "language": "typescript",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/app/(dashboard)/layout.tsx": [
+      "frontend/src/components/common/CommandPalette.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/providers/ModalProvider.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-version-check.ts"
+    ],
+    "frontend/src/components/common/CommandPalette.tsx": [
+      "frontend/src/components/ui/command.tsx",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/common/ContextIndicator.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/layout/AppSidebar.test.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/lib/stores/sidebar-store.ts"
+    ],
+    "frontend/src/components/layout/AppSidebar.tsx": [
+      "frontend/src/components/common/LanguageToggle.tsx",
+      "frontend/src/components/common/ThemeToggle.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/sidebar-store.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/notebooks/CollapsibleColumn.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/source/MessageActions.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/sources/AddSourceButton.tsx": [
+      "frontend/src/components/sources/AddSourceDialog.tsx",
+      "frontend/src/components/ui/button.tsx"
+    ],
+    "frontend/src/components/sources/AddSourceDialog.tsx": [
+      "frontend/src/components/sources/steps/NotebooksStep.tsx",
+      "frontend/src/components/sources/steps/ProcessingStep.tsx",
+      "frontend/src/components/sources/steps/SourceTypeStep.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/wizard-container.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/steps/NotebooksStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/steps/ProcessingStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/components/ui/accordion.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox-list.tsx": [
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/command.tsx": [
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/form-section.tsx": [
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/popover.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/radio-group.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/tooltip.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/wizard-container.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/lib/hooks/use-auth.ts": [
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/lib/hooks/use-create-dialogs.tsx": [
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/sources/AddSourceDialog.tsx"
+    ],
+    "frontend/src/lib/hooks/use-version-check.ts": [
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/stores/auth-store.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/stores/sidebar-store.ts": [],
+    "frontend/src/lib/utils.ts": []
+  }
+}

@@ -1,0 +1,2184 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 12,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/5-CONFIGURATION/advanced.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 544,
+      "nonEmptyLines": 381,
+      "sections": [
+        {
+          "heading": "Advanced Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Performance Tuning",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Concurrency Control",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Retry Strategy",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Timeout Tuning",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "Batching",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "TTS Batch Size",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Logging & Debugging",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Enable Detailed Logging",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Debug Specific Components",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "LangSmith Tracing",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Port Configuration",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "Default Ports",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Changing Frontend Port",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Changing API Port",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Changing SurrealDB Port",
+          "level": 3,
+          "line": 161
+        },
+        {
+          "heading": "SSL/TLS Configuration",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Custom CA Certificate",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "Disable Verification (Development Only)",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "Multi-Provider Setup",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "Use Different Providers for Different Tasks",
+          "level": 3,
+          "line": 198
+        },
+        {
+          "heading": "Multiple Endpoints for OpenAI-Compatible",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Security Hardening",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "Change Default Credentials",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Add Password Protection",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "Use HTTPS",
+          "level": 3,
+          "line": 235
+        },
+        {
+          "heading": "Firewall Rules",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "Web Scraping & Content Extraction",
+          "level": 2,
+          "line": 251
+        },
+        {
+          "heading": "Firecrawl",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "Jina AI",
+          "level": 3,
+          "line": 265
+        },
+        {
+          "heading": "Environment Variable Groups",
+          "level": 2,
+          "line": 277
+        },
+        {
+          "heading": "Credential Storage (Required)",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "Database",
+          "level": 3,
+          "line": 286
+        },
+        {
+          "heading": "Performance",
+          "level": 3,
+          "line": 295
+        },
+        {
+          "heading": "API Settings",
+          "level": 3,
+          "line": 305
+        },
+        {
+          "heading": "Audio/TTS",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "Debugging",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Testing Configuration",
+          "level": 2,
+          "line": 330
+        },
+        {
+          "heading": "Quick Test",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "Validate Config",
+          "level": 3,
+          "line": 344
+        },
+        {
+          "heading": "Troubleshooting Performance",
+          "level": 2,
+          "line": 356
+        },
+        {
+          "heading": "High Memory Usage",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "High CPU Usage",
+          "level": 3,
+          "line": 368
+        },
+        {
+          "heading": "Slow Responses",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "Database Conflicts",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "Backup & Restore",
+          "level": 2,
+          "line": 400
+        },
+        {
+          "heading": "Data Locations",
+          "level": 3,
+          "line": 402
+        },
+        {
+          "heading": "Quick Backup",
+          "level": 3,
+          "line": 409
+        },
+        {
+          "heading": "Automated Backup Script",
+          "level": 3,
+          "line": 423
+        },
+        {
+          "heading": "Restore",
+          "level": 3,
+          "line": 449
+        },
+        {
+          "heading": "Migration Between Servers",
+          "level": 3,
+          "line": 465
+        },
+        {
+          "heading": "Container Management",
+          "level": 2,
+          "line": 482
+        },
+        {
+          "heading": "Common Commands",
+          "level": 3,
+          "line": 484
+        },
+        {
+          "heading": "Clean Up",
+          "level": 3,
+          "line": 514
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 529
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 55
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ai-providers.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 537,
+      "nonEmptyLines": 409,
+      "sections": [
+        {
+          "heading": "AI Providers - Configuration Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "How Provider Setup Works",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Cloud Providers (Recommended for Most)",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "OpenAI",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Anthropic (Claude)",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Google Gemini",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Groq",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "OpenRouter",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "DashScope (Qwen)",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "MiniMax",
+          "level": 3,
+          "line": 286
+        },
+        {
+          "heading": "Self-Hosted / Local",
+          "level": 2,
+          "line": 322
+        },
+        {
+          "heading": "Ollama (Recommended for Local)",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "LM Studio (Local Alternative)",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "Custom OpenAI-Compatible",
+          "level": 3,
+          "line": 426
+        },
+        {
+          "heading": "Enterprise",
+          "level": 2,
+          "line": 442
+        },
+        {
+          "heading": "Azure OpenAI",
+          "level": 3,
+          "line": 444
+        },
+        {
+          "heading": "Embeddings (For Search/Semantic Features)",
+          "level": 2,
+          "line": 471
+        },
+        {
+          "heading": "Choosing Your Provider",
+          "level": 2,
+          "line": 477
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 504
+        },
+        {
+          "heading": "Legacy: Environment Variables (Deprecated)",
+          "level": 2,
+          "line": 520
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 528
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/database.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 50,
+      "nonEmptyLines": 34,
+      "sections": [
+        {
+          "heading": "Database - SurrealDB Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Default Configuration",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "DB running in the same docker compose as Open Notebook (recommended)",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "DB running in the host machine and Open Notebook running in Docker",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Open Notebook and Surreal are running on the same machine",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Multiple databases",
+          "level": 2,
+          "line": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/environment-reference.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 303,
+      "nonEmptyLines": 230,
+      "sections": [
+        {
+          "heading": "Complete Environment Reference",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "API Configuration",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Database: SurrealDB",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Database: Retry Configuration",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Database: Concurrency",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "LLM Timeouts",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Embeddings",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "API / CORS",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Text-to-Speech (TTS)",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Content Extraction",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Network / Proxy",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Debugging & Monitoring",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Environment Variables by Use Case",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "Minimal Setup (New Installation)",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "Production Deployment",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "Self-Hosted Behind Reverse Proxy",
+          "level": 3,
+          "line": 182
+        },
+        {
+          "heading": "Corporate Environment (Behind Proxy)",
+          "level": 3,
+          "line": 188
+        },
+        {
+          "heading": "High-Performance Deployment",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "Debugging",
+          "level": 3,
+          "line": 204
+        },
+        {
+          "heading": "Validation",
+          "level": 2,
+          "line": 213
+        },
+        {
+          "heading": "Notes",
+          "level": 2,
+          "line": 230
+        },
+        {
+          "heading": "Quick Setup Checklist",
+          "level": 2,
+          "line": 242
+        },
+        {
+          "heading": "Legacy: AI Provider Environment Variables (Deprecated)",
+          "level": 2,
+          "line": 259
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 23
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 328,
+      "nonEmptyLines": 238,
+      "sections": [
+        {
+          "heading": "Configuration - Essential Settings",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What Needs Configuration?",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Decision: Which Provider?",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Option 1: Cloud Provider (Fastest)",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Option 2: Local (Free & Private)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Option 3: OpenAI-Compatible",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Configuration File",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "`.env` (Local Development)",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "`docker.env` (Docker Deployment)",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Most Important Settings",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Surreal Database",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "AI Provider (Credentials)",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "API URL (If Behind Reverse Proxy)",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Configuration by Scenario",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "Scenario 1: Docker on Localhost (Default)",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Scenario 2: Docker on Remote Server",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Scenario 3: Behind Reverse Proxy (Nginx/Cloudflare)",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Scenario 4: Using Ollama Locally",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "Scenario 5: Using Azure OpenAI",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Configuration Sections",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "[AI Providers](ai-providers.md)",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "[Database](database.md)",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "[Advanced](advanced.md)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "[Reverse Proxy](reverse-proxy.md)",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "[Security](security.md)",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "[Local TTS](local-tts.md)",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "[Local STT](local-stt.md)",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "[Ollama](ollama.md)",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "[OpenAI-Compatible Providers](openai-compatible.md)",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "[Complete Reference](environment-reference.md)",
+          "level": 3,
+          "line": 224
+        },
+        {
+          "heading": "How to Add Configuration",
+          "level": 2,
+          "line": 232
+        },
+        {
+          "heading": "Method 1: Settings UI (For AI Provider Credentials)",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Method 2: Edit `.env` File (Infrastructure Settings)",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "Method 3: Set Docker Environment (Deployment)",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "Verification",
+          "level": 2,
+          "line": 275
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 289
+        },
+        {
+          "heading": "What Comes After Configuration",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 312
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 320
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 39
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-stt.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 366,
+      "nonEmptyLines": 261,
+      "sections": [
+        {
+          "heading": "Local Speech-to-Text Setup",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Local STT?",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Start with Speaches",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Step 1: Create Docker Compose File",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Step 2: Start and Download Model",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Step 3: Test",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Step 4: Configure Open Notebook",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "Step 5: Add Model in Open Notebook",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Available Models",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "List Available Models",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Recommended Models",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "GPU Acceleration",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Keep Model in Memory",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "Docker Networking",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Open Notebook in Docker (macOS/Windows)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "Open Notebook in Docker (Linux)",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Remote Server",
+          "level": 3,
+          "line": 189
+        },
+        {
+          "heading": "Language Support",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 219
+        },
+        {
+          "heading": "Service Won't Start",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "Connection Refused",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Model Download Fails",
+          "level": 3,
+          "line": 244
+        },
+        {
+          "heading": "Poor Transcription Quality",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "Slow Transcription",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 2,
+          "line": 277
+        },
+        {
+          "heading": "Recommended Specs",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "Resource Limits",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "Monitor Usage",
+          "level": 3,
+          "line": 298
+        },
+        {
+          "heading": "Comparison: Local vs Cloud",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "When to Use Local",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "When to Use Cloud",
+          "level": 3,
+          "line": 326
+        },
+        {
+          "heading": "Using Both TTS and STT",
+          "level": 2,
+          "line": 335
+        },
+        {
+          "heading": "Other Local STT Options",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 362
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-tts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 344,
+      "nonEmptyLines": 251,
+      "sections": [
+        {
+          "heading": "Local Text-to-Speech Setup",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Local TTS?",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Start with Speaches",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Step 1: Create Docker Compose File",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Step 2: Start and Download Model",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Step 3: Test",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Step 4: Configure Open Notebook",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Step 5: Add Model in Open Notebook",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Available Voices",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Female Voices",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Male Voices",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "British Accents",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Test Different Voices",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "GPU Acceleration",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "Docker Networking",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Open Notebook in Docker (macOS/Windows)",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Open Notebook in Docker (Linux)",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Remote Server",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Multi-Speaker Podcasts",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "Service Won't Start",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Connection Refused",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Model Not Found",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Poor Audio Quality",
+          "level": 3,
+          "line": 253
+        },
+        {
+          "heading": "Slow Generation",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 2,
+          "line": 271
+        },
+        {
+          "heading": "Recommended Specs",
+          "level": 3,
+          "line": 273
+        },
+        {
+          "heading": "Resource Limits",
+          "level": 3,
+          "line": 282
+        },
+        {
+          "heading": "Monitor Usage",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "Comparison: Local vs Cloud",
+          "level": 2,
+          "line": 300
+        },
+        {
+          "heading": "When to Use Local",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "When to Use Cloud",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Other Local TTS Options",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 339
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/mcp-integration.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 199,
+      "nonEmptyLines": 141,
+      "sections": [
+        {
+          "heading": "Model Context Protocol (MCP) Integration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What is MCP?",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quick Setup",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "For Claude Desktop",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "For VS Code (Cline and other MCP-compatible extensions)",
+          "level": 3,
+          "line": 63
+        },
+        {
+          "heading": "Configuration",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "For Remote Servers",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "What You Can Do",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "Available Tools",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Notebooks",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Sources",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Notes",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Chat",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Search",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "Models",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Settings",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "MCP Server Repository",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Finding the Server",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 184
+        },
+        {
+          "heading": "Connection Errors",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "Using with Other MCP Clients",
+          "level": 2,
+          "line": 193
+        },
+        {
+          "heading": "Learn More",
+          "level": 2,
+          "line": 197
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ollama.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 744,
+      "nonEmptyLines": 568,
+      "sections": [
+        {
+          "heading": "Ollama Setup Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Choose Ollama?",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quick Start",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "1. Install Ollama",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "2. Pull Required Models",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "3. Configure Open Notebook",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Network Configuration Guide",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Scenario 1: Local Installation (Same Machine)",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Scenario 2: Open Notebook in Docker, Ollama on Host",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Scenario 3: Both in Docker (Same Compose)",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Scenario 4: Remote Ollama Server",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Scenario 5: Ollama with Custom Port",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "Model Recommendations",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Language Models",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "Embedding Models",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "Installation Commands",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "Hardware Requirements",
+          "level": 2,
+          "line": 210
+        },
+        {
+          "heading": "Minimum Requirements",
+          "level": 3,
+          "line": 212
+        },
+        {
+          "heading": "Recommended Setup",
+          "level": 3,
+          "line": 217
+        },
+        {
+          "heading": "GPU Acceleration",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 246
+        },
+        {
+          "heading": "Model Name Configuration (Critical)",
+          "level": 3,
+          "line": 248
+        },
+        {
+          "heading": "Common Issues",
+          "level": 3,
+          "line": 287
+        },
+        {
+          "heading": "Docker-Specific Troubleshooting",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "Performance Optimization",
+          "level": 2,
+          "line": 477
+        },
+        {
+          "heading": "Model Management",
+          "level": 3,
+          "line": 479
+        },
+        {
+          "heading": "System Optimization",
+          "level": 3,
+          "line": 506
+        },
+        {
+          "heading": "Advanced Configuration",
+          "level": 2,
+          "line": 532
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 3,
+          "line": 534
+        },
+        {
+          "heading": "SSL Configuration (Self-Signed Certificates)",
+          "level": 3,
+          "line": 549
+        },
+        {
+          "heading": "Custom Model Imports",
+          "level": 3,
+          "line": 590
+        },
+        {
+          "heading": "Monitoring and Logging",
+          "level": 3,
+          "line": 611
+        },
+        {
+          "heading": "Integration Examples",
+          "level": 2,
+          "line": 637
+        },
+        {
+          "heading": "Python Script Integration",
+          "level": 3,
+          "line": 639
+        },
+        {
+          "heading": "Health Check Script",
+          "level": 3,
+          "line": 660
+        },
+        {
+          "heading": "Migration from Other Providers",
+          "level": 2,
+          "line": 679
+        },
+        {
+          "heading": "Coming from OpenAI",
+          "level": 3,
+          "line": 681
+        },
+        {
+          "heading": "Coming from Anthropic",
+          "level": 3,
+          "line": 692
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 698
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 700
+        },
+        {
+          "heading": "Performance",
+          "level": 3,
+          "line": 715
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 731
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 42
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/openai-compatible.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 402,
+      "nonEmptyLines": 287,
+      "sections": [
+        {
+          "heading": "OpenAI-Compatible Providers",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What is OpenAI-Compatible?",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Common Compatible Servers",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Quick Setup: LM Studio",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Step 1: Install and Start LM Studio",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Step 2: Configure in Settings UI (Recommended)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "Step 3: Add Model in Open Notebook",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Configuration via Settings UI",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Legacy: Environment Variables (Deprecated)",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Language Models (Chat)",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Embeddings",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Text-to-Speech",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Speech-to-Text",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Docker Networking",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "macOS / Windows",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "Linux",
+          "level": 3,
+          "line": 121
+        },
+        {
+          "heading": "Same Docker Network",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "Text Generation WebUI Setup",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "Start with API Enabled",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Configure Open Notebook",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Docker Compose Example",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "vLLM Setup",
+          "level": 2,
+          "line": 183
+        },
+        {
+          "heading": "Start vLLM Server",
+          "level": 3,
+          "line": 185
+        },
+        {
+          "heading": "Configure Open Notebook",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "Docker Compose with GPU",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Adding Models in Open Notebook",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "Via Settings UI",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "Model Name Format",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "Testing Connection",
+          "level": 2,
+          "line": 252
+        },
+        {
+          "heading": "Test API Endpoint",
+          "level": 3,
+          "line": 254
+        },
+        {
+          "heading": "Test from Inside Docker",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 274
+        },
+        {
+          "heading": "Connection Refused",
+          "level": 3,
+          "line": 276
+        },
+        {
+          "heading": "Model Not Found",
+          "level": 3,
+          "line": 289
+        },
+        {
+          "heading": "Slow Responses",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Authentication Errors",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "Timeout Errors",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "Multiple Compatible Endpoints",
+          "level": 2,
+          "line": 338
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 2,
+          "line": 351
+        },
+        {
+          "heading": "Model Selection",
+          "level": 3,
+          "line": 353
+        },
+        {
+          "heading": "Quantization",
+          "level": 3,
+          "line": 361
+        },
+        {
+          "heading": "GPU Acceleration",
+          "level": 3,
+          "line": 370
+        },
+        {
+          "heading": "Comparison: Native vs Compatible",
+          "level": 2,
+          "line": 379
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 397
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/reverse-proxy.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 901,
+      "nonEmptyLines": 708,
+      "sections": [
+        {
+          "heading": "Reverse Proxy Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Simplified Setup (v1.1+)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "How It Works",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Quick Configuration Examples",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Nginx (Recommended)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Caddy",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Traefik",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Coolify",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "Understanding API_URL",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "Auto-Detection Details",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "Complete Docker Compose Example",
+          "level": 2,
+          "line": 162
+        },
+        {
+          "heading": "Full Nginx Configuration",
+          "level": 2,
+          "line": 199
+        },
+        {
+          "heading": "Direct API Access (Optional)",
+          "level": 2,
+          "line": 261
+        },
+        {
+          "heading": "Advanced Scenarios",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "Remote Server Access (LAN/VPS)",
+          "level": 3,
+          "line": 289
+        },
+        {
+          "heading": "API on Separate Subdomain",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "Multi-Container Deployment (Advanced)",
+          "level": 3,
+          "line": 398
+        },
+        {
+          "heading": "SSL Certificates",
+          "level": 2,
+          "line": 477
+        },
+        {
+          "heading": "Let's Encrypt with Certbot",
+          "level": 3,
+          "line": 479
+        },
+        {
+          "heading": "Let's Encrypt with Caddy",
+          "level": 3,
+          "line": 492
+        },
+        {
+          "heading": "Self-Signed (Development Only)",
+          "level": 3,
+          "line": 496
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 507
+        },
+        {
+          "heading": "\"Unable to connect to server\"",
+          "level": 3,
+          "line": 509
+        },
+        {
+          "heading": "Mixed Content Errors",
+          "level": 3,
+          "line": 525
+        },
+        {
+          "heading": "WebSocket Issues",
+          "level": 3,
+          "line": 534
+        },
+        {
+          "heading": "502 Bad Gateway",
+          "level": 3,
+          "line": 544
+        },
+        {
+          "heading": "Timeout Errors",
+          "level": 3,
+          "line": 550
+        },
+        {
+          "heading": "How to Debug Configuration Issues",
+          "level": 3,
+          "line": 598
+        },
+        {
+          "heading": "Frontend Adds `:5055` to URL (Versions ≤ 1.0.10)",
+          "level": 3,
+          "line": 647
+        },
+        {
+          "heading": "File Upload Errors (413 Payload Too Large)",
+          "level": 3,
+          "line": 676
+        },
+        {
+          "heading": "CORS Errors",
+          "level": 3,
+          "line": 764
+        },
+        {
+          "heading": "Missing Authorization Header",
+          "level": 3,
+          "line": 800
+        },
+        {
+          "heading": "SSL/TLS Certificate Errors",
+          "level": 3,
+          "line": 825
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 859
+        },
+        {
+          "heading": "Legacy Configurations (Pre-v1.1)",
+          "level": 2,
+          "line": 878
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 896
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 37
+      }
+    },
+    {
+      "path": "docs/5-CONFIGURATION/security.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 422,
+      "nonEmptyLines": 306,
+      "sections": [
+        {
+          "heading": "Security Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "API Key Encryption",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Configuration Methods",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Setup",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Default Credentials",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Docker Secrets Support",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Security Notes",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Key Management",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "When to Use Password Protection",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Use it for:",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "You can skip it for:",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Quick Setup",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Docker Deployment",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Development Setup",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Password Requirements",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Good Passwords",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "Bad Passwords",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "How It Works",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "Frontend Protection",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "API Protection",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Unprotected Endpoints",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "API Authentication Examples",
+          "level": 2,
+          "line": 172
+        },
+        {
+          "heading": "curl",
+          "level": 3,
+          "line": 174
+        },
+        {
+          "heading": "Python",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "JavaScript/TypeScript",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "Production Hardening",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "Docker Security",
+          "level": 3,
+          "line": 245
+        },
+        {
+          "heading": "Firewall Configuration",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "Reverse Proxy with SSL",
+          "level": 3,
+          "line": 286
+        },
+        {
+          "heading": "CORS Origins",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "Security Limitations",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "Risk Mitigation",
+          "level": 3,
+          "line": 330
+        },
+        {
+          "heading": "Enterprise Considerations",
+          "level": 2,
+          "line": 341
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 356
+        },
+        {
+          "heading": "Password Not Working",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "401 Unauthorized Errors",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "Cannot Access After Setting Password",
+          "level": 3,
+          "line": 383
+        },
+        {
+          "heading": "Security Testing",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "Reporting Security Issues",
+          "level": 2,
+          "line": 407
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 418
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 40
+      }
+    }
+  ]
+}

@@ -64,9 +64,14 @@ build-backend = "setuptools.build_meta"
 
 [dependency-groups]
 dev = [
+    "matplotlib>=3.10.9",
+    "pandas>=3.0.0",
+    "plotly>=6.8.0",
     "pre-commit>=4.1.0",
     "pytest-asyncio>=1.2.0",
+    "ragas>=0.4.3",
     "ruff>=0.14.13",
+    "seaborn>=0.13.2",
     "types-requests>=2.32.4.20250913",
 ]
 

@@ -1,0 +1,610 @@
+{
+  "nodes": [
+    {
+      "id": "resource:Makefile",
+      "type": "resource",
+      "name": "Makefile",
+      "filePath": "Makefile",
+      "summary": "Infrastructure orchestration rules for Makefile.",
+      "tags": [
+        "infrastructure",
+        "makefile",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "pipeline:Makefile:database",
+      "type": "pipeline",
+      "name": "database",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step database.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:run",
+      "type": "pipeline",
+      "name": "run",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step run.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:frontend",
+      "type": "pipeline",
+      "name": "frontend",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step frontend.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:lint",
+      "type": "pipeline",
+      "name": "lint",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step lint.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:ruff",
+      "type": "pipeline",
+      "name": "ruff",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step ruff.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-buildx-prepare",
+      "type": "pipeline",
+      "name": "docker-buildx-prepare",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-buildx-prepare.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-buildx-clean",
+      "type": "pipeline",
+      "name": "docker-buildx-clean",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-buildx-clean.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-buildx-reset",
+      "type": "pipeline",
+      "name": "docker-buildx-reset",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-buildx-reset.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-build-local",
+      "type": "pipeline",
+      "name": "docker-build-local",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-build-local.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-push",
+      "type": "pipeline",
+      "name": "docker-push",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-push.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-push-latest",
+      "type": "pipeline",
+      "name": "docker-push-latest",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-push-latest.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:docker-release",
+      "type": "pipeline",
+      "name": "docker-release",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step docker-release.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:tag",
+      "type": "pipeline",
+      "name": "tag",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step tag.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:dev",
+      "type": "pipeline",
+      "name": "dev",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step dev.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:dev-down",
+      "type": "pipeline",
+      "name": "dev-down",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step dev-down.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:dev-logs",
+      "type": "pipeline",
+      "name": "dev-logs",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step dev-logs.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:api",
+      "type": "pipeline",
+      "name": "api",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step api.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:worker",
+      "type": "pipeline",
+      "name": "worker",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step worker.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:worker-start",
+      "type": "pipeline",
+      "name": "worker-start",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step worker-start.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:worker-stop",
+      "type": "pipeline",
+      "name": "worker-stop",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step worker-stop.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:worker-restart",
+      "type": "pipeline",
+      "name": "worker-restart",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step worker-restart.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:start-all",
+      "type": "pipeline",
+      "name": "start-all",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step start-all.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:stop-all",
+      "type": "pipeline",
+      "name": "stop-all",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step stop-all.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:status",
+      "type": "pipeline",
+      "name": "status",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step status.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:export-docs",
+      "type": "pipeline",
+      "name": "export-docs",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step export-docs.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:clean-cache",
+      "type": "pipeline",
+      "name": "clean-cache",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step clean-cache.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Makefile:start",
+      "type": "pipeline",
+      "name": "start",
+      "filePath": "Makefile",
+      "summary": "Workflow pipeline step start.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.dev.md",
+      "type": "document",
+      "name": "README.dev.md",
+      "filePath": "README.dev.md",
+      "summary": "Documentation content for README.dev.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Documentation content for README.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:dev-init.sh",
+      "type": "file",
+      "name": "dev-init.sh",
+      "filePath": "dev-init.sh",
+      "summary": "Source implementation module for dev-init.sh.",
+      "tags": [
+        "shell",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:docker-compose-dev.yml",
+      "type": "config",
+      "name": "docker-compose-dev.yml",
+      "filePath": "docker-compose-dev.yml",
+      "summary": "Configuration rules and parameters for docker-compose-dev.yml.",
+      "tags": [
+        "configuration",
+        "settings",
+        "yaml"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:mypy.ini",
+      "type": "config",
+      "name": "mypy.ini",
+      "filePath": "mypy.ini",
+      "summary": "Configuration rules and parameters for mypy.ini.",
+      "tags": [
+        "configuration",
+        "settings",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:pyproject.toml",
+      "type": "config",
+      "name": "pyproject.toml",
+      "filePath": "pyproject.toml",
+      "summary": "Configuration rules and parameters for pyproject.toml.",
+      "tags": [
+        "configuration",
+        "settings",
+        "toml"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:database",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:run",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:frontend",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:lint",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:ruff",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-buildx-prepare",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-buildx-clean",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-buildx-reset",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-build-local",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-push",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-push-latest",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:docker-release",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:tag",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:dev",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:dev-down",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:dev-logs",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:api",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:worker",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:worker-start",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:worker-stop",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:worker-restart",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:start-all",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:stop-all",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:status",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:export-docs",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:clean-cache",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "resource:Makefile",
+      "target": "pipeline:Makefile:start",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

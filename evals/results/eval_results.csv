@@ -1,0 +1,4 @@
+user_input,retrieved_contexts,response,reference,faithfulness,answer_relevancy,context_precision
+What is SurrealDB?,"['SurrealDB is a powerful multi-model database.', 'It has built-in vector search capabilities.']",SurrealDB is a multi-model database that supports graph and vector search.,SurrealDB is a multi-model database with vector search.,,,
+How does LangGraph work?,"['LangGraph allows you to model workflows as graphs.', 'It is built on top of LangChain.']",LangGraph is a library for building stateful multi-actor applications with LLMs.,LangGraph is a stateful graph library for LLMs.,,,
+What is the main use case of Open Notebook?,"['Open Notebook is an AI-powered research assistant.', 'It is inspired by Google NotebookLM.']",It acts as a research assistant to process documents and generate insights.,An AI research assistant for analyzing documents.,1.0,0.6234332315700623,

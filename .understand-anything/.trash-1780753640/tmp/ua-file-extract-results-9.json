@@ -1,0 +1,3683 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 248,
+      "nonEmptyLines": 226,
+      "functions": [
+        {
+          "name": "NotebookPage",
+          "startLine": 28,
+          "endLine": 248,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotebookPage",
+          "line": 28,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotebookPage",
+          "callee": "useTranslation",
+          "lineNumber": 29
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useParams",
+          "lineNumber": 30
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "decodeURIComponent",
+          "lineNumber": 33
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useNotebook",
+          "lineNumber": 35
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useNotebookSources",
+          "lineNumber": 43
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useNotes",
+          "lineNumber": 44
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useNotebookColumnsStore",
+          "lineNumber": 47
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useIsDesktop",
+          "lineNumber": 50
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useEffect",
+          "lineNumber": 62
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "setContextSelections",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "sources.forEach",
+          "lineNumber": 66
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "useEffect",
+          "lineNumber": 83
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "setContextSelections",
+          "lineNumber": 85
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "notes.forEach",
+          "lineNumber": 87
+        },
+        {
+          "caller": "handleContextModeChange",
+          "callee": "setContextSelections",
+          "lineNumber": 101
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "t",
+          "lineNumber": 122
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "t",
+          "lineNumber": 123
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "setMobileActiveTab",
+          "lineNumber": 141
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "t",
+          "lineNumber": 145
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "t",
+          "lineNumber": 149
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "t",
+          "lineNumber": 153
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "handleContextModeChange",
+          "lineNumber": 169
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "handleContextModeChange",
+          "lineNumber": 181
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "cn",
+          "lineNumber": 197
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "cn",
+          "lineNumber": 202
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "handleContextModeChange",
+          "lineNumber": 213
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "cn",
+          "lineNumber": 221
+        },
+        {
+          "caller": "NotebookPage",
+          "callee": "handleContextModeChange",
+          "lineNumber": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 14,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 63,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "createNotesMock",
+          "startLine": 15,
+          "endLine": 20,
+          "params": [
+            "overrides"
+          ]
+        },
+        {
+          "name": "createChatMock",
+          "startLine": 23,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 115,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "ChatColumn",
+          "startLine": 21,
+          "endLine": 115,
+          "params": [
+            "{ notebookId, contextSelections, sources, sourcesLoading }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatColumn",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ChatColumn",
+          "callee": "useTranslation",
+          "lineNumber": 22
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "useNotes",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "useNotebookChat",
+          "lineNumber": 28
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "useMemo",
+          "lineNumber": 36
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "sources.forEach",
+          "lineNumber": 42
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "notes.forEach",
+          "lineNumber": 52
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "t",
+          "lineNumber": 86
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "t",
+          "lineNumber": 87
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "t",
+          "lineNumber": 96
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "chat.sendMessage",
+          "lineNumber": 101
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "chat.setModelOverride",
+          "lineNumber": 103
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "chat.createSession",
+          "lineNumber": 106
+        },
+        {
+          "caller": "ChatColumn",
+          "callee": "chat.updateSession",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 197,
+      "nonEmptyLines": 180,
+      "functions": [
+        {
+          "name": "NoteEditorDialog",
+          "startLine": 31,
+          "endLine": 197,
+          "params": [
+            "{ open, onOpenChange, notebookId, note }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NoteEditorDialog",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useTranslation",
+          "lineNumber": 32
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useCreateNote",
+          "lineNumber": 33
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useUpdateNote",
+          "lineNumber": 34
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useQueryClient",
+          "lineNumber": 35
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "Boolean",
+          "lineNumber": 36
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "note.id.includes",
+          "lineNumber": 40
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useNote",
+          "lineNumber": 43
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useForm",
+          "lineNumber": 51
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "zodResolver",
+          "lineNumber": 52
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useWatch",
+          "lineNumber": 58
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useEffect",
+          "lineNumber": 61
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "reset",
+          "lineNumber": 63
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "reset",
+          "lineNumber": 71
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "useEffect",
+          "lineNumber": 74
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "setIsEditorFullscreen",
+          "lineNumber": 78
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "document.querySelector",
+          "lineNumber": 78
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "observer.observe",
+          "lineNumber": 80
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "observer.disconnect",
+          "lineNumber": 81
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "updateNote.mutateAsync",
+          "lineNumber": 86
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 95
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "QUERY_KEYS.notes",
+          "lineNumber": 95
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "console.error",
+          "lineNumber": 100
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "createNote.mutateAsync",
+          "lineNumber": 103
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "reset",
+          "lineNumber": 110
+        },
+        {
+          "caller": "onSubmit",
+          "callee": "onOpenChange",
+          "lineNumber": 111
+        },
+        {
+          "caller": "handleClose",
+          "callee": "reset",
+          "lineNumber": 115
+        },
+        {
+          "caller": "handleClose",
+          "callee": "setIsEditorFullscreen",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleClose",
+          "callee": "onOpenChange",
+          "lineNumber": 117
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "cn",
+          "lineNumber": 122
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 127
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 127
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "handleSubmit",
+          "lineNumber": 129
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 132
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "setValue",
+          "lineNumber": 141
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 142
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 143
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "cn",
+          "lineNumber": 149
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 163
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "cn",
+          "lineNumber": 164
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 180
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 187
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 187
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 189
+        },
+        {
+          "caller": "NoteEditorDialog",
+          "callee": "t",
+          "lineNumber": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 137,
+      "nonEmptyLines": 127,
+      "functions": [
+        {
+          "name": "NotebookCard",
+          "startLine": 25,
+          "endLine": 137,
+          "params": [
+            "{ notebook }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotebookCard",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotebookCard",
+          "callee": "useTranslation",
+          "lineNumber": 26
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "useState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "useRouter",
+          "lineNumber": 28
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "useUpdateNotebook",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleArchiveToggle",
+          "callee": "e.stopPropagation",
+          "lineNumber": 32
+        },
+        {
+          "caller": "handleArchiveToggle",
+          "callee": "updateNotebook.mutate",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleCardClick",
+          "callee": "router.push",
+          "lineNumber": 40
+        },
+        {
+          "caller": "handleCardClick",
+          "callee": "encodeURIComponent",
+          "lineNumber": 40
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 58
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 69
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 74
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 79
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 84
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 90
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "setShowDeleteDialog",
+          "lineNumber": 91
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 96
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 105
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t('common.updated').replace",
+          "lineNumber": 109
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "t",
+          "lineNumber": 109
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 109
+        },
+        {
+          "caller": "NotebookCard",
+          "callee": "getDateLocale",
+          "lineNumber": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 176,
+      "nonEmptyLines": 162,
+      "functions": [
+        {
+          "name": "NotebookDeleteDialog",
+          "startLine": 29,
+          "endLine": 176,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  notebookId,\n  notebookName,\n  redirectAfterDelete = false,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotebookDeleteDialog",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useTranslation",
+          "lineNumber": 36
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useRouter",
+          "lineNumber": 37
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useEffect",
+          "lineNumber": 41
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "setSourceAction",
+          "lineNumber": 43
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useNotebookDeletePreview",
+          "lineNumber": 48
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "useDeleteNotebook",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleConfirm",
+          "callee": "deleteNotebook.mutateAsync",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleConfirm",
+          "callee": "onOpenChange",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleConfirm",
+          "callee": "router.push",
+          "lineNumber": 62
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 72
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t('notebooks.deleteNotebookDesc').replace",
+          "lineNumber": 74
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 74
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 82
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 86
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t('notebooks.deleteNotebookNotes').replace",
+          "lineNumber": 94
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 94
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "String",
+          "lineNumber": 96
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 100
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t('notebooks.deleteNotebookSharedSources').replace",
+          "lineNumber": 108
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 108
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "String",
+          "lineNumber": 110
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 119
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t('notebooks.deleteNotebookExclusiveSources').replace",
+          "lineNumber": 127
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 127
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "String",
+          "lineNumber": 129
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "setSourceAction",
+          "lineNumber": 134
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 140
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 146
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 157
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 166
+        },
+        {
+          "caller": "NotebookDeleteDialog",
+          "callee": "t",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 128,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "NotebookHeader",
+          "startLine": 19,
+          "endLine": 128,
+          "params": [
+            "{ notebook }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotebookHeader",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotebookHeader",
+          "callee": "useTranslation",
+          "lineNumber": 20
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "getDateLocale",
+          "lineNumber": 21
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "useState",
+          "lineNumber": 22
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "useUpdateNotebook",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleUpdateName",
+          "callee": "updateNotebook.mutateAsync",
+          "lineNumber": 29
+        },
+        {
+          "caller": "handleUpdateDescription",
+          "callee": "updateNotebook.mutateAsync",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handleArchiveToggle",
+          "callee": "updateNotebook.mutate",
+          "lineNumber": 45
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 64
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 79
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 84
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "setShowDeleteDialog",
+          "lineNumber": 91
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 95
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 107
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 109
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t('common.created').replace",
+          "lineNumber": 113
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 113
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 113
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t('common.updated').replace",
+          "lineNumber": 114
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "t",
+          "lineNumber": 114
+        },
+        {
+          "caller": "NotebookHeader",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 82,
+      "functions": [
+        {
+          "name": "NotebookList",
+          "startLine": 23,
+          "endLine": 89,
+          "params": [
+            "{ \n  notebooks, \n  isLoading, \n  title, \n  collapsible = false,\n  emptyTitle,\n  emptyDescription,\n  onAction,\n  actionLabel,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotebookList",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotebookList",
+          "callee": "useTranslation",
+          "lineNumber": 33
+        },
+        {
+          "caller": "NotebookList",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "NotebookList",
+          "callee": "t",
+          "lineNumber": 48
+        },
+        {
+          "caller": "NotebookList",
+          "callee": "t",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NotebookList",
+          "callee": "setIsExpanded",
+          "lineNumber": 67
+        },
+        {
+          "caller": "NotebookList",
+          "callee": "notebooks.map",
+          "lineNumber": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 224,
+      "nonEmptyLines": 207,
+      "functions": [
+        {
+          "name": "NotesColumn",
+          "startLine": 36,
+          "endLine": 224,
+          "params": [
+            "{\n  notes,\n  isLoading,\n  notebookId,\n  contextSelections,\n  onContextModeChange\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotesColumn",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "NotesColumn",
+          "callee": "useTranslation",
+          "lineNumber": 43
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useState",
+          "lineNumber": 45
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useState",
+          "lineNumber": 46
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useState",
+          "lineNumber": 47
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useDeleteNote",
+          "lineNumber": 49
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useNotebookColumnsStore",
+          "lineNumber": 52
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "useMemo",
+          "lineNumber": 53
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "createCollapseButton",
+          "lineNumber": 54
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 54
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleDeleteClick",
+          "callee": "setNoteToDelete",
+          "lineNumber": 59
+        },
+        {
+          "caller": "handleDeleteClick",
+          "callee": "setDeleteDialogOpen",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "deleteNote.mutateAsync",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setDeleteDialogOpen",
+          "lineNumber": 68
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setNoteToDelete",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "console.error",
+          "lineNumber": 71
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 81
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 86
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setEditingNote",
+          "lineNumber": 91
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setShowAddDialog",
+          "lineNumber": 92
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 96
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 111
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 112
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "notes.map",
+          "lineNumber": 116
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setEditingNote",
+          "lineNumber": 120
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 130
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 130
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 136
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "getDateLocale",
+          "lineNumber": 138
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "event.stopPropagation",
+          "lineNumber": 144
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "onContextModeChange",
+          "lineNumber": 148
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "e.stopPropagation",
+          "lineNumber": 160
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "e.stopPropagation",
+          "lineNumber": 168
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "handleDeleteClick",
+          "lineNumber": 169
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 174
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "Boolean",
+          "lineNumber": 199
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setShowAddDialog",
+          "lineNumber": 202
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setEditingNote",
+          "lineNumber": 203
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "setShowAddDialog",
+          "lineNumber": 205
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 215
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 216
+        },
+        {
+          "caller": "NotesColumn",
+          "callee": "t",
+          "lineNumber": 217
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 263,
+      "nonEmptyLines": 239,
+      "functions": [
+        {
+          "name": "SourcesColumn",
+          "startLine": 41,
+          "endLine": 263,
+          "params": [
+            "{\n  sources,\n  isLoading,\n  notebookId,\n  onRefresh,\n  contextSelections,\n  onContextModeChange,\n  hasNextPage,\n  isFetchingNextPage,\n  fetchNextPage,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SourcesColumn",
+          "line": 41,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SourcesColumn",
+          "callee": "useTranslation",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 57
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 58
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useState",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useModalManager",
+          "lineNumber": 61
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useDeleteSource",
+          "lineNumber": 62
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useRetrySource",
+          "lineNumber": 63
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useRemoveSourceFromNotebook",
+          "lineNumber": 64
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useNotebookColumnsStore",
+          "lineNumber": 67
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useMemo",
+          "lineNumber": 68
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "createCollapseButton",
+          "lineNumber": 69
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 69
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 70
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useRef",
+          "lineNumber": 74
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useCallback",
+          "lineNumber": 77
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "fetchNextPage",
+          "lineNumber": 84
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "useEffect",
+          "lineNumber": 89
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "container.addEventListener",
+          "lineNumber": 93
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "container.removeEventListener",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handleDeleteClick",
+          "callee": "setSourceToDelete",
+          "lineNumber": 98
+        },
+        {
+          "caller": "handleDeleteClick",
+          "callee": "setDeleteDialogOpen",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "deleteSource.mutateAsync",
+          "lineNumber": 106
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setDeleteDialogOpen",
+          "lineNumber": 107
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setSourceToDelete",
+          "lineNumber": 108
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "onRefresh",
+          "lineNumber": 109
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "console.error",
+          "lineNumber": 111
+        },
+        {
+          "caller": "handleRemoveFromNotebook",
+          "callee": "setSourceToRemove",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleRemoveFromNotebook",
+          "callee": "setRemoveDialogOpen",
+          "lineNumber": 117
+        },
+        {
+          "caller": "handleRemoveConfirm",
+          "callee": "removeFromNotebook.mutateAsync",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleRemoveConfirm",
+          "callee": "setRemoveDialogOpen",
+          "lineNumber": 128
+        },
+        {
+          "caller": "handleRemoveConfirm",
+          "callee": "setSourceToRemove",
+          "lineNumber": 129
+        },
+        {
+          "caller": "handleRemoveConfirm",
+          "callee": "console.error",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleRetry",
+          "callee": "retrySource.mutateAsync",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleRetry",
+          "callee": "console.error",
+          "lineNumber": 140
+        },
+        {
+          "caller": "handleSourceClick",
+          "callee": "openModal",
+          "lineNumber": 145
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 154
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 159
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 165
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "setDropdownOpen",
+          "lineNumber": 170
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "setAddDialogOpen",
+          "lineNumber": 170
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 172
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "setDropdownOpen",
+          "lineNumber": 174
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "setAddExistingDialogOpen",
+          "lineNumber": 174
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 176
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 193
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 194
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "sources.map",
+          "lineNumber": 198
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "onContextModeChange",
+          "lineNumber": 210
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 243
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 244
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 245
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 254
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 255
+        },
+        {
+          "caller": "SourcesColumn",
+          "callee": "t",
+          "lineNumber": 256
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/sources/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 467,
+      "nonEmptyLines": 424,
+      "functions": [
+        {
+          "name": "SourcesPage",
+          "startLine": 21,
+          "endLine": 467,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SourcesPage",
+          "line": 21,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SourcesPage",
+          "callee": "useTranslation",
+          "lineNumber": 22
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 23
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 24
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 25
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 27
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 28
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRouter",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRef",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRef",
+          "lineNumber": 36
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRef",
+          "lineNumber": 37
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRef",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useRef",
+          "lineNumber": 39
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useCallback",
+          "lineNumber": 42
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setLoading",
+          "lineNumber": 50
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setSources",
+          "lineNumber": 52
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setLoadingMore",
+          "lineNumber": 56
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "sourcesApi.list",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setSources",
+          "lineNumber": 67
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setSources",
+          "lineNumber": 69
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "console.error",
+          "lineNumber": 77
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setError",
+          "lineNumber": 78
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 78
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "toast.error",
+          "lineNumber": 79
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 79
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setLoading",
+          "lineNumber": 81
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setLoadingMore",
+          "lineNumber": 82
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 85
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useEffect",
+          "lineNumber": 88
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "fetchSources",
+          "lineNumber": 89
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useEffect",
+          "lineNumber": 93
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "gridRef.current.focus",
+          "lineNumber": 96
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useEffect",
+          "lineNumber": 100
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 106
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setSelectedIndex",
+          "lineNumber": 107
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "Math.min",
+          "lineNumber": 108
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setTimeout",
+          "lineNumber": 110
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollToSelectedRow",
+          "lineNumber": 110
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 115
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setSelectedIndex",
+          "lineNumber": 116
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "Math.max",
+          "lineNumber": 117
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setTimeout",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollToSelectedRow",
+          "lineNumber": 119
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 124
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "router.push",
+          "lineNumber": 126
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 130
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setSelectedIndex",
+          "lineNumber": 131
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setTimeout",
+          "lineNumber": 132
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollToSelectedRow",
+          "lineNumber": 132
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 135
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setSelectedIndex",
+          "lineNumber": 137
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "setTimeout",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "scrollToSelectedRow",
+          "lineNumber": 138
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "window.addEventListener",
+          "lineNumber": 143
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "window.removeEventListener",
+          "lineNumber": 144
+        },
+        {
+          "caller": "scrollToSelectedRow",
+          "callee": "scrollContainer.querySelectorAll",
+          "lineNumber": 151
+        },
+        {
+          "caller": "scrollToSelectedRow",
+          "callee": "scrollContainer.getBoundingClientRect",
+          "lineNumber": 155
+        },
+        {
+          "caller": "scrollToSelectedRow",
+          "callee": "selectedTile.getBoundingClientRect",
+          "lineNumber": 156
+        },
+        {
+          "caller": "scrollToSelectedRow",
+          "callee": "selectedTile.scrollIntoView",
+          "lineNumber": 160
+        },
+        {
+          "caller": "scrollToSelectedRow",
+          "callee": "selectedTile.scrollIntoView",
+          "lineNumber": 164
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useEffect",
+          "lineNumber": 169
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "clearTimeout",
+          "lineNumber": 177
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "setTimeout",
+          "lineNumber": 180
+        },
+        {
+          "caller": "handleScroll",
+          "callee": "fetchSources",
+          "lineNumber": 188
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "scrollContainer.addEventListener",
+          "lineNumber": 193
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "handleScroll",
+          "lineNumber": 194
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "scrollContainer.removeEventListener",
+          "lineNumber": 197
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "clearTimeout",
+          "lineNumber": 199
+        },
+        {
+          "caller": "toggleSort",
+          "callee": "setSortOrder",
+          "lineNumber": 207
+        },
+        {
+          "caller": "toggleSort",
+          "callee": "setSortBy",
+          "lineNumber": 210
+        },
+        {
+          "caller": "toggleSort",
+          "callee": "setSortOrder",
+          "lineNumber": 211
+        },
+        {
+          "caller": "getSourceType",
+          "callee": "t",
+          "lineNumber": 222
+        },
+        {
+          "caller": "getSourceType",
+          "callee": "t",
+          "lineNumber": 223
+        },
+        {
+          "caller": "getSourceType",
+          "callee": "t",
+          "lineNumber": 224
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useCallback",
+          "lineNumber": 227
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setSelectedIndex",
+          "lineNumber": 228
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "router.push",
+          "lineNumber": 229
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "useCallback",
+          "lineNumber": 232
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "e.stopPropagation",
+          "lineNumber": 233
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setDeleteDialog",
+          "lineNumber": 234
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "sourcesApi.delete",
+          "lineNumber": 241
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "toast.success",
+          "lineNumber": 242
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "t",
+          "lineNumber": 242
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setSources",
+          "lineNumber": 244
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "prev.filter",
+          "lineNumber": 244
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "setDeleteDialog",
+          "lineNumber": 245
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "console.error",
+          "lineNumber": 248
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "toast.error",
+          "lineNumber": 249
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "t",
+          "lineNumber": 249
+        },
+        {
+          "caller": "handleDeleteConfirm",
+          "callee": "getApiErrorKey",
+          "lineNumber": 249
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "sources.filter",
+          "lineNumber": 253
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "sources.filter",
+          "lineNumber": 254
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "sources.reduce",
+          "lineNumber": 255
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 282
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 283
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 299
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 302
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 305
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "toggleSort",
+          "lineNumber": 312
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 315
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "cn",
+          "lineNumber": 316
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "toggleSort",
+          "lineNumber": 327
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "cn",
+          "lineNumber": 331
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 346
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 348
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 351
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 356
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "sources.map",
+          "lineNumber": 372
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "handleRowClick",
+          "lineNumber": 381
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setSelectedIndex",
+          "lineNumber": 382
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "cn",
+          "lineNumber": 383
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "getSourceIcon",
+          "lineNumber": 394
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "getSourceType",
+          "lineNumber": 397
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "handleDeleteClick",
+          "lineNumber": 403
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "cn",
+          "lineNumber": 410
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 414
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 425
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 427
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "getDateLocale",
+          "lineNumber": 429
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 434
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 438
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 439
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 449
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "setDeleteDialog",
+          "lineNumber": 458
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 459
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t('sources.deleteConfirmWithTitle').replace",
+          "lineNumber": 460
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 460
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 460
+        },
+        {
+          "caller": "SourcesPage",
+          "callee": "t",
+          "lineNumber": 461
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/ConfirmDialog.test.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 39,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/ConfirmDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "ConfirmDialog",
+          "startLine": 27,
+          "endLine": 67,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  title,\n  description,\n  confirmText,\n  confirmVariant = 'default',\n  onConfirm,\n  isLoading = false,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConfirmDialog",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConfirmDialog",
+          "callee": "useTranslation",
+          "lineNumber": 37
+        },
+        {
+          "caller": "ConfirmDialog",
+          "callee": "t",
+          "lineNumber": 38
+        },
+        {
+          "caller": "ConfirmDialog",
+          "callee": "t",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/ContextToggle.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 88,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "ContextToggle",
+          "startLine": 22,
+          "endLine": 88,
+          "params": [
+            "{ mode, hasInsights = false, onChange, className }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ContextToggle",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ContextToggle",
+          "callee": "useTranslation",
+          "lineNumber": 23
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "t",
+          "lineNumber": 28
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "t",
+          "lineNumber": 34
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "t",
+          "lineNumber": 40
+        },
+        {
+          "caller": "handleClick",
+          "callee": "e.stopPropagation",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handleClick",
+          "callee": "availableModes.indexOf",
+          "lineNumber": 57
+        },
+        {
+          "caller": "handleClick",
+          "callee": "onChange",
+          "lineNumber": 59
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "cn",
+          "lineNumber": 69
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "cn",
+          "lineNumber": 76
+        },
+        {
+          "caller": "ContextToggle",
+          "callee": "t",
+          "lineNumber": 82
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/EmptyState.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "functions": [
+        {
+          "name": "EmptyState",
+          "startLine": 10,
+          "endLine": 19,
+          "params": [
+            "{ icon: Icon, title, description, action }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmptyState",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/InlineEdit.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 156,
+      "nonEmptyLines": 144,
+      "functions": [
+        {
+          "name": "InlineEdit",
+          "startLine": 20,
+          "endLine": 156,
+          "params": [
+            "{\n  value,\n  onSave,\n  className,\n  inputClassName,\n  placeholder,\n  multiline = false,\n  emptyText,\n  id: providedId,\n  name,\n  autocomplete = 'off'\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "InlineEdit",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "InlineEdit",
+          "callee": "useId",
+          "lineNumber": 32
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useTranslation",
+          "lineNumber": 34
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "t",
+          "lineNumber": 35
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useState",
+          "lineNumber": 36
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useState",
+          "lineNumber": 37
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useState",
+          "lineNumber": 38
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useRef",
+          "lineNumber": 39
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useEffect",
+          "lineNumber": 41
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "inputRef.current.focus",
+          "lineNumber": 43
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "inputRef.current.select",
+          "lineNumber": 44
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "useEffect",
+          "lineNumber": 48
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setEditValue",
+          "lineNumber": 49
+        },
+        {
+          "caller": "handleSave",
+          "callee": "editValue.trim",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleSave",
+          "callee": "value.trim",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setIsEditing",
+          "lineNumber": 54
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setIsSaving",
+          "lineNumber": 58
+        },
+        {
+          "caller": "handleSave",
+          "callee": "onSave",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleSave",
+          "callee": "editValue.trim",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setIsEditing",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setEditValue",
+          "lineNumber": 64
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setIsSaving",
+          "lineNumber": 66
+        },
+        {
+          "caller": "handleCancel",
+          "callee": "setEditValue",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleCancel",
+          "callee": "setIsEditing",
+          "lineNumber": 72
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 77
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "handleSave",
+          "lineNumber": 78
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "e.preventDefault",
+          "lineNumber": 80
+        },
+        {
+          "caller": "handleKeyDown",
+          "callee": "handleCancel",
+          "lineNumber": 81
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "cn",
+          "lineNumber": 89
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "e.preventDefault",
+          "lineNumber": 94
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "e.stopPropagation",
+          "lineNumber": 95
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setIsEditing",
+          "lineNumber": 96
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setEditValue",
+          "lineNumber": 109
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "editValue.trim",
+          "lineNumber": 112
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "value.trim",
+          "lineNumber": 112
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "handleSave",
+          "lineNumber": 113
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "editValue.trim",
+          "lineNumber": 114
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "value.trim",
+          "lineNumber": 114
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setIsEditing",
+          "lineNumber": 115
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "cn",
+          "lineNumber": 118
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setEditValue",
+          "lineNumber": 136
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "editValue.trim",
+          "lineNumber": 139
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "value.trim",
+          "lineNumber": 139
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "handleSave",
+          "lineNumber": 140
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "editValue.trim",
+          "lineNumber": 141
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "value.trim",
+          "lineNumber": 141
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "setIsEditing",
+          "lineNumber": 142
+        },
+        {
+          "caller": "InlineEdit",
+          "callee": "cn",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/common/LoadingSpinner.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "LoadingSpinner",
+          "startLine": 9,
+          "endLine": 22,
+          "params": [
+            "{ className, size = 'md' }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LoadingSpinner",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "LoadingSpinner",
+          "callee": "cn",
+          "lineNumber": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/search/SaveToNotebooksDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 123,
+      "nonEmptyLines": 112,
+      "functions": [
+        {
+          "name": "SaveToNotebooksDialog",
+          "startLine": 27,
+          "endLine": 123,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  question,\n  answer\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SaveToNotebooksDialog",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "useTranslation",
+          "lineNumber": 33
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "useState",
+          "lineNumber": 34
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "useNotebooks",
+          "lineNumber": 35
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "useCreateNote",
+          "lineNumber": 36
+        },
+        {
+          "caller": "handleToggle",
+          "callee": "setSelectedNotebooks",
+          "lineNumber": 39
+        },
+        {
+          "caller": "handleToggle",
+          "callee": "prev.includes",
+          "lineNumber": 40
+        },
+        {
+          "caller": "handleToggle",
+          "callee": "prev.filter",
+          "lineNumber": 41
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSave",
+          "callee": "t",
+          "lineNumber": 48
+        },
+        {
+          "caller": "handleSave",
+          "callee": "createNote.mutateAsync",
+          "lineNumber": 55
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.success",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handleSave",
+          "callee": "t",
+          "lineNumber": 63
+        },
+        {
+          "caller": "handleSave",
+          "callee": "setSelectedNotebooks",
+          "lineNumber": 64
+        },
+        {
+          "caller": "handleSave",
+          "callee": "onOpenChange",
+          "lineNumber": 65
+        },
+        {
+          "caller": "handleSave",
+          "callee": "toast.error",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleSave",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "notebooks?.map",
+          "lineNumber": 71
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 81
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 83
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 97
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 103
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 104
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 113
+        },
+        {
+          "caller": "SaveToNotebooksDialog",
+          "callee": "t",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/sources/AddExistingSourceDialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 307,
+      "nonEmptyLines": 280,
+      "functions": [
+        {
+          "name": "AddExistingSourceDialog",
+          "startLine": 32,
+          "endLine": 307,
+          "params": [
+            "{\n  open,\n  onOpenChange,\n  notebookId,\n  onSuccess,\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AddExistingSourceDialog",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useTranslation",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useState",
+          "lineNumber": 39
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useDebounce",
+          "lineNumber": 40
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useState",
+          "lineNumber": 41
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useState",
+          "lineNumber": 42
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useState",
+          "lineNumber": 43
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useState",
+          "lineNumber": 44
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useSources",
+          "lineNumber": 47
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useMemo",
+          "lineNumber": 48
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "currentNotebookSources?.map",
+          "lineNumber": 49
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useAddSourcesToNotebook",
+          "lineNumber": 53
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useCallback",
+          "lineNumber": 55
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 57
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "sourcesApi.list",
+          "lineNumber": 59
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setAllSources",
+          "lineNumber": 66
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setFilteredSources",
+          "lineNumber": 67
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "console.error",
+          "lineNumber": 69
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 71
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useCallback",
+          "lineNumber": 75
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "debouncedSearchQuery.trim",
+          "lineNumber": 76
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setFilteredSources",
+          "lineNumber": 78
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 79
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 84
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "searchApi.search",
+          "lineNumber": 85
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "response.results.map",
+          "lineNumber": 96
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setFilteredSources",
+          "lineNumber": 108
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "console.error",
+          "lineNumber": 110
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setFilteredSources",
+          "lineNumber": 112
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 114
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useEffect",
+          "lineNumber": 119
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "loadAllSources",
+          "lineNumber": 121
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "useEffect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setFilteredSources",
+          "lineNumber": 128
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setIsSearching",
+          "lineNumber": 129
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "performSearch",
+          "lineNumber": 133
+        },
+        {
+          "caller": "handleToggleSource",
+          "callee": "setSelectedSourceIds",
+          "lineNumber": 137
+        },
+        {
+          "caller": "handleToggleSource",
+          "callee": "prev.includes",
+          "lineNumber": 138
+        },
+        {
+          "caller": "handleToggleSource",
+          "callee": "prev.filter",
+          "lineNumber": 139
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "addSources.mutateAsync",
+          "lineNumber": 148
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "setSelectedSourceIds",
+          "lineNumber": 154
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "setSearchQuery",
+          "lineNumber": 155
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "onOpenChange",
+          "lineNumber": 156
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "onSuccess",
+          "lineNumber": 157
+        },
+        {
+          "caller": "handleAddSelected",
+          "callee": "console.error",
+          "lineNumber": 160
+        },
+        {
+          "caller": "formatDate",
+          "callee": "new Date(dateString).toLocaleDateString",
+          "lineNumber": 177
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 189
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 192
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 201
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "setSearchQuery",
+          "lineNumber": 203
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 216
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 221
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "filteredSources.map",
+          "lineNumber": 225
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "currentSourceIds.has",
+          "lineNumber": 226
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "selectedSourceIds.includes",
+          "lineNumber": 227
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "handleToggleSource",
+          "lineNumber": 238
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "getSourceIcon",
+          "lineNumber": 245
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 252
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t('sources.added').replace",
+          "lineNumber": 257
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 257
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "formatDate",
+          "lineNumber": 257
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 270
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t('sources.selectedCount').replace",
+          "lineNumber": 277
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 277
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "selectedSourceIds.length.toString",
+          "lineNumber": 277
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "onOpenChange",
+          "lineNumber": 285
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 288
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 297
+        },
+        {
+          "caller": "AddExistingSourceDialog",
+          "callee": "t",
+          "lineNumber": 300
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/sources/SourceCard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 394,
+      "nonEmptyLines": 358,
+      "functions": [
+        {
+          "name": "getStatusConfig",
+          "startLine": 54,
+          "endLine": 95,
+          "params": [
+            "t"
+          ]
+        },
+        {
+          "name": "isSourceStatus",
+          "startLine": 99,
+          "endLine": 101,
+          "params": [
+            "status"
+          ]
+        },
+        {
+          "name": "getSourceType",
+          "startLine": 103,
+          "endLine": 108,
+          "params": [
+            "source"
+          ]
+        },
+        {
+          "name": "SourceCard",
+          "startLine": 110,
+          "endLine": 394,
+          "params": [
+            "{\n  source,\n  onClick,\n  onDelete,\n  onRetry,\n  onRemoveFromNotebook,\n  onRefresh,\n  className,\n  showRemoveFromNotebook = false,\n  contextMode,\n  onContextModeChange\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "SourceCard",
+          "line": 110,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getStatusConfig",
+          "callee": "t",
+          "lineNumber": 93
+        },
+        {
+          "caller": "isSourceStatus",
+          "callee": "['new', 'queued', 'running', 'completed', 'failed'].includes",
+          "lineNumber": 100
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "useTranslation",
+          "lineNumber": 122
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "getStatusConfig",
+          "lineNumber": 123
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "useState",
+          "lineNumber": 129
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "useSourceStatus",
+          "lineNumber": 137
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "isSourceStatus",
+          "lineNumber": 145
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "useEffect",
+          "lineNumber": 151
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "setWasProcessing",
+          "lineNumber": 156
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "setWasProcessing",
+          "lineNumber": 162
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "setTimeout",
+          "lineNumber": 165
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "onRefresh",
+          "lineNumber": 165
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "getSourceType",
+          "lineNumber": 172
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 175
+        },
+        {
+          "caller": "handleRetry",
+          "callee": "onRetry",
+          "lineNumber": 179
+        },
+        {
+          "caller": "handleDelete",
+          "callee": "onDelete",
+          "lineNumber": 185
+        },
+        {
+          "caller": "handleRemoveFromNotebook",
+          "callee": "onRemoveFromNotebook",
+          "lineNumber": 191
+        },
+        {
+          "caller": "handleCardClick",
+          "callee": "onClick",
+          "lineNumber": 197
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "cn",
+          "lineNumber": 207
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "cn",
+          "lineNumber": 220
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "cn",
+          "lineNumber": 225
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 229
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 235
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "cn",
+          "lineNumber": 241
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 262
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 262
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 262
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t('sources.insightsCount').replace",
+          "lineNumber": 267
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 267
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "source.insights_count.toString",
+          "lineNumber": 267
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "source.topics.slice(0, 2).map",
+          "lineNumber": 272
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "source.topics.slice",
+          "lineNumber": 272
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 305
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 315
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "handleRemoveFromNotebook",
+          "lineNumber": 316
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 321
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 331
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "handleRetry",
+          "lineNumber": 332
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 337
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "e.stopPropagation",
+          "lineNumber": 345
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "handleDelete",
+          "lineNumber": 346
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 352
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 369
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "t",
+          "lineNumber": 378
+        },
+        {
+          "caller": "SourceCard",
+          "callee": "Math.round",
+          "lineNumber": 380
+        }
+      ],
+      "metrics": {
+        "importCount": 10,
+        "exportCount": 1,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    }
+  ]
+}

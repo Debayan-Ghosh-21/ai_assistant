@@ -1,0 +1,91 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "docs/5-CONFIGURATION/advanced.md",
+      "language": "markdown",
+      "sizeLines": 544,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ai-providers.md",
+      "language": "markdown",
+      "sizeLines": 537,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/database.md",
+      "language": "markdown",
+      "sizeLines": 50,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/environment-reference.md",
+      "language": "markdown",
+      "sizeLines": 303,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/index.md",
+      "language": "markdown",
+      "sizeLines": 328,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-stt.md",
+      "language": "markdown",
+      "sizeLines": 365,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/local-tts.md",
+      "language": "markdown",
+      "sizeLines": 344,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/mcp-integration.md",
+      "language": "markdown",
+      "sizeLines": 199,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/ollama.md",
+      "language": "markdown",
+      "sizeLines": 743,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/openai-compatible.md",
+      "language": "markdown",
+      "sizeLines": 402,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/reverse-proxy.md",
+      "language": "markdown",
+      "sizeLines": 901,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/5-CONFIGURATION/security.md",
+      "language": "markdown",
+      "sizeLines": 422,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/5-CONFIGURATION/advanced.md": [],
+    "docs/5-CONFIGURATION/ai-providers.md": [],
+    "docs/5-CONFIGURATION/database.md": [],
+    "docs/5-CONFIGURATION/environment-reference.md": [],
+    "docs/5-CONFIGURATION/index.md": [],
+    "docs/5-CONFIGURATION/local-stt.md": [],
+    "docs/5-CONFIGURATION/local-tts.md": [],
+    "docs/5-CONFIGURATION/mcp-integration.md": [],
+    "docs/5-CONFIGURATION/ollama.md": [],
+    "docs/5-CONFIGURATION/openai-compatible.md": [],
+    "docs/5-CONFIGURATION/reverse-proxy.md": [],
+    "docs/5-CONFIGURATION/security.md": []
+  }
+}

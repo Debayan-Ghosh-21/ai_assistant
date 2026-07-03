@@ -1,0 +1,42 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "docs/6-TROUBLESHOOTING/ai-chat-issues.md",
+      "language": "markdown",
+      "sizeLines": 444,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/connection-issues.md",
+      "language": "markdown",
+      "sizeLines": 447,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/faq.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/index.md",
+      "language": "markdown",
+      "sizeLines": 240,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/quick-fixes.md",
+      "language": "markdown",
+      "sizeLines": 372,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/6-TROUBLESHOOTING/ai-chat-issues.md": [],
+    "docs/6-TROUBLESHOOTING/connection-issues.md": [],
+    "docs/6-TROUBLESHOOTING/faq.md": [],
+    "docs/6-TROUBLESHOOTING/index.md": [],
+    "docs/6-TROUBLESHOOTING/quick-fixes.md": []
+  }
+}

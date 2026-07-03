@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "pipeline:.github/workflows/build-and-release.yml",
+      "type": "pipeline",
+      "name": "build-and-release.yml",
+      "filePath": ".github/workflows/build-and-release.yml",
+      "summary": "Infrastructure orchestration rules for build-and-release.yml.",
+      "tags": [
+        "infrastructure",
+        "ci-cd",
+        "yaml"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "pipeline:.github/workflows/build-dev.yml",
+      "type": "pipeline",
+      "name": "build-dev.yml",
+      "filePath": ".github/workflows/build-dev.yml",
+      "summary": "Infrastructure orchestration rules for build-dev.yml.",
+      "tags": [
+        "infrastructure",
+        "ci-cd",
+        "yaml"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "pipeline:.github/workflows/claude-code-review.yml",
+      "type": "pipeline",
+      "name": "claude-code-review.yml",
+      "filePath": ".github/workflows/claude-code-review.yml",
+      "summary": "Infrastructure orchestration rules for claude-code-review.yml.",
+      "tags": [
+        "infrastructure",
+        "ci-cd",
+        "yaml"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:.github/workflows/claude.yml",
+      "type": "pipeline",
+      "name": "claude.yml",
+      "filePath": ".github/workflows/claude.yml",
+      "summary": "Infrastructure orchestration rules for claude.yml.",
+      "tags": [
+        "infrastructure",
+        "ci-cd",
+        "yaml"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "pipeline:.github/workflows/test.yml",
+      "type": "pipeline",
+      "name": "test.yml",
+      "filePath": ".github/workflows/test.yml",
+      "summary": "Infrastructure orchestration rules for test.yml.",
+      "tags": [
+        "infrastructure",
+        "ci-cd",
+        "test",
+        "testing",
+        "yaml"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,407 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx",
+      "language": "typescript",
+      "sizeLines": 341,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/advanced/page.tsx",
+      "language": "typescript",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/notebooks/page.tsx",
+      "language": "typescript",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/podcasts/page.tsx",
+      "language": "typescript",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/search/page.tsx",
+      "language": "typescript",
+      "sizeLines": 500,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/api-keys/page.tsx",
+      "language": "typescript",
+      "sizeLines": 1455,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx",
+      "language": "typescript",
+      "sizeLines": 278,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/settings/page.tsx",
+      "language": "typescript",
+      "sizeLines": 32,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx",
+      "language": "typescript",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 255,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx",
+      "language": "typescript",
+      "sizeLines": 153,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx",
+      "language": "typescript",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/transformations/page.tsx",
+      "language": "typescript",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/auth/LoginForm.tsx",
+      "language": "typescript",
+      "sizeLines": 219,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/LanguageToggle.tsx",
+      "language": "typescript",
+      "sizeLines": 94,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ModelSelector.tsx",
+      "language": "typescript",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/errors/ConnectionErrorOverlay.tsx",
+      "language": "typescript",
+      "sizeLines": 175,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/AppShell.tsx",
+      "language": "typescript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/layout/SetupBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodeCard.tsx",
+      "language": "typescript",
+      "sizeLines": 435,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 293,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/EpisodesTab.tsx",
+      "language": "typescript",
+      "sizeLines": 182,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/progress.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/page.tsx": [
+      "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx",
+      "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/page.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/podcasts/page.tsx": [
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/podcasts/EpisodesTab.tsx",
+      "frontend/src/components/podcasts/TemplatesTab.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/app/(dashboard)/search/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/search/AdvancedModelsDialog.tsx",
+      "frontend/src/components/search/SaveToNotebooksDialog.tsx",
+      "frontend/src/components/search/StreamingResponse.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/radio-group.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-ask.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-search.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/api-keys/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx",
+      "frontend/src/components/settings/index.ts",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/credentials.ts",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/page.tsx": [
+      "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/markdown-editor.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/page.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/components/auth/LoginForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/components/common/LanguageToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/errors/ConnectionErrorOverlay.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/components/layout/AppShell.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/components/layout/SetupBanner.tsx"
+    ],
+    "frontend/src/components/layout/SetupBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/notebooks/CreateNotebookDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeCard.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeCard.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ]
+  }
+}

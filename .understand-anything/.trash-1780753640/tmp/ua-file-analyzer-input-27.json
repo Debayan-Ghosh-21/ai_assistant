@@ -1,0 +1,182 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "frontend/src/lib/locales/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 154,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/stores/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 68,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "frontend/src/lib/types/auth.ts",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/types/common.ts",
+      "language": "typescript",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/proxy.ts",
+      "language": "typescript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/test/jest-dom.d.ts",
+      "language": "typescript",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/test/setup.ts",
+      "language": "typescript",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/start-server.js",
+      "language": "javascript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/tailwind.config.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/vitest.config.ts",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/__init__.py",
+      "language": "python",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 331,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 225,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/database/CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 124,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "open_notebook/database/migrations/1_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/1.surrealql",
+      "language": "surrealql",
+      "sizeLines": 178,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/10_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/10.surrealql",
+      "language": "surrealql",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/11_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 4,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/11.surrealql",
+      "language": "surrealql",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/12_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/12.surrealql",
+      "language": "surrealql",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/13_down.surrealql",
+      "language": "surrealql",
+      "sizeLines": 1,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrations/13.surrealql",
+      "language": "surrealql",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/lib/locales/CLAUDE.md": [],
+    "frontend/src/lib/stores/CLAUDE.md": [],
+    "frontend/src/lib/types/auth.ts": [],
+    "frontend/src/lib/types/common.ts": [],
+    "frontend/src/proxy.ts": [],
+    "frontend/src/test/jest-dom.d.ts": [],
+    "frontend/src/test/setup.ts": [],
+    "frontend/start-server.js": [],
+    "frontend/tailwind.config.ts": [],
+    "frontend/vitest.config.ts": [],
+    "open_notebook/__init__.py": [],
+    "open_notebook/ai/__init__.py": [],
+    "open_notebook/ai/CLAUDE.md": [],
+    "open_notebook/CLAUDE.md": [],
+    "open_notebook/database/CLAUDE.md": [],
+    "open_notebook/database/migrations/1_down.surrealql": [],
+    "open_notebook/database/migrations/1.surrealql": [],
+    "open_notebook/database/migrations/10_down.surrealql": [],
+    "open_notebook/database/migrations/10.surrealql": [],
+    "open_notebook/database/migrations/11_down.surrealql": [],
+    "open_notebook/database/migrations/11.surrealql": [],
+    "open_notebook/database/migrations/12_down.surrealql": [],
+    "open_notebook/database/migrations/12.surrealql": [],
+    "open_notebook/database/migrations/13_down.surrealql": [],
+    "open_notebook/database/migrations/13.surrealql": []
+  }
+}

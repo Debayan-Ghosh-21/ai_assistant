@@ -8,20 +8,24 @@ import { getConfig } from '@/lib/config'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { AlertCircle } from 'lucide-react'
+import { AlertCircle, UserPlus, LogIn, ArrowRight } from 'lucide-react'
 import { LoadingSpinner } from '@/components/common/LoadingSpinner'
 import { useTranslation } from '@/lib/hooks/use-translation'
 
 export function LoginForm() {
   const { t, language } = useTranslation()
+  const [mode, setMode] = useState<'login' | 'signup'>('login')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { login, isLoading, error } = useAuth()
-  const { authRequired, checkAuthRequired, hasHydrated, isAuthenticated } = useAuthStore()
-  const [isCheckingAuth, setIsCheckingAuth] = useState(true)
+  const [confirmPassword, setConfirmPassword] = useState('')
+  const [localError, setLocalError] = useState<string | null>(null)
+  const [showSignUpPrompt, setShowSignUpPrompt] = useState(false)
+
+  const { login, signup, isLoading, error } = useAuth()
+  const { hasHydrated, isAuthenticated } = useAuthStore()
   const [configInfo, setConfigInfo] = useState<{ apiUrl: string; version: string; buildTime: string } | null>(null)
   const router = useRouter()
 
-  // Load config info for debugging
   useEffect(() => {
     getConfig().then(cfg => {
       setConfigInfo({
@@ -34,42 +38,13 @@ export function LoginForm() {
     })
   }, [])
 
-  // Check if authentication is required on mount
   useEffect(() => {
-    if (!hasHydrated) {
-      return
+    if (hasHydrated && isAuthenticated) {
+      router.push('/notebooks')
     }
+  }, [hasHydrated, isAuthenticated, router])
 
-    const checkAuth = async () => {
-      try {
-        const required = await checkAuthRequired()
-
-        // If auth is not required, redirect to notebooks
-        if (!required) {
-          router.push('/notebooks')
-        }
-      } catch (error) {
-        console.error('Error checking auth requirement:', error)
-        // On error, assume auth is required to be safe
-      } finally {
-        setIsCheckingAuth(false)
-      }
-    }
-
-    // If we already know auth status, use it
-    if (authRequired !== null) {
-      if (!authRequired && isAuthenticated) {
-        router.push('/notebooks')
-      } else {
-        setIsCheckingAuth(false)
-      }
-    } else {
-      void checkAuth()
-    }
-  }, [hasHydrated, authRequired, checkAuthRequired, router, isAuthenticated])
-
-  // Show loading while checking if auth is required
-  if (!hasHydrated || isCheckingAuth) {
+  if (!hasHydrated) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-background">
         <LoadingSpinner />
@@ -77,65 +52,45 @@ export function LoginForm() {
     )
   }
 
-  // If we still don't know if auth is required (connection error), show error
-  if (authRequired === null) {
-    return (
-      <div className="flex min-h-screen items-center justify-center bg-background p-4">
-        <Card className="w-full max-w-md rounded-[2rem] border-white/70 bg-card/95">
-          <CardHeader className="text-center">
-            <CardTitle>{t('common.connectionError')}</CardTitle>
-            <CardDescription>
-              {t('common.unableToConnect')}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              <div className="flex items-start gap-2 text-red-600 text-sm">
-                <AlertCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <div className="flex-1">
-                  {error || t('auth.connectErrorHint')}
-                </div>
-              </div>
-
-              {configInfo && (
-                <div className="space-y-2 text-xs text-muted-foreground border-t pt-3">
-                  <div className="font-medium">{t('common.diagnosticInfo')}:</div>
-                  <div className="space-y-1 font-mono">
-                    <div>{t('common.version')}: {configInfo.version}</div>
-                    <div>{t('common.built')}: {new Date(configInfo.buildTime).toLocaleString(language === 'zh-CN' ? 'zh-CN' : language === 'zh-TW' ? 'zh-TW' : 'en-US')}</div>
-                    <div className="break-all">{t('common.apiUrl')}: {configInfo.apiUrl}</div>
-                    <div className="break-all">{t('common.frontendUrl')}: {typeof window !== 'undefined' ? window.location.href : 'N/A'}</div>
-                  </div>
-                  <div className="text-xs pt-2">
-                    {t('common.checkConsoleLogs')}
-                  </div>
-                </div>
-              )}
-
-              <Button
-                onClick={() => window.location.reload()}
-                className="w-full"
-              >
-                {t('common.retryConnection')}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-    )
+  const handleModeSwitch = (newMode: 'login' | 'signup') => {
+    setMode(newMode)
+    setLocalError(null)
+    setShowSignUpPrompt(false)
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (password.trim()) {
-      try {
-        await login(password)
-      } catch (error) {
-        console.error('Unhandled error during login:', error)
-        // The auth store should handle most errors, but this catches any unhandled ones
+    setLocalError(null)
+    setShowSignUpPrompt(false)
+
+    if (!email.trim() || !password.trim()) {
+      setLocalError('Please fill in both email and password.')
+      return
+    }
+
+    if (mode === 'signup') {
+      if (password !== confirmPassword) {
+        setLocalError('Passwords do not match.')
+        return
+      }
+      const res = await signup(email, password)
+      if (!res.success && res.message) {
+        setLocalError(res.message)
+      }
+    } else {
+      const res = await login(email, password)
+      if (!res.success) {
+        if (res.requiresSignUp) {
+          setShowSignUpPrompt(true)
+        }
+        if (res.message) {
+          setLocalError(res.message)
+        }
       }
     }
   }
+
+  const displayError = localError || error
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4 sm:p-8">
@@ -158,7 +113,9 @@ export function LoginForm() {
                 shaped quietly.
               </h1>
               <p className="mt-5 max-w-sm text-sm leading-6 text-muted-foreground">
-                Sign in to collect sources, build notebooks, and work with your AI assistant.
+                {mode === 'login'
+                  ? 'Sign in to collect sources, build notebooks, and work with your AI assistant.'
+                  : 'Create an account to save your notebooks, sources, and local AI sessions.'}
               </p>
             </div>
             <div className="flex items-center justify-between border-t border-border/70 pt-5 text-[11px] text-muted-foreground">
@@ -169,45 +126,142 @@ export function LoginForm() {
 
           <section className="flex items-center justify-center border-t border-border/70 p-6 md:border-l md:border-t-0 sm:p-10">
             <Card className="w-full max-w-sm border-0 bg-transparent p-0 shadow-none">
-              <CardHeader className="text-center">
-                <CardTitle>{t('auth.loginTitle')}</CardTitle>
+              <CardHeader className="text-center pb-4">
+                <div className="flex items-center justify-center gap-1 p-1 mb-4 rounded-xl bg-muted/60 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => handleModeSwitch('login')}
+                    className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg font-medium transition-all ${
+                      mode === 'login'
+                        ? 'bg-background text-foreground shadow-sm'
+                        : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    <LogIn className="w-3.5 h-3.5" />
+                    Sign In
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleModeSwitch('signup')}
+                    className={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-lg font-medium transition-all ${
+                      mode === 'signup'
+                        ? 'bg-background text-foreground shadow-sm'
+                        : 'text-muted-foreground hover:text-foreground'
+                    }`}
+                  >
+                    <UserPlus className="w-3.5 h-3.5" />
+                    Sign Up
+                  </button>
+                </div>
+                <CardTitle className="text-2xl font-semibold">
+                  {mode === 'login' ? 'Welcome Back' : 'Create an Account'}
+                </CardTitle>
                 <CardDescription>
-                  {t('auth.loginDesc')}
+                  {mode === 'login'
+                    ? 'Enter your credentials to access your account'
+                    : 'Fill in your details below to get started'}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
+                    <label className="block text-xs font-medium text-muted-foreground mb-1">Email</label>
                     <Input
-                      type="password"
-                      placeholder={t('auth.passwordPlaceholder')}
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
+                      type="email"
+                      placeholder="name@example.com"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       disabled={isLoading}
+                      required
                     />
                   </div>
 
-                  {error && (
-                    <div className="flex items-center gap-2 text-red-600 text-sm">
-                      <AlertCircle className="h-4 w-4" />
-                      {error}
+                  <div>
+                    <label className="block text-xs font-medium text-muted-foreground mb-1">Password</label>
+                    <Input
+                      type="password"
+                      placeholder="••••••••"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      disabled={isLoading}
+                      required
+                    />
+                  </div>
+
+                  {mode === 'signup' && (
+                    <div>
+                      <label className="block text-xs font-medium text-muted-foreground mb-1">Confirm Password</label>
+                      <Input
+                        type="password"
+                        placeholder="••••••••"
+                        value={confirmPassword}
+                        onChange={(e) => setConfirmPassword(e.target.value)}
+                        disabled={isLoading}
+                        required
+                      />
+                    </div>
+                  )}
+
+                  {displayError && (
+                    <div className="flex items-start gap-2 rounded-lg bg-red-500/10 p-3 text-red-600 text-sm border border-red-500/20">
+                      <AlertCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                      <div className="flex-1 text-xs">{displayError}</div>
+                    </div>
+                  )}
+
+                  {showSignUpPrompt && (
+                    <div className="rounded-xl border border-primary/20 bg-primary/5 p-3 text-center">
+                      <p className="text-xs text-foreground mb-2 font-medium">
+                        Don't have an account yet?
+                      </p>
+                      <Button
+                        type="button"
+                        variant="default"
+                        size="sm"
+                        onClick={() => handleModeSwitch('signup')}
+                        className="w-full flex items-center justify-center gap-1.5"
+                      >
+                        Create Account Now
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Button>
                     </div>
                   )}
 
                   <Button
                     type="submit"
                     className="w-full"
-                    disabled={isLoading || !password.trim()}
+                    disabled={isLoading || !email.trim() || !password.trim() || (mode === 'signup' && !confirmPassword.trim())}
                   >
-                    {isLoading ? t('auth.signingIn') : t('auth.signIn')}
+                    {isLoading
+                      ? mode === 'login' ? 'Signing in...' : 'Creating account...'
+                      : mode === 'login' ? 'Sign In' : 'Sign Up'}
                   </Button>
 
-                  {configInfo && (
-                    <div className="text-xs text-center text-muted-foreground pt-2 border-t">
-                      <div>{t('common.version')} {configInfo.version}</div>
-                      <div className="font-mono text-[10px]">{configInfo.apiUrl}</div>
-                    </div>
-                  )}
+                  <div className="text-xs text-center text-muted-foreground pt-3 border-t">
+                    {mode === 'login' ? (
+                      <span>
+                        Need an account?{' '}
+                        <button
+                          type="button"
+                          onClick={() => handleModeSwitch('signup')}
+                          className="font-medium text-foreground hover:underline"
+                        >
+                          Sign Up
+                        </button>
+                      </span>
+                    ) : (
+                      <span>
+                        Already registered?{' '}
+                        <button
+                          type="button"
+                          onClick={() => handleModeSwitch('login')}
+                          className="font-medium text-foreground hover:underline"
+                        >
+                          Sign In
+                        </button>
+                      </span>
+                    )}
+                  </div>
                 </form>
               </CardContent>
             </Card>
@@ -217,3 +271,4 @@ export function LoginForm() {
     </div>
   )
 }
+

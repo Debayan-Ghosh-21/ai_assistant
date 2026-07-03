@@ -1,0 +1,339 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "api/routers/search.py",
+      "language": "python",
+      "sizeLines": 217,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/settings.py",
+      "language": "python",
+      "sizeLines": 88,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/source_chat.py",
+      "language": "python",
+      "sizeLines": 554,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/sources.py",
+      "language": "python",
+      "sizeLines": 1045,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/speaker_profiles.py",
+      "language": "python",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/transformations.py",
+      "language": "python",
+      "sizeLines": 252,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/search_service.py",
+      "language": "python",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/settings_service.py",
+      "language": "python",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/sources_service.py",
+      "language": "python",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/transformations_service.py",
+      "language": "python",
+      "sizeLines": 141,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/__init__.py",
+      "language": "python",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/embedding_commands.py",
+      "language": "python",
+      "sizeLines": 787,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/example_commands.py",
+      "language": "python",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/podcast_commands.py",
+      "language": "python",
+      "sizeLines": 300,
+      "fileCategory": "code"
+    },
+    {
+      "path": "commands/source_commands.py",
+      "language": "python",
+      "sizeLines": 270,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/connection_tester.py",
+      "language": "python",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/key_provider.py",
+      "language": "python",
+      "sizeLines": 305,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/model_discovery.py",
+      "language": "python",
+      "sizeLines": 836,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/models.py",
+      "language": "python",
+      "sizeLines": 267,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/ai/provision.py",
+      "language": "python",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/config.py",
+      "language": "python",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/async_migrate.py",
+      "language": "python",
+      "sizeLines": 245,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/migrate.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/database/repository.py",
+      "language": "python",
+      "sizeLines": 194,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/base.py",
+      "language": "python",
+      "sizeLines": 361,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/content_settings.py",
+      "language": "python",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/credential.py",
+      "language": "python",
+      "sizeLines": 234,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/notebook.py",
+      "language": "python",
+      "sizeLines": 680,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/provider_config.py",
+      "language": "python",
+      "sizeLines": 444,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/quiz.py",
+      "language": "python",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/domain/transformation.py",
+      "language": "python",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "open_notebook/exceptions.py",
+      "language": "python",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "api/routers/search.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/ask.py"
+    ],
+    "api/routers/settings.py": [
+      "api/models.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/source_chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/source_chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/sources.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "commands/source_commands.py",
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/speaker_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/transformations.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "api/search_service.py": [
+      "api/client.py"
+    ],
+    "api/settings_service.py": [
+      "api/client.py",
+      "open_notebook/domain/content_settings.py"
+    ],
+    "api/sources_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/transformations_service.py": [
+      "api/client.py",
+      "open_notebook/domain/transformation.py"
+    ],
+    "commands/__init__.py": [
+      "commands/embedding_commands.py",
+      "commands/example_commands.py",
+      "commands/podcast_commands.py",
+      "commands/source_commands.py"
+    ],
+    "commands/embedding_commands.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py"
+    ],
+    "commands/example_commands.py": [],
+    "commands/podcast_commands.py": [
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "commands/source_commands.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/ai/connection_tester.py": [
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/key_provider.py": [
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/model_discovery.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/models.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/ai/provision.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "open_notebook/config.py": [],
+    "open_notebook/database/async_migrate.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "open_notebook/database/migrate.py": [
+      "open_notebook/database/async_migrate.py"
+    ],
+    "open_notebook/database/repository.py": [],
+    "open_notebook/domain/base.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/content_settings.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/domain/credential.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/notebook.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/provider_config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/quiz.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/transformation.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/exceptions.py": []
+  }
+}

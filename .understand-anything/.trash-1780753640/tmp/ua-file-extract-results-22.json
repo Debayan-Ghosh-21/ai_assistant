@@ -1,0 +1,937 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/6-TROUBLESHOOTING/ai-chat-issues.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 444,
+      "nonEmptyLines": 329,
+      "sections": [
+        {
+          "heading": "AI & Chat Issues - Model Configuration & Quality",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "\"Failed to send message\" Error",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Solution 1: Check Default Model Configuration",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Solution 2: Verify Model Names (Ollama Users)",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Solution 3: Re-add Missing Models",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Solution 4: Check Model Still Exists",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "\"Models not available\" or \"Models not showing\"",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Solution 1: Add Credential via Settings UI",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Solution 2: Check Key is Valid",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Solution 3: Switch Provider",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "\"Invalid API key\" or \"Unauthorized\"",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Step 1: Test Your Credential",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Step 2: Get Fresh Key",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "Step 3: Update Credential",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Step 4: Verify in UI",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "Chat Returns Generic/Bad Responses",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "Solution 1: Check Context",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Solution 2: Ask Better Question",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "Solution 3: Use Stronger Model",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Solution 4: Add More Sources",
+          "level": 3,
+          "line": 186
+        },
+        {
+          "heading": "Chat is Very Slow",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "Solution 1: Use Faster Model",
+          "level": 3,
+          "line": 202
+        },
+        {
+          "heading": "Solution 2: Reduce Context",
+          "level": 3,
+          "line": 212
+        },
+        {
+          "heading": "Solution 3: Increase Timeout",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Solution 4: Check System Load",
+          "level": 3,
+          "line": 229
+        },
+        {
+          "heading": "Chat Doesn't Remember History",
+          "level": 2,
+          "line": 241
+        },
+        {
+          "heading": "\"Rate limit exceeded\"",
+          "level": 2,
+          "line": 259
+        },
+        {
+          "heading": "For Cloud Providers (OpenAI, Anthropic, etc.)",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "Check Account Status",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "For Ollama (Local)",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "\"Context length exceeded\" or \"Token limit\"",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "Solution 1: Use Model with Longer Context",
+          "level": 3,
+          "line": 305
+        },
+        {
+          "heading": "Solution 2: Reduce Context",
+          "level": 3,
+          "line": 313
+        },
+        {
+          "heading": "Solution 3: For Ollama (Local)",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "\"API call failed\" or Timeout",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "Check Provider Status",
+          "level": 3,
+          "line": 337
+        },
+        {
+          "heading": "Retry Operation",
+          "level": 3,
+          "line": 345
+        },
+        {
+          "heading": "Use Different Model/Provider",
+          "level": 3,
+          "line": 351
+        },
+        {
+          "heading": "Check Network",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "Responses Include Hallucinations",
+          "level": 2,
+          "line": 370
+        },
+        {
+          "heading": "Solution 1: Verify Context",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "Solution 2: Request Citations",
+          "level": 3,
+          "line": 386
+        },
+        {
+          "heading": "Solution 3: Use Stronger Model",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "High API Costs",
+          "level": 2,
+          "line": 401
+        },
+        {
+          "heading": "Use Cheaper Model",
+          "level": 3,
+          "line": 409
+        },
+        {
+          "heading": "Reduce Context",
+          "level": 3,
+          "line": 420
+        },
+        {
+          "heading": "Switch to Ollama (Free)",
+          "level": 3,
+          "line": 428
+        },
+        {
+          "heading": "Still Having Chat Issues?",
+          "level": 2,
+          "line": 439
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 48
+      }
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/connection-issues.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 447,
+      "nonEmptyLines": 336,
+      "sections": [
+        {
+          "heading": "Connection Issues - Network & API Problems",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "\"Cannot connect to server\" (Most Common)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Solution 1: API Not Running",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "Solution 2: Port Not Exposed",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Solution 3: API_URL Mismatch",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Solution 4: Firewall Blocking",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Solution 5: Services Not Started",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Connection Refused",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Timeout / Slow Connection",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "Check API Performance",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "Reduce Load",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Check Network",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "502 Bad Gateway (Reverse Proxy)",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "Check Backend is Running",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Check Reverse Proxy Config",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Set API_URL for HTTPS",
+          "level": 3,
+          "line": 214
+        },
+        {
+          "heading": "Intermittent Disconnects",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "Enable Retry Logic",
+          "level": 3,
+          "line": 236
+        },
+        {
+          "heading": "Reduce Concurrency",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "Check Network Stability",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "Different Machine / Remote Access",
+          "level": 2,
+          "line": 268
+        },
+        {
+          "heading": "Step 1: Get Your Machine IP",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "Step 2: Update API_URL",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "Step 3: Access from Other Machine",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "Step 4: Verify Port is Exposed",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "If Still Doesn't Work",
+          "level": 3,
+          "line": 309
+        },
+        {
+          "heading": "CORS Error (Browser Console)",
+          "level": 2,
+          "line": 324
+        },
+        {
+          "heading": "Testing Connection",
+          "level": 2,
+          "line": 357
+        },
+        {
+          "heading": "Checklist for Remote Access",
+          "level": 2,
+          "line": 384
+        },
+        {
+          "heading": "SSL Certificate Errors",
+          "level": 2,
+          "line": 396
+        },
+        {
+          "heading": "Solution 1: Use Custom CA Bundle (Recommended)",
+          "level": 3,
+          "line": 409
+        },
+        {
+          "heading": "Solution 2: Disable SSL Verification (Development Only)",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "Solution 3: Use HTTP Instead",
+          "level": 3,
+          "line": 429
+        },
+        {
+          "heading": "Still Having Issues?",
+          "level": 2,
+          "line": 440
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/faq.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 258,
+      "nonEmptyLines": 180,
+      "sections": [
+        {
+          "heading": "Frequently Asked Questions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "General Usage",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "What is Open Notebook?",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "How is it different from Google Notebook LM?",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "Can I use Open Notebook offline?",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "What file types are supported?",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "How much does it cost?",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "AI Models and Providers",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Which AI provider should I choose?",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Can I use multiple providers?",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "What are the best model combinations?",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "How do I optimize AI costs?",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "Data Management",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Where is my data stored?",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "How do I backup my data?",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Can I sync data between devices?",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "What happens if I delete a notebook?",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "How should I organize my notebooks?",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "How do I get the best search results?",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "How can I improve chat responses?",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "What are the security best practices?",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Technical Questions",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "Can I use Open Notebook programmatically?",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "Can I run Open Notebook in production?",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "What are the system requirements?",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Timeout and Performance",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "Why do I get timeout errors?",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Recommended timeouts by setup:",
+          "level": 3,
+          "line": 215
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 226
+        },
+        {
+          "heading": "My question isn't answered here",
+          "level": 3,
+          "line": 228
+        },
+        {
+          "heading": "How do I report a bug?",
+          "level": 3,
+          "line": 235
+        },
+        {
+          "heading": "Where can I get help?",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 254
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 240,
+      "nonEmptyLines": 169,
+      "sections": [
+        {
+          "heading": "Troubleshooting - Problem Solving Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "How to Use This Guide",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Problem Map",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "During Installation",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "When Starting",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Settings / Configuration",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Using Features",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Adding Content",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Search",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "Podcasts",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "Troubleshooting by Error Message",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "\"Cannot connect to server\"",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "\"Invalid API key\"",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "\"Models not available\"",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "\"Connection refused\"",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "\"Port already in use\"",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "\"Permission denied\"",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "\"Unsupported file type\"",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "\"Processing timeout\"",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Troubleshooting by Component",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Frontend (Browser/UI)",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "API (Backend)",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Database",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "AI / Chat",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Sources",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "Podcasts",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Diagnostic Checklist",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "How to Report an Issue",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Guides",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "[Quick Fixes](quick-fixes.md)",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "[Connection Issues](connection-issues.md)",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "[AI & Chat Issues](ai-chat-issues.md)",
+          "level": 3,
+          "line": 174
+        },
+        {
+          "heading": "[FAQ](faq.md)",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "Common Solutions",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Still Stuck?",
+          "level": 2,
+          "line": 229
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": "docs/6-TROUBLESHOOTING/quick-fixes.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 372,
+      "nonEmptyLines": 252,
+      "sections": [
+        {
+          "heading": "Quick Fixes - Top 11 Issues & Solutions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "#1: \"Cannot connect to server\"",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "#2: \"Invalid API key\" or \"Models not showing\"",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "#3: \"Port X already in use\"",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "#4: \"Cannot process file\" or \"Unsupported format\"",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "#5: \"Chat is very slow\"",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "#6: \"Chat gives bad responses\"",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "#7: \"Search returns nothing\"",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "#8: \"Podcast generation failed\"",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "#9: \"Services won't start\" or Docker error",
+          "level": 2,
+          "line": 238
+        },
+        {
+          "heading": "#10: \"Database says 'too many connections'\"",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "#11: Slow Startup or Download Timeouts (China/Slow Networks)",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "Increase Download Timeout",
+          "level": 3,
+          "line": 295
+        },
+        {
+          "heading": "Use Chinese Mirrors (if in China)",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "Quick Troubleshooting Checklist",
+          "level": 2,
+          "line": 319
+        },
+        {
+          "heading": "Nuclear Options (Last Resort)",
+          "level": 2,
+          "line": 333
+        },
+        {
+          "heading": "Prevention Tips",
+          "level": 2,
+          "line": 357
+        },
+        {
+          "heading": "Still Stuck?",
+          "level": 2,
+          "line": 367
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    }
+  ]
+}

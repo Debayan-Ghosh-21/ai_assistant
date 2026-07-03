@@ -1,0 +1,987 @@
+{
+  "nodes": [
+    {
+      "id": "file:frontend/src/app/(auth)/login/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "frontend/src/app/(auth)/login/page.tsx",
+      "summary": "Source module that implements functions like LoginPage.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/app/(auth)/login/page.tsx:LoginPage",
+      "type": "function",
+      "name": "LoginPage",
+      "filePath": "frontend/src/app/(auth)/login/page.tsx",
+      "lineRange": [
+        4,
+        10
+      ],
+      "summary": "Function implements logic for LoginPage.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "frontend/src/app/layout.tsx",
+      "summary": "Source module that implements functions like RootLayout.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/app/layout.tsx:RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "filePath": "frontend/src/app/layout.tsx",
+      "lineRange": [
+        19,
+        45
+      ],
+      "summary": "Function implements logic for RootLayout.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "type": "file",
+      "name": "ErrorBoundary.tsx",
+      "filePath": "frontend/src/components/common/ErrorBoundary.tsx",
+      "summary": "Source module that defines classes like ErrorBoundary and implements functions like useErrorBoundary.",
+      "tags": [
+        "class",
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/components/common/ErrorBoundary.tsx:useErrorBoundary",
+      "type": "function",
+      "name": "useErrorBoundary",
+      "filePath": "frontend/src/components/common/ErrorBoundary.tsx",
+      "lineRange": [
+        101,
+        105
+      ],
+      "summary": "Function implements logic for useErrorBoundary.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:frontend/src/components/common/ErrorBoundary.tsx:ErrorBoundary",
+      "type": "class",
+      "name": "ErrorBoundary",
+      "filePath": "frontend/src/components/common/ErrorBoundary.tsx",
+      "lineRange": [
+        23,
+        98
+      ],
+      "summary": "Class implements ErrorBoundary structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "type": "file",
+      "name": "LanguageLoadingOverlay.tsx",
+      "filePath": "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "summary": "LanguageLoadingOverlay - Shows a brief loading overlay during language switches to provide a smoother UX and hide the flash caused by re-rendering. IM",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/components/common/LanguageLoadingOverlay.tsx:LanguageLoadingOverlay",
+      "type": "function",
+      "name": "LanguageLoadingOverlay",
+      "filePath": "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "lineRange": [
+        20,
+        91
+      ],
+      "summary": "Function implements logic for LanguageLoadingOverlay.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "type": "file",
+      "name": "ThemeToggle.tsx",
+      "filePath": "frontend/src/components/common/ThemeToggle.tsx",
+      "summary": "Source module that implements functions like ThemeToggle.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/components/common/ThemeToggle.tsx:ThemeToggle",
+      "type": "function",
+      "name": "ThemeToggle",
+      "filePath": "frontend/src/components/common/ThemeToggle.tsx",
+      "lineRange": [
+        18,
+        63
+      ],
+      "summary": "Function implements logic for ThemeToggle.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "type": "file",
+      "name": "I18nProvider.tsx",
+      "filePath": "frontend/src/components/providers/I18nProvider.tsx",
+      "summary": "Source module that implements functions like I18nProvider.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/components/providers/I18nProvider.tsx:I18nProvider",
+      "type": "function",
+      "name": "I18nProvider",
+      "filePath": "frontend/src/components/providers/I18nProvider.tsx",
+      "lineRange": [
+        7,
+        25
+      ],
+      "summary": "Function implements logic for I18nProvider.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/components/providers/QueryProvider.tsx",
+      "type": "file",
+      "name": "QueryProvider.tsx",
+      "filePath": "frontend/src/components/providers/QueryProvider.tsx",
+      "summary": "Source module that implements functions like QueryProvider.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/components/providers/QueryProvider.tsx:QueryProvider",
+      "type": "function",
+      "name": "QueryProvider",
+      "filePath": "frontend/src/components/providers/QueryProvider.tsx",
+      "lineRange": [
+        10,
+        16
+      ],
+      "summary": "Function implements logic for QueryProvider.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/components/providers/ThemeProvider.tsx",
+      "type": "file",
+      "name": "ThemeProvider.tsx",
+      "filePath": "frontend/src/components/providers/ThemeProvider.tsx",
+      "summary": "Source module that implements functions like ThemeProvider.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/components/providers/ThemeProvider.tsx:ThemeProvider",
+      "type": "function",
+      "name": "ThemeProvider",
+      "filePath": "frontend/src/components/providers/ThemeProvider.tsx",
+      "lineRange": [
+        10,
+        44
+      ],
+      "summary": "Function implements logic for ThemeProvider.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/components/ui/sonner.tsx",
+      "type": "file",
+      "name": "sonner.tsx",
+      "filePath": "frontend/src/components/ui/sonner.tsx",
+      "summary": "Source module that implements functions like Toaster.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/components/ui/sonner.tsx:Toaster",
+      "type": "function",
+      "name": "Toaster",
+      "filePath": "frontend/src/components/ui/sonner.tsx",
+      "lineRange": [
+        6,
+        28
+      ],
+      "summary": "Function implements logic for Toaster.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/i18n-events.ts",
+      "type": "file",
+      "name": "i18n-events.ts",
+      "filePath": "frontend/src/lib/i18n-events.ts",
+      "summary": "Source module that implements functions like emitLanguageChangeStart, emitLanguageChangeEnd.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeStart",
+      "type": "function",
+      "name": "emitLanguageChangeStart",
+      "filePath": "frontend/src/lib/i18n-events.ts",
+      "lineRange": [
+        10,
+        16
+      ],
+      "summary": "Function implements logic for emitLanguageChangeStart.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeEnd",
+      "type": "function",
+      "name": "emitLanguageChangeEnd",
+      "filePath": "frontend/src/lib/i18n-events.ts",
+      "lineRange": [
+        18,
+        24
+      ],
+      "summary": "Function implements logic for emitLanguageChangeEnd.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/i18n.ts",
+      "type": "file",
+      "name": "i18n.ts",
+      "filePath": "frontend/src/lib/i18n.ts",
+      "summary": "Source implementation module for i18n.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/bn-IN/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/bn-IN/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/en-US/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/en-US/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/es-ES/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/es-ES/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/fr-FR/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/fr-FR/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/index.test.ts",
+      "type": "file",
+      "name": "index.test.ts",
+      "filePath": "frontend/src/lib/locales/index.test.ts",
+      "summary": "Verification test suite for code correctness in index.test.ts.",
+      "tags": [
+        "test",
+        "testing",
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/it-IT/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/it-IT/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/ja-JP/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/ja-JP/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/pt-BR/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/pt-BR/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/ru-RU/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/ru-RU/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/zh-CN/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/zh-CN/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/locales/zh-TW/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/lib/locales/zh-TW/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/stores/theme-store.ts",
+      "type": "file",
+      "name": "theme-store.ts",
+      "filePath": "frontend/src/lib/stores/theme-store.ts",
+      "summary": "Source module that implements functions like useTheme.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/lib/stores/theme-store.ts:useTheme",
+      "type": "function",
+      "name": "useTheme",
+      "filePath": "frontend/src/lib/stores/theme-store.ts",
+      "lineRange": [
+        51,
+        60
+      ],
+      "summary": "Function implements logic for useTheme.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/theme-script.ts",
+      "type": "file",
+      "name": "theme-script.ts",
+      "filePath": "frontend/src/lib/theme-script.ts",
+      "summary": "Source implementation module for theme-script.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:frontend/src/app/(auth)/login/page.tsx",
+      "target": "function:frontend/src/app/(auth)/login/page.tsx:LoginPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/app/(auth)/login/page.tsx",
+      "target": "function:frontend/src/app/(auth)/login/page.tsx:LoginPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/app/(auth)/login/page.tsx",
+      "target": "file:frontend/src/components/auth/LoginForm.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/(auth)/login/page.tsx",
+      "target": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "function:frontend/src/app/layout.tsx:RootLayout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "function:frontend/src/app/layout.tsx:RootLayout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/app/globals.css",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/providers/QueryProvider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/providers/ThemeProvider.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/components/ui/sonner.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/app/layout.tsx",
+      "target": "file:frontend/src/lib/theme-script.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "function:frontend/src/components/common/ErrorBoundary.tsx:useErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "function:frontend/src/components/common/ErrorBoundary.tsx:useErrorBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "class:frontend/src/components/common/ErrorBoundary.tsx:ErrorBoundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "class:frontend/src/components/common/ErrorBoundary.tsx:ErrorBoundary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "file:frontend/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "file:frontend/src/components/ui/card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ErrorBoundary.tsx",
+      "target": "file:frontend/src/lib/locales/en-US/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "target": "function:frontend/src/components/common/LanguageLoadingOverlay.tsx:LanguageLoadingOverlay",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "target": "function:frontend/src/components/common/LanguageLoadingOverlay.tsx:LanguageLoadingOverlay",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "target": "file:frontend/src/lib/i18n-events.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "function:frontend/src/components/common/ThemeToggle.tsx:ThemeToggle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "function:frontend/src/components/common/ThemeToggle.tsx:ThemeToggle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "file:frontend/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "file:frontend/src/components/ui/dropdown-menu.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "file:frontend/src/lib/hooks/use-translation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ThemeToggle.tsx",
+      "target": "file:frontend/src/lib/stores/theme-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "target": "function:frontend/src/components/providers/I18nProvider.tsx:I18nProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "target": "function:frontend/src/components/providers/I18nProvider.tsx:I18nProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "target": "file:frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/providers/I18nProvider.tsx",
+      "target": "file:frontend/src/lib/i18n.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/providers/QueryProvider.tsx",
+      "target": "function:frontend/src/components/providers/QueryProvider.tsx:QueryProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/providers/QueryProvider.tsx",
+      "target": "function:frontend/src/components/providers/QueryProvider.tsx:QueryProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/providers/QueryProvider.tsx",
+      "target": "file:frontend/src/lib/api/query-client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/providers/ThemeProvider.tsx",
+      "target": "function:frontend/src/components/providers/ThemeProvider.tsx:ThemeProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/providers/ThemeProvider.tsx",
+      "target": "function:frontend/src/components/providers/ThemeProvider.tsx:ThemeProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/providers/ThemeProvider.tsx",
+      "target": "file:frontend/src/lib/stores/theme-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/ui/sonner.tsx",
+      "target": "function:frontend/src/components/ui/sonner.tsx:Toaster",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/ui/sonner.tsx",
+      "target": "function:frontend/src/components/ui/sonner.tsx:Toaster",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/ui/sonner.tsx",
+      "target": "file:frontend/src/lib/stores/theme-store.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/i18n-events.ts",
+      "target": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeStart",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/i18n-events.ts",
+      "target": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeStart",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/i18n-events.ts",
+      "target": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeEnd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/i18n-events.ts",
+      "target": "function:frontend/src/lib/i18n-events.ts:emitLanguageChangeEnd",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/i18n.ts",
+      "target": "file:frontend/src/lib/locales/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.test.ts",
+      "target": "file:frontend/src/lib/locales/en-US/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.test.ts",
+      "target": "file:frontend/src/lib/locales/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/bn-IN/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/en-US/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/es-ES/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/fr-FR/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/it-IT/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/ja-JP/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/pt-BR/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/ru-RU/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/zh-CN/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/locales/index.ts",
+      "target": "file:frontend/src/lib/locales/zh-TW/index.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/stores/theme-store.ts",
+      "target": "function:frontend/src/lib/stores/theme-store.ts:useTheme",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/stores/theme-store.ts",
+      "target": "function:frontend/src/lib/stores/theme-store.ts:useTheme",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

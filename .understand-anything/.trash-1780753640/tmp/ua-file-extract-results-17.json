@@ -1,0 +1,416 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/0-START-HERE/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "Open Notebook - Start Here",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Choose Your Path",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "🚀 I want to use OpenAI (Fastest)",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "☁️ I want to use other cloud AI (Anthropic, Google, OpenRouter, etc.)",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "🏠 I want to run locally (Ollama or LMStudio, completely private)",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "What Can You Do?",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Why Open Notebook?",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-cloud.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 212,
+      "nonEmptyLines": 152,
+      "sections": [
+        {
+          "heading": "Quick Start - Cloud AI Providers (5 minutes)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 1: Create Configuration (1 min)",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Step 2: Start Services (1 min)",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Step 3: Access Open Notebook (instant)",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Step 4: Configure Your AI Provider (1 min)",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Step 5: Configure Your Model (1 min)",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Step 6: Create Your First Notebook (1 min)",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "Step 7: Add Content & Chat (2 min)",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Verification Checklist",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "Provider Comparison",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "\"Model not found\" Error",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "\"Cannot connect to server\"",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "Provider-Specific Issues",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "Cost Estimates",
+          "level": 2,
+          "line": 189
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 204
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-local.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 303,
+      "nonEmptyLines": 215,
+      "sections": [
+        {
+          "heading": "Quick Start - Local & Private (5 minutes)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 1: Choose Your Setup (1 min)",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Local Machine (Same Computer)",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Remote Server (Raspberry Pi, NAS, Cloud VM)",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Step 2: Create Configuration (1 min)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Step 3: Start Services (1 min)",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Step 4: Download a Model (2-3 min)",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Step 5: Access Open Notebook (instant)",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "Step 6: Configure Ollama Provider (1 min)",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "Step 7: Configure Local Model (1 min)",
+          "level": 2,
+          "line": 141
+        },
+        {
+          "heading": "Step 8: Create Your First Notebook (1 min)",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Step 9: Add Local Content (1 min)",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "Step 10: Chat With Your Content (1 min)",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "Verification Checklist",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "Advantages of Local Setup",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "\"ollama: command not found\"",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "Model Download Stuck",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "\"Address already in use\" Error",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Low Performance",
+          "level": 3,
+          "line": 227
+        },
+        {
+          "heading": "Adding More Models",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 251
+        },
+        {
+          "heading": "Alternative: Using LM Studio Instead of Ollama",
+          "level": 2,
+          "line": 263
+        },
+        {
+          "heading": "Going Further",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "Common Model Choices",
+          "level": 2,
+          "line": 292
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "docs/0-START-HERE/quick-start-openai.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 195,
+      "nonEmptyLines": 137,
+      "sections": [
+        {
+          "heading": "Quick Start - OpenAI (5 minutes)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Prerequisites",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Step 1: Create Configuration (1 min)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Step 2: Start Services (1 min)",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Step 3: Access Open Notebook (instant)",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Step 4: Configure Your OpenAI Provider (1 min)",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Step 5: Create Your First Notebook (1 min)",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Step 6: Add a Source (1 min)",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Step 7: Chat With Your Content (1 min)",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "Verification Checklist",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "Using Different Models",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "\"Port 8502 already in use\"",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "\"API key not working\"",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "\"Cannot connect to server\"",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Cost Estimate",
+          "level": 2,
+          "line": 184
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    }
+  ]
+}

@@ -1,0 +1,1806 @@
+{
+  "nodes": [
+    {
+      "id": "file:open_notebook/ai/key_provider.py",
+      "type": "file",
+      "name": "key_provider.py",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "summary": "API Key Provider - Database-first with environment fallback. This module provides a unified interface for retrieving API keys and provider configurati",
+      "tags": [
+        "function",
+        "python",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:_get_default_credential",
+      "type": "function",
+      "name": "_get_default_credential",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        74,
+        82
+      ],
+      "summary": "Function implements logic for _get_default_credential.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:get_api_key",
+      "type": "function",
+      "name": "get_api_key",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        85,
+        108
+      ],
+      "summary": "Function implements logic for get_api_key.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:_provision_simple_provider",
+      "type": "function",
+      "name": "_provision_simple_provider",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        111,
+        140
+      ],
+      "summary": "Function implements logic for _provision_simple_provider.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:_provision_vertex",
+      "type": "function",
+      "name": "_provision_vertex",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        143,
+        169
+      ],
+      "summary": "Function implements logic for _provision_vertex.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:_provision_azure",
+      "type": "function",
+      "name": "_provision_azure",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        172,
+        216
+      ],
+      "summary": "Function implements logic for _provision_azure.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:_provision_openai_compatible",
+      "type": "function",
+      "name": "_provision_openai_compatible",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        219,
+        241
+      ],
+      "summary": "Function implements logic for _provision_openai_compatible.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:provision_provider_keys",
+      "type": "function",
+      "name": "provision_provider_keys",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        244,
+        278
+      ],
+      "summary": "Function implements logic for provision_provider_keys.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/key_provider.py:provision_all_keys",
+      "type": "function",
+      "name": "provision_all_keys",
+      "filePath": "open_notebook/ai/key_provider.py",
+      "lineRange": [
+        281,
+        305
+      ],
+      "summary": "Function implements logic for provision_all_keys.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:open_notebook/ai/model_discovery.py",
+      "type": "file",
+      "name": "model_discovery.py",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "summary": "Model Discovery - Automatic model fetching from AI providers. This module provides functionality to discover available models from configured AI provi",
+      "tags": [
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:classify_model_type",
+      "type": "function",
+      "name": "classify_model_type",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        143,
+        175
+      ],
+      "summary": "Function implements logic for classify_model_type.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_openai_models",
+      "type": "function",
+      "name": "discover_openai_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        183,
+        214
+      ],
+      "summary": "Function implements logic for discover_openai_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_anthropic_models",
+      "type": "function",
+      "name": "discover_anthropic_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        217,
+        233
+      ],
+      "summary": "Function implements logic for discover_anthropic_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_google_models",
+      "type": "function",
+      "name": "discover_google_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        236,
+        276
+      ],
+      "summary": "Function implements logic for discover_google_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_ollama_models",
+      "type": "function",
+      "name": "discover_ollama_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        279,
+        309
+      ],
+      "summary": "Function implements logic for discover_ollama_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_groq_models",
+      "type": "function",
+      "name": "discover_groq_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        312,
+        343
+      ],
+      "summary": "Function implements logic for discover_groq_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_mistral_models",
+      "type": "function",
+      "name": "discover_mistral_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        346,
+        382
+      ],
+      "summary": "Function implements logic for discover_mistral_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_deepseek_models",
+      "type": "function",
+      "name": "discover_deepseek_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        385,
+        416
+      ],
+      "summary": "Function implements logic for discover_deepseek_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_xai_models",
+      "type": "function",
+      "name": "discover_xai_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        419,
+        450
+      ],
+      "summary": "Function implements logic for discover_xai_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_openrouter_models",
+      "type": "function",
+      "name": "discover_openrouter_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        453,
+        485
+      ],
+      "summary": "Function implements logic for discover_openrouter_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_voyage_models",
+      "type": "function",
+      "name": "discover_voyage_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        488,
+        507
+      ],
+      "summary": "Function implements logic for discover_voyage_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_elevenlabs_models",
+      "type": "function",
+      "name": "discover_elevenlabs_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        510,
+        528
+      ],
+      "summary": "Function implements logic for discover_elevenlabs_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_dashscope_models",
+      "type": "function",
+      "name": "discover_dashscope_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        531,
+        562
+      ],
+      "summary": "Function implements logic for discover_dashscope_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_minimax_models",
+      "type": "function",
+      "name": "discover_minimax_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        565,
+        596
+      ],
+      "summary": "Function implements logic for discover_minimax_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_openai_compatible_models",
+      "type": "function",
+      "name": "discover_openai_compatible_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        599,
+        660
+      ],
+      "summary": "Function implements logic for discover_openai_compatible_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:discover_provider_models",
+      "type": "function",
+      "name": "discover_provider_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        688,
+        709
+      ],
+      "summary": "Function implements logic for discover_provider_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:sync_provider_models",
+      "type": "function",
+      "name": "sync_provider_models",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        712,
+        776
+      ],
+      "summary": "Function implements logic for sync_provider_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:sync_all_providers",
+      "type": "function",
+      "name": "sync_all_providers",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        779,
+        804
+      ],
+      "summary": "Function implements logic for sync_all_providers.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/model_discovery.py:get_provider_model_count",
+      "type": "function",
+      "name": "get_provider_model_count",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        807,
+        836
+      ],
+      "summary": "Function implements logic for get_provider_model_count.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:open_notebook/ai/model_discovery.py:DiscoveredModel",
+      "type": "class",
+      "name": "DiscoveredModel",
+      "filePath": "open_notebook/ai/model_discovery.py",
+      "lineRange": [
+        22,
+        28
+      ],
+      "summary": "Class implements DiscoveredModel structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:open_notebook/ai/models.py",
+      "type": "file",
+      "name": "models.py",
+      "filePath": "open_notebook/ai/models.py",
+      "summary": "Get all models linked to a specific credential.",
+      "tags": [
+        "class",
+        "python",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:open_notebook/ai/models.py:Model",
+      "type": "class",
+      "name": "Model",
+      "filePath": "open_notebook/ai/models.py",
+      "lineRange": [
+        19,
+        59
+      ],
+      "summary": "Class implements Model structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/ai/models.py:DefaultModels",
+      "type": "class",
+      "name": "DefaultModels",
+      "filePath": "open_notebook/ai/models.py",
+      "lineRange": [
+        62,
+        95
+      ],
+      "summary": "Class implements DefaultModels structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/ai/models.py:ModelManager",
+      "type": "class",
+      "name": "ModelManager",
+      "filePath": "open_notebook/ai/models.py",
+      "lineRange": [
+        98,
+        264
+      ],
+      "summary": "Class implements ModelManager structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:open_notebook/ai/provision.py",
+      "type": "file",
+      "name": "provision.py",
+      "filePath": "open_notebook/ai/provision.py",
+      "summary": "Returns the best model to use based on the context size and on whether there is a specific model being requested in Config. If context > 105_000, retu",
+      "tags": [
+        "function",
+        "python",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/ai/provision.py:provision_langchain_model",
+      "type": "function",
+      "name": "provision_langchain_model",
+      "filePath": "open_notebook/ai/provision.py",
+      "lineRange": [
+        10,
+        61
+      ],
+      "summary": "Function implements logic for provision_langchain_model.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:open_notebook/config.py",
+      "type": "file",
+      "name": "config.py",
+      "filePath": "open_notebook/config.py",
+      "summary": "Source implementation module for config.py.",
+      "tags": [
+        "python",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:open_notebook/database/async_migrate.py",
+      "type": "file",
+      "name": "async_migrate.py",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "summary": "Async migration system for SurrealDB using the official Python client. Based on patterns from sblpy migration system.",
+      "tags": [
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:open_notebook/database/async_migrate.py:get_latest_version",
+      "type": "function",
+      "name": "get_latest_version",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        205,
+        214
+      ],
+      "summary": "Function implements logic for get_latest_version.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/async_migrate.py:get_all_versions",
+      "type": "function",
+      "name": "get_all_versions",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        217,
+        224
+      ],
+      "summary": "Function implements logic for get_all_versions.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/async_migrate.py:bump_version",
+      "type": "function",
+      "name": "bump_version",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        227,
+        235
+      ],
+      "summary": "Function implements logic for bump_version.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/async_migrate.py:lower_version",
+      "type": "function",
+      "name": "lower_version",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        238,
+        245
+      ],
+      "summary": "Function implements logic for lower_version.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/database/async_migrate.py:AsyncMigration",
+      "type": "class",
+      "name": "AsyncMigration",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        13,
+        49
+      ],
+      "summary": "Class implements AsyncMigration structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/database/async_migrate.py:AsyncMigrationRunner",
+      "type": "class",
+      "name": "AsyncMigrationRunner",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        52,
+        88
+      ],
+      "summary": "Class implements AsyncMigrationRunner structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/database/async_migrate.py:AsyncMigrationManager",
+      "type": "class",
+      "name": "AsyncMigrationManager",
+      "filePath": "open_notebook/database/async_migrate.py",
+      "lineRange": [
+        91,
+        201
+      ],
+      "summary": "Class implements AsyncMigrationManager structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:open_notebook/database/migrate.py",
+      "type": "file",
+      "name": "migrate.py",
+      "filePath": "open_notebook/database/migrate.py",
+      "summary": "Synchronous wrapper around AsyncMigrationManager for backward compatibility.",
+      "tags": [
+        "class",
+        "python",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:open_notebook/database/migrate.py:MigrationManager",
+      "type": "class",
+      "name": "MigrationManager",
+      "filePath": "open_notebook/database/migrate.py",
+      "lineRange": [
+        6,
+        26
+      ],
+      "summary": "Class implements MigrationManager structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:open_notebook/database/repository.py",
+      "type": "file",
+      "name": "repository.py",
+      "filePath": "open_notebook/database/repository.py",
+      "summary": "Get database URL with backward compatibility",
+      "tags": [
+        "function",
+        "python",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:get_database_url",
+      "type": "function",
+      "name": "get_database_url",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        12,
+        21
+      ],
+      "summary": "Function implements logic for get_database_url.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:get_database_password",
+      "type": "function",
+      "name": "get_database_password",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        24,
+        26
+      ],
+      "summary": "Function implements logic for get_database_password.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:parse_record_ids",
+      "type": "function",
+      "name": "parse_record_ids",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        29,
+        37
+      ],
+      "summary": "Function implements logic for parse_record_ids.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:ensure_record_id",
+      "type": "function",
+      "name": "ensure_record_id",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        40,
+        44
+      ],
+      "summary": "Function implements logic for ensure_record_id.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:db_connection",
+      "type": "function",
+      "name": "db_connection",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        48,
+        62
+      ],
+      "summary": "Function implements logic for db_connection.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_query",
+      "type": "function",
+      "name": "repo_query",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        65,
+        82
+      ],
+      "summary": "Function implements logic for repo_query.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_create",
+      "type": "function",
+      "name": "repo_create",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        85,
+        103
+      ],
+      "summary": "Function implements logic for repo_create.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_relate",
+      "type": "function",
+      "name": "repo_relate",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        106,
+        120
+      ],
+      "summary": "Function implements logic for repo_relate.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_upsert",
+      "type": "function",
+      "name": "repo_upsert",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        123,
+        131
+      ],
+      "summary": "Function implements logic for repo_upsert.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_update",
+      "type": "function",
+      "name": "repo_update",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        134,
+        155
+      ],
+      "summary": "Function implements logic for repo_update.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_delete",
+      "type": "function",
+      "name": "repo_delete",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        158,
+        166
+      ],
+      "summary": "Function implements logic for repo_delete.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:open_notebook/database/repository.py:repo_insert",
+      "type": "function",
+      "name": "repo_insert",
+      "filePath": "open_notebook/database/repository.py",
+      "lineRange": [
+        169,
+        194
+      ],
+      "summary": "Function implements logic for repo_insert.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_get_default_credential",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_get_default_credential",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:get_api_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:get_api_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_simple_provider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_simple_provider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_vertex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_vertex",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_azure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_azure",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_openai_compatible",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:_provision_openai_compatible",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:provision_provider_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:provision_provider_keys",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:provision_all_keys",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "function:open_notebook/ai/key_provider.py:provision_all_keys",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/key_provider.py",
+      "target": "file:open_notebook/domain/credential.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:classify_model_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:classify_model_type",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openai_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openai_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_anthropic_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_anthropic_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_google_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_google_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_ollama_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_ollama_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_groq_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_groq_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_mistral_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_mistral_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_deepseek_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_deepseek_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_xai_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_xai_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openrouter_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openrouter_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_voyage_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_voyage_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_elevenlabs_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_elevenlabs_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_dashscope_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_dashscope_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_minimax_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_minimax_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openai_compatible_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_openai_compatible_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_provider_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:discover_provider_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:sync_provider_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:sync_provider_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:sync_all_providers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:sync_all_providers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:get_provider_model_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "function:open_notebook/ai/model_discovery.py:get_provider_model_count",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "class:open_notebook/ai/model_discovery.py:DiscoveredModel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "class:open_notebook/ai/model_discovery.py:DiscoveredModel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "file:open_notebook/ai/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "file:open_notebook/database/repository.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/model_discovery.py",
+      "target": "file:open_notebook/domain/credential.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:Model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:Model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:DefaultModels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:DefaultModels",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:ModelManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "class:open_notebook/ai/models.py:ModelManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "file:open_notebook/database/repository.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "file:open_notebook/domain/base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/models.py",
+      "target": "file:open_notebook/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/provision.py",
+      "target": "function:open_notebook/ai/provision.py:provision_langchain_model",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/ai/provision.py",
+      "target": "function:open_notebook/ai/provision.py:provision_langchain_model",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/ai/provision.py",
+      "target": "file:open_notebook/ai/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/provision.py",
+      "target": "file:open_notebook/exceptions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/ai/provision.py",
+      "target": "file:open_notebook/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:get_latest_version",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:get_latest_version",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:get_all_versions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:get_all_versions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:bump_version",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:bump_version",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:lower_version",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "function:open_notebook/database/async_migrate.py:lower_version",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigration",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigrationRunner",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigrationRunner",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigrationManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "class:open_notebook/database/async_migrate.py:AsyncMigrationManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/async_migrate.py",
+      "target": "file:open_notebook/database/repository.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/database/migrate.py",
+      "target": "class:open_notebook/database/migrate.py:MigrationManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/migrate.py",
+      "target": "class:open_notebook/database/migrate.py:MigrationManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/migrate.py",
+      "target": "file:open_notebook/database/async_migrate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:get_database_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:get_database_url",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:get_database_password",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:get_database_password",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:parse_record_ids",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:parse_record_ids",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:ensure_record_id",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:ensure_record_id",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:db_connection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:db_connection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_query",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_query",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_create",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_create",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_relate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_relate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_upsert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_upsert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_update",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_update",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_delete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_delete",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_insert",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:open_notebook/database/repository.py",
+      "target": "function:open_notebook/database/repository.py:repo_insert",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

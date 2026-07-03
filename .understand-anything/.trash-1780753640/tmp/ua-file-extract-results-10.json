@@ -1,0 +1,1385 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/components/common/ConnectionGuard.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "ConnectionGuard",
+          "startLine": 12,
+          "endLine": 108,
+          "params": [
+            "{ children }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ConnectionGuard",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useState",
+          "lineNumber": 14
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useRef",
+          "lineNumber": 16
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useCallback",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setIsChecking",
+          "lineNumber": 25
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setError",
+          "lineNumber": 27
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "resetConfig",
+          "lineNumber": 30
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "getConfig",
+          "lineNumber": 33
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setError",
+          "lineNumber": 44
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setIsChecking",
+          "lineNumber": 46
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setError",
+          "lineNumber": 51
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setIsChecking",
+          "lineNumber": 53
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setError",
+          "lineNumber": 72
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "setIsChecking",
+          "lineNumber": 74
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useEffect",
+          "lineNumber": 79
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "checkConnection",
+          "lineNumber": 80
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "useEffect",
+          "lineNumber": 84
+        },
+        {
+          "caller": "handleKeyPress",
+          "callee": "e.preventDefault",
+          "lineNumber": 87
+        },
+        {
+          "caller": "handleKeyPress",
+          "callee": "checkConnection",
+          "lineNumber": 88
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "window.addEventListener",
+          "lineNumber": 92
+        },
+        {
+          "caller": "ConnectionGuard",
+          "callee": "window.removeEventListener",
+          "lineNumber": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/source/QuizPanel.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 405,
+      "nonEmptyLines": 374,
+      "functions": [
+        {
+          "name": "QuizPanel",
+          "startLine": 39,
+          "endLine": 405,
+          "params": [
+            "{ sourceId }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizPanel",
+          "line": 39,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "QuizPanel",
+          "callee": "useQuiz",
+          "lineNumber": 51
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "useState",
+          "lineNumber": 53
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "useState",
+          "lineNumber": 54
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "useState",
+          "lineNumber": 55
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "useState",
+          "lineNumber": 56
+        },
+        {
+          "caller": "handleGenerate",
+          "callee": "generateQuiz",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleGenerate",
+          "callee": "setSelectedAnswers",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleGenerate",
+          "callee": "setViewState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "handleRetake",
+          "callee": "startQuiz",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleRetake",
+          "callee": "setSelectedAnswers",
+          "lineNumber": 70
+        },
+        {
+          "caller": "handleRetake",
+          "callee": "setViewState",
+          "lineNumber": 71
+        },
+        {
+          "caller": "handleSelectOption",
+          "callee": "setSelectedAnswers",
+          "lineNumber": 75
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "submitAnswers",
+          "lineNumber": 80
+        },
+        {
+          "caller": "handleSubmit",
+          "callee": "setViewState",
+          "lineNumber": 81
+        },
+        {
+          "caller": "handleNewQuiz",
+          "callee": "resetQuiz",
+          "lineNumber": 88
+        },
+        {
+          "caller": "handleNewQuiz",
+          "callee": "setSelectedAnswers",
+          "lineNumber": 89
+        },
+        {
+          "caller": "handleNewQuiz",
+          "callee": "setViewState",
+          "lineNumber": 90
+        },
+        {
+          "caller": "handleRetakeFromResults",
+          "callee": "setSelectedAnswers",
+          "lineNumber": 94
+        },
+        {
+          "caller": "handleRetakeFromResults",
+          "callee": "setViewState",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getOptionLetter",
+          "callee": "optionText.match",
+          "lineNumber": 99
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "setNumQuestions",
+          "lineNumber": 124
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "Math.min",
+          "lineNumber": 125
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "Math.max",
+          "lineNumber": 125
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "parseInt",
+          "lineNumber": 125
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "setDifficulty",
+          "lineNumber": 136
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "quizzes.map",
+          "lineNumber": 181
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "formatDistanceToNow",
+          "lineNumber": 194
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "handleRetake",
+          "lineNumber": 204
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "deleteQuiz",
+          "lineNumber": 212
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "Object.keys",
+          "lineNumber": 229
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "activeQuiz.questions.map",
+          "lineNumber": 250
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "(() => {\n                    // Ensure we always show at least 4 options in the UI for consistent layout\n                    const options = [...question.options]\n                    while (options.length < 4) {\n                      const letter = String.fromCharCode(65 + options.length)\n                      options.push(`${letter}. [Option placeholder]`)\n                    }\n\n                    return options.map((option, idx) => {\n                      const letter = getOptionLetter(option) || String.fromCharCode(65 + idx)\n                      const isSelected = selectedAnswers[qIdx] === letter\n\n                      return (\n                        <button\n                          key={idx}\n                          onClick={() => handleSelectOption(qIdx, letter)}\n                          className={`w-full text-left rounded-lg border p-4 transition-all ${\n                            isSelected\n                              ? 'border-primary bg-primary/10 ring-2 ring-primary/30'\n                              : 'border-border hover:border-primary/50 hover:bg-muted/50'\n                          }`}\n                        >\n                          <span className=\"text-sm\">{option}</span>\n                        </button>\n                      )\n                    })\n                  })",
+          "lineNumber": 259
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "String.fromCharCode",
+          "lineNumber": 263
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "options.push",
+          "lineNumber": 264
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "options.map",
+          "lineNumber": 267
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "getOptionLetter",
+          "lineNumber": 268
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "String.fromCharCode",
+          "lineNumber": 268
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "handleSelectOption",
+          "lineNumber": 274
+        },
+        {
+          "caller": "QuizPanel",
+          "callee": "quizResult.results.map",
+          "lineNumber": 341
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/ui/progress.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 27,
+      "functions": [
+        {
+          "name": "Progress",
+          "startLine": 8,
+          "endLine": 29,
+          "params": [
+            "{\n  className,\n  value,\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "Progress",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "Progress",
+          "callee": "cn",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 59,
+      "exports": [
+        {
+          "name": "apiClient",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/insights.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 94,
+      "nonEmptyLines": 83,
+      "exports": [
+        {
+          "name": "insightsApi",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/models.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 106,
+      "nonEmptyLines": 92,
+      "exports": [
+        {
+          "name": "modelsApi",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/podcasts.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 126,
+      "nonEmptyLines": 105,
+      "functions": [
+        {
+          "name": "resolvePodcastAssetUrl",
+          "startLine": 15,
+          "endLine": 31,
+          "params": [
+            "path"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "resolvePodcastAssetUrl",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "podcastsApi",
+          "line": 33,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolvePodcastAssetUrl",
+          "callee": "/^https?:\\/\\//i.test",
+          "lineNumber": 20
+        },
+        {
+          "caller": "resolvePodcastAssetUrl",
+          "callee": "getApiUrl",
+          "lineNumber": 24
+        },
+        {
+          "caller": "resolvePodcastAssetUrl",
+          "callee": "path.startsWith",
+          "lineNumber": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/quiz.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 36,
+      "exports": [
+        {
+          "name": "quizApi",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/search.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "exports": [
+        {
+          "name": "searchApi",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/settings.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "exports": [
+        {
+          "name": "settingsApi",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/config.test.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 81,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 129,
+      "functions": [
+        {
+          "name": "getApiUrl",
+          "startLine": 22,
+          "endLine": 38,
+          "params": []
+        },
+        {
+          "name": "getConfig",
+          "startLine": 43,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "fetchConfig",
+          "startLine": 59,
+          "endLine": 140,
+          "params": []
+        },
+        {
+          "name": "resetConfig",
+          "startLine": 145,
+          "endLine": 148,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "getApiUrl",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "getConfig",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "resetConfig",
+          "line": 145,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getApiUrl",
+          "callee": "fetchConfig",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getConfig",
+          "callee": "fetchConfig",
+          "lineNumber": 52
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 63
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 64
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "fetch",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "runtimeResponse.json",
+          "lineNumber": 77
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 83
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 85
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 88
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 93
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 100
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 107
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 108
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 114
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "fetch",
+          "lineNumber": 116
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "response.json",
+          "lineNumber": 121
+        },
+        {
+          "caller": "fetchConfig",
+          "callee": "console.log",
+          "lineNumber": 130
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-ask.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 171,
+      "nonEmptyLines": 147,
+      "functions": [
+        {
+          "name": "useAsk",
+          "startLine": 29,
+          "endLine": 171,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useAsk",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useAsk",
+          "callee": "useTranslation",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useAsk",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "useAsk",
+          "callee": "useCallback",
+          "lineNumber": 39
+        },
+        {
+          "caller": "useAsk",
+          "callee": "question.trim",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useAsk",
+          "callee": "toast.error",
+          "lineNumber": 42
+        },
+        {
+          "caller": "useAsk",
+          "callee": "t",
+          "lineNumber": 42
+        },
+        {
+          "caller": "useAsk",
+          "callee": "toast.error",
+          "lineNumber": 47
+        },
+        {
+          "caller": "useAsk",
+          "callee": "t",
+          "lineNumber": 47
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useAsk",
+          "callee": "searchApi.askKnowledgeBase",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useAsk",
+          "callee": "response.getReader",
+          "lineNumber": 72
+        },
+        {
+          "caller": "useAsk",
+          "callee": "reader.read",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useAsk",
+          "callee": "decoder.decode",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useAsk",
+          "callee": "buffer.split",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useAsk",
+          "callee": "lines.pop",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useAsk",
+          "callee": "line.startsWith",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useAsk",
+          "callee": "line.slice(6).trim",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useAsk",
+          "callee": "line.slice",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useAsk",
+          "callee": "JSON.parse",
+          "lineNumber": 95
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 98
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 117
+        },
+        {
+          "caller": "useAsk",
+          "callee": "console.error",
+          "lineNumber": 126
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 137
+        },
+        {
+          "caller": "useAsk",
+          "callee": "console.error",
+          "lineNumber": 142
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 144
+        },
+        {
+          "caller": "useAsk",
+          "callee": "toast.error",
+          "lineNumber": 150
+        },
+        {
+          "caller": "useAsk",
+          "callee": "t",
+          "lineNumber": 150
+        },
+        {
+          "caller": "useAsk",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 151
+        },
+        {
+          "caller": "useAsk",
+          "callee": "t",
+          "lineNumber": 151
+        },
+        {
+          "caller": "useAsk",
+          "callee": "useCallback",
+          "lineNumber": 156
+        },
+        {
+          "caller": "useAsk",
+          "callee": "setState",
+          "lineNumber": 157
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-insights.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "functions": [
+        {
+          "name": "useInsight",
+          "startLine": 4,
+          "endLine": 11,
+          "params": [
+            "id",
+            "options"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useInsight",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useInsight",
+          "callee": "useQuery",
+          "lineNumber": 5
+        },
+        {
+          "caller": "useInsight",
+          "callee": "insightsApi.get",
+          "lineNumber": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-quiz.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 168,
+      "functions": [
+        {
+          "name": "useQuiz",
+          "startLine": 9,
+          "endLine": 193,
+          "params": [
+            "sourceId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useQuiz",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useQuiz",
+          "callee": "useQueryClient",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useState",
+          "lineNumber": 11
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useState",
+          "lineNumber": 13
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useQuery",
+          "lineNumber": 15
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "quizApi.listForSource",
+          "lineNumber": 17
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 22
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 23
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 26
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setIsGenerating",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "quizApi.generate",
+          "lineNumber": 33
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "console.log",
+          "lineNumber": 37
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "fallbackGenerateQuiz",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "refreshList",
+          "lineNumber": 44
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setActiveQuiz",
+          "lineNumber": 45
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setQuizResult",
+          "lineNumber": 46
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "toast.success",
+          "lineNumber": 47
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "console.error",
+          "lineNumber": 49
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "toast.error",
+          "lineNumber": 50
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setIsGenerating",
+          "lineNumber": 53
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "import",
+          "lineNumber": 67
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "import",
+          "lineNumber": 68
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "import",
+          "lineNumber": 69
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "insightsApi.listForSource",
+          "lineNumber": 72
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "insights.find",
+          "lineNumber": 73
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "sourcesApi.get",
+          "lineNumber": 78
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "chatApi.createSession",
+          "lineNumber": 84
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "chatApi.sendMessage",
+          "lineNumber": 111
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "lastMessage.content.match",
+          "lineNumber": 119
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "JSON.parse",
+          "lineNumber": 124
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "Date.now",
+          "lineNumber": 128
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "new Date().toISOString",
+          "lineNumber": 132
+        },
+        {
+          "caller": "fallbackGenerateQuiz",
+          "callee": "new Date().toISOString",
+          "lineNumber": 133
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 137
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setActiveQuiz",
+          "lineNumber": 138
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setQuizResult",
+          "lineNumber": 139
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 142
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "quizApi.submitAnswers",
+          "lineNumber": 147
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setQuizResult",
+          "lineNumber": 148
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "console.error",
+          "lineNumber": 150
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "toast.error",
+          "lineNumber": 151
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 158
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "quizApi.deleteQuiz",
+          "lineNumber": 161
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "refreshList",
+          "lineNumber": 162
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setActiveQuiz",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setQuizResult",
+          "lineNumber": 165
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "toast.success",
+          "lineNumber": 167
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "console.error",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "toast.error",
+          "lineNumber": 170
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "useCallback",
+          "lineNumber": 176
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setActiveQuiz",
+          "lineNumber": 177
+        },
+        {
+          "caller": "useQuiz",
+          "callee": "setQuizResult",
+          "lineNumber": 178
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-search.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 30,
+      "functions": [
+        {
+          "name": "useSearch",
+          "startLine": 8,
+          "endLine": 34,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useSearch",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useSearch",
+          "callee": "useTranslation",
+          "lineNumber": 9
+        },
+        {
+          "caller": "useSearch",
+          "callee": "useMutation",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useSearch",
+          "callee": "searchApi.search",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useSearch",
+          "callee": "response.results.map",
+          "lineNumber": 15
+        },
+        {
+          "caller": "useSearch",
+          "callee": "processedResults.sort",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useSearch",
+          "callee": "toast.error",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useSearch",
+          "callee": "t",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useSearch",
+          "callee": "t",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useSearch",
+          "callee": "getApiErrorKey",
+          "lineNumber": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/types/config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 37,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/types/quiz.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 41,
+      "nonEmptyLines": 36,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/types/search.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 55,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

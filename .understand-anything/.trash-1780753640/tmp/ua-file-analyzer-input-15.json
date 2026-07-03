@@ -1,0 +1,112 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 59,
+      "fileCategory": "config"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 339,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "sizeLines": 218,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONFIGURATION.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Dockerfile.dev",
+      "language": "dockerfile",
+      "sizeLines": 42,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "Dockerfile.single",
+      "language": "dockerfile",
+      "sizeLines": 96,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "MAINTAINER_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "sizeLines": 207,
+      "fileCategory": "infra"
+    },
+    {
+      "path": "README.dev.md",
+      "language": "markdown",
+      "sizeLines": 452,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 1,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "dev-init.sh",
+      "language": "shell",
+      "sizeLines": 43,
+      "fileCategory": "script"
+    },
+    {
+      "path": "docker-compose-dev.yml",
+      "language": "yaml",
+      "sizeLines": 64,
+      "fileCategory": "config"
+    },
+    {
+      "path": "mypy.ini",
+      "language": "config",
+      "sizeLines": 36,
+      "fileCategory": "config"
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "sizeLines": 100,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "CHANGELOG.md": [],
+    "CLAUDE.md": [],
+    "CONFIGURATION.md": [],
+    "CONTRIBUTING.md": [],
+    "Dockerfile.dev": [],
+    "Dockerfile.single": [],
+    "MAINTAINER_GUIDE.md": [],
+    "Makefile": [],
+    "README.dev.md": [],
+    "README.md": [],
+    "dev-init.sh": [],
+    "docker-compose-dev.yml": [],
+    "mypy.ini": [],
+    "pyproject.toml": []
+  }
+}

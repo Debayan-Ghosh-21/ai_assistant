@@ -1,0 +1,42 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "docs/2-CORE-CONCEPTS/ai-context-rag.md",
+      "language": "markdown",
+      "sizeLines": 450,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/chat-vs-transformations.md",
+      "language": "markdown",
+      "sizeLines": 353,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/index.md",
+      "language": "markdown",
+      "sizeLines": 70,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md",
+      "language": "markdown",
+      "sizeLines": 284,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/2-CORE-CONCEPTS/podcasts-explained.md",
+      "language": "markdown",
+      "sizeLines": 426,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/2-CORE-CONCEPTS/ai-context-rag.md": [],
+    "docs/2-CORE-CONCEPTS/chat-vs-transformations.md": [],
+    "docs/2-CORE-CONCEPTS/index.md": [],
+    "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md": [],
+    "docs/2-CORE-CONCEPTS/podcasts-explained.md": []
+  }
+}

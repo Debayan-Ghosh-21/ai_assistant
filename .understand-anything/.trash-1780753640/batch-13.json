@@ -1,0 +1,940 @@
+{
+  "nodes": [
+    {
+      "id": "resource:.dockerignore",
+      "type": "resource",
+      "name": ".dockerignore",
+      "filePath": ".dockerignore",
+      "summary": "Infrastructure orchestration rules for .dockerignore.",
+      "tags": [
+        "infrastructure",
+        "unknown",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:docker-compose.yml",
+      "type": "service",
+      "name": "docker-compose.yml",
+      "filePath": "docker-compose.yml",
+      "summary": "Infrastructure orchestration rules for docker-compose.yml.",
+      "tags": [
+        "infrastructure",
+        "yaml",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:Dockerfile",
+      "type": "service",
+      "name": "Dockerfile",
+      "filePath": "Dockerfile",
+      "summary": "Infrastructure orchestration rules for Dockerfile.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "dockerfile"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "service:Dockerfile:builder",
+      "type": "service",
+      "name": "builder",
+      "filePath": "Dockerfile",
+      "summary": "Service container builder building image python:3.12-slim-bookworm.",
+      "tags": [
+        "service",
+        "docker",
+        "infrastructure"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:Dockerfile:runtime",
+      "type": "service",
+      "name": "runtime",
+      "filePath": "Dockerfile",
+      "summary": "Service container runtime building image python:3.12-slim-bookworm.",
+      "tags": [
+        "service",
+        "docker",
+        "infrastructure"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:FROM python:3.12-slim-bookworm AS builder",
+      "type": "pipeline",
+      "name": "FROM python:3.12-slim-bookworm AS builder",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step FROM python:3.12-slim-bookworm AS builder.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "pipeline",
+      "name": "COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN apt-get update && apt-get install -y --no-install-recommends",
+      "type": "pipeline",
+      "name": "RUN apt-get update && apt-get install -y --no-install-recommends",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN apt-get update && apt-get install -y --no-install-recommends.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV MAKEFLAGS=\"-j$(nproc)\"",
+      "type": "pipeline",
+      "name": "ENV MAKEFLAGS=\"-j$(nproc)\"",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV MAKEFLAGS=\"-j$(nproc)\".",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV PYTHONDONTWRITEBYTECODE=1",
+      "type": "pipeline",
+      "name": "ENV PYTHONDONTWRITEBYTECODE=1",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV PYTHONDONTWRITEBYTECODE=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV PYTHONUNBUFFERED=1",
+      "type": "pipeline",
+      "name": "ENV PYTHONUNBUFFERED=1",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV PYTHONUNBUFFERED=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV UV_COMPILE_BYTECODE=1",
+      "type": "pipeline",
+      "name": "ENV UV_COMPILE_BYTECODE=1",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV UV_COMPILE_BYTECODE=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV UV_LINK_MODE=copy",
+      "type": "pipeline",
+      "name": "ENV UV_LINK_MODE=copy",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV UV_LINK_MODE=copy.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "pipeline",
+      "name": "WORKDIR /app",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step WORKDIR /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY pyproject.toml uv.lock ./",
+      "type": "pipeline",
+      "name": "COPY pyproject.toml uv.lock ./",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY pyproject.toml uv.lock ./.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "type": "pipeline",
+      "name": "COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY open_notebook/__init__.py ./open_notebook/__init__.py.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN uv sync --frozen --no-dev",
+      "type": "pipeline",
+      "name": "RUN uv sync --frozen --no-dev",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN uv sync --frozen --no-dev.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "pipeline",
+      "name": "ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN mkdir -p /app/tiktoken-cache && \\",
+      "type": "pipeline",
+      "name": "RUN mkdir -p /app/tiktoken-cache && \\",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN mkdir -p /app/tiktoken-cache && \\.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY . /app",
+      "type": "pipeline",
+      "name": "COPY . /app",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY . /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:WORKDIR /app/frontend",
+      "type": "pipeline",
+      "name": "WORKDIR /app/frontend",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step WORKDIR /app/frontend.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ARG NPM_REGISTRY=https://registry.npmjs.org/",
+      "type": "pipeline",
+      "name": "ARG NPM_REGISTRY=https://registry.npmjs.org/",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ARG NPM_REGISTRY=https://registry.npmjs.org/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY frontend/package.json frontend/package-lock.json ./",
+      "type": "pipeline",
+      "name": "COPY frontend/package.json frontend/package-lock.json ./",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY frontend/package.json frontend/package-lock.json ./.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN npm config set registry ${NPM_REGISTRY}",
+      "type": "pipeline",
+      "name": "RUN npm config set registry ${NPM_REGISTRY}",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN npm config set registry ${NPM_REGISTRY}.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN npm ci",
+      "type": "pipeline",
+      "name": "RUN npm ci",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN npm ci.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY frontend/ ./",
+      "type": "pipeline",
+      "name": "COPY frontend/ ./",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY frontend/ ./.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN npm run build",
+      "type": "pipeline",
+      "name": "RUN npm run build",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN npm run build.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "pipeline",
+      "name": "WORKDIR /app",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step WORKDIR /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:FROM python:3.12-slim-bookworm AS runtime",
+      "type": "pipeline",
+      "name": "FROM python:3.12-slim-bookworm AS runtime",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step FROM python:3.12-slim-bookworm AS runtime.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN apt-get update && apt-get upgrade -y && apt-get install -y -",
+      "type": "pipeline",
+      "name": "RUN apt-get update && apt-get upgrade -y && apt-get install -y -",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN apt-get update && apt-get upgrade -y && apt-get install -y -.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "pipeline",
+      "name": "COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "pipeline",
+      "name": "WORKDIR /app",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step WORKDIR /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/.venv /app/.venv",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/.venv /app/.venv",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/.venv /app/.venv.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY . /app",
+      "type": "pipeline",
+      "name": "COPY . /app",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY . /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/tiktoken-cache /app/tiktoken-cache",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/tiktoken-cache /app/tiktoken-cache",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/tiktoken-cache /app/tiktoken-cache.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV UV_NO_SYNC=1",
+      "type": "pipeline",
+      "name": "ENV UV_NO_SYNC=1",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV UV_NO_SYNC=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV VIRTUAL_ENV=/app/.venv",
+      "type": "pipeline",
+      "name": "ENV VIRTUAL_ENV=/app/.venv",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV VIRTUAL_ENV=/app/.venv.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "pipeline",
+      "name": "ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:ENV HOSTNAME=0.0.0.0",
+      "type": "pipeline",
+      "name": "ENV HOSTNAME=0.0.0.0",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step ENV HOSTNAME=0.0.0.0.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/frontend/.next/standalone /app/frontend/",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/frontend/.next/standalone /app/frontend/",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/frontend/.next/standalone /app/frontend/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/frontend/.next/static /app/frontend/.nex",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/frontend/.next/static /app/frontend/.nex",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/frontend/.next/static /app/frontend/.nex.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/frontend/public /app/frontend/public",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/frontend/public /app/frontend/public",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/frontend/public /app/frontend/public.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY --from=builder /app/frontend/start-server.js /app/frontend/s",
+      "type": "pipeline",
+      "name": "COPY --from=builder /app/frontend/start-server.js /app/frontend/s",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY --from=builder /app/frontend/start-server.js /app/frontend/s.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:EXPOSE 8502 5055",
+      "type": "pipeline",
+      "name": "EXPOSE 8502 5055",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step EXPOSE 8502 5055.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN mkdir -p /app/data",
+      "type": "pipeline",
+      "name": "RUN mkdir -p /app/data",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN mkdir -p /app/data.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY scripts/wait-for-api.sh /app/scripts/wait-for-api.sh",
+      "type": "pipeline",
+      "name": "COPY scripts/wait-for-api.sh /app/scripts/wait-for-api.sh",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY scripts/wait-for-api.sh /app/scripts/wait-for-api.sh.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN chmod +x /app/scripts/wait-for-api.sh",
+      "type": "pipeline",
+      "name": "RUN chmod +x /app/scripts/wait-for-api.sh",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN chmod +x /app/scripts/wait-for-api.sh.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf",
+      "type": "pipeline",
+      "name": "COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:RUN mkdir -p /var/log/supervisor",
+      "type": "pipeline",
+      "name": "RUN mkdir -p /var/log/supervisor",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step RUN mkdir -p /var/log/supervisor.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile:CMD [\"/usr/bin/supervisord\", \"-c\", \"/etc/supervisor/conf.d/super",
+      "type": "pipeline",
+      "name": "CMD [\"/usr/bin/supervisord\", \"-c\", \"/etc/supervisor/conf.d/super",
+      "filePath": "Dockerfile",
+      "summary": "Workflow pipeline step CMD [\"/usr/bin/supervisord\", \"-c\", \"/etc/supervisor/conf.d/super.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "service:Dockerfile",
+      "target": "service:Dockerfile:builder",
+      "type": "deploys",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "service:Dockerfile:runtime",
+      "type": "deploys",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:FROM python:3.12-slim-bookworm AS builder",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN apt-get update && apt-get install -y --no-install-recommends",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV MAKEFLAGS=\"-j$(nproc)\"",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV PYTHONDONTWRITEBYTECODE=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV PYTHONUNBUFFERED=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV UV_COMPILE_BYTECODE=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV UV_LINK_MODE=copy",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY pyproject.toml uv.lock ./",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN uv sync --frozen --no-dev",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN mkdir -p /app/tiktoken-cache && \\",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY . /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:WORKDIR /app/frontend",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ARG NPM_REGISTRY=https://registry.npmjs.org/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY frontend/package.json frontend/package-lock.json ./",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN npm config set registry ${NPM_REGISTRY}",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN npm ci",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY frontend/ ./",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN npm run build",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:FROM python:3.12-slim-bookworm AS runtime",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN apt-get update && apt-get upgrade -y && apt-get install -y -",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:WORKDIR /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/.venv /app/.venv",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY . /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/tiktoken-cache /app/tiktoken-cache",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV UV_NO_SYNC=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV VIRTUAL_ENV=/app/.venv",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:ENV HOSTNAME=0.0.0.0",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/frontend/.next/standalone /app/frontend/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/frontend/.next/static /app/frontend/.nex",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/frontend/public /app/frontend/public",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY --from=builder /app/frontend/start-server.js /app/frontend/s",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:EXPOSE 8502 5055",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN mkdir -p /app/data",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY scripts/wait-for-api.sh /app/scripts/wait-for-api.sh",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN chmod +x /app/scripts/wait-for-api.sh",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:RUN mkdir -p /var/log/supervisor",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile",
+      "target": "pipeline:Dockerfile:CMD [\"/usr/bin/supervisord\", \"-c\", \"/etc/supervisor/conf.d/super",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

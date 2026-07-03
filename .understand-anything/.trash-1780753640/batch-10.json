@@ -1,0 +1,892 @@
+{
+  "nodes": [
+    {
+      "id": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "type": "file",
+      "name": "ConnectionGuard.tsx",
+      "filePath": "frontend/src/components/common/ConnectionGuard.tsx",
+      "summary": "Source module that implements functions like ConnectionGuard.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/components/common/ConnectionGuard.tsx:ConnectionGuard",
+      "type": "function",
+      "name": "ConnectionGuard",
+      "filePath": "frontend/src/components/common/ConnectionGuard.tsx",
+      "lineRange": [
+        12,
+        108
+      ],
+      "summary": "Function implements logic for ConnectionGuard.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/components/source/QuizPanel.tsx",
+      "type": "file",
+      "name": "QuizPanel.tsx",
+      "filePath": "frontend/src/components/source/QuizPanel.tsx",
+      "summary": "Source module that implements functions like QuizPanel.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:frontend/src/components/source/QuizPanel.tsx:QuizPanel",
+      "type": "function",
+      "name": "QuizPanel",
+      "filePath": "frontend/src/components/source/QuizPanel.tsx",
+      "lineRange": [
+        39,
+        405
+      ],
+      "summary": "Function implements logic for QuizPanel.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/components/ui/progress.tsx",
+      "type": "file",
+      "name": "progress.tsx",
+      "filePath": "frontend/src/components/ui/progress.tsx",
+      "summary": "Source module that implements functions like Progress.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/components/ui/progress.tsx:Progress",
+      "type": "function",
+      "name": "Progress",
+      "filePath": "frontend/src/components/ui/progress.tsx",
+      "lineRange": [
+        8,
+        29
+      ],
+      "summary": "Function implements logic for Progress.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/api/client.ts",
+      "type": "file",
+      "name": "client.ts",
+      "filePath": "frontend/src/lib/api/client.ts",
+      "summary": "Source implementation module for client.ts.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/api/insights.ts",
+      "type": "file",
+      "name": "insights.ts",
+      "filePath": "frontend/src/lib/api/insights.ts",
+      "summary": "Poll command status until completed or failed. Returns true if completed successfully, false if failed.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/api/models.ts",
+      "type": "file",
+      "name": "models.ts",
+      "filePath": "frontend/src/lib/api/models.ts",
+      "summary": "Discover available models from a provider without registering them",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/api/podcasts.ts",
+      "type": "file",
+      "name": "podcasts.ts",
+      "filePath": "frontend/src/lib/api/podcasts.ts",
+      "summary": "Source module that implements functions like resolvePodcastAssetUrl.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "function",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/lib/api/podcasts.ts:resolvePodcastAssetUrl",
+      "type": "function",
+      "name": "resolvePodcastAssetUrl",
+      "filePath": "frontend/src/lib/api/podcasts.ts",
+      "lineRange": [
+        15,
+        31
+      ],
+      "summary": "Function implements logic for resolvePodcastAssetUrl.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/api/quiz.ts",
+      "type": "file",
+      "name": "quiz.ts",
+      "filePath": "frontend/src/lib/api/quiz.ts",
+      "summary": "Source implementation module for quiz.ts.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/api/search.ts",
+      "type": "file",
+      "name": "search.ts",
+      "filePath": "frontend/src/lib/api/search.ts",
+      "summary": "Source implementation module for search.ts.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/api/settings.ts",
+      "type": "file",
+      "name": "settings.ts",
+      "filePath": "frontend/src/lib/api/settings.ts",
+      "summary": "Source implementation module for settings.ts.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/config.test.ts",
+      "type": "file",
+      "name": "config.test.ts",
+      "filePath": "frontend/src/lib/config.test.ts",
+      "summary": "Verification test suite for code correctness in config.test.ts.",
+      "tags": [
+        "test",
+        "testing",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/config.ts",
+      "type": "file",
+      "name": "config.ts",
+      "filePath": "frontend/src/lib/config.ts",
+      "summary": "Runtime configuration for the frontend. This allows the same Docker image to work in different environments.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/lib/config.ts:getApiUrl",
+      "type": "function",
+      "name": "getApiUrl",
+      "filePath": "frontend/src/lib/config.ts",
+      "lineRange": [
+        22,
+        38
+      ],
+      "summary": "Function implements logic for getApiUrl.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/config.ts:getConfig",
+      "type": "function",
+      "name": "getConfig",
+      "filePath": "frontend/src/lib/config.ts",
+      "lineRange": [
+        43,
+        54
+      ],
+      "summary": "Function implements logic for getConfig.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/config.ts:fetchConfig",
+      "type": "function",
+      "name": "fetchConfig",
+      "filePath": "frontend/src/lib/config.ts",
+      "lineRange": [
+        59,
+        140
+      ],
+      "summary": "Function implements logic for fetchConfig.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:frontend/src/lib/config.ts:resetConfig",
+      "type": "function",
+      "name": "resetConfig",
+      "filePath": "frontend/src/lib/config.ts",
+      "lineRange": [
+        145,
+        148
+      ],
+      "summary": "Function implements logic for resetConfig.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/hooks/use-ask.ts",
+      "type": "file",
+      "name": "use-ask.ts",
+      "filePath": "frontend/src/lib/hooks/use-ask.ts",
+      "summary": "Source module that implements functions like useAsk.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/lib/hooks/use-ask.ts:useAsk",
+      "type": "function",
+      "name": "useAsk",
+      "filePath": "frontend/src/lib/hooks/use-ask.ts",
+      "lineRange": [
+        29,
+        171
+      ],
+      "summary": "Function implements logic for useAsk.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/hooks/use-insights.ts",
+      "type": "file",
+      "name": "use-insights.ts",
+      "filePath": "frontend/src/lib/hooks/use-insights.ts",
+      "summary": "Source module that implements functions like useInsight.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/hooks/use-insights.ts:useInsight",
+      "type": "function",
+      "name": "useInsight",
+      "filePath": "frontend/src/lib/hooks/use-insights.ts",
+      "lineRange": [
+        4,
+        11
+      ],
+      "summary": "Function implements logic for useInsight.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "type": "file",
+      "name": "use-quiz.ts",
+      "filePath": "frontend/src/lib/hooks/use-quiz.ts",
+      "summary": "Manual generation using insights and chat API as a fallback",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/lib/hooks/use-quiz.ts:useQuiz",
+      "type": "function",
+      "name": "useQuiz",
+      "filePath": "frontend/src/lib/hooks/use-quiz.ts",
+      "lineRange": [
+        9,
+        193
+      ],
+      "summary": "Function implements logic for useQuiz.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/lib/hooks/use-search.ts",
+      "type": "file",
+      "name": "use-search.ts",
+      "filePath": "frontend/src/lib/hooks/use-search.ts",
+      "summary": "Source module that implements functions like useSearch.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/lib/hooks/use-search.ts:useSearch",
+      "type": "function",
+      "name": "useSearch",
+      "filePath": "frontend/src/lib/hooks/use-search.ts",
+      "lineRange": [
+        8,
+        34
+      ],
+      "summary": "Function implements logic for useSearch.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/lib/types/config.ts",
+      "type": "file",
+      "name": "config.ts",
+      "filePath": "frontend/src/lib/types/config.ts",
+      "summary": "Backend configuration response from Python API /api/config endpoint. Note: apiUrl is determined by the Next.js runtime-config endpoint, not returned b",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/types/quiz.ts",
+      "type": "file",
+      "name": "quiz.ts",
+      "filePath": "frontend/src/lib/types/quiz.ts",
+      "summary": "Source implementation module for quiz.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/lib/types/search.ts",
+      "type": "file",
+      "name": "search.ts",
+      "filePath": "frontend/src/lib/types/search.ts",
+      "summary": "Source implementation module for search.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "target": "function:frontend/src/components/common/ConnectionGuard.tsx:ConnectionGuard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "target": "function:frontend/src/components/common/ConnectionGuard.tsx:ConnectionGuard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "target": "file:frontend/src/components/errors/ConnectionErrorOverlay.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "target": "file:frontend/src/lib/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/common/ConnectionGuard.tsx",
+      "target": "file:frontend/src/lib/types/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "function:frontend/src/components/source/QuizPanel.tsx:QuizPanel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "function:frontend/src/components/source/QuizPanel.tsx:QuizPanel",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/badge.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/card.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/input.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/label.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/progress.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/components/ui/select.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/source/QuizPanel.tsx",
+      "target": "file:frontend/src/lib/types/quiz.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/components/ui/progress.tsx",
+      "target": "function:frontend/src/components/ui/progress.tsx:Progress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/components/ui/progress.tsx",
+      "target": "function:frontend/src/components/ui/progress.tsx:Progress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/components/ui/progress.tsx",
+      "target": "file:frontend/src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/client.ts",
+      "target": "file:frontend/src/lib/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/insights.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/models.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/models.ts",
+      "target": "file:frontend/src/lib/types/models.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/podcasts.ts",
+      "target": "function:frontend/src/lib/api/podcasts.ts:resolvePodcastAssetUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/api/podcasts.ts",
+      "target": "function:frontend/src/lib/api/podcasts.ts:resolvePodcastAssetUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/api/podcasts.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/podcasts.ts",
+      "target": "file:frontend/src/lib/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/podcasts.ts",
+      "target": "file:frontend/src/lib/types/podcasts.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/quiz.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/quiz.ts",
+      "target": "file:frontend/src/lib/types/quiz.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/search.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/search.ts",
+      "target": "file:frontend/src/lib/types/search.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/settings.ts",
+      "target": "file:frontend/src/lib/api/client.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/api/settings.ts",
+      "target": "file:frontend/src/lib/types/api.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/config.test.ts",
+      "target": "file:frontend/src/lib/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:getApiUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:getApiUrl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:getConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:getConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:fetchConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:resetConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "function:frontend/src/lib/config.ts:resetConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/config.ts",
+      "target": "file:frontend/src/lib/types/config.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "function:frontend/src/lib/hooks/use-ask.ts:useAsk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "function:frontend/src/lib/hooks/use-ask.ts:useAsk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "file:frontend/src/lib/api/search.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "file:frontend/src/lib/hooks/use-translation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "file:frontend/src/lib/types/search.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-ask.ts",
+      "target": "file:frontend/src/lib/utils/error-handler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-insights.ts",
+      "target": "function:frontend/src/lib/hooks/use-insights.ts:useInsight",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-insights.ts",
+      "target": "function:frontend/src/lib/hooks/use-insights.ts:useInsight",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-insights.ts",
+      "target": "file:frontend/src/lib/api/insights.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "target": "function:frontend/src/lib/hooks/use-quiz.ts:useQuiz",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "target": "function:frontend/src/lib/hooks/use-quiz.ts:useQuiz",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "target": "file:frontend/src/lib/api/quiz.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-quiz.ts",
+      "target": "file:frontend/src/lib/types/quiz.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "function:frontend/src/lib/hooks/use-search.ts:useSearch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "function:frontend/src/lib/hooks/use-search.ts:useSearch",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "file:frontend/src/lib/api/search.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "file:frontend/src/lib/hooks/use-translation.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "file:frontend/src/lib/types/search.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:frontend/src/lib/hooks/use-search.ts",
+      "target": "file:frontend/src/lib/utils/error-handler.ts",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,1356 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 15,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "fileCategory": "config",
+      "totalLines": 59,
+      "nonEmptyLines": 44,
+      "definitions": [
+        {
+          "name": "OPEN_NOTEBOOK_ENCRYPTION_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "SURREAL_URL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "SURREAL_USER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "name": "SURREAL_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "SURREAL_NAMESPACE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "name": "SURREAL_DATABASE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 20,
+          "endLine": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 6
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 339,
+      "nonEmptyLines": 264,
+      "sections": [
+        {
+          "heading": "Changelog",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "[Unreleased]",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "[1.8.5] - 2026-04-14",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "[1.8.4] - 2026-04-09",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "[1.8.3] - 2026-04-07",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "[1.8.2] - 2026-04-06",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Docs",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "[1.8.1] - 2026-03-10",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "[1.7.4] - 2026-02-18",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "[1.7.3] - 2026-02-17",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 94
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "[1.7.2] - 2026-02-16",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "[1.7.1] - 2026-02-14",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "Docs",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "[1.7.0] - 2026-02-10",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Security",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Docs",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "Internationalization",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "[1.6.2] - 2026-01-24",
+          "level": 2,
+          "line": 217
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 219
+        },
+        {
+          "heading": "[1.6.1] - 2026-01-22",
+          "level": 2,
+          "line": 223
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "Docs",
+          "level": 3,
+          "line": 231
+        },
+        {
+          "heading": "[1.6.0] - 2026-01-21",
+          "level": 2,
+          "line": 237
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "Removed",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 257
+        },
+        {
+          "heading": "[1.5.2] - 2026-01-15",
+          "level": 2,
+          "line": 264
+        },
+        {
+          "heading": "Performance",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "[1.5.1] - 2026-01-15",
+          "level": 2,
+          "line": 271
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 273
+        },
+        {
+          "heading": "[1.5.0] - 2026-01-15",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 287
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 293
+        },
+        {
+          "heading": "[1.4.0] - 2026-01-14",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 311
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 316
+        },
+        {
+          "heading": "[1.2.4] - 2025-12-14",
+          "level": 2,
+          "line": 321
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 323
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 327
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 334
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 337
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 70
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 218,
+      "nonEmptyLines": 169,
+      "sections": [
+        {
+          "heading": "Open Notebook - Root CLAUDE.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Project Overview",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Three-Tier Architecture",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Useful sources",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Tech Stack",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Frontend (`frontend/`)",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "API Backend (`api/` + `open_notebook/`)",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Database",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Additional Services",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Architecture Highlights",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "1. Async-First Design",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "2. LangGraph Workflows",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "3. Multi-Provider AI",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "4. Database Schema",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "5. Authentication",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Important Quirks & Gotchas",
+          "level": 2,
+          "line": 118
+        },
+        {
+          "heading": "API Startup",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Frontend-Backend Communication",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "LangGraph Workflows",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Podcast Generation",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Content Processing",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "Component References",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Documentation Map",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "Testing Strategy",
+          "level": 2,
+          "line": 171
+        },
+        {
+          "heading": "Common Tasks",
+          "level": 2,
+          "line": 181
+        },
+        {
+          "heading": "Add a New API Endpoint",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Add a New LangGraph Workflow",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Add Database Migration",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Deploy to Production",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "Support & Community",
+          "level": 2,
+          "line": 212
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 30
+      }
+    },
+    {
+      "path": "CONFIGURATION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 24,
+      "sections": [
+        {
+          "heading": "Configuration Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Links",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "What You'll Find",
+          "level": 2,
+          "line": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 29,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "Contributing to Open Notebook",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Links",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "The Issue-First Workflow",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "Dockerfile.dev",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 42,
+      "nonEmptyLines": 32,
+      "services": [
+        {
+          "name": "python",
+          "image": "python:3.12-slim-bookworm",
+          "ports": [
+            5055,
+            8502
+          ],
+          "startLine": 1,
+          "endLine": 43
+        }
+      ],
+      "steps": [
+        {
+          "name": "FROM python:3.12-slim-bookworm",
+          "startLine": 1,
+          "endLine": 1
+        },
+        {
+          "name": "COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "ENV PYTHONDONTWRITEBYTECODE=1",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "ENV PYTHONUNBUFFERED=1",
+          "startLine": 6,
+          "endLine": 6
+        },
+        {
+          "name": "ENV UV_COMPILE_BYTECODE=1",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "ENV UV_LINK_MODE=copy",
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "name": "ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "name": "ENV VIRTUAL_ENV=/app/.venv",
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "ENV PATH=\"/app/.venv/bin:${PATH}\"",
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "RUN apt-get update && apt-get install -y --no-install-recommends",
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 23,
+          "endLine": 23
+        },
+        {
+          "name": "COPY pyproject.toml uv.lock ./",
+          "startLine": 25,
+          "endLine": 25
+        },
+        {
+          "name": "COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+          "startLine": 26,
+          "endLine": 26
+        },
+        {
+          "name": "RUN uv sync --frozen",
+          "startLine": 27,
+          "endLine": 27
+        },
+        {
+          "name": "COPY frontend/package.json frontend/package-lock.json ./frontend/",
+          "startLine": 29,
+          "endLine": 29
+        },
+        {
+          "name": "WORKDIR /app/frontend",
+          "startLine": 30,
+          "endLine": 30
+        },
+        {
+          "name": "RUN npm ci",
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "COPY . .",
+          "startLine": 34,
+          "endLine": 34
+        },
+        {
+          "name": "RUN mkdir -p /app/data /app/tiktoken-cache /var/log/supervisor \\",
+          "startLine": 36,
+          "endLine": 36
+        },
+        {
+          "name": "EXPOSE 5055 8502",
+          "startLine": 40,
+          "endLine": 40
+        },
+        {
+          "name": "CMD [\"/usr/bin/supervisord\", \"-c\", \"/app/supervisord.dev.conf\"]",
+          "startLine": 42,
+          "endLine": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "serviceCount": 1,
+        "stepCount": 22
+      }
+    },
+    {
+      "path": "Dockerfile.single",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 97,
+      "nonEmptyLines": 75,
+      "metrics": {}
+    },
+    {
+      "path": "MAINTAINER_GUIDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "Maintainer Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Links",
+          "level": 2,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "Makefile",
+      "language": "makefile",
+      "fileCategory": "infra",
+      "totalLines": 207,
+      "nonEmptyLines": 174,
+      "steps": [
+        {
+          "name": "database",
+          "startLine": 15,
+          "endLine": 17
+        },
+        {
+          "name": "run",
+          "startLine": 18,
+          "endLine": 21
+        },
+        {
+          "name": "frontend",
+          "startLine": 22,
+          "endLine": 24
+        },
+        {
+          "name": "lint",
+          "startLine": 25,
+          "endLine": 27
+        },
+        {
+          "name": "ruff",
+          "startLine": 28,
+          "endLine": 30
+        },
+        {
+          "name": "docker-buildx-prepare",
+          "startLine": 32,
+          "endLine": 36
+        },
+        {
+          "name": "docker-buildx-clean",
+          "startLine": 37,
+          "endLine": 42
+        },
+        {
+          "name": "docker-buildx-reset",
+          "startLine": 43,
+          "endLine": 45
+        },
+        {
+          "name": "docker-build-local",
+          "startLine": 49,
+          "endLine": 57
+        },
+        {
+          "name": "docker-push",
+          "startLine": 59,
+          "endLine": 85
+        },
+        {
+          "name": "docker-push-latest",
+          "startLine": 87,
+          "endLine": 117
+        },
+        {
+          "name": "docker-release",
+          "startLine": 119,
+          "endLine": 121
+        },
+        {
+          "name": "tag",
+          "startLine": 122,
+          "endLine": 128
+        },
+        {
+          "name": "dev",
+          "startLine": 129,
+          "endLine": 131
+        },
+        {
+          "name": "dev-down",
+          "startLine": 132,
+          "endLine": 134
+        },
+        {
+          "name": "dev-logs",
+          "startLine": 135,
+          "endLine": 138
+        },
+        {
+          "name": "api",
+          "startLine": 139,
+          "endLine": 141
+        },
+        {
+          "name": "worker",
+          "startLine": 144,
+          "endLine": 145
+        },
+        {
+          "name": "worker-start",
+          "startLine": 146,
+          "endLine": 149
+        },
+        {
+          "name": "worker-stop",
+          "startLine": 150,
+          "endLine": 153
+        },
+        {
+          "name": "worker-restart",
+          "startLine": 154,
+          "endLine": 157
+        },
+        {
+          "name": "start-all",
+          "startLine": 159,
+          "endLine": 176
+        },
+        {
+          "name": "stop-all",
+          "startLine": 177,
+          "endLine": 185
+        },
+        {
+          "name": "status",
+          "startLine": 186,
+          "endLine": 189
+        },
+        {
+          "name": "export-docs",
+          "startLine": 191,
+          "endLine": 195
+        },
+        {
+          "name": "clean-cache",
+          "startLine": 197,
+          "endLine": 206
+        },
+        {
+          "name": "start",
+          "startLine": 207,
+          "endLine": 208
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "stepCount": 27
+      }
+    },
+    {
+      "path": "README.dev.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 452,
+      "nonEmptyLines": 322,
+      "sections": [
+        {
+          "heading": "Developer Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Start for Development",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Development Workflows",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "When to Use What?",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "1. Local Development (Recommended)",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Setup",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "What This Does",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Individual Services",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Checking Status",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Advantages",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Disadvantages",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "2. Docker Compose Development",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Configuration Files",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Advantages",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "Disadvantages",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "3. Testing Production Docker Images",
+          "level": 2,
+          "line": 129
+        },
+        {
+          "heading": "Build Locally",
+          "level": 3,
+          "line": 133
+        },
+        {
+          "heading": "Run Locally",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "When to Use",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "4. Publishing Docker Images",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "Workflow",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "Available Commands",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Publishing Details",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Creating Git Tags",
+          "level": 3,
+          "line": 191
+        },
+        {
+          "heading": "Code Quality",
+          "level": 2,
+          "line": 200
+        },
+        {
+          "heading": "Common Development Tasks",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "Adding a New Feature",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "Fixing a Bug",
+          "level": 3,
+          "line": 229
+        },
+        {
+          "heading": "Updating Dependencies",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "Adding a New Language (i18n)",
+          "level": 3,
+          "line": 250
+        },
+        {
+          "heading": "Database Migrations",
+          "level": 3,
+          "line": 291
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "Services Won't Start",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "Port Already in Use",
+          "level": 3,
+          "line": 321
+        },
+        {
+          "heading": "Database Connection Issues",
+          "level": 3,
+          "line": 333
+        },
+        {
+          "heading": "Docker Build Fails",
+          "level": 3,
+          "line": 343
+        },
+        {
+          "heading": "Project Structure",
+          "level": 2,
+          "line": 358
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "Required for Local Development",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "Performance Tips",
+          "level": 2,
+          "line": 405
+        },
+        {
+          "heading": "Speed Up Local Development",
+          "level": 3,
+          "line": 407
+        },
+        {
+          "heading": "Reduce Resource Usage",
+          "level": 3,
+          "line": 414
+        },
+        {
+          "heading": "TODO: Sections to Add",
+          "level": 2,
+          "line": 429
+        },
+        {
+          "heading": "Resources",
+          "level": 2,
+          "line": 442
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "dev-init.sh",
+      "language": "shell",
+      "fileCategory": "script",
+      "totalLines": 43,
+      "nonEmptyLines": 35,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "docker-compose-dev.yml",
+      "language": "yaml",
+      "fileCategory": "config",
+      "totalLines": 64,
+      "nonEmptyLines": 61,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "volumes",
+          "level": 1,
+          "line": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "mypy.ini",
+      "language": "config",
+      "fileCategory": "config",
+      "totalLines": 36,
+      "nonEmptyLines": 27,
+      "metrics": {}
+    },
+    {
+      "path": "pyproject.toml",
+      "language": "toml",
+      "fileCategory": "config",
+      "totalLines": 100,
+      "nonEmptyLines": 90,
+      "sections": [
+        {
+          "heading": "project",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "tool.setuptools",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "project.optional-dependencies",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "build-system",
+          "level": 1,
+          "line": 61
+        },
+        {
+          "heading": "dependency-groups",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "tool.isort",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "tool.ruff",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "tool.ruff.lint",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "tool.ruff.lint.per-file-ignores",
+          "level": 4,
+          "line": 91
+        },
+        {
+          "heading": "tool.mypy",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "[[tool.mypy.overrides]]",
+          "level": 3,
+          "line": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}

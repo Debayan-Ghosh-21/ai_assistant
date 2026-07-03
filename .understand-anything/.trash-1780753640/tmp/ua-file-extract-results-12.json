@@ -1,0 +1,162 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/app/(dashboard)/sources/[id]/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "SourceDetailPage",
+          "startLine": 12,
+          "endLine": 78,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "SourceDetailPage",
+          "line": 12,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "SourceDetailPage",
+          "callee": "useRouter",
+          "lineNumber": 13
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "useParams",
+          "lineNumber": 14
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "decodeURIComponent",
+          "lineNumber": 15
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "useNavigation",
+          "lineNumber": 16
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "useSourceChat",
+          "lineNumber": 19
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "useCallback",
+          "lineNumber": 21
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "navigation.getReturnPath",
+          "lineNumber": 22
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "router.push",
+          "lineNumber": 23
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "navigation.clearReturnTo",
+          "lineNumber": 24
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "navigation.getReturnLabel",
+          "lineNumber": 38
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "chat.sendMessage",
+          "lineNumber": 59
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "chat.updateSession",
+          "lineNumber": 63
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "chat.createSession",
+          "lineNumber": 68
+        },
+        {
+          "caller": "SourceDetailPage",
+          "callee": "chat.updateSession",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-navigation.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "functions": [
+        {
+          "name": "useNavigation",
+          "startLine": 3,
+          "endLine": 13,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useNavigation",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useNavigation",
+          "callee": "useNavigationStore",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/stores/navigation-store.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 99,
+      "nonEmptyLines": 89,
+      "exports": [
+        {
+          "name": "useNavigationStore",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/6-TROUBLESHOOTING/ai-chat-issues.md",
+      "type": "document",
+      "name": "ai-chat-issues.md",
+      "filePath": "docs/6-TROUBLESHOOTING/ai-chat-issues.md",
+      "summary": "Documentation content for ai-chat-issues.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/6-TROUBLESHOOTING/connection-issues.md",
+      "type": "document",
+      "name": "connection-issues.md",
+      "filePath": "docs/6-TROUBLESHOOTING/connection-issues.md",
+      "summary": "Documentation content for connection-issues.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/6-TROUBLESHOOTING/faq.md",
+      "type": "document",
+      "name": "faq.md",
+      "filePath": "docs/6-TROUBLESHOOTING/faq.md",
+      "summary": "Documentation content for faq.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/6-TROUBLESHOOTING/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/6-TROUBLESHOOTING/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/6-TROUBLESHOOTING/quick-fixes.md",
+      "type": "document",
+      "name": "quick-fixes.md",
+      "filePath": "docs/6-TROUBLESHOOTING/quick-fixes.md",
+      "summary": "Documentation content for quick-fixes.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

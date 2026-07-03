@@ -1,0 +1,662 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": "Configuration rules and parameters for .env.example.",
+      "tags": [
+        "configuration",
+        "settings",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "schema:.env.example:OPEN_NOTEBOOK_ENCRYPTION_KEY",
+      "type": "schema",
+      "name": "OPEN_NOTEBOOK_ENCRYPTION_KEY",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:.env.example:SURREAL_URL",
+      "type": "schema",
+      "name": "SURREAL_URL",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:.env.example:SURREAL_USER",
+      "type": "schema",
+      "name": "SURREAL_USER",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:.env.example:SURREAL_PASSWORD",
+      "type": "schema",
+      "name": "SURREAL_PASSWORD",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:.env.example:SURREAL_NAMESPACE",
+      "type": "schema",
+      "name": "SURREAL_NAMESPACE",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:.env.example:SURREAL_DATABASE",
+      "type": "schema",
+      "name": "SURREAL_DATABASE",
+      "filePath": ".env.example",
+      "summary": "Schema definition for kind variable.",
+      "tags": [
+        "schema",
+        "definition"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CHANGELOG.md",
+      "type": "document",
+      "name": "CHANGELOG.md",
+      "filePath": "CHANGELOG.md",
+      "summary": "Documentation content for CHANGELOG.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:CONFIGURATION.md",
+      "type": "document",
+      "name": "CONFIGURATION.md",
+      "filePath": "CONFIGURATION.md",
+      "summary": "Documentation content for CONFIGURATION.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:CONTRIBUTING.md",
+      "type": "document",
+      "name": "CONTRIBUTING.md",
+      "filePath": "CONTRIBUTING.md",
+      "summary": "Documentation content for CONTRIBUTING.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:Dockerfile.dev",
+      "type": "service",
+      "name": "Dockerfile.dev",
+      "filePath": "Dockerfile.dev",
+      "summary": "Infrastructure orchestration rules for Dockerfile.dev.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "dockerfile"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:Dockerfile.dev:python",
+      "type": "service",
+      "name": "python",
+      "filePath": "Dockerfile.dev",
+      "summary": "Service container python building image python:3.12-slim-bookworm.",
+      "tags": [
+        "service",
+        "docker",
+        "infrastructure"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:FROM python:3.12-slim-bookworm",
+      "type": "pipeline",
+      "name": "FROM python:3.12-slim-bookworm",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step FROM python:3.12-slim-bookworm.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "pipeline",
+      "name": "COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV PYTHONDONTWRITEBYTECODE=1",
+      "type": "pipeline",
+      "name": "ENV PYTHONDONTWRITEBYTECODE=1",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV PYTHONDONTWRITEBYTECODE=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV PYTHONUNBUFFERED=1",
+      "type": "pipeline",
+      "name": "ENV PYTHONUNBUFFERED=1",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV PYTHONUNBUFFERED=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV UV_COMPILE_BYTECODE=1",
+      "type": "pipeline",
+      "name": "ENV UV_COMPILE_BYTECODE=1",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV UV_COMPILE_BYTECODE=1.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV UV_LINK_MODE=copy",
+      "type": "pipeline",
+      "name": "ENV UV_LINK_MODE=copy",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV UV_LINK_MODE=copy.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "pipeline",
+      "name": "ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV VIRTUAL_ENV=/app/.venv",
+      "type": "pipeline",
+      "name": "ENV VIRTUAL_ENV=/app/.venv",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV VIRTUAL_ENV=/app/.venv.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:ENV PATH=\"/app/.venv/bin:${PATH}\"",
+      "type": "pipeline",
+      "name": "ENV PATH=\"/app/.venv/bin:${PATH}\"",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step ENV PATH=\"/app/.venv/bin:${PATH}\".",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:RUN apt-get update && apt-get install -y --no-install-recommends",
+      "type": "pipeline",
+      "name": "RUN apt-get update && apt-get install -y --no-install-recommends",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step RUN apt-get update && apt-get install -y --no-install-recommends.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:WORKDIR /app",
+      "type": "pipeline",
+      "name": "WORKDIR /app",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step WORKDIR /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:COPY pyproject.toml uv.lock ./",
+      "type": "pipeline",
+      "name": "COPY pyproject.toml uv.lock ./",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step COPY pyproject.toml uv.lock ./.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "type": "pipeline",
+      "name": "COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step COPY open_notebook/__init__.py ./open_notebook/__init__.py.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:RUN uv sync --frozen",
+      "type": "pipeline",
+      "name": "RUN uv sync --frozen",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step RUN uv sync --frozen.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:COPY frontend/package.json frontend/package-lock.json ./frontend/",
+      "type": "pipeline",
+      "name": "COPY frontend/package.json frontend/package-lock.json ./frontend/",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step COPY frontend/package.json frontend/package-lock.json ./frontend/.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:WORKDIR /app/frontend",
+      "type": "pipeline",
+      "name": "WORKDIR /app/frontend",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step WORKDIR /app/frontend.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:RUN npm ci",
+      "type": "pipeline",
+      "name": "RUN npm ci",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step RUN npm ci.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:WORKDIR /app",
+      "type": "pipeline",
+      "name": "WORKDIR /app",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step WORKDIR /app.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:COPY . .",
+      "type": "pipeline",
+      "name": "COPY . .",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step COPY . ..",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:RUN mkdir -p /app/data /app/tiktoken-cache /var/log/supervisor \\",
+      "type": "pipeline",
+      "name": "RUN mkdir -p /app/data /app/tiktoken-cache /var/log/supervisor \\",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step RUN mkdir -p /app/data /app/tiktoken-cache /var/log/supervisor \\.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:EXPOSE 5055 8502",
+      "type": "pipeline",
+      "name": "EXPOSE 5055 8502",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step EXPOSE 5055 8502.",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "pipeline:Dockerfile.dev:CMD [\"/usr/bin/supervisord\", \"-c\", \"/app/supervisord.dev.conf\"]",
+      "type": "pipeline",
+      "name": "CMD [\"/usr/bin/supervisord\", \"-c\", \"/app/supervisord.dev.conf\"]",
+      "filePath": "Dockerfile.dev",
+      "summary": "Workflow pipeline step CMD [\"/usr/bin/supervisord\", \"-c\", \"/app/supervisord.dev.conf\"].",
+      "tags": [
+        "pipeline",
+        "ci-cd"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "service:Dockerfile.single",
+      "type": "service",
+      "name": "Dockerfile.single",
+      "filePath": "Dockerfile.single",
+      "summary": "Infrastructure orchestration rules for Dockerfile.single.",
+      "tags": [
+        "infrastructure",
+        "containerization",
+        "dockerfile"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:MAINTAINER_GUIDE.md",
+      "type": "document",
+      "name": "MAINTAINER_GUIDE.md",
+      "filePath": "MAINTAINER_GUIDE.md",
+      "summary": "Documentation content for MAINTAINER_GUIDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:OPEN_NOTEBOOK_ENCRYPTION_KEY",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:SURREAL_URL",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:SURREAL_USER",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:SURREAL_PASSWORD",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:SURREAL_NAMESPACE",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "config:.env.example",
+      "target": "schema:.env.example:SURREAL_DATABASE",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "service:Dockerfile.dev:python",
+      "type": "deploys",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:FROM python:3.12-slim-bookworm",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV PYTHONDONTWRITEBYTECODE=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV PYTHONUNBUFFERED=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV UV_COMPILE_BYTECODE=1",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV UV_LINK_MODE=copy",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV TIKTOKEN_CACHE_DIR=/app/tiktoken-cache",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV VIRTUAL_ENV=/app/.venv",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:ENV PATH=\"/app/.venv/bin:${PATH}\"",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:RUN apt-get update && apt-get install -y --no-install-recommends",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:WORKDIR /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:COPY pyproject.toml uv.lock ./",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:COPY open_notebook/__init__.py ./open_notebook/__init__.py",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:RUN uv sync --frozen",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:COPY frontend/package.json frontend/package-lock.json ./frontend/",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:WORKDIR /app/frontend",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:RUN npm ci",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:WORKDIR /app",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:COPY . .",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:RUN mkdir -p /app/data /app/tiktoken-cache /var/log/supervisor \\",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:EXPOSE 5055 8502",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "service:Dockerfile.dev",
+      "target": "pipeline:Dockerfile.dev:CMD [\"/usr/bin/supervisord\", \"-c\", \"/app/supervisord.dev.conf\"]",
+      "type": "triggers",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

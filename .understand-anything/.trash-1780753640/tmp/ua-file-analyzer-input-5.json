@@ -1,0 +1,230 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "frontend/src/app/(auth)/login/page.tsx",
+      "language": "typescript",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/app/layout.tsx",
+      "language": "typescript",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ErrorBoundary.tsx",
+      "language": "typescript",
+      "sizeLines": 104,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "language": "typescript",
+      "sizeLines": 91,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/common/ThemeToggle.tsx",
+      "language": "typescript",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/I18nProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/QueryProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/ThemeProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/sonner.tsx",
+      "language": "typescript",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/i18n-events.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/i18n.ts",
+      "language": "typescript",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/bn-IN/index.ts",
+      "language": "typescript",
+      "sizeLines": 931,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/en-US/index.ts",
+      "language": "typescript",
+      "sizeLines": 931,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/es-ES/index.ts",
+      "language": "typescript",
+      "sizeLines": 931,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/fr-FR/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/index.test.ts",
+      "language": "typescript",
+      "sizeLines": 68,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/index.ts",
+      "language": "typescript",
+      "sizeLines": 47,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/it-IT/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/ja-JP/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/pt-BR/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/ru-RU/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/zh-CN/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/locales/zh-TW/index.ts",
+      "language": "typescript",
+      "sizeLines": 930,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/stores/theme-store.ts",
+      "language": "typescript",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/lib/theme-script.ts",
+      "language": "typescript",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/app/(auth)/login/page.tsx": [
+      "frontend/src/components/auth/LoginForm.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx"
+    ],
+    "frontend/src/app/layout.tsx": [
+      "frontend/src/app/globals.css",
+      "frontend/src/components/common/ConnectionGuard.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/providers/I18nProvider.tsx",
+      "frontend/src/components/providers/QueryProvider.tsx",
+      "frontend/src/components/providers/ThemeProvider.tsx",
+      "frontend/src/components/ui/sonner.tsx",
+      "frontend/src/lib/theme-script.ts"
+    ],
+    "frontend/src/components/common/ErrorBoundary.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/locales/en-US/index.ts"
+    ],
+    "frontend/src/components/common/LanguageLoadingOverlay.tsx": [
+      "frontend/src/lib/i18n-events.ts"
+    ],
+    "frontend/src/components/common/ThemeToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/providers/I18nProvider.tsx": [
+      "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "frontend/src/lib/i18n.ts"
+    ],
+    "frontend/src/components/providers/QueryProvider.tsx": [
+      "frontend/src/lib/api/query-client.ts"
+    ],
+    "frontend/src/components/providers/ThemeProvider.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/ui/sonner.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/lib/i18n-events.ts": [],
+    "frontend/src/lib/i18n.ts": [
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/bn-IN/index.ts": [],
+    "frontend/src/lib/locales/en-US/index.ts": [],
+    "frontend/src/lib/locales/es-ES/index.ts": [],
+    "frontend/src/lib/locales/fr-FR/index.ts": [],
+    "frontend/src/lib/locales/index.test.ts": [
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/index.ts": [
+      "frontend/src/lib/locales/bn-IN/index.ts",
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/es-ES/index.ts",
+      "frontend/src/lib/locales/fr-FR/index.ts",
+      "frontend/src/lib/locales/it-IT/index.ts",
+      "frontend/src/lib/locales/ja-JP/index.ts",
+      "frontend/src/lib/locales/pt-BR/index.ts",
+      "frontend/src/lib/locales/ru-RU/index.ts",
+      "frontend/src/lib/locales/zh-CN/index.ts",
+      "frontend/src/lib/locales/zh-TW/index.ts"
+    ],
+    "frontend/src/lib/locales/it-IT/index.ts": [],
+    "frontend/src/lib/locales/ja-JP/index.ts": [],
+    "frontend/src/lib/locales/pt-BR/index.ts": [],
+    "frontend/src/lib/locales/ru-RU/index.ts": [],
+    "frontend/src/lib/locales/zh-CN/index.ts": [],
+    "frontend/src/lib/locales/zh-TW/index.ts": [],
+    "frontend/src/lib/stores/theme-store.ts": [],
+    "frontend/src/lib/theme-script.ts": []
+  }
+}

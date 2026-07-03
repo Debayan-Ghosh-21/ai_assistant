@@ -1,10 +1,22 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { getApiUrl } from '@/lib/config'
+
+export interface UserRecord {
+  email: string
+  password: string
+  createdAt: string
+}
+
+export interface LoginResult {
+  success: boolean
+  requiresSignUp?: boolean
+  message?: string
+}
 
 interface AuthState {
   isAuthenticated: boolean
   token: string | null
+  currentUser: { email: string } | null
   isLoading: boolean
   error: string | null
   lastAuthCheck: number | null
@@ -13,9 +25,32 @@ interface AuthState {
   authRequired: boolean | null
   setHasHydrated: (state: boolean) => void
   checkAuthRequired: () => Promise<boolean>
-  login: (password: string) => Promise<boolean>
+  login: (email: string, password: string) => Promise<LoginResult>
+  signup: (email: string, password: string) => Promise<{ success: boolean; message?: string }>
   logout: () => void
   checkAuth: () => Promise<boolean>
+}
+
+const REGISTERED_USERS_KEY = 'registered_users'
+
+function getRegisteredUsers(): UserRecord[] {
+  if (typeof window === 'undefined') return []
+  try {
+    const raw = localStorage.getItem(REGISTERED_USERS_KEY)
+    return raw ? JSON.parse(raw) : []
+  } catch (err) {
+    console.error('Failed to parse registered users:', err)
+    return []
+  }
+}
+
+function saveRegisteredUsers(users: UserRecord[]) {
+  if (typeof window === 'undefined') return
+  try {
+    localStorage.setItem(REGISTERED_USERS_KEY, JSON.stringify(users))
+  } catch (err) {
+    console.error('Failed to save registered users:', err)
+  }
 }
 
 export const useAuthStore = create<AuthState>()(
@@ -23,200 +58,127 @@ export const useAuthStore = create<AuthState>()(
     (set, get) => ({
       isAuthenticated: false,
       token: null,
+      currentUser: null,
       isLoading: false,
       error: null,
       lastAuthCheck: null,
       isCheckingAuth: false,
       hasHydrated: false,
-      authRequired: null,
+      authRequired: true,
 
       setHasHydrated: (state: boolean) => {
         set({ hasHydrated: state })
       },
 
       checkAuthRequired: async () => {
-        try {
-          const apiUrl = await getApiUrl()
-          const response = await fetch(`${apiUrl}/api/auth/status`, {
-            cache: 'no-store',
-          })
-
-          if (!response.ok) {
-            throw new Error(`Auth status check failed: ${response.status}`)
-          }
-
-          const data = await response.json()
-          const required = data.auth_enabled || false
-          set({ authRequired: required })
-
-          // If auth is not required, mark as authenticated
-          if (!required) {
-            set({ isAuthenticated: true, token: 'not-required' })
-          }
-
-          return required
-        } catch (error) {
-          console.error('Failed to check auth status:', error)
-
-          // If it's a network error, set a more helpful error message
-          if (error instanceof TypeError && error.message.includes('Failed to fetch')) {
-            set({
-              error: 'Unable to connect to server. Please check if the API is running.',
-              authRequired: null  // Don't assume auth is required if we can't connect
-            })
-          } else {
-            // For other errors, default to requiring auth to be safe
-            set({ authRequired: true })
-          }
-
-          // Re-throw the error so the UI can handle it
-          throw error
-        }
+        set({ authRequired: true })
+        return true
       },
 
-      login: async (password: string) => {
+      signup: async (email: string, password: string) => {
         set({ isLoading: true, error: null })
-        try {
-          const apiUrl = await getApiUrl()
+        const normalizedEmail = email.trim().toLowerCase()
+        const users = getRegisteredUsers()
 
-          // Test auth with notebooks endpoint
-          const response = await fetch(`${apiUrl}/api/notebooks`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${password}`,
-              'Content-Type': 'application/json'
-            }
-          })
-          
-          if (response.ok) {
-            set({ 
-              isAuthenticated: true, 
-              token: password, 
-              isLoading: false,
-              lastAuthCheck: Date.now(),
-              error: null
-            })
-            return true
-          } else {
-            let errorMessage = 'Authentication failed'
-            if (response.status === 401) {
-              errorMessage = 'Invalid password. Please try again.'
-            } else if (response.status === 403) {
-              errorMessage = 'Access denied. Please check your credentials.'
-            } else if (response.status >= 500) {
-              errorMessage = 'Server error. Please try again later.'
-            } else {
-              errorMessage = `Authentication failed (${response.status})`
-            }
-            
-            set({ 
-              error: errorMessage,
-              isLoading: false,
-              isAuthenticated: false,
-              token: null
-            })
-            return false
-          }
-        } catch (error) {
-          console.error('Network error during auth:', error)
-          let errorMessage = 'Authentication failed'
-          
-          if (error instanceof TypeError && error.message.includes('Failed to fetch')) {
-            errorMessage = 'Unable to connect to server. Please check if the API is running.'
-          } else if (error instanceof Error) {
-            errorMessage = `Network error: ${error.message}`
-          } else {
-            errorMessage = 'An unexpected error occurred during authentication'
-          }
-          
-          set({ 
-            error: errorMessage,
-            isLoading: false,
-            isAuthenticated: false,
-            token: null
-          })
-          return false
+        const existingUser = users.find((u) => u.email.toLowerCase() === normalizedEmail)
+        if (existingUser) {
+          const errMsg = 'An account with this email already exists. Please sign in.'
+          set({ isLoading: false, error: errMsg })
+          return { success: false, message: errMsg }
         }
+
+        const newUser: UserRecord = {
+          email: normalizedEmail,
+          password: password,
+          createdAt: new Date().toISOString(),
+        }
+
+        users.push(newUser)
+        saveRegisteredUsers(users)
+
+        set({
+          isAuthenticated: true,
+          token: `token-${normalizedEmail}`,
+          currentUser: { email: normalizedEmail },
+          isLoading: false,
+          error: null,
+          lastAuthCheck: Date.now(),
+        })
+
+        return { success: true }
       },
-      
+
+      login: async (email: string, password: string) => {
+        set({ isLoading: true, error: null })
+        const normalizedEmail = email.trim().toLowerCase()
+        const users = getRegisteredUsers()
+
+        const foundUser = users.find((u) => u.email.toLowerCase() === normalizedEmail)
+
+        if (!foundUser) {
+          const errMsg = 'No account found with this email. Please sign up.'
+          set({
+            isLoading: false,
+            error: errMsg,
+            isAuthenticated: false,
+            token: null,
+            currentUser: null,
+          })
+          return { success: false, requiresSignUp: true, message: errMsg }
+        }
+
+        if (foundUser.password !== password) {
+          const errMsg = 'Invalid password. Please check your credentials and try again.'
+          set({
+            isLoading: false,
+            error: errMsg,
+            isAuthenticated: false,
+            token: null,
+            currentUser: null,
+          })
+          return { success: false, requiresSignUp: false, message: errMsg }
+        }
+
+        set({
+          isAuthenticated: true,
+          token: `token-${normalizedEmail}`,
+          currentUser: { email: normalizedEmail },
+          isLoading: false,
+          error: null,
+          lastAuthCheck: Date.now(),
+        })
+
+        return { success: true }
+      },
+
       logout: () => {
-        set({ 
-          isAuthenticated: false, 
-          token: null, 
-          error: null 
+        set({
+          isAuthenticated: false,
+          token: null,
+          currentUser: null,
+          error: null,
         })
       },
-      
+
       checkAuth: async () => {
-        const state = get()
-        const { token, lastAuthCheck, isCheckingAuth, isAuthenticated } = state
-
-        // If already checking, return current auth state
-        if (isCheckingAuth) {
-          return isAuthenticated
-        }
-
-        // If no token, not authenticated
-        if (!token) {
+        const { token, isAuthenticated } = get()
+        if (!token || !isAuthenticated) {
+          set({ isAuthenticated: false, token: null, currentUser: null })
           return false
         }
-
-        // If we checked recently (within 30 seconds) and are authenticated, skip
-        const now = Date.now()
-        if (isAuthenticated && lastAuthCheck && (now - lastAuthCheck) < 30000) {
-          return true
-        }
-
-        set({ isCheckingAuth: true })
-
-        try {
-          const apiUrl = await getApiUrl()
-
-          const response = await fetch(`${apiUrl}/api/notebooks`, {
-            method: 'GET',
-            headers: {
-              'Authorization': `Bearer ${token}`,
-              'Content-Type': 'application/json'
-            }
-          })
-          
-          if (response.ok) {
-            set({ 
-              isAuthenticated: true, 
-              lastAuthCheck: now,
-              isCheckingAuth: false 
-            })
-            return true
-          } else {
-            set({
-              isAuthenticated: false,
-              token: null,
-              lastAuthCheck: null,
-              isCheckingAuth: false
-            })
-            return false
-          }
-        } catch (error) {
-          console.error('checkAuth error:', error)
-          set({ 
-            isAuthenticated: false, 
-            token: null,
-            lastAuthCheck: null,
-            isCheckingAuth: false 
-          })
-          return false
-        }
-      }
+        return true
+      },
     }),
     {
       name: 'auth-storage',
       partialize: (state) => ({
         token: state.token,
-        isAuthenticated: state.isAuthenticated
+        isAuthenticated: state.isAuthenticated,
+        currentUser: state.currentUser,
       }),
       onRehydrateStorage: () => (state) => {
         state?.setHasHydrated(true)
-      }
+      },
     }
   )
 )

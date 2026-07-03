@@ -1,0 +1,460 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": "Source implementation module for .gitattributes.",
+      "tags": [
+        "unknown",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:.github/pull_request_template.md",
+      "type": "document",
+      "name": "pull_request_template.md",
+      "filePath": ".github/pull_request_template.md",
+      "summary": "Documentation content for pull_request_template.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.python-version",
+      "type": "file",
+      "name": ".python-version",
+      "filePath": ".python-version",
+      "summary": "Source implementation module for .python-version.",
+      "tags": [
+        "unknown",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": "Source implementation module for .understandignore.",
+      "tags": [
+        "unknown",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.worktreeinclude",
+      "type": "file",
+      "name": ".worktreeinclude",
+      "filePath": ".worktreeinclude",
+      "summary": "Source implementation module for .worktreeinclude.",
+      "tags": [
+        "unknown",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "api/__init__.py",
+      "summary": "Source implementation module for __init__.py.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/chat_service.py",
+      "type": "file",
+      "name": "chat_service.py",
+      "filePath": "api/chat_service.py",
+      "summary": "Chat service for API operations. Provides async interface for chat functionality.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/chat_service.py:ChatService",
+      "type": "class",
+      "name": "ChatService",
+      "filePath": "api/chat_service.py",
+      "lineRange": [
+        13,
+        164
+      ],
+      "summary": "Class implements ChatService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:api/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "api/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "api-handler",
+        "endpoint",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:commands/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "commands/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/4-AI-PROVIDERS/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/4-AI-PROVIDERS/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/SECURITY_REVIEW.md",
+      "type": "document",
+      "name": "SECURITY_REVIEW.md",
+      "filePath": "docs/SECURITY_REVIEW.md",
+      "summary": "Documentation content for SECURITY_REVIEW.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/eslint.config.mjs",
+      "type": "file",
+      "name": "eslint.config.mjs",
+      "filePath": "frontend/eslint.config.mjs",
+      "summary": "Source implementation module for eslint.config.mjs.",
+      "tags": [
+        "javascript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/next.config.ts",
+      "type": "file",
+      "name": "next.config.ts",
+      "filePath": "frontend/next.config.ts",
+      "summary": "Source implementation module for next.config.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/postcss.config.mjs",
+      "type": "file",
+      "name": "postcss.config.mjs",
+      "filePath": "frontend/postcss.config.mjs",
+      "summary": "Source implementation module for postcss.config.mjs.",
+      "tags": [
+        "javascript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/app/(dashboard)/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "frontend/src/app/(dashboard)/page.tsx",
+      "summary": "Source module that implements functions like DashboardPage.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/app/(dashboard)/page.tsx:DashboardPage",
+      "type": "function",
+      "name": "DashboardPage",
+      "filePath": "frontend/src/app/(dashboard)/page.tsx",
+      "lineRange": [
+        3,
+        5
+      ],
+      "summary": "Function implements logic for DashboardPage.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:frontend/src/app/config/route.ts",
+      "type": "file",
+      "name": "route.ts",
+      "filePath": "frontend/src/app/config/route.ts",
+      "summary": "Runtime Configuration Endpoint This endpoint provides server-side environment variables to the client at runtime. This solves the NEXT_PUBLIC_ limitat",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:frontend/src/app/config/route.ts:GET",
+      "type": "function",
+      "name": "GET",
+      "filePath": "frontend/src/app/config/route.ts",
+      "lineRange": [
+        25,
+        68
+      ],
+      "summary": "Function implements logic for GET.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "frontend/src/app/globals.css",
+      "summary": "Source implementation module for globals.css.",
+      "tags": [
+        "css",
+        "development",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:frontend/src/app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "frontend/src/app/page.tsx",
+      "summary": "Source module that implements functions like HomePage.",
+      "tags": [
+        "function",
+        "typescript",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:frontend/src/app/page.tsx:HomePage",
+      "type": "function",
+      "name": "HomePage",
+      "filePath": "frontend/src/app/page.tsx",
+      "lineRange": [
+        3,
+        5
+      ],
+      "summary": "Function implements logic for HomePage.",
+      "tags": [
+        "function",
+        "logic",
+        "typescript"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:frontend/src/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "frontend/src/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:frontend/src/components/sources/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "frontend/src/components/sources/index.ts",
+      "summary": "Source implementation module for index.ts.",
+      "tags": [
+        "typescript",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:frontend/src/components/sources/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "frontend/src/components/sources/README.md",
+      "summary": "Documentation content for README.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:frontend/src/components/ui/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "frontend/src/components/ui/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:frontend/src/lib/api/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "frontend/src/lib/api/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "api-handler",
+        "endpoint",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:frontend/src/lib/hooks/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "frontend/src/lib/hooks/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:api/chat_service.py",
+      "target": "class:api/chat_service.py:ChatService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/chat_service.py",
+      "target": "class:api/chat_service.py:ChatService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/app/(dashboard)/page.tsx",
+      "target": "function:frontend/src/app/(dashboard)/page.tsx:DashboardPage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/app/(dashboard)/page.tsx",
+      "target": "function:frontend/src/app/(dashboard)/page.tsx:DashboardPage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/app/config/route.ts",
+      "target": "function:frontend/src/app/config/route.ts:GET",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/app/config/route.ts",
+      "target": "function:frontend/src/app/config/route.ts:GET",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:frontend/src/app/page.tsx",
+      "target": "function:frontend/src/app/page.tsx:HomePage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:frontend/src/app/page.tsx",
+      "target": "function:frontend/src/app/page.tsx:HomePage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

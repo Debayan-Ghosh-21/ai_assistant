@@ -1,0 +1,150 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/7-DEVELOPMENT/api-reference.md",
+      "type": "document",
+      "name": "api-reference.md",
+      "filePath": "docs/7-DEVELOPMENT/api-reference.md",
+      "summary": "Documentation content for api-reference.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/architecture.md",
+      "type": "document",
+      "name": "architecture.md",
+      "filePath": "docs/7-DEVELOPMENT/architecture.md",
+      "summary": "Documentation content for architecture.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/code-standards.md",
+      "type": "document",
+      "name": "code-standards.md",
+      "filePath": "docs/7-DEVELOPMENT/code-standards.md",
+      "summary": "Documentation content for code-standards.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/contributing.md",
+      "type": "document",
+      "name": "contributing.md",
+      "filePath": "docs/7-DEVELOPMENT/contributing.md",
+      "summary": "Documentation content for contributing.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/design-principles.md",
+      "type": "document",
+      "name": "design-principles.md",
+      "filePath": "docs/7-DEVELOPMENT/design-principles.md",
+      "summary": "Documentation content for design-principles.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/development-setup.md",
+      "type": "document",
+      "name": "development-setup.md",
+      "filePath": "docs/7-DEVELOPMENT/development-setup.md",
+      "summary": "Documentation content for development-setup.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/7-DEVELOPMENT/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/maintainer-guide.md",
+      "type": "document",
+      "name": "maintainer-guide.md",
+      "filePath": "docs/7-DEVELOPMENT/maintainer-guide.md",
+      "summary": "Documentation content for maintainer-guide.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/quick-start.md",
+      "type": "document",
+      "name": "quick-start.md",
+      "filePath": "docs/7-DEVELOPMENT/quick-start.md",
+      "summary": "Documentation content for quick-start.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/security.md",
+      "type": "document",
+      "name": "security.md",
+      "filePath": "docs/7-DEVELOPMENT/security.md",
+      "summary": "Documentation content for security.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/7-DEVELOPMENT/testing.md",
+      "type": "document",
+      "name": "testing.md",
+      "filePath": "docs/7-DEVELOPMENT/testing.md",
+      "summary": "Documentation content for testing.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "test",
+        "testing",
+        "markdown"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

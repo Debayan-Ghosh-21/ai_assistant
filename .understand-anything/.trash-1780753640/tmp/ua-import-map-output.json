@@ -1,0 +1,1717 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 466,
+    "filesWithImports": 234,
+    "totalEdges": 1007
+  },
+  "importMap": {
+    ".dockerignore": [],
+    ".env.example": [],
+    ".gitattributes": [],
+    ".github/ISSUE_TEMPLATE/bug_report.yml": [],
+    ".github/ISSUE_TEMPLATE/config.yml": [],
+    ".github/ISSUE_TEMPLATE/feature_request.yml": [],
+    ".github/ISSUE_TEMPLATE/installation_issue.yml": [],
+    ".github/pull_request_template.md": [],
+    ".github/workflows/build-and-release.yml": [],
+    ".github/workflows/build-dev.yml": [],
+    ".github/workflows/claude-code-review.yml": [],
+    ".github/workflows/claude.yml": [],
+    ".github/workflows/test.yml": [],
+    ".python-version": [],
+    ".understand-anything/.understandignore": [],
+    ".worktreeinclude": [],
+    "api/__init__.py": [],
+    "api/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/chat_service.py": [],
+    "api/CLAUDE.md": [],
+    "api/client.py": [],
+    "api/command_service.py": [],
+    "api/context_service.py": [
+      "api/client.py"
+    ],
+    "api/credentials_service.py": [
+      "api/models.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/embedding_service.py": [
+      "api/client.py"
+    ],
+    "api/episode_profiles_service.py": [
+      "api/client.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/insights_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/main.py": [
+      "api/auth.py",
+      "api/routers/__init__.py",
+      "api/routers/auth.py",
+      "api/routers/chat.py",
+      "api/routers/config.py",
+      "api/routers/context.py",
+      "api/routers/credentials.py",
+      "api/routers/embedding_rebuild.py",
+      "api/routers/embedding.py",
+      "api/routers/episode_profiles.py",
+      "api/routers/insights.py",
+      "api/routers/languages.py",
+      "api/routers/models.py",
+      "api/routers/notebooks.py",
+      "api/routers/notes.py",
+      "api/routers/podcasts.py",
+      "api/routers/quiz.py",
+      "api/routers/search.py",
+      "api/routers/settings.py",
+      "api/routers/source_chat.py",
+      "api/routers/sources.py",
+      "api/routers/speaker_profiles.py",
+      "api/routers/transformations.py",
+      "open_notebook/database/async_migrate.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/models_service.py": [
+      "api/client.py",
+      "open_notebook/ai/models.py"
+    ],
+    "api/models.py": [],
+    "api/notebook_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/notes_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/podcast_api_service.py": [
+      "api/client.py"
+    ],
+    "api/podcast_service.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/__init__.py": [],
+    "api/routers/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/routers/chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/commands.py": [
+      "api/command_service.py"
+    ],
+    "api/routers/config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/utils/version_utils.py"
+    ],
+    "api/routers/context.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "api/routers/credentials.py": [
+      "api/credentials_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py"
+    ],
+    "api/routers/embedding_rebuild.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py"
+    ],
+    "api/routers/embedding.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/routers/episode_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/insights.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/languages.py": [],
+    "api/routers/models.py": [
+      "api/models.py",
+      "open_notebook/ai/connection_tester.py",
+      "open_notebook/ai/key_provider.py",
+      "open_notebook/ai/model_discovery.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notebooks.py": [
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notes.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/podcasts.py": [
+      "api/podcast_service.py"
+    ],
+    "api/routers/quiz.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/quiz.py",
+      "open_notebook/graphs/quiz.py"
+    ],
+    "api/routers/search.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/ask.py"
+    ],
+    "api/routers/settings.py": [
+      "api/models.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/source_chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/source_chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/sources.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "commands/source_commands.py",
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/speaker_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/transformations.py": [
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "api/search_service.py": [
+      "api/client.py"
+    ],
+    "api/settings_service.py": [
+      "api/client.py",
+      "open_notebook/domain/content_settings.py"
+    ],
+    "api/sources_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/transformations_service.py": [
+      "api/client.py",
+      "open_notebook/domain/transformation.py"
+    ],
+    "CHANGELOG.md": [],
+    "CLAUDE.md": [],
+    "commands/__init__.py": [
+      "commands/embedding_commands.py",
+      "commands/example_commands.py",
+      "commands/podcast_commands.py",
+      "commands/source_commands.py"
+    ],
+    "commands/CLAUDE.md": [],
+    "commands/embedding_commands.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py"
+    ],
+    "commands/example_commands.py": [],
+    "commands/podcast_commands.py": [
+      "open_notebook/config.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "commands/source_commands.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py"
+    ],
+    "CONFIGURATION.md": [],
+    "CONTRIBUTING.md": [],
+    "dev-init.sh": [],
+    "docker-compose-dev.yml": [],
+    "docker-compose.yml": [],
+    "Dockerfile": [],
+    "Dockerfile.dev": [],
+    "Dockerfile.single": [],
+    "docs/0-START-HERE/index.md": [],
+    "docs/0-START-HERE/quick-start-cloud.md": [],
+    "docs/0-START-HERE/quick-start-local.md": [],
+    "docs/0-START-HERE/quick-start-openai.md": [],
+    "docs/1-INSTALLATION/docker-compose.md": [],
+    "docs/1-INSTALLATION/from-source.md": [],
+    "docs/1-INSTALLATION/index.md": [],
+    "docs/1-INSTALLATION/single-container.md": [],
+    "docs/2-CORE-CONCEPTS/ai-context-rag.md": [],
+    "docs/2-CORE-CONCEPTS/chat-vs-transformations.md": [],
+    "docs/2-CORE-CONCEPTS/index.md": [],
+    "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md": [],
+    "docs/2-CORE-CONCEPTS/podcasts-explained.md": [],
+    "docs/3-USER-GUIDE/adding-sources.md": [],
+    "docs/3-USER-GUIDE/api-configuration.md": [],
+    "docs/3-USER-GUIDE/chat-effectively.md": [],
+    "docs/3-USER-GUIDE/citations.md": [],
+    "docs/3-USER-GUIDE/creating-podcasts.md": [],
+    "docs/3-USER-GUIDE/index.md": [],
+    "docs/3-USER-GUIDE/interface-overview.md": [],
+    "docs/3-USER-GUIDE/search.md": [],
+    "docs/3-USER-GUIDE/transformations.md": [],
+    "docs/3-USER-GUIDE/working-with-notes.md": [],
+    "docs/4-AI-PROVIDERS/index.md": [],
+    "docs/5-CONFIGURATION/advanced.md": [],
+    "docs/5-CONFIGURATION/ai-providers.md": [],
+    "docs/5-CONFIGURATION/database.md": [],
+    "docs/5-CONFIGURATION/environment-reference.md": [],
+    "docs/5-CONFIGURATION/index.md": [],
+    "docs/5-CONFIGURATION/local-stt.md": [],
+    "docs/5-CONFIGURATION/local-tts.md": [],
+    "docs/5-CONFIGURATION/mcp-integration.md": [],
+    "docs/5-CONFIGURATION/ollama.md": [],
+    "docs/5-CONFIGURATION/openai-compatible.md": [],
+    "docs/5-CONFIGURATION/reverse-proxy.md": [],
+    "docs/5-CONFIGURATION/security.md": [],
+    "docs/6-TROUBLESHOOTING/ai-chat-issues.md": [],
+    "docs/6-TROUBLESHOOTING/connection-issues.md": [],
+    "docs/6-TROUBLESHOOTING/faq.md": [],
+    "docs/6-TROUBLESHOOTING/index.md": [],
+    "docs/6-TROUBLESHOOTING/quick-fixes.md": [],
+    "docs/7-DEVELOPMENT/api-reference.md": [],
+    "docs/7-DEVELOPMENT/architecture.md": [],
+    "docs/7-DEVELOPMENT/code-standards.md": [],
+    "docs/7-DEVELOPMENT/contributing.md": [],
+    "docs/7-DEVELOPMENT/design-principles.md": [],
+    "docs/7-DEVELOPMENT/development-setup.md": [],
+    "docs/7-DEVELOPMENT/index.md": [],
+    "docs/7-DEVELOPMENT/maintainer-guide.md": [],
+    "docs/7-DEVELOPMENT/quick-start.md": [],
+    "docs/7-DEVELOPMENT/security.md": [],
+    "docs/7-DEVELOPMENT/testing.md": [],
+    "docs/index.md": [],
+    "docs/SECURITY_REVIEW.md": [],
+    "examples/docker-compose-full-local.yml": [],
+    "examples/docker-compose-ollama.yml": [],
+    "examples/docker-compose-single.yml": [],
+    "examples/docker-compose-speaches.yml": [],
+    "examples/README.md": [],
+    "frontend/components.json": [],
+    "frontend/eslint.config.mjs": [],
+    "frontend/next.config.ts": [],
+    "frontend/package.json": [],
+    "frontend/postcss.config.mjs": [],
+    "frontend/src/app/(auth)/login/page.tsx": [
+      "frontend/src/components/auth/LoginForm.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx"
+    ],
+    "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/progress.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/advanced/page.tsx": [
+      "frontend/src/app/(dashboard)/advanced/components/RebuildEmbeddings.tsx",
+      "frontend/src/app/(dashboard)/advanced/components/SystemInfo.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/layout.tsx": [
+      "frontend/src/components/common/CommandPalette.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/providers/ModalProvider.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-version-check.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-media-query.ts",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.test.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/useNotebookChat.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/ChatColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/source/ChatPanel.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/hooks/useNotebookChat.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/radio-group.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookHeader.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookDeleteDialog.tsx",
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookCard.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx": [
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/markdown-editor.tsx",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/NotesColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/ContextToggle.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/components/SourcesColumn.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/notebooks/CollapsibleColumn.tsx",
+      "frontend/src/components/sources/AddExistingSourceDialog.tsx",
+      "frontend/src/components/sources/AddSourceDialog.tsx",
+      "frontend/src/components/sources/SourceCard.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/notebook-columns-store.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/app/(dashboard)/notebooks/page.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NotebookList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/page.tsx": [],
+    "frontend/src/app/(dashboard)/podcasts/page.tsx": [
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/podcasts/EpisodesTab.tsx",
+      "frontend/src/components/podcasts/TemplatesTab.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/app/(dashboard)/search/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/search/AdvancedModelsDialog.tsx",
+      "frontend/src/components/search/SaveToNotebooksDialog.tsx",
+      "frontend/src/components/search/StreamingResponse.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/radio-group.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-ask.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-search.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/api-keys/page.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx",
+      "frontend/src/components/settings/index.ts",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/api/credentials.ts",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/settings/page.tsx": [
+      "frontend/src/app/(dashboard)/settings/components/SettingsForm.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/sources/[id]/page.tsx": [
+      "frontend/src/components/source/ChatPanel.tsx",
+      "frontend/src/components/source/SourceDetailContent.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-navigation.ts",
+      "frontend/src/lib/hooks/useSourceChat.ts"
+    ],
+    "frontend/src/app/(dashboard)/sources/page.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/date-locale.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/markdown-editor.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/TransformationCard.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationEditorDialog.tsx",
+      "frontend/src/components/common/EmptyState.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/(dashboard)/transformations/page.tsx": [
+      "frontend/src/app/(dashboard)/transformations/components/DefaultPromptEditor.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationPlayground.tsx",
+      "frontend/src/app/(dashboard)/transformations/components/TransformationsList.tsx",
+      "frontend/src/components/layout/AppShell.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/app/config/route.ts": [],
+    "frontend/src/app/globals.css": [],
+    "frontend/src/app/layout.tsx": [
+      "frontend/src/app/globals.css",
+      "frontend/src/components/common/ConnectionGuard.tsx",
+      "frontend/src/components/common/ErrorBoundary.tsx",
+      "frontend/src/components/providers/I18nProvider.tsx",
+      "frontend/src/components/providers/QueryProvider.tsx",
+      "frontend/src/components/providers/ThemeProvider.tsx",
+      "frontend/src/components/ui/sonner.tsx",
+      "frontend/src/lib/theme-script.ts"
+    ],
+    "frontend/src/app/page.tsx": [],
+    "frontend/src/CLAUDE.md": [],
+    "frontend/src/components/auth/LoginForm.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/components/common/CommandPalette.tsx": [
+      "frontend/src/components/ui/command.tsx",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/common/ConfirmDialog.test.tsx": [
+      "frontend/src/components/common/ConfirmDialog.tsx"
+    ],
+    "frontend/src/components/common/ConfirmDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/ConnectionGuard.tsx": [
+      "frontend/src/components/errors/ConnectionErrorOverlay.tsx",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/components/common/ContextIndicator.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/ContextToggle.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/EmptyState.tsx": [],
+    "frontend/src/components/common/ErrorBoundary.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/lib/locales/en-US/index.ts"
+    ],
+    "frontend/src/components/common/InlineEdit.tsx": [
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/LanguageLoadingOverlay.tsx": [
+      "frontend/src/lib/i18n-events.ts"
+    ],
+    "frontend/src/components/common/LanguageToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/LoadingSpinner.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/common/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/common/ThemeToggle.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/errors/ConnectionErrorOverlay.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/components/layout/AppShell.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/components/layout/SetupBanner.tsx"
+    ],
+    "frontend/src/components/layout/AppSidebar.test.tsx": [
+      "frontend/src/components/layout/AppSidebar.tsx",
+      "frontend/src/lib/stores/sidebar-store.ts"
+    ],
+    "frontend/src/components/layout/AppSidebar.tsx": [
+      "frontend/src/components/common/LanguageToggle.tsx",
+      "frontend/src/components/common/ThemeToggle.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-auth.ts",
+      "frontend/src/lib/hooks/use-create-dialogs.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/stores/sidebar-store.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/layout/SetupBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/notebooks/CollapsibleColumn.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/notebooks/CreateNotebookDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeCard.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts",
+      "frontend/src/lib/utils.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/EpisodesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeCard.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/GeneratePodcastDialog.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/api/chat.ts",
+      "frontend/src/lib/api/notes.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/TemplatesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx",
+      "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx",
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/providers/I18nProvider.tsx": [
+      "frontend/src/components/common/LanguageLoadingOverlay.tsx",
+      "frontend/src/lib/i18n.ts"
+    ],
+    "frontend/src/components/providers/ModalProvider.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "frontend/src/components/source/SourceDialog.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts"
+    ],
+    "frontend/src/components/providers/QueryProvider.tsx": [
+      "frontend/src/lib/api/query-client.ts"
+    ],
+    "frontend/src/components/providers/ThemeProvider.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/search/AdvancedModelsDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/search/SaveToNotebooksDialog.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/search/StreamingResponse.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/index.ts": [],
+    "frontend/src/components/settings/MigrationBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/ModelTestResultDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/components/source/ChatPanel.tsx": [
+      "frontend/src/components/common/ContextIndicator.tsx",
+      "frontend/src/components/source/MessageActions.tsx",
+      "frontend/src/components/source/ModelSelector.tsx",
+      "frontend/src/components/source/SessionManager.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/source/MessageActions.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/tooltip.tsx",
+      "frontend/src/lib/hooks/use-notes.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/NotebookAssociations.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/QuizPanel.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/progress.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-quiz.ts",
+      "frontend/src/lib/types/quiz.ts"
+    ],
+    "frontend/src/components/source/SessionManager.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDetailContent.tsx": [
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/source/NotebookAssociations.tsx",
+      "frontend/src/components/source/QuizPanel.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/api/insights.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/api/transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDialog.tsx": [
+      "frontend/src/components/source/SourceDetailContent.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/SourceInsightDialog.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-insights.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/sources/AddExistingSourceDialog.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/AddSourceButton.tsx": [
+      "frontend/src/components/sources/AddSourceDialog.tsx",
+      "frontend/src/components/ui/button.tsx"
+    ],
+    "frontend/src/components/sources/AddSourceDialog.tsx": [
+      "frontend/src/components/sources/steps/NotebooksStep.tsx",
+      "frontend/src/components/sources/steps/ProcessingStep.tsx",
+      "frontend/src/components/sources/steps/SourceTypeStep.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/wizard-container.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-settings.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/index.ts": [],
+    "frontend/src/components/sources/README.md": [],
+    "frontend/src/components/sources/SourceCard.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/components/common/ContextToggle.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/sources/steps/NotebooksStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/components/sources/steps/ProcessingStep.tsx": [
+      "frontend/src/components/ui/checkbox-list.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/components/sources/steps/SourceTypeStep.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/ui/accordion.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/alert-dialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/alert.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/badge.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/button.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/card.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox-list.tsx": [
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/checkbox.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/CLAUDE.md": [],
+    "frontend/src/components/ui/collapsible.tsx": [],
+    "frontend/src/components/ui/command.tsx": [
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/dialog.tsx": [
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/dropdown-menu.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/form-section.tsx": [
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/input.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/label.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/markdown-editor.tsx": [],
+    "frontend/src/components/ui/popover.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/progress.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/radio-group.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/scroll-area.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/select.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/separator.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/sonner.tsx": [
+      "frontend/src/lib/stores/theme-store.ts"
+    ],
+    "frontend/src/components/ui/tabs.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/textarea.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/tooltip.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/wizard-container.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/lib/api/chat.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/CLAUDE.md": [],
+    "frontend/src/lib/api/client.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/api/credentials.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/embedding.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/insights.ts": [
+      "frontend/src/lib/api/client.ts"
+    ],
+    "frontend/src/lib/api/models.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/lib/api/notebooks.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/notes.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/podcasts.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/lib/api/query-client.ts": [],
+    "frontend/src/lib/api/quiz.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/quiz.ts"
+    ],
+    "frontend/src/lib/api/search.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/search.ts"
+    ],
+    "frontend/src/lib/api/settings.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/source-chat.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/sources.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/api.ts"
+    ],
+    "frontend/src/lib/api/transformations.ts": [
+      "frontend/src/lib/api/client.ts",
+      "frontend/src/lib/types/transformations.ts"
+    ],
+    "frontend/src/lib/config.test.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/config.ts": [
+      "frontend/src/lib/types/config.ts"
+    ],
+    "frontend/src/lib/hooks/CLAUDE.md": [],
+    "frontend/src/lib/hooks/use-ask.ts": [
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/search.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-auth.ts": [
+      "frontend/src/lib/stores/auth-store.ts"
+    ],
+    "frontend/src/lib/hooks/use-create-dialogs.tsx": [
+      "frontend/src/components/notebooks/CreateNotebookDialog.tsx",
+      "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "frontend/src/components/sources/AddSourceDialog.tsx"
+    ],
+    "frontend/src/lib/hooks/use-credentials.ts": [
+      "frontend/src/lib/api/credentials.ts",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-insights.ts": [
+      "frontend/src/lib/api/insights.ts"
+    ],
+    "frontend/src/lib/hooks/use-media-query.ts": [],
+    "frontend/src/lib/hooks/use-modal-manager.test.ts": [
+      "frontend/src/lib/hooks/use-modal-manager.ts"
+    ],
+    "frontend/src/lib/hooks/use-modal-manager.ts": [],
+    "frontend/src/lib/hooks/use-models.ts": [
+      "frontend/src/lib/api/models.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-navigation.ts": [
+      "frontend/src/lib/stores/navigation-store.ts"
+    ],
+    "frontend/src/lib/hooks/use-notebooks.ts": [
+      "frontend/src/lib/api/notebooks.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-notes.ts": [
+      "frontend/src/lib/api/notes.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-podcasts.ts": [
+      "frontend/src/lib/api/podcasts.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-quiz.ts": [
+      "frontend/src/lib/api/quiz.ts",
+      "frontend/src/lib/types/quiz.ts"
+    ],
+    "frontend/src/lib/hooks/use-search.ts": [
+      "frontend/src/lib/api/search.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/search.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-settings.ts": [
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/settings.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-sources.ts": [
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-toast.ts": [
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/use-transformations.ts": [
+      "frontend/src/lib/api/transformations.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/use-translation.test.ts": [
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/use-translation.ts": [
+      "frontend/src/lib/i18n-events.ts"
+    ],
+    "frontend/src/lib/hooks/use-version-check.ts": [
+      "frontend/src/lib/config.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/lib/hooks/useNotebookChat.ts": [
+      "frontend/src/app/(dashboard)/notebooks/[id]/page.tsx",
+      "frontend/src/lib/api/chat.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/hooks/useSourceChat.ts": [
+      "frontend/src/lib/api/source-chat.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/error-handler.ts"
+    ],
+    "frontend/src/lib/i18n-events.ts": [],
+    "frontend/src/lib/i18n.ts": [
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/bn-IN/index.ts": [],
+    "frontend/src/lib/locales/CLAUDE.md": [],
+    "frontend/src/lib/locales/en-US/index.ts": [],
+    "frontend/src/lib/locales/es-ES/index.ts": [],
+    "frontend/src/lib/locales/fr-FR/index.ts": [],
+    "frontend/src/lib/locales/index.test.ts": [
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/index.ts"
+    ],
+    "frontend/src/lib/locales/index.ts": [
+      "frontend/src/lib/locales/bn-IN/index.ts",
+      "frontend/src/lib/locales/en-US/index.ts",
+      "frontend/src/lib/locales/es-ES/index.ts",
+      "frontend/src/lib/locales/fr-FR/index.ts",
+      "frontend/src/lib/locales/it-IT/index.ts",
+      "frontend/src/lib/locales/ja-JP/index.ts",
+      "frontend/src/lib/locales/pt-BR/index.ts",
+      "frontend/src/lib/locales/ru-RU/index.ts",
+      "frontend/src/lib/locales/zh-CN/index.ts",
+      "frontend/src/lib/locales/zh-TW/index.ts"
+    ],
+    "frontend/src/lib/locales/it-IT/index.ts": [],
+    "frontend/src/lib/locales/ja-JP/index.ts": [],
+    "frontend/src/lib/locales/pt-BR/index.ts": [],
+    "frontend/src/lib/locales/ru-RU/index.ts": [],
+    "frontend/src/lib/locales/zh-CN/index.ts": [],
+    "frontend/src/lib/locales/zh-TW/index.ts": [],
+    "frontend/src/lib/stores/auth-store.ts": [
+      "frontend/src/lib/config.ts"
+    ],
+    "frontend/src/lib/stores/CLAUDE.md": [],
+    "frontend/src/lib/stores/navigation-store.ts": [],
+    "frontend/src/lib/stores/notebook-columns-store.ts": [],
+    "frontend/src/lib/stores/sidebar-store.ts": [],
+    "frontend/src/lib/stores/theme-store.ts": [],
+    "frontend/src/lib/theme-script.ts": [],
+    "frontend/src/lib/types/api.ts": [],
+    "frontend/src/lib/types/auth.ts": [],
+    "frontend/src/lib/types/common.ts": [],
+    "frontend/src/lib/types/config.ts": [],
+    "frontend/src/lib/types/models.ts": [],
+    "frontend/src/lib/types/podcasts.ts": [],
+    "frontend/src/lib/types/quiz.ts": [],
+    "frontend/src/lib/types/search.ts": [],
+    "frontend/src/lib/types/transformations.ts": [],
+    "frontend/src/lib/utils.ts": [],
+    "frontend/src/lib/utils/date-locale.ts": [],
+    "frontend/src/lib/utils/error-handler.ts": [],
+    "frontend/src/lib/utils/source-references.tsx": [],
+    "frontend/src/proxy.ts": [],
+    "frontend/src/test/jest-dom.d.ts": [],
+    "frontend/src/test/setup.ts": [],
+    "frontend/start-server.js": [],
+    "frontend/tailwind.config.ts": [],
+    "frontend/tsconfig.json": [],
+    "frontend/vitest.config.ts": [],
+    "MAINTAINER_GUIDE.md": [],
+    "Makefile": [],
+    "mypy.ini": [],
+    "open_notebook/__init__.py": [],
+    "open_notebook/ai/__init__.py": [],
+    "open_notebook/ai/CLAUDE.md": [],
+    "open_notebook/ai/connection_tester.py": [
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/key_provider.py": [
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/model_discovery.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py"
+    ],
+    "open_notebook/ai/models.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/ai/provision.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "open_notebook/CLAUDE.md": [],
+    "open_notebook/config.py": [],
+    "open_notebook/database/async_migrate.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "open_notebook/database/CLAUDE.md": [],
+    "open_notebook/database/migrate.py": [
+      "open_notebook/database/async_migrate.py"
+    ],
+    "open_notebook/database/migrations/1_down.surrealql": [],
+    "open_notebook/database/migrations/1.surrealql": [],
+    "open_notebook/database/migrations/10_down.surrealql": [],
+    "open_notebook/database/migrations/10.surrealql": [],
+    "open_notebook/database/migrations/11_down.surrealql": [],
+    "open_notebook/database/migrations/11.surrealql": [],
+    "open_notebook/database/migrations/12_down.surrealql": [],
+    "open_notebook/database/migrations/12.surrealql": [],
+    "open_notebook/database/migrations/13_down.surrealql": [],
+    "open_notebook/database/migrations/13.surrealql": [],
+    "open_notebook/database/migrations/14_down.surrealql": [],
+    "open_notebook/database/migrations/14.surrealql": [],
+    "open_notebook/database/migrations/15.surrealql": [],
+    "open_notebook/database/migrations/2_down.surrealql": [],
+    "open_notebook/database/migrations/2.surrealql": [],
+    "open_notebook/database/migrations/3_down.surrealql": [],
+    "open_notebook/database/migrations/3.surrealql": [],
+    "open_notebook/database/migrations/4_down.surrealql": [],
+    "open_notebook/database/migrations/4.surrealql": [],
+    "open_notebook/database/migrations/5_down.surrealql": [],
+    "open_notebook/database/migrations/5.surrealql": [],
+    "open_notebook/database/migrations/6_down.surrealql": [],
+    "open_notebook/database/migrations/6.surrealql": [],
+    "open_notebook/database/migrations/7_down.surrealql": [],
+    "open_notebook/database/migrations/7.surrealql": [],
+    "open_notebook/database/migrations/8_down.surrealql": [],
+    "open_notebook/database/migrations/8.surrealql": [],
+    "open_notebook/database/migrations/9_down.surrealql": [],
+    "open_notebook/database/migrations/9.surrealql": [],
+    "open_notebook/database/repository.py": [],
+    "open_notebook/domain/__init__.py": [],
+    "open_notebook/domain/base.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/CLAUDE.md": [],
+    "open_notebook/domain/content_settings.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/domain/credential.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/notebook.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/provider_config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "open_notebook/domain/quiz.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/domain/transformation.py": [
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/exceptions.py": [],
+    "open_notebook/graphs/ask.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/chat.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/CLAUDE.md": [],
+    "open_notebook/graphs/prompt.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/quiz.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/quiz.py"
+    ],
+    "open_notebook/graphs/source_chat.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/context_builder.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/graphs/source.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "open_notebook/graphs/tools.py": [],
+    "open_notebook/graphs/transformation.py": [
+      "open_notebook/ai/provision.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/error_classifier.py",
+      "open_notebook/utils/text_utils.py"
+    ],
+    "open_notebook/podcasts/__init__.py": [],
+    "open_notebook/podcasts/CLAUDE.md": [],
+    "open_notebook/podcasts/migration.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "open_notebook/podcasts/models.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/base.py"
+    ],
+    "open_notebook/utils/__init__.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py",
+      "open_notebook/utils/encryption.py",
+      "open_notebook/utils/text_utils.py",
+      "open_notebook/utils/token_utils.py",
+      "open_notebook/utils/version_utils.py"
+    ],
+    "open_notebook/utils/chunking.py": [
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/CLAUDE.md": [],
+    "open_notebook/utils/context_builder.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/embedding.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "open_notebook/utils/encryption.py": [],
+    "open_notebook/utils/error_classifier.py": [
+      "open_notebook/exceptions.py"
+    ],
+    "open_notebook/utils/graph_utils.py": [],
+    "open_notebook/utils/README.md": [],
+    "open_notebook/utils/text_utils.py": [],
+    "open_notebook/utils/token_utils.py": [
+      "open_notebook/config.py"
+    ],
+    "open_notebook/utils/version_utils.py": [],
+    "prompts/ask/entry.jinja": [],
+    "prompts/ask/final_answer.jinja": [],
+    "prompts/ask/query_process.jinja": [],
+    "prompts/chat/system.jinja": [],
+    "prompts/CLAUDE.md": [],
+    "prompts/podcast/outline.jinja": [],
+    "prompts/podcast/transcript.jinja": [],
+    "prompts/source_chat/system.jinja": [],
+    "pyproject.toml": [],
+    "README.dev.md": [],
+    "README.md": [],
+    "run_api.py": [],
+    "scratch/check_command_result.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "scratch/check_command.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "scratch/check_source.py": [
+      "open_notebook/database/repository.py"
+    ],
+    "scratch/debug_youtube.py": [],
+    "scratch/test_config_override.py": [],
+    "scripts/export_docs.py": [],
+    "scripts/README.md": [],
+    "scripts/wait-for-api.sh": [],
+    "supervisord.conf": [],
+    "supervisord.dev.conf": [],
+    "supervisord.single.conf": [],
+    "tests/conftest.py": [],
+    "tests/README.md": [],
+    "tests/test_chunking.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "tests/test_credentials_api.py": [],
+    "tests/test_domain.py": [
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/base.py",
+      "open_notebook/domain/content_settings.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/transformation.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "tests/test_embedding.py": [
+      "open_notebook/utils/chunking.py",
+      "open_notebook/utils/embedding.py",
+      "open_notebook/utils/token_utils.py"
+    ],
+    "tests/test_graphs.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/graphs/prompt.py",
+      "open_notebook/graphs/tools.py",
+      "open_notebook/graphs/transformation.py"
+    ],
+    "tests/test_models_api.py": [],
+    "tests/test_notes_api.py": [],
+    "tests/test_podcast_path.py": [
+      "commands/podcast_commands.py"
+    ],
+    "tests/test_sources_api.py": [
+      "open_notebook/config.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "tests/test_url_validation.py": [
+      "api/credentials_service.py"
+    ],
+    "tests/test_utils.py": [
+      "open_notebook/utils/__init__.py",
+      "open_notebook/utils/context_builder.py"
+    ]
+  }
+}

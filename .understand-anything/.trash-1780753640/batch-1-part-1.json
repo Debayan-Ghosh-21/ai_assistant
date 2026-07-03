@@ -1,0 +1,781 @@
+{
+  "nodes": [
+    {
+      "id": "file:api/auth.py",
+      "type": "file",
+      "name": "auth.py",
+      "filePath": "api/auth.py",
+      "summary": "Middleware to check password authentication for all API requests. Always active with default password if OPEN_NOTEBOOK_PASSWORD is not set. Supports D",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:api/auth.py:check_api_password",
+      "type": "function",
+      "name": "check_api_password",
+      "filePath": "api/auth.py",
+      "lineRange": [
+        82,
+        114
+      ],
+      "summary": "Function implements logic for check_api_password.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/auth.py:PasswordAuthMiddleware",
+      "type": "class",
+      "name": "PasswordAuthMiddleware",
+      "filePath": "api/auth.py",
+      "lineRange": [
+        12,
+        75
+      ],
+      "summary": "Class implements PasswordAuthMiddleware structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/client.py",
+      "type": "file",
+      "name": "client.py",
+      "filePath": "api/client.py",
+      "summary": "API client for Open Notebook API. This module provides a client interface to interact with the Open Notebook API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:api/client.py:APIClient",
+      "type": "class",
+      "name": "APIClient",
+      "filePath": "api/client.py",
+      "lineRange": [
+        13,
+        525
+      ],
+      "summary": "Class implements APIClient structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:api/command_service.py",
+      "type": "file",
+      "name": "command_service.py",
+      "filePath": "api/command_service.py",
+      "summary": "Generic service layer for command operations",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/command_service.py:CommandService",
+      "type": "class",
+      "name": "CommandService",
+      "filePath": "api/command_service.py",
+      "lineRange": [
+        7,
+        92
+      ],
+      "summary": "Class implements CommandService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:api/context_service.py",
+      "type": "file",
+      "name": "context_service.py",
+      "filePath": "api/context_service.py",
+      "summary": "Context service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/context_service.py:ContextService",
+      "type": "class",
+      "name": "ContextService",
+      "filePath": "api/context_service.py",
+      "lineRange": [
+        12,
+        25
+      ],
+      "summary": "Class implements ContextService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/credentials_service.py",
+      "type": "file",
+      "name": "credentials_service.py",
+      "filePath": "api/credentials_service.py",
+      "summary": "Credentials Service Business logic for managing AI provider credentials. Extracted from the credentials router to follow the service layer pattern. Al",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "function",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:validate_url",
+      "type": "function",
+      "name": "validate_url",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        89,
+        188
+      ],
+      "summary": "Function implements logic for validate_url.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:require_encryption_key",
+      "type": "function",
+      "name": "require_encryption_key",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        196,
+        202
+      ],
+      "summary": "Function implements logic for require_encryption_key.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/credentials_service.py:credential_to_response",
+      "type": "function",
+      "name": "credential_to_response",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        205,
+        227
+      ],
+      "summary": "Function implements logic for credential_to_response.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:api/credentials_service.py:check_env_configured",
+      "type": "function",
+      "name": "check_env_configured",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        230,
+        240
+      ],
+      "summary": "Function implements logic for check_env_configured.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/credentials_service.py:get_default_modalities",
+      "type": "function",
+      "name": "get_default_modalities",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        243,
+        245
+      ],
+      "summary": "Function implements logic for get_default_modalities.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/credentials_service.py:create_credential_from_env",
+      "type": "function",
+      "name": "create_credential_from_env",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        248,
+        311
+      ],
+      "summary": "Function implements logic for create_credential_from_env.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:get_provider_status",
+      "type": "function",
+      "name": "get_provider_status",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        319,
+        350
+      ],
+      "summary": "Function implements logic for get_provider_status.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:api/credentials_service.py:get_env_status",
+      "type": "function",
+      "name": "get_env_status",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        353,
+        358
+      ],
+      "summary": "Function implements logic for get_env_status.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:api/credentials_service.py:test_credential",
+      "type": "function",
+      "name": "test_credential",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        361,
+        470
+      ],
+      "summary": "Function implements logic for test_credential.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:discover_with_config",
+      "type": "function",
+      "name": "discover_with_config",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        473,
+        645
+      ],
+      "summary": "Function implements logic for discover_with_config.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:register_models",
+      "type": "function",
+      "name": "register_models",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        648,
+        690
+      ],
+      "summary": "Function implements logic for register_models.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:api/credentials_service.py:migrate_from_provider_config",
+      "type": "function",
+      "name": "migrate_from_provider_config",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        693,
+        798
+      ],
+      "summary": "Function implements logic for migrate_from_provider_config.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:api/credentials_service.py:migrate_from_env",
+      "type": "function",
+      "name": "migrate_from_env",
+      "filePath": "api/credentials_service.py",
+      "lineRange": [
+        801,
+        890
+      ],
+      "summary": "Function implements logic for migrate_from_env.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:api/embedding_service.py",
+      "type": "file",
+      "name": "embedding_service.py",
+      "filePath": "api/embedding_service.py",
+      "summary": "Embedding service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:api/embedding_service.py:EmbeddingService",
+      "type": "class",
+      "name": "EmbeddingService",
+      "filePath": "api/embedding_service.py",
+      "lineRange": [
+        12,
+        23
+      ],
+      "summary": "Class implements EmbeddingService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:api/episode_profiles_service.py",
+      "type": "file",
+      "name": "episode_profiles_service.py",
+      "filePath": "api/episode_profiles_service.py",
+      "summary": "Episode profiles service layer using API.",
+      "tags": [
+        "api-handler",
+        "endpoint",
+        "class",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:api/episode_profiles_service.py:EpisodeProfilesService",
+      "type": "class",
+      "name": "EpisodeProfilesService",
+      "filePath": "api/episode_profiles_service.py",
+      "lineRange": [
+        13,
+        108
+      ],
+      "summary": "Class implements EpisodeProfilesService structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:api/auth.py",
+      "target": "function:api/auth.py:check_api_password",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/auth.py",
+      "target": "function:api/auth.py:check_api_password",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/auth.py",
+      "target": "class:api/auth.py:PasswordAuthMiddleware",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/auth.py",
+      "target": "class:api/auth.py:PasswordAuthMiddleware",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/auth.py",
+      "target": "file:open_notebook/utils/encryption.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/client.py",
+      "target": "class:api/client.py:APIClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/client.py",
+      "target": "class:api/client.py:APIClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/command_service.py",
+      "target": "class:api/command_service.py:CommandService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/command_service.py",
+      "target": "class:api/command_service.py:CommandService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/context_service.py",
+      "target": "class:api/context_service.py:ContextService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/context_service.py",
+      "target": "class:api/context_service.py:ContextService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/context_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:validate_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:validate_url",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:require_encryption_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:require_encryption_key",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:credential_to_response",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:credential_to_response",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:check_env_configured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:check_env_configured",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_default_modalities",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_default_modalities",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:create_credential_from_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:create_credential_from_env",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_provider_status",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_provider_status",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_env_status",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:get_env_status",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:test_credential",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:test_credential",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:discover_with_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:discover_with_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:register_models",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:register_models",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:migrate_from_provider_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:migrate_from_provider_config",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:migrate_from_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "function:api/credentials_service.py:migrate_from_env",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "file:api/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "file:open_notebook/domain/credential.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/credentials_service.py",
+      "target": "file:open_notebook/utils/encryption.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/embedding_service.py",
+      "target": "class:api/embedding_service.py:EmbeddingService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/embedding_service.py",
+      "target": "class:api/embedding_service.py:EmbeddingService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/embedding_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/episode_profiles_service.py",
+      "target": "class:api/episode_profiles_service.py:EpisodeProfilesService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:api/episode_profiles_service.py",
+      "target": "class:api/episode_profiles_service.py:EpisodeProfilesService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:api/episode_profiles_service.py",
+      "target": "file:api/client.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:api/episode_profiles_service.py",
+      "target": "file:open_notebook/podcasts/models.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

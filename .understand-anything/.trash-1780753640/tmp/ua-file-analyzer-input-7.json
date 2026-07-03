@@ -1,0 +1,370 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "frontend/src/components/podcasts/GeneratePodcastDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 983,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/TemplatesTab.tsx",
+      "language": "typescript",
+      "sizeLines": 119,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 362,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 359,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/providers/ModalProvider.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/search/AdvancedModelsDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 105,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/search/StreamingResponse.tsx",
+      "language": "typescript",
+      "sizeLines": 197,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 116,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/MigrationBanner.tsx",
+      "language": "typescript",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/ModelTestResultDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 63,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/settings/index.ts",
+      "language": "typescript",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/ChatPanel.tsx",
+      "language": "typescript",
+      "sizeLines": 374,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/ModelSelector.tsx",
+      "language": "typescript",
+      "sizeLines": 172,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/NotebookAssociations.tsx",
+      "language": "typescript",
+      "sizeLines": 229,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SessionManager.tsx",
+      "language": "typescript",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceDetailContent.tsx",
+      "language": "typescript",
+      "sizeLines": 876,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/source/SourceInsightDialog.tsx",
+      "language": "typescript",
+      "sizeLines": 155,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/sources/steps/SourceTypeStep.tsx",
+      "language": "typescript",
+      "sizeLines": 356,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/alert.tsx",
+      "language": "typescript",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/badge.tsx",
+      "language": "typescript",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/button.tsx",
+      "language": "typescript",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/card.tsx",
+      "language": "typescript",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "frontend/src/components/ui/collapsible.tsx",
+      "language": "typescript",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "frontend/src/components/podcasts/GeneratePodcastDialog.tsx": [
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/api/chat.ts",
+      "frontend/src/lib/api/notes.ts",
+      "frontend/src/lib/api/query-client.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-toast.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx": [
+      "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/TemplatesTab.tsx": [
+      "frontend/src/components/podcasts/EpisodeProfilesPanel.tsx",
+      "frontend/src/components/podcasts/SpeakerProfilesPanel.tsx",
+      "frontend/src/components/ui/accordion.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/podcasts/forms/EpisodeProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/podcasts/forms/SpeakerProfileFormDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/separator.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-podcasts.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/podcasts.ts"
+    ],
+    "frontend/src/components/providers/ModalProvider.tsx": [
+      "frontend/src/app/(dashboard)/notebooks/components/NoteEditorDialog.tsx",
+      "frontend/src/components/source/SourceDialog.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts"
+    ],
+    "frontend/src/components/search/AdvancedModelsDialog.tsx": [
+      "frontend/src/components/common/ModelSelector.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/search/StreamingResponse.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/collapsible.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/settings/EmbeddingModelChangeDialog.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/MigrationBanner.tsx": [
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/lib/hooks/use-credentials.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/settings/ModelTestResultDialog.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/models.ts"
+    ],
+    "frontend/src/components/settings/index.ts": [],
+    "frontend/src/components/source/ChatPanel.tsx": [
+      "frontend/src/components/common/ContextIndicator.tsx",
+      "frontend/src/components/source/MessageActions.tsx",
+      "frontend/src/components/source/ModelSelector.tsx",
+      "frontend/src/components/source/SessionManager.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/source-references.tsx"
+    ],
+    "frontend/src/components/source/ModelSelector.tsx": [
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/NotebookAssociations.tsx": [
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/checkbox.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-notebooks.ts",
+      "frontend/src/lib/hooks/use-sources.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/SessionManager.tsx": [
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/scroll-area.tsx",
+      "frontend/src/lib/hooks/use-models.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDetailContent.tsx": [
+      "frontend/src/components/common/InlineEdit.tsx",
+      "frontend/src/components/common/LoadingSpinner.tsx",
+      "frontend/src/components/source/NotebookAssociations.tsx",
+      "frontend/src/components/source/QuizPanel.tsx",
+      "frontend/src/components/source/SourceInsightDialog.tsx",
+      "frontend/src/components/ui/alert-dialog.tsx",
+      "frontend/src/components/ui/alert.tsx",
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/card.tsx",
+      "frontend/src/components/ui/dropdown-menu.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/select.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/lib/api/embedding.ts",
+      "frontend/src/lib/api/insights.ts",
+      "frontend/src/lib/api/sources.ts",
+      "frontend/src/lib/api/transformations.ts",
+      "frontend/src/lib/hooks/use-translation.ts",
+      "frontend/src/lib/types/api.ts",
+      "frontend/src/lib/types/transformations.ts",
+      "frontend/src/lib/utils/date-locale.ts"
+    ],
+    "frontend/src/components/source/SourceDialog.tsx": [
+      "frontend/src/components/source/SourceDetailContent.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/source/SourceInsightDialog.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/button.tsx",
+      "frontend/src/components/ui/dialog.tsx",
+      "frontend/src/lib/hooks/use-insights.ts",
+      "frontend/src/lib/hooks/use-modal-manager.ts",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/sources/steps/SourceTypeStep.tsx": [
+      "frontend/src/components/ui/badge.tsx",
+      "frontend/src/components/ui/form-section.tsx",
+      "frontend/src/components/ui/input.tsx",
+      "frontend/src/components/ui/label.tsx",
+      "frontend/src/components/ui/tabs.tsx",
+      "frontend/src/components/ui/textarea.tsx",
+      "frontend/src/lib/hooks/use-translation.ts"
+    ],
+    "frontend/src/components/ui/alert.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/badge.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/button.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/card.tsx": [
+      "frontend/src/lib/utils.ts"
+    ],
+    "frontend/src/components/ui/collapsible.tsx": []
+  }
+}

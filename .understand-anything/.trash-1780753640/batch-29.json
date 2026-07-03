@@ -1,0 +1,688 @@
+{
+  "nodes": [
+    {
+      "id": "document:open_notebook/utils/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "open_notebook/utils/README.md",
+      "summary": "Documentation content for README.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "utility",
+        "helper",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:prompts/ask/entry.jinja",
+      "type": "file",
+      "name": "entry.jinja",
+      "filePath": "prompts/ask/entry.jinja",
+      "summary": "Source implementation module for entry.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:prompts/ask/final_answer.jinja",
+      "type": "file",
+      "name": "final_answer.jinja",
+      "filePath": "prompts/ask/final_answer.jinja",
+      "summary": "Source implementation module for final_answer.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:prompts/ask/query_process.jinja",
+      "type": "file",
+      "name": "query_process.jinja",
+      "filePath": "prompts/ask/query_process.jinja",
+      "summary": "Source implementation module for query_process.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:prompts/chat/system.jinja",
+      "type": "file",
+      "name": "system.jinja",
+      "filePath": "prompts/chat/system.jinja",
+      "summary": "Source implementation module for system.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:prompts/CLAUDE.md",
+      "type": "document",
+      "name": "CLAUDE.md",
+      "filePath": "prompts/CLAUDE.md",
+      "summary": "Documentation content for CLAUDE.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:prompts/podcast/outline.jinja",
+      "type": "file",
+      "name": "outline.jinja",
+      "filePath": "prompts/podcast/outline.jinja",
+      "summary": "Source implementation module for outline.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:prompts/podcast/transcript.jinja",
+      "type": "file",
+      "name": "transcript.jinja",
+      "filePath": "prompts/podcast/transcript.jinja",
+      "summary": "Source implementation module for transcript.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:prompts/source_chat/system.jinja",
+      "type": "file",
+      "name": "system.jinja",
+      "filePath": "prompts/source_chat/system.jinja",
+      "summary": "Source implementation module for system.jinja.",
+      "tags": [
+        "jinja",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:run_api.py",
+      "type": "file",
+      "name": "run_api.py",
+      "filePath": "run_api.py",
+      "summary": "Startup script for Open Notebook API server.",
+      "tags": [
+        "python",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/debug_youtube.py",
+      "type": "file",
+      "name": "debug_youtube.py",
+      "filePath": "scratch/debug_youtube.py",
+      "summary": "Source implementation module for debug_youtube.py.",
+      "tags": [
+        "python",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scratch/test_config_override.py",
+      "type": "file",
+      "name": "test_config_override.py",
+      "filePath": "scratch/test_config_override.py",
+      "summary": "Verification test suite for code correctness in test_config_override.py.",
+      "tags": [
+        "test",
+        "testing",
+        "function",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scratch/test_config_override.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scratch/test_config_override.py",
+      "lineRange": [
+        6,
+        19
+      ],
+      "summary": "Function implements logic for main.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:scripts/export_docs.py",
+      "type": "file",
+      "name": "export_docs.py",
+      "filePath": "scripts/export_docs.py",
+      "summary": "Export documentation by consolidating markdown files from each docs folder. This script: 1. Scans all subdirectories in the docs/ folder 2. For each s",
+      "tags": [
+        "function",
+        "python",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/export_docs.py:get_markdown_files",
+      "type": "function",
+      "name": "get_markdown_files",
+      "filePath": "scripts/export_docs.py",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": "Function implements logic for get_markdown_files.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:scripts/export_docs.py:consolidate_folder",
+      "type": "function",
+      "name": "consolidate_folder",
+      "filePath": "scripts/export_docs.py",
+      "lineRange": [
+        26,
+        57
+      ],
+      "summary": "Function implements logic for consolidate_folder.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:scripts/export_docs.py:main",
+      "type": "function",
+      "name": "main",
+      "filePath": "scripts/export_docs.py",
+      "lineRange": [
+        60,
+        92
+      ],
+      "summary": "Function implements logic for main.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:scripts/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "scripts/README.md",
+      "summary": "Documentation content for README.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:scripts/wait-for-api.sh",
+      "type": "file",
+      "name": "wait-for-api.sh",
+      "filePath": "scripts/wait-for-api.sh",
+      "summary": "Source implementation module for wait-for-api.sh.",
+      "tags": [
+        "shell",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supervisord.conf",
+      "type": "file",
+      "name": "supervisord.conf",
+      "filePath": "supervisord.conf",
+      "summary": "Source implementation module for supervisord.conf.",
+      "tags": [
+        "conf",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supervisord.dev.conf",
+      "type": "file",
+      "name": "supervisord.dev.conf",
+      "filePath": "supervisord.dev.conf",
+      "summary": "Source implementation module for supervisord.dev.conf.",
+      "tags": [
+        "conf",
+        "development",
+        "development"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:supervisord.single.conf",
+      "type": "file",
+      "name": "supervisord.single.conf",
+      "filePath": "supervisord.single.conf",
+      "summary": "Source implementation module for supervisord.single.conf.",
+      "tags": [
+        "conf",
+        "development",
+        "development"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/conftest.py",
+      "type": "file",
+      "name": "conftest.py",
+      "filePath": "tests/conftest.py",
+      "summary": "Pytest configuration file. This file ensures that the project root is in the Python path, allowing tests to import from the api and open_notebook modu",
+      "tags": [
+        "test",
+        "testing",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:tests/README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "tests/README.md",
+      "summary": "Documentation content for README.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "test",
+        "testing",
+        "markdown"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tests/test_credentials_api.py",
+      "type": "file",
+      "name": "test_credentials_api.py",
+      "filePath": "tests/test_credentials_api.py",
+      "summary": "Tests for the credentials API endpoint.",
+      "tags": [
+        "test",
+        "testing",
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/test_credentials_api.py:client",
+      "type": "function",
+      "name": "client",
+      "filePath": "tests/test_credentials_api.py",
+      "lineRange": [
+        10,
+        14
+      ],
+      "summary": "Function implements logic for client.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/test_credentials_api.py:TestCredentialCascadeDelete",
+      "type": "class",
+      "name": "TestCredentialCascadeDelete",
+      "filePath": "tests/test_credentials_api.py",
+      "lineRange": [
+        17,
+        96
+      ],
+      "summary": "Class implements TestCredentialCascadeDelete structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/test_models_api.py",
+      "type": "file",
+      "name": "test_models_api.py",
+      "filePath": "tests/test_models_api.py",
+      "summary": "Create test client after environment variables have been cleared by conftest.",
+      "tags": [
+        "test",
+        "testing",
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:tests/test_models_api.py:client",
+      "type": "function",
+      "name": "client",
+      "filePath": "tests/test_models_api.py",
+      "lineRange": [
+        8,
+        12
+      ],
+      "summary": "Function implements logic for client.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/test_models_api.py:TestModelCreation",
+      "type": "class",
+      "name": "TestModelCreation",
+      "filePath": "tests/test_models_api.py",
+      "lineRange": [
+        15,
+        116
+      ],
+      "summary": "Class implements TestModelCreation structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/test_models_api.py:TestModelsProviderAvailability",
+      "type": "class",
+      "name": "TestModelsProviderAvailability",
+      "filePath": "tests/test_models_api.py",
+      "lineRange": [
+        119,
+        391
+      ],
+      "summary": "Class implements TestModelsProviderAvailability structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:tests/test_notes_api.py",
+      "type": "file",
+      "name": "test_notes_api.py",
+      "filePath": "tests/test_notes_api.py",
+      "summary": "Create test client after environment variables have been cleared by conftest.",
+      "tags": [
+        "test",
+        "testing",
+        "class",
+        "function",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/test_notes_api.py:client",
+      "type": "function",
+      "name": "client",
+      "filePath": "tests/test_notes_api.py",
+      "lineRange": [
+        8,
+        12
+      ],
+      "summary": "Function implements logic for client.",
+      "tags": [
+        "function",
+        "logic",
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:tests/test_notes_api.py:TestNoteCreation",
+      "type": "class",
+      "name": "TestNoteCreation",
+      "filePath": "tests/test_notes_api.py",
+      "lineRange": [
+        15,
+        65
+      ],
+      "summary": "Class implements TestNoteCreation structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:tests/test_notes_api.py:TestNoteUpdate",
+      "type": "class",
+      "name": "TestNoteUpdate",
+      "filePath": "tests/test_notes_api.py",
+      "lineRange": [
+        68,
+        115
+      ],
+      "summary": "Class implements TestNoteUpdate structure and behaviors.",
+      "tags": [
+        "class",
+        "oop",
+        "python"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:scratch/test_config_override.py",
+      "target": "function:scratch/test_config_override.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scratch/test_config_override.py",
+      "target": "function:scratch/test_config_override.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:get_markdown_files",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:get_markdown_files",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:consolidate_folder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:consolidate_folder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:main",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:scripts/export_docs.py",
+      "target": "function:scripts/export_docs.py:main",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_credentials_api.py",
+      "target": "function:tests/test_credentials_api.py:client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_credentials_api.py",
+      "target": "function:tests/test_credentials_api.py:client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_credentials_api.py",
+      "target": "class:tests/test_credentials_api.py:TestCredentialCascadeDelete",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_credentials_api.py",
+      "target": "class:tests/test_credentials_api.py:TestCredentialCascadeDelete",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "function:tests/test_models_api.py:client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "function:tests/test_models_api.py:client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "class:tests/test_models_api.py:TestModelCreation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "class:tests/test_models_api.py:TestModelCreation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "class:tests/test_models_api.py:TestModelsProviderAvailability",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_models_api.py",
+      "target": "class:tests/test_models_api.py:TestModelsProviderAvailability",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "function:tests/test_notes_api.py:client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "function:tests/test_notes_api.py:client",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "class:tests/test_notes_api.py:TestNoteCreation",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "class:tests/test_notes_api.py:TestNoteCreation",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "class:tests/test_notes_api.py:TestNoteUpdate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/test_notes_api.py",
+      "target": "class:tests/test_notes_api.py:TestNoteUpdate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

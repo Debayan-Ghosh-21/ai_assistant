@@ -1,0 +1,3559 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "frontend/src/components/ui/alert-dialog.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 157,
+      "nonEmptyLines": 143,
+      "functions": [
+        {
+          "name": "AlertDialog",
+          "startLine": 9,
+          "endLine": 13,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "startLine": 15,
+          "endLine": 21,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogPortal",
+          "startLine": 23,
+          "endLine": 29,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "startLine": 31,
+          "endLine": 45,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogContent",
+          "startLine": 47,
+          "endLine": 64,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogHeader",
+          "startLine": 66,
+          "endLine": 77,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogFooter",
+          "startLine": 79,
+          "endLine": 93,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogTitle",
+          "startLine": 95,
+          "endLine": 106,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogDescription",
+          "startLine": 108,
+          "endLine": 119,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogAction",
+          "startLine": 121,
+          "endLine": 131,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "AlertDialogCancel",
+          "startLine": 133,
+          "endLine": 143,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AlertDialog",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogPortal",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTrigger",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogContent",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogHeader",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogFooter",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogTitle",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogDescription",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogAction",
+          "line": 145,
+          "isDefault": false
+        },
+        {
+          "name": "AlertDialogCancel",
+          "line": 145,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AlertDialogOverlay",
+          "callee": "cn",
+          "lineNumber": 38
+        },
+        {
+          "caller": "AlertDialogContent",
+          "callee": "cn",
+          "lineNumber": 56
+        },
+        {
+          "caller": "AlertDialogHeader",
+          "callee": "cn",
+          "lineNumber": 73
+        },
+        {
+          "caller": "AlertDialogFooter",
+          "callee": "cn",
+          "lineNumber": 86
+        },
+        {
+          "caller": "AlertDialogTitle",
+          "callee": "cn",
+          "lineNumber": 102
+        },
+        {
+          "caller": "AlertDialogDescription",
+          "callee": "cn",
+          "lineNumber": 115
+        },
+        {
+          "caller": "AlertDialogAction",
+          "callee": "cn",
+          "lineNumber": 127
+        },
+        {
+          "caller": "AlertDialogAction",
+          "callee": "buttonVariants",
+          "lineNumber": 127
+        },
+        {
+          "caller": "AlertDialogCancel",
+          "callee": "cn",
+          "lineNumber": 139
+        },
+        {
+          "caller": "AlertDialogCancel",
+          "callee": "buttonVariants",
+          "lineNumber": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/ui/dropdown-menu.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 257,
+      "nonEmptyLines": 239,
+      "functions": [
+        {
+          "name": "DropdownMenu",
+          "startLine": 9,
+          "endLine": 13,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "startLine": 15,
+          "endLine": 21,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "startLine": 23,
+          "endLine": 32,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuContent",
+          "startLine": 34,
+          "endLine": 52,
+          "params": [
+            "{\n  className,\n  sideOffset = 4,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "startLine": 54,
+          "endLine": 60,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuItem",
+          "startLine": 62,
+          "endLine": 83,
+          "params": [
+            "{\n  className,\n  inset,\n  variant = \"default\",\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "startLine": 85,
+          "endLine": 109,
+          "params": [
+            "{\n  className,\n  children,\n  checked,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "startLine": 111,
+          "endLine": 120,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "startLine": 122,
+          "endLine": 144,
+          "params": [
+            "{\n  className,\n  children,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "startLine": 146,
+          "endLine": 164,
+          "params": [
+            "{\n  className,\n  inset,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "startLine": 166,
+          "endLine": 177,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "startLine": 179,
+          "endLine": 193,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuSub",
+          "startLine": 195,
+          "endLine": 199,
+          "params": [
+            "{\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "startLine": 201,
+          "endLine": 223,
+          "params": [
+            "{\n  className,\n  inset,\n  children,\n  ...props\n}"
+          ]
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "startLine": 225,
+          "endLine": 239,
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DropdownMenu",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuPortal",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuTrigger",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuContent",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuGroup",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuItem",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioGroup",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSub",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "line": 241,
+          "isDefault": false
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "line": 241,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DropdownMenuContent",
+          "callee": "cn",
+          "lineNumber": 44
+        },
+        {
+          "caller": "DropdownMenuItem",
+          "callee": "cn",
+          "lineNumber": 76
+        },
+        {
+          "caller": "DropdownMenuCheckboxItem",
+          "callee": "cn",
+          "lineNumber": 94
+        },
+        {
+          "caller": "DropdownMenuRadioItem",
+          "callee": "cn",
+          "lineNumber": 130
+        },
+        {
+          "caller": "DropdownMenuLabel",
+          "callee": "cn",
+          "lineNumber": 157
+        },
+        {
+          "caller": "DropdownMenuSeparator",
+          "callee": "cn",
+          "lineNumber": 173
+        },
+        {
+          "caller": "DropdownMenuShortcut",
+          "callee": "cn",
+          "lineNumber": 186
+        },
+        {
+          "caller": "DropdownMenuSubTrigger",
+          "callee": "cn",
+          "lineNumber": 213
+        },
+        {
+          "caller": "DropdownMenuSubContent",
+          "callee": "cn",
+          "lineNumber": 232
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 15,
+        "functionCount": 15,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/ui/markdown-editor.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 40,
+      "exports": [
+        {
+          "name": "MarkdownEditor",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/chat.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 63,
+      "exports": [
+        {
+          "name": "chatApi",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/notebooks.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 54,
+      "nonEmptyLines": 46,
+      "exports": [
+        {
+          "name": "notebooksApi",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/notes.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "exports": [
+        {
+          "name": "notesApi",
+          "line": 4,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/query-client.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 33,
+      "exports": [
+        {
+          "name": "queryClient",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "QUERY_KEYS",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/source-chat.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 85,
+      "nonEmptyLines": 77,
+      "exports": [
+        {
+          "name": "sourceChatApi",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/sources.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 108,
+      "nonEmptyLines": 92,
+      "exports": [
+        {
+          "name": "sourcesApi",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-media-query.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 32,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "useMediaQuery",
+          "startLine": 9,
+          "endLine": 25,
+          "params": [
+            "query"
+          ]
+        },
+        {
+          "name": "useIsDesktop",
+          "startLine": 30,
+          "endLine": 32,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useMediaQuery",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "useIsDesktop",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useMediaQuery",
+          "callee": "useState",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useMediaQuery",
+          "callee": "useEffect",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useMediaQuery",
+          "callee": "window.matchMedia",
+          "lineNumber": 13
+        },
+        {
+          "caller": "useMediaQuery",
+          "callee": "setMatches",
+          "lineNumber": 14
+        },
+        {
+          "caller": "handler",
+          "callee": "setMatches",
+          "lineNumber": 17
+        },
+        {
+          "caller": "useMediaQuery",
+          "callee": "mediaQuery.addEventListener",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useMediaQuery",
+          "callee": "mediaQuery.removeEventListener",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useIsDesktop",
+          "callee": "useMediaQuery",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-notebooks.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 112,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "useNotebooks",
+          "startLine": 9,
+          "endLine": 14,
+          "params": [
+            "archived"
+          ]
+        },
+        {
+          "name": "useNotebook",
+          "startLine": 16,
+          "endLine": 22,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "useCreateNotebook",
+          "startLine": 24,
+          "endLine": 46,
+          "params": []
+        },
+        {
+          "name": "useUpdateNotebook",
+          "startLine": 48,
+          "endLine": 72,
+          "params": []
+        },
+        {
+          "name": "useNotebookDeletePreview",
+          "startLine": 74,
+          "endLine": 80,
+          "params": [
+            "id",
+            "enabled"
+          ]
+        },
+        {
+          "name": "useDeleteNotebook",
+          "startLine": 82,
+          "endLine": 112,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useNotebooks",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "useNotebook",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "useCreateNotebook",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "useUpdateNotebook",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "useNotebookDeletePreview",
+          "line": 74,
+          "isDefault": false
+        },
+        {
+          "name": "useDeleteNotebook",
+          "line": 82,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useNotebooks",
+          "callee": "useQuery",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useNotebooks",
+          "callee": "notebooksApi.list",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useNotebook",
+          "callee": "useQuery",
+          "lineNumber": 17
+        },
+        {
+          "caller": "useNotebook",
+          "callee": "QUERY_KEYS.notebook",
+          "lineNumber": 18
+        },
+        {
+          "caller": "useNotebook",
+          "callee": "notebooksApi.get",
+          "lineNumber": 19
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "useQueryClient",
+          "lineNumber": 25
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "useToast",
+          "lineNumber": 26
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "useTranslation",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "useMutation",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "notebooksApi.create",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 32
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "toast",
+          "lineNumber": 33
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "t",
+          "lineNumber": 34
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "t",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "toast",
+          "lineNumber": 39
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "t",
+          "lineNumber": 40
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "t",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "getApiErrorKey",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useCreateNotebook",
+          "callee": "t",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "useQueryClient",
+          "lineNumber": 49
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "useToast",
+          "lineNumber": 50
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "useTranslation",
+          "lineNumber": 51
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "useMutation",
+          "lineNumber": 53
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "notebooksApi.update",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 58
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "QUERY_KEYS.notebook",
+          "lineNumber": 58
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "toast",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "t",
+          "lineNumber": 60
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "t",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "toast",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "t",
+          "lineNumber": 66
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "getApiErrorKey",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useUpdateNotebook",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useNotebookDeletePreview",
+          "callee": "useQuery",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useNotebookDeletePreview",
+          "callee": "QUERY_KEYS.notebook",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useNotebookDeletePreview",
+          "callee": "notebooksApi.deletePreview",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "useQueryClient",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "useToast",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "useTranslation",
+          "lineNumber": 85
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "useMutation",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "notebooksApi.delete",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 98
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "toast",
+          "lineNumber": 99
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "t",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "t",
+          "lineNumber": 101
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "toast",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "t",
+          "lineNumber": 106
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "t",
+          "lineNumber": 107
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "getApiErrorKey",
+          "lineNumber": 107
+        },
+        {
+          "caller": "useDeleteNotebook",
+          "callee": "t",
+          "lineNumber": 107
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 6,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-notes.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 101,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "useNotes",
+          "startLine": 9,
+          "endLine": 15,
+          "params": [
+            "notebookId"
+          ]
+        },
+        {
+          "name": "useNote",
+          "startLine": 17,
+          "endLine": 24,
+          "params": [
+            "id",
+            "options"
+          ]
+        },
+        {
+          "name": "useCreateNote",
+          "startLine": 26,
+          "endLine": 50,
+          "params": []
+        },
+        {
+          "name": "useUpdateNote",
+          "startLine": 52,
+          "endLine": 76,
+          "params": []
+        },
+        {
+          "name": "useDeleteNote",
+          "startLine": 78,
+          "endLine": 101,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useNotes",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "useNote",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "useCreateNote",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "useUpdateNote",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "useDeleteNote",
+          "line": 78,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useNotes",
+          "callee": "useQuery",
+          "lineNumber": 10
+        },
+        {
+          "caller": "useNotes",
+          "callee": "QUERY_KEYS.notes",
+          "lineNumber": 11
+        },
+        {
+          "caller": "useNotes",
+          "callee": "notesApi.list",
+          "lineNumber": 12
+        },
+        {
+          "caller": "useNote",
+          "callee": "useQuery",
+          "lineNumber": 19
+        },
+        {
+          "caller": "useNote",
+          "callee": "QUERY_KEYS.note",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useNote",
+          "callee": "notesApi.get",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "useQueryClient",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "useToast",
+          "lineNumber": 28
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "useTranslation",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "useMutation",
+          "lineNumber": 31
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "notesApi.create",
+          "lineNumber": 32
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 34
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "QUERY_KEYS.notes",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "toast",
+          "lineNumber": 37
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "t",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "t",
+          "lineNumber": 39
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "toast",
+          "lineNumber": 43
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "t",
+          "lineNumber": 44
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "getApiErrorKey",
+          "lineNumber": 45
+        },
+        {
+          "caller": "useCreateNote",
+          "callee": "t",
+          "lineNumber": 45
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "useQueryClient",
+          "lineNumber": 53
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "useToast",
+          "lineNumber": 54
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "useTranslation",
+          "lineNumber": 55
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "useMutation",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "notesApi.update",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "QUERY_KEYS.notes",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "QUERY_KEYS.note",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "toast",
+          "lineNumber": 63
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "t",
+          "lineNumber": 64
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "t",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "toast",
+          "lineNumber": 69
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "t",
+          "lineNumber": 70
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "getApiErrorKey",
+          "lineNumber": 71
+        },
+        {
+          "caller": "useUpdateNote",
+          "callee": "t",
+          "lineNumber": 71
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "useQueryClient",
+          "lineNumber": 79
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "useToast",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "useTranslation",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "useMutation",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "notesApi.delete",
+          "lineNumber": 84
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "toast",
+          "lineNumber": 88
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "t",
+          "lineNumber": 89
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "t",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "toast",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "t",
+          "lineNumber": 95
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "getApiErrorKey",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useDeleteNote",
+          "callee": "t",
+          "lineNumber": 96
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 5,
+        "functionCount": 5,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/use-sources.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 386,
+      "nonEmptyLines": 355,
+      "functions": [
+        {
+          "name": "useSources",
+          "startLine": 18,
+          "endLine": 26,
+          "params": [
+            "notebookId"
+          ]
+        },
+        {
+          "name": "useNotebookSources",
+          "startLine": 32,
+          "endLine": 77,
+          "params": [
+            "notebookId"
+          ]
+        },
+        {
+          "name": "useSource",
+          "startLine": 79,
+          "endLine": 87,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "useCreateSource",
+          "startLine": 89,
+          "endLine": 147,
+          "params": []
+        },
+        {
+          "name": "useUpdateSource",
+          "startLine": 149,
+          "endLine": 174,
+          "params": []
+        },
+        {
+          "name": "useDeleteSource",
+          "startLine": 176,
+          "endLine": 201,
+          "params": []
+        },
+        {
+          "name": "useFileUpload",
+          "startLine": 203,
+          "endLine": 232,
+          "params": []
+        },
+        {
+          "name": "useSourceStatus",
+          "startLine": 234,
+          "endLine": 259,
+          "params": [
+            "sourceId",
+            "enabled"
+          ]
+        },
+        {
+          "name": "useRetrySource",
+          "startLine": 261,
+          "endLine": 290,
+          "params": []
+        },
+        {
+          "name": "useAddSourcesToNotebook",
+          "startLine": 292,
+          "endLine": 352,
+          "params": []
+        },
+        {
+          "name": "useRemoveSourceFromNotebook",
+          "startLine": 354,
+          "endLine": 386,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "useSources",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "useNotebookSources",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "useSource",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "useCreateSource",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "useUpdateSource",
+          "line": 149,
+          "isDefault": false
+        },
+        {
+          "name": "useDeleteSource",
+          "line": 176,
+          "isDefault": false
+        },
+        {
+          "name": "useFileUpload",
+          "line": 203,
+          "isDefault": false
+        },
+        {
+          "name": "useSourceStatus",
+          "line": 234,
+          "isDefault": false
+        },
+        {
+          "name": "useRetrySource",
+          "line": 261,
+          "isDefault": false
+        },
+        {
+          "name": "useAddSourcesToNotebook",
+          "line": 292,
+          "isDefault": false
+        },
+        {
+          "name": "useRemoveSourceFromNotebook",
+          "line": 354,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useSources",
+          "callee": "useQuery",
+          "lineNumber": 19
+        },
+        {
+          "caller": "useSources",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useSources",
+          "callee": "sourcesApi.list",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "useQueryClient",
+          "lineNumber": 33
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "useInfiniteQuery",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "QUERY_KEYS.sourcesInfinite",
+          "lineNumber": 36
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "sourcesApi.list",
+          "lineNumber": 38
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "useMemo",
+          "lineNumber": 58
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "query.data?.pages.flatMap",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "useCallback",
+          "lineNumber": 64
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useNotebookSources",
+          "callee": "QUERY_KEYS.sourcesInfinite",
+          "lineNumber": 65
+        },
+        {
+          "caller": "useSource",
+          "callee": "useQuery",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useSource",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 81
+        },
+        {
+          "caller": "useSource",
+          "callee": "sourcesApi.get",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "useQueryClient",
+          "lineNumber": 90
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "useToast",
+          "lineNumber": 91
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "useTranslation",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "useMutation",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "sourcesApi.create",
+          "lineNumber": 95
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "variables.notebooks.forEach",
+          "lineNumber": 99
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 101
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 104
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "QUERY_KEYS.sourcesInfinite",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 110
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 114
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "QUERY_KEYS.sourcesInfinite",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 121
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 122
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "toast",
+          "lineNumber": 128
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 129
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 130
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "toast",
+          "lineNumber": 133
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 134
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 135
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "toast",
+          "lineNumber": 140
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 142
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 142
+        },
+        {
+          "caller": "useCreateSource",
+          "callee": "t",
+          "lineNumber": 142
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "useQueryClient",
+          "lineNumber": 150
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "useToast",
+          "lineNumber": 151
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "useTranslation",
+          "lineNumber": 152
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "useMutation",
+          "lineNumber": 154
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "sourcesApi.update",
+          "lineNumber": 156
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 159
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 160
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 160
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "toast",
+          "lineNumber": 161
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "t",
+          "lineNumber": 162
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "t",
+          "lineNumber": 163
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "toast",
+          "lineNumber": 167
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "t",
+          "lineNumber": 168
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "t",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useUpdateSource",
+          "callee": "t",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "useQueryClient",
+          "lineNumber": 177
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "useToast",
+          "lineNumber": 178
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "useTranslation",
+          "lineNumber": 179
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "useMutation",
+          "lineNumber": 181
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "sourcesApi.delete",
+          "lineNumber": 182
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 185
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 187
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 187
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "toast",
+          "lineNumber": 188
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "t",
+          "lineNumber": 189
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "t",
+          "lineNumber": 190
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "toast",
+          "lineNumber": 194
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "t",
+          "lineNumber": 195
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 196
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "t",
+          "lineNumber": 196
+        },
+        {
+          "caller": "useDeleteSource",
+          "callee": "t",
+          "lineNumber": 196
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "useQueryClient",
+          "lineNumber": 204
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "useToast",
+          "lineNumber": 205
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "useTranslation",
+          "lineNumber": 206
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "useMutation",
+          "lineNumber": 208
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "sourcesApi.upload",
+          "lineNumber": 210
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 212
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 213
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 215
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "QUERY_KEYS.sourcesInfinite",
+          "lineNumber": 216
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "toast",
+          "lineNumber": 219
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "t",
+          "lineNumber": 220
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "t",
+          "lineNumber": 221
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "toast",
+          "lineNumber": 225
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "t",
+          "lineNumber": 226
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 227
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "t",
+          "lineNumber": 227
+        },
+        {
+          "caller": "useFileUpload",
+          "callee": "t",
+          "lineNumber": 227
+        },
+        {
+          "caller": "useSourceStatus",
+          "callee": "useQuery",
+          "lineNumber": 235
+        },
+        {
+          "caller": "useSourceStatus",
+          "callee": "sourcesApi.status",
+          "lineNumber": 237
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "useQueryClient",
+          "lineNumber": 262
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "useToast",
+          "lineNumber": 263
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "useTranslation",
+          "lineNumber": 264
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "useMutation",
+          "lineNumber": 266
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "sourcesApi.retry",
+          "lineNumber": 267
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 270
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 274
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 275
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 275
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "toast",
+          "lineNumber": 277
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "t",
+          "lineNumber": 278
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "t",
+          "lineNumber": 279
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "toast",
+          "lineNumber": 283
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "t",
+          "lineNumber": 284
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 285
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "t",
+          "lineNumber": 285
+        },
+        {
+          "caller": "useRetrySource",
+          "callee": "t",
+          "lineNumber": 285
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "useQueryClient",
+          "lineNumber": 293
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "useToast",
+          "lineNumber": 294
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "useTranslation",
+          "lineNumber": 295
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "useMutation",
+          "lineNumber": 297
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "import",
+          "lineNumber": 299
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "Promise.allSettled",
+          "lineNumber": 302
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "sourceIds.map",
+          "lineNumber": 303
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "notebooksApi.addSource",
+          "lineNumber": 303
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "results.filter",
+          "lineNumber": 307
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "results.filter",
+          "lineNumber": 308
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 314
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 316
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 316
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "sourceIds.forEach",
+          "lineNumber": 318
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 319
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 319
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "toast",
+          "lineNumber": 324
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 325
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t('sources.sourcesAddedToNotebook').replace",
+          "lineNumber": 326
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 326
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "result.successes.toString",
+          "lineNumber": 326
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "toast",
+          "lineNumber": 329
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 330
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 331
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "toast",
+          "lineNumber": 335
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 336
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t('sources.partialAddSuccess')\n            .replace('{success}', result.successes.toString())\n            .replace",
+          "lineNumber": 337
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t('sources.partialAddSuccess')\n            .replace",
+          "lineNumber": 337
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 337
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "result.successes.toString",
+          "lineNumber": 338
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "result.failures.toString",
+          "lineNumber": 339
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "toast",
+          "lineNumber": 345
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 346
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 347
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 347
+        },
+        {
+          "caller": "useAddSourcesToNotebook",
+          "callee": "t",
+          "lineNumber": 347
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "useQueryClient",
+          "lineNumber": 355
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "useToast",
+          "lineNumber": 356
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "useTranslation",
+          "lineNumber": 357
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "useMutation",
+          "lineNumber": 359
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "import",
+          "lineNumber": 362
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "notebooksApi.removeSource",
+          "lineNumber": 363
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 367
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 369
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "QUERY_KEYS.sources",
+          "lineNumber": 369
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 371
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "QUERY_KEYS.source",
+          "lineNumber": 371
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "toast",
+          "lineNumber": 373
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "t",
+          "lineNumber": 374
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "t",
+          "lineNumber": 375
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "toast",
+          "lineNumber": 379
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "t",
+          "lineNumber": 380
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 381
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "t",
+          "lineNumber": 381
+        },
+        {
+          "caller": "useRemoveSourceFromNotebook",
+          "callee": "t",
+          "lineNumber": 381
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 11,
+        "functionCount": 11,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/useNotebookChat.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 323,
+      "nonEmptyLines": 293,
+      "functions": [
+        {
+          "name": "useNotebookChat",
+          "startLine": 26,
+          "endLine": 323,
+          "params": [
+            "{ notebookId, sources, notes, contextSelections }"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useNotebookChat",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useNotebookChat",
+          "callee": "useTranslation",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useQueryClient",
+          "lineNumber": 28
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 30
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 31
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 32
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 33
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useState",
+          "lineNumber": 35
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useQuery",
+          "lineNumber": 42
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSessions",
+          "lineNumber": 43
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.listSessions",
+          "lineNumber": 44
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useQuery",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSession",
+          "lineNumber": 53
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.getSession",
+          "lineNumber": 54
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useEffect",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setMessages",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useEffect",
+          "lineNumber": 66
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 70
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useMutation",
+          "lineNumber": 75
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.createSession",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 79
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSessions",
+          "lineNumber": 80
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.success",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 83
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.error",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useMutation",
+          "lineNumber": 92
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.updateSession",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 98
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSessions",
+          "lineNumber": 99
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 101
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSession",
+          "lineNumber": 102
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.success",
+          "lineNumber": 104
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 104
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.error",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 108
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useMutation",
+          "lineNumber": 113
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.deleteSession",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 117
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSessions",
+          "lineNumber": 118
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 121
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setMessages",
+          "lineNumber": 122
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.success",
+          "lineNumber": 124
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 124
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.error",
+          "lineNumber": 128
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 128
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 128
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 133
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "sources.forEach",
+          "lineNumber": 141
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "notes.forEach",
+          "lineNumber": 153
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.buildContext",
+          "lineNumber": 163
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setTokenCount",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCharCount",
+          "lineNumber": 170
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 176
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "message.substring",
+          "lineNumber": 183
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.createSession",
+          "lineNumber": 185
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 192
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setPendingModelOverride",
+          "lineNumber": 194
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 195
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "QUERY_KEYS.notebookChatSessions",
+          "lineNumber": 196
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.error",
+          "lineNumber": 200
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 200
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 200
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "Date.now",
+          "lineNumber": 207
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "new Date().toISOString",
+          "lineNumber": 210
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setMessages",
+          "lineNumber": 212
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setIsSending",
+          "lineNumber": 213
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "buildContext",
+          "lineNumber": 217
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "chatApi.sendMessage",
+          "lineNumber": 218
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setMessages",
+          "lineNumber": 226
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "refetchCurrentSession",
+          "lineNumber": 229
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "console.error",
+          "lineNumber": 232
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "toast.error",
+          "lineNumber": 233
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 233
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "t",
+          "lineNumber": 233
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setMessages",
+          "lineNumber": 235
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "prev.filter",
+          "lineNumber": 235
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "msg.id.startsWith",
+          "lineNumber": 235
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setIsSending",
+          "lineNumber": 237
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 251
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 252
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 256
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "createSessionMutation.mutate",
+          "lineNumber": 257
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 264
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "updateSessionMutation.mutate",
+          "lineNumber": 265
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 272
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "deleteSessionMutation.mutate",
+          "lineNumber": 273
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useCallback",
+          "lineNumber": 277
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "updateSessionMutation.mutate",
+          "lineNumber": 280
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "setPendingModelOverride",
+          "lineNumber": 286
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "useEffect",
+          "lineNumber": 291
+        },
+        {
+          "caller": "updateContextCounts",
+          "callee": "buildContext",
+          "lineNumber": 294
+        },
+        {
+          "caller": "updateContextCounts",
+          "callee": "console.error",
+          "lineNumber": 296
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "updateContextCounts",
+          "lineNumber": 299
+        },
+        {
+          "caller": "useNotebookChat",
+          "callee": "sessions.find",
+          "lineNumber": 305
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/useSourceChat.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 255,
+      "nonEmptyLines": 229,
+      "functions": [
+        {
+          "name": "useSourceChat",
+          "startLine": 17,
+          "endLine": 255,
+          "params": [
+            "sourceId"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "useSourceChat",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "useSourceChat",
+          "callee": "useTranslation",
+          "lineNumber": 18
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useQueryClient",
+          "lineNumber": 19
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useState",
+          "lineNumber": 20
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useState",
+          "lineNumber": 21
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useState",
+          "lineNumber": 22
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useState",
+          "lineNumber": 23
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useRef",
+          "lineNumber": 24
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useQuery",
+          "lineNumber": 27
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.listSessions",
+          "lineNumber": 29
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useQuery",
+          "lineNumber": 34
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.getSession",
+          "lineNumber": 36
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useEffect",
+          "lineNumber": 41
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 43
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useEffect",
+          "lineNumber": 48
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 52
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useMutation",
+          "lineNumber": 57
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.createSession",
+          "lineNumber": 59
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 61
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.success",
+          "lineNumber": 63
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 63
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.error",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 67
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useMutation",
+          "lineNumber": 72
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.updateSession",
+          "lineNumber": 74
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 76
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 77
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.success",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 78
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.error",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 82
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useMutation",
+          "lineNumber": 87
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.deleteSession",
+          "lineNumber": 89
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 91
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 93
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 94
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.success",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 96
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.error",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 100
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 105
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "message.substring",
+          "lineNumber": 111
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.createSession",
+          "lineNumber": 112
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 114
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "queryClient.invalidateQueries",
+          "lineNumber": 115
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "console.error",
+          "lineNumber": 118
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.error",
+          "lineNumber": 119
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 119
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 119
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "Date.now",
+          "lineNumber": 126
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "new Date().toISOString",
+          "lineNumber": 129
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 131
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setIsStreaming",
+          "lineNumber": 132
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sourceChatApi.sendMessage",
+          "lineNumber": 135
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "response.getReader",
+          "lineNumber": 144
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "reader.read",
+          "lineNumber": 149
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "decoder.decode",
+          "lineNumber": 152
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "text.split",
+          "lineNumber": 153
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "line.startsWith",
+          "lineNumber": 156
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "JSON.parse",
+          "lineNumber": 158
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "line.slice",
+          "lineNumber": 158
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "Date.now",
+          "lineNumber": 164
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "new Date().toISOString",
+          "lineNumber": 167
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 169
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 172
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "prev.map",
+          "lineNumber": 173
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setContextIndicators",
+          "lineNumber": 180
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "console.error",
+          "lineNumber": 186
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "console.error",
+          "lineNumber": 196
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "toast.error",
+          "lineNumber": 197
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "getApiErrorMessage",
+          "lineNumber": 197
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "t",
+          "lineNumber": 197
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setMessages",
+          "lineNumber": 199
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "prev.filter",
+          "lineNumber": 199
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "msg.id.startsWith",
+          "lineNumber": 199
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setIsStreaming",
+          "lineNumber": 201
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "refetchCurrentSession",
+          "lineNumber": 203
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 208
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "abortControllerRef.current.abort",
+          "lineNumber": 210
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setIsStreaming",
+          "lineNumber": 211
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 216
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setCurrentSessionId",
+          "lineNumber": 217
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "setContextIndicators",
+          "lineNumber": 218
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 222
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "createSessionMutation.mutate",
+          "lineNumber": 223
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 227
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "updateSessionMutation.mutate",
+          "lineNumber": 228
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "useCallback",
+          "lineNumber": 232
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "deleteSessionMutation.mutate",
+          "lineNumber": 233
+        },
+        {
+          "caller": "useSourceChat",
+          "callee": "sessions.find",
+          "lineNumber": 239
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/stores/notebook-columns-store.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 25,
+      "exports": [
+        {
+          "name": "useNotebookColumnsStore",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/types/api.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 241,
+      "nonEmptyLines": 209,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/utils/date-locale.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "getDateLocale",
+          "startLine": 26,
+          "endLine": 28,
+          "params": [
+            "language"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDateLocale",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/lib/utils/error-handler.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "getApiErrorKey",
+          "startLine": 34,
+          "endLine": 52,
+          "params": [
+            "errorOrMessage",
+            "fallbackKey"
+          ]
+        },
+        {
+          "name": "getApiErrorMessage",
+          "startLine": 59,
+          "endLine": 77,
+          "params": [
+            "errorOrMessage",
+            "t",
+            "fallbackKey"
+          ]
+        },
+        {
+          "name": "formatApiError",
+          "startLine": 82,
+          "endLine": 93,
+          "params": [
+            "error"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ERROR_MAP",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "getApiErrorKey",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getApiErrorMessage",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "formatApiError",
+          "line": 82,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getApiErrorKey",
+          "callee": "formatApiError",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getApiErrorKey",
+          "callee": "Object.entries",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getApiErrorKey",
+          "callee": "message.startsWith",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "formatApiError",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "t",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "t",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "t",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "Object.entries",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "message.startsWith",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getApiErrorMessage",
+          "callee": "t",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,1699 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 107,
+      "nonEmptyLines": 75,
+      "sections": [
+        {
+          "heading": "Description",
+          "level": 2,
+          "line": 1
+        },
+        {
+          "heading": "Related Issue",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Type of Change",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "How Has This Been Tested?",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Design Alignment",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Code Quality",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "Testing",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "Documentation",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "Database Changes",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "Breaking Changes",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Screenshots (if applicable)",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Additional Context",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "Pre-Submission Verification",
+          "level": 2,
+          "line": 95
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": ".python-version",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 107,
+      "nonEmptyLines": 102,
+      "metrics": {}
+    },
+    {
+      "path": ".worktreeinclude",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 5,
+      "metrics": {}
+    },
+    {
+      "path": "api/__init__.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "api/chat_service.py",
+      "language": "python",
+      "fileCategory": "code",
+      "totalLines": 168,
+      "nonEmptyLines": 149,
+      "classes": [
+        {
+          "name": "ChatService",
+          "startLine": 13,
+          "endLine": 164,
+          "methods": [
+            "__init__",
+            "get_sessions",
+            "create_session",
+            "get_session",
+            "update_session",
+            "delete_session",
+            "execute_chat",
+            "build_context"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ChatService",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 17
+        },
+        {
+          "caller": "__init__",
+          "callee": "os.getenv",
+          "lineNumber": 20
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 27
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "client.get",
+          "lineNumber": 28
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "response.raise_for_status",
+          "lineNumber": 33
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "response.json",
+          "lineNumber": 34
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "logger.error",
+          "lineNumber": 36
+        },
+        {
+          "caller": "get_sessions",
+          "callee": "str",
+          "lineNumber": 36
+        },
+        {
+          "caller": "create_session",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 53
+        },
+        {
+          "caller": "create_session",
+          "callee": "client.post",
+          "lineNumber": 54
+        },
+        {
+          "caller": "create_session",
+          "callee": "response.raise_for_status",
+          "lineNumber": 59
+        },
+        {
+          "caller": "create_session",
+          "callee": "response.json",
+          "lineNumber": 60
+        },
+        {
+          "caller": "create_session",
+          "callee": "logger.error",
+          "lineNumber": 62
+        },
+        {
+          "caller": "create_session",
+          "callee": "str",
+          "lineNumber": 62
+        },
+        {
+          "caller": "get_session",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 68
+        },
+        {
+          "caller": "get_session",
+          "callee": "client.get",
+          "lineNumber": 69
+        },
+        {
+          "caller": "get_session",
+          "callee": "response.raise_for_status",
+          "lineNumber": 73
+        },
+        {
+          "caller": "get_session",
+          "callee": "response.json",
+          "lineNumber": 74
+        },
+        {
+          "caller": "get_session",
+          "callee": "logger.error",
+          "lineNumber": 76
+        },
+        {
+          "caller": "get_session",
+          "callee": "str",
+          "lineNumber": 76
+        },
+        {
+          "caller": "update_session",
+          "callee": "ValueError",
+          "lineNumber": 94
+        },
+        {
+          "caller": "update_session",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 98
+        },
+        {
+          "caller": "update_session",
+          "callee": "client.put",
+          "lineNumber": 99
+        },
+        {
+          "caller": "update_session",
+          "callee": "response.raise_for_status",
+          "lineNumber": 104
+        },
+        {
+          "caller": "update_session",
+          "callee": "response.json",
+          "lineNumber": 105
+        },
+        {
+          "caller": "update_session",
+          "callee": "logger.error",
+          "lineNumber": 107
+        },
+        {
+          "caller": "update_session",
+          "callee": "str",
+          "lineNumber": 107
+        },
+        {
+          "caller": "delete_session",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 113
+        },
+        {
+          "caller": "delete_session",
+          "callee": "client.delete",
+          "lineNumber": 114
+        },
+        {
+          "caller": "delete_session",
+          "callee": "response.raise_for_status",
+          "lineNumber": 118
+        },
+        {
+          "caller": "delete_session",
+          "callee": "response.json",
+          "lineNumber": 119
+        },
+        {
+          "caller": "delete_session",
+          "callee": "logger.error",
+          "lineNumber": 121
+        },
+        {
+          "caller": "delete_session",
+          "callee": "str",
+          "lineNumber": 121
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "httpx.Timeout",
+          "lineNumber": 138
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 139
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "client.post",
+          "lineNumber": 140
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "response.raise_for_status",
+          "lineNumber": 143
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "response.json",
+          "lineNumber": 144
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "logger.error",
+          "lineNumber": 146
+        },
+        {
+          "caller": "execute_chat",
+          "callee": "str",
+          "lineNumber": 146
+        },
+        {
+          "caller": "build_context",
+          "callee": "httpx.AsyncClient",
+          "lineNumber": 156
+        },
+        {
+          "caller": "build_context",
+          "callee": "client.post",
+          "lineNumber": 157
+        },
+        {
+          "caller": "build_context",
+          "callee": "response.raise_for_status",
+          "lineNumber": 160
+        },
+        {
+          "caller": "build_context",
+          "callee": "response.json",
+          "lineNumber": 161
+        },
+        {
+          "caller": "build_context",
+          "callee": "logger.error",
+          "lineNumber": 163
+        },
+        {
+          "caller": "build_context",
+          "callee": "str",
+          "lineNumber": 163
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "api/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 260,
+      "nonEmptyLines": 199,
+      "sections": [
+        {
+          "heading": "API Module",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Architecture Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Component Catalog",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Main Application",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Services (Business Logic)",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Models (Schemas)",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "Routers",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Common Patterns",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Key Dependencies",
+          "level": 2,
+          "line": 79
+        },
+        {
+          "heading": "Important Quirks & Gotchas",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "Global Exception Handlers (`main.py`)",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Error Classification (`open_notebook.utils.error_classifier`)",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "Frontend Integration",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "How to Add New Endpoint",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "Testing Patterns",
+          "level": 2,
+          "line": 144
+        },
+        {
+          "heading": "Credential Management (API Configuration UI)",
+          "level": 2,
+          "line": 153
+        },
+        {
+          "heading": "Router: `routers/credentials.py`",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Domain Model: `Credential` (`open_notebook/domain/credential.py`)",
+          "level": 3,
+          "line": 185
+        },
+        {
+          "heading": "Integration with Key Provider (`open_notebook/ai/key_provider.py`)",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Authentication",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Connection Testing (`open_notebook/ai/connection_tester.py`)",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "Migration Workflows",
+          "level": 3,
+          "line": 224
+        },
+        {
+          "heading": "Example Usage",
+          "level": 3,
+          "line": 238
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "commands/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 68,
+      "nonEmptyLines": 54,
+      "sections": [
+        {
+          "heading": "Commands Module",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Components",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Embedding Commands",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Other Commands",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "Important Patterns",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Dependencies",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Quirks & Edge Cases",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Code Example",
+          "level": 2,
+          "line": 49
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "docs/4-AI-PROVIDERS/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 219,
+      "nonEmptyLines": 161,
+      "sections": [
+        {
+          "heading": "AI Providers - Comparison & Selection Guide",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick Decision: Which Provider?",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Cloud Providers (Easiest)",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Local / Self-Hosted (Free)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "Enterprise",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Comparison Table",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Choosing Your Provider",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "I want the easiest setup",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "I have unlimited budget",
+          "level": 3,
+          "line": 132
+        },
+        {
+          "heading": "I want to save money",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "I want privacy/offline",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "I want a GUI (not CLI)",
+          "level": 3,
+          "line": 141
+        },
+        {
+          "heading": "I'm in an enterprise",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "I need long context (200K+ tokens)",
+          "level": 3,
+          "line": 147
+        },
+        {
+          "heading": "I need multimodal (images, audio, video)",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "I want access to many models with one API key",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "Ready to Set Up Your Provider?",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "Cost Estimator",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "OpenAI",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "Anthropic",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Groq",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "Ollama",
+          "level": 3,
+          "line": 197
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 205
+        },
+        {
+          "heading": "Need Help?",
+          "level": 2,
+          "line": 215
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "docs/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 289,
+      "nonEmptyLines": 216,
+      "sections": [
+        {
+          "heading": "Open Notebook Documentation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🎯 Choose Your Path",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "I'm brand new",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "I need to install/deploy",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "I want to understand how it works",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "I want to use it (tutorials)",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "I need to configure it",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "I need provider-specific help",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Something's not working",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "I want to contribute/develop",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "📊 Documentation Overview",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "By Section",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "🔍 Find What You Need",
+          "level": 2,
+          "line": 126
+        },
+        {
+          "heading": "By Problem Type",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "📚 Reading Paths",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "Path 1: Complete Beginner (1-2 hours)",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Path 2: Get Running Fast (15 minutes)",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "Path 3: DevOps/Deployment (1-2 hours)",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Path 4: Troubleshooting (5-30 minutes)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "❓ Common Questions",
+          "level": 2,
+          "line": 188
+        },
+        {
+          "heading": "📖 How This Documentation is Organized",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "Principles",
+          "level": 3,
+          "line": 218
+        },
+        {
+          "heading": "Structure",
+          "level": 3,
+          "line": 226
+        },
+        {
+          "heading": "🚀 Quick Navigation",
+          "level": 2,
+          "line": 238
+        },
+        {
+          "heading": "First Time?",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "Just Want to Use It?",
+          "level": 3,
+          "line": 243
+        },
+        {
+          "heading": "Something Broken?",
+          "level": 3,
+          "line": 246
+        },
+        {
+          "heading": "Full Reference?",
+          "level": 3,
+          "line": 249
+        },
+        {
+          "heading": "Developer?",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "📞 Getting Help",
+          "level": 2,
+          "line": 257
+        },
+        {
+          "heading": "📈 Documentation Stats",
+          "level": 2,
+          "line": 265
+        },
+        {
+          "heading": "🎯 Start Here",
+          "level": 2,
+          "line": 276
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 32
+      }
+    },
+    {
+      "path": "docs/SECURITY_REVIEW.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 96,
+      "nonEmptyLines": 68,
+      "sections": [
+        {
+          "heading": "Security Review - API Configuration UI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Date: 2026-01-27 (Updated: 2026-01-28)",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Reviewer: Security Audit",
+          "level": 2,
+          "line": 4
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Encryption",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "API Security",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Frontend Security",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Authentication",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Files Reviewed",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Remaining Recommendations",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Future Improvements",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Conclusion",
+          "level": 2,
+          "line": 87
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "frontend/eslint.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/next.config.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 29,
+      "callGraph": [
+        {
+          "caller": "rewrites",
+          "callee": "console.log",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/postcss.config.mjs",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/(dashboard)/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "DashboardPage",
+          "startLine": 3,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DashboardPage",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DashboardPage",
+          "callee": "redirect",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/config/route.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 68,
+      "nonEmptyLines": 59,
+      "functions": [
+        {
+          "name": "GET",
+          "startLine": 25,
+          "endLine": 68,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GET",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 30
+        },
+        {
+          "caller": "GET",
+          "callee": "request.headers.get",
+          "lineNumber": 39
+        },
+        {
+          "caller": "GET",
+          "callee": "request.nextUrl.protocol.replace",
+          "lineNumber": 40
+        },
+        {
+          "caller": "GET",
+          "callee": "request.headers.get",
+          "lineNumber": 44
+        },
+        {
+          "caller": "GET",
+          "callee": "hostHeader.split",
+          "lineNumber": 48
+        },
+        {
+          "caller": "GET",
+          "callee": "console.log",
+          "lineNumber": 53
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 55
+        },
+        {
+          "caller": "GET",
+          "callee": "console.error",
+          "lineNumber": 60
+        },
+        {
+          "caller": "GET",
+          "callee": "console.log",
+          "lineNumber": 64
+        },
+        {
+          "caller": "GET",
+          "callee": "NextResponse.json",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/app/globals.css",
+      "language": "css",
+      "fileCategory": "markup",
+      "totalLines": 212,
+      "nonEmptyLines": 190,
+      "metrics": {}
+    },
+    {
+      "path": "frontend/src/app/page.tsx",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "functions": [
+        {
+          "name": "HomePage",
+          "startLine": 3,
+          "endLine": 5,
+          "params": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "HomePage",
+          "line": 3,
+          "isDefault": true
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "HomePage",
+          "callee": "redirect",
+          "lineNumber": 4
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 1,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 168,
+      "nonEmptyLines": 133,
+      "sections": [
+        {
+          "heading": "Frontend Architecture",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "High-Level Data Flow",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Architectural Layers",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Pages (`src/app/`) — Next.js App Router",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Components (`src/components/`) — Feature-Specific UI",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "Lib (`src/lib/`) — Data & State Layer",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "`lib/api/` — Backend Communication",
+          "level": 4,
+          "line": 42
+        },
+        {
+          "heading": "`lib/hooks/` — React Query + Custom Logic",
+          "level": 4,
+          "line": 48
+        },
+        {
+          "heading": "`lib/stores/` — Application State",
+          "level": 4,
+          "line": 55
+        },
+        {
+          "heading": "`lib/types/` — TypeScript Definitions",
+          "level": 4,
+          "line": 60
+        },
+        {
+          "heading": "`lib/locales/` — Internationalization (i18n)",
+          "level": 4,
+          "line": 64
+        },
+        {
+          "heading": "Data & Control Flow Walkthrough",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Example: Notebook Chat",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Example: File Upload with Source Creation",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Key Patterns & Cross-Layer Coordination",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Caching & Invalidation",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Auth & Protected Routes",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Modal State Management",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Error Handling",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "FormData Handling",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Component Organization Within Features",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "Providers & Context Setup",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Important Gotchas & Design Decisions",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "How to Add a New Feature",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "Testing",
+          "level": 2,
+          "line": 161
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "frontend/src/components/sources/index.ts",
+      "language": "typescript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "exports": [
+        {
+          "name": "AddSourceDialog",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "AddSourceButton",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SourceCard",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 3,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "frontend/src/components/sources/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 144,
+      "nonEmptyLines": 108,
+      "sections": [
+        {
+          "heading": "AddSourceDialog Component",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Features",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Usage",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Basic Usage",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "With Default Notebook",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "Using the Button Component",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "Props",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "AddSourceDialog",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "AddSourceButton",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Source Types",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Link Sources",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "File Upload Sources",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "Text Sources",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Processing Options",
+          "level": 2,
+          "line": 102
+        },
+        {
+          "heading": "Embedding",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Async Processing (Recommended)",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Integration with Hooks",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "Error Handling",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "Accessibility",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "Dependencies",
+          "level": 2,
+          "line": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 20
+      }
+    },
+    {
+      "path": "frontend/src/components/ui/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 64,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "UI Components Module",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Components",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Important Patterns",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Key Dependencies",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "How to Add New Components",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Important Quirks & Gotchas",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Testing Patterns",
+          "level": 2,
+          "line": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "frontend/src/lib/api/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 158,
+      "nonEmptyLines": 128,
+      "sections": [
+        {
+          "heading": "API Module",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Components",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Important Patterns",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Key Dependencies",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "How to Add New API Modules",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Important Quirks & Gotchas",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Usage Example",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Credentials Module (`credentials.ts`)",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Type Definitions",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "API Functions",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "Usage Example",
+          "level": 3,
+          "line": 128
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "frontend/src/lib/hooks/CLAUDE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 192,
+      "nonEmptyLines": 153,
+      "sections": [
+        {
+          "heading": "Hooks Module",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Key Components",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Important Patterns",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Key Dependencies",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "How to Add New Hooks",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "Important Quirks & Gotchas",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Testing Patterns",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Credentials Hooks (`use-credentials.ts`)",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Query Keys",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "Query Hooks",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Mutation Hooks",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "useTestCredential Details",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "Cache Invalidation Strategy",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Usage Example",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Important Notes",
+          "level": 3,
+          "line": 186
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    }
+  ]
+}

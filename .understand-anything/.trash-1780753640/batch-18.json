@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "service:docs/1-INSTALLATION/docker-compose.md",
+      "type": "service",
+      "name": "docker-compose.md",
+      "filePath": "docs/1-INSTALLATION/docker-compose.md",
+      "summary": "Infrastructure orchestration rules for docker-compose.md.",
+      "tags": [
+        "infrastructure",
+        "markdown",
+        "development"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/1-INSTALLATION/from-source.md",
+      "type": "document",
+      "name": "from-source.md",
+      "filePath": "docs/1-INSTALLATION/from-source.md",
+      "summary": "Documentation content for from-source.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/1-INSTALLATION/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/1-INSTALLATION/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/1-INSTALLATION/single-container.md",
+      "type": "document",
+      "name": "single-container.md",
+      "filePath": "docs/1-INSTALLATION/single-container.md",
+      "summary": "Documentation content for single-container.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

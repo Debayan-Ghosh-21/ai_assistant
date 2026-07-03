@@ -1,0 +1,350 @@
+{
+  "projectRoot": "/home/debayan_ghosh/ai_assistant/AiAssistant-",
+  "batchFiles": [
+    {
+      "path": "api/auth.py",
+      "language": "python",
+      "sizeLines": 114,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/client.py",
+      "language": "python",
+      "sizeLines": 529,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/command_service.py",
+      "language": "python",
+      "sizeLines": 92,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/context_service.py",
+      "language": "python",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/credentials_service.py",
+      "language": "python",
+      "sizeLines": 890,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/embedding_service.py",
+      "language": "python",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/episode_profiles_service.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/insights_service.py",
+      "language": "python",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/main.py",
+      "language": "python",
+      "sizeLines": 324,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/models.py",
+      "language": "python",
+      "sizeLines": 733,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/models_service.py",
+      "language": "python",
+      "sizeLines": 112,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/notebook_service.py",
+      "language": "python",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/notes_service.py",
+      "language": "python",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/podcast_api_service.py",
+      "language": "python",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/podcast_service.py",
+      "language": "python",
+      "sizeLines": 206,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/__init__.py",
+      "language": "python",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/auth.py",
+      "language": "python",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/chat.py",
+      "language": "python",
+      "sizeLines": 516,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/commands.py",
+      "language": "python",
+      "sizeLines": 166,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/config.py",
+      "language": "python",
+      "sizeLines": 190,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/context.py",
+      "language": "python",
+      "sizeLines": 115,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/credentials.py",
+      "language": "python",
+      "sizeLines": 426,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/embedding.py",
+      "language": "python",
+      "sizeLines": 113,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/embedding_rebuild.py",
+      "language": "python",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/episode_profiles.py",
+      "language": "python",
+      "sizeLines": 226,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/insights.py",
+      "language": "python",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/languages.py",
+      "language": "python",
+      "sizeLines": 83,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/models.py",
+      "language": "python",
+      "sizeLines": 776,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/notebooks.py",
+      "language": "python",
+      "sizeLines": 354,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/notes.py",
+      "language": "python",
+      "sizeLines": 189,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/podcasts.py",
+      "language": "python",
+      "sizeLines": 299,
+      "fileCategory": "code"
+    },
+    {
+      "path": "api/routers/quiz.py",
+      "language": "python",
+      "sizeLines": 162,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "api/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/client.py": [],
+    "api/command_service.py": [],
+    "api/context_service.py": [
+      "api/client.py"
+    ],
+    "api/credentials_service.py": [
+      "api/models.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/embedding_service.py": [
+      "api/client.py"
+    ],
+    "api/episode_profiles_service.py": [
+      "api/client.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/insights_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/main.py": [
+      "api/auth.py",
+      "api/routers/__init__.py",
+      "api/routers/auth.py",
+      "api/routers/chat.py",
+      "api/routers/config.py",
+      "api/routers/context.py",
+      "api/routers/credentials.py",
+      "api/routers/embedding_rebuild.py",
+      "api/routers/embedding.py",
+      "api/routers/episode_profiles.py",
+      "api/routers/insights.py",
+      "api/routers/languages.py",
+      "api/routers/models.py",
+      "api/routers/notebooks.py",
+      "api/routers/notes.py",
+      "api/routers/podcasts.py",
+      "api/routers/quiz.py",
+      "api/routers/search.py",
+      "api/routers/settings.py",
+      "api/routers/source_chat.py",
+      "api/routers/sources.py",
+      "api/routers/speaker_profiles.py",
+      "api/routers/transformations.py",
+      "open_notebook/database/async_migrate.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/models.py": [],
+    "api/models_service.py": [
+      "api/client.py",
+      "open_notebook/ai/models.py"
+    ],
+    "api/notebook_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/notes_service.py": [
+      "api/client.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/podcast_api_service.py": [
+      "api/client.py"
+    ],
+    "api/podcast_service.py": [
+      "open_notebook/domain/notebook.py",
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/__init__.py": [],
+    "api/routers/auth.py": [
+      "open_notebook/utils/encryption.py"
+    ],
+    "api/routers/chat.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/graphs/chat.py",
+      "open_notebook/utils/graph_utils.py"
+    ],
+    "api/routers/commands.py": [
+      "api/command_service.py"
+    ],
+    "api/routers/config.py": [
+      "open_notebook/database/repository.py",
+      "open_notebook/utils/version_utils.py"
+    ],
+    "api/routers/context.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py",
+      "open_notebook/utils/__init__.py"
+    ],
+    "api/routers/credentials.py": [
+      "api/credentials_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/credential.py"
+    ],
+    "api/routers/embedding.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/notebook.py"
+    ],
+    "api/routers/embedding_rebuild.py": [
+      "api/command_service.py",
+      "api/models.py",
+      "open_notebook/database/repository.py"
+    ],
+    "api/routers/episode_profiles.py": [
+      "open_notebook/podcasts/models.py"
+    ],
+    "api/routers/insights.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/languages.py": [],
+    "api/routers/models.py": [
+      "api/models.py",
+      "open_notebook/ai/connection_tester.py",
+      "open_notebook/ai/key_provider.py",
+      "open_notebook/ai/model_discovery.py",
+      "open_notebook/ai/models.py",
+      "open_notebook/domain/credential.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notebooks.py": [
+      "api/models.py",
+      "open_notebook/database/repository.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/notes.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/exceptions.py"
+    ],
+    "api/routers/podcasts.py": [
+      "api/podcast_service.py"
+    ],
+    "api/routers/quiz.py": [
+      "api/models.py",
+      "open_notebook/domain/notebook.py",
+      "open_notebook/domain/quiz.py",
+      "open_notebook/graphs/quiz.py"
+    ]
+  }
+}

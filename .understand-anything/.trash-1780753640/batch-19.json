@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/2-CORE-CONCEPTS/ai-context-rag.md",
+      "type": "document",
+      "name": "ai-context-rag.md",
+      "filePath": "docs/2-CORE-CONCEPTS/ai-context-rag.md",
+      "summary": "Documentation content for ai-context-rag.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/2-CORE-CONCEPTS/chat-vs-transformations.md",
+      "type": "document",
+      "name": "chat-vs-transformations.md",
+      "filePath": "docs/2-CORE-CONCEPTS/chat-vs-transformations.md",
+      "summary": "Documentation content for chat-vs-transformations.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/2-CORE-CONCEPTS/index.md",
+      "type": "document",
+      "name": "index.md",
+      "filePath": "docs/2-CORE-CONCEPTS/index.md",
+      "summary": "Documentation content for index.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/2-CORE-CONCEPTS/notebooks-sources-notes.md",
+      "type": "document",
+      "name": "notebooks-sources-notes.md",
+      "filePath": "docs/2-CORE-CONCEPTS/notebooks-sources-notes.md",
+      "summary": "Documentation content for notebooks-sources-notes.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/2-CORE-CONCEPTS/podcasts-explained.md",
+      "type": "document",
+      "name": "podcasts-explained.md",
+      "filePath": "docs/2-CORE-CONCEPTS/podcasts-explained.md",
+      "summary": "Documentation content for podcasts-explained.md.",
+      "tags": [
+        "documentation",
+        "guides",
+        "markdown"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

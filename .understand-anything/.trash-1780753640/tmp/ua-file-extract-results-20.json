@@ -1,0 +1,1992 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/3-USER-GUIDE/adding-sources.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 429,
+      "nonEmptyLines": 324,
+      "sections": [
+        {
+          "heading": "Adding Sources - Getting Content Into Your Notebook",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick-Start: Add Your First Source",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Option 1: Upload a File (PDF, Word, etc.)",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Option 2: Add a Web Link",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Option 3: Paste Text",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Supported File Types",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Documents",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Audio & Video",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Web Content",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "What Doesn't Work",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "What Happens When You Add a Source",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "Step-by-Step for Different Types",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "PDFs",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Web Links / Articles",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "Audio Files",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "YouTube Videos",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Text / Paste Content",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "Managing Your Sources",
+          "level": 2,
+          "line": 229
+        },
+        {
+          "heading": "Viewing Source Details",
+          "level": 3,
+          "line": 231
+        },
+        {
+          "heading": "Organizing with Metadata",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "Searching Within Sources",
+          "level": 3,
+          "line": 254
+        },
+        {
+          "heading": "Context Management: How Sources Get Used",
+          "level": 2,
+          "line": 271
+        },
+        {
+          "heading": "Three Levels (for Chat)",
+          "level": 3,
+          "line": 275
+        },
+        {
+          "heading": "How to Set Context (in Chat)",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 315
+        },
+        {
+          "heading": "Processing Status & Troubleshooting",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "What the Status Indicators Mean",
+          "level": 3,
+          "line": 331
+        },
+        {
+          "heading": "Common Errors & Solutions",
+          "level": 3,
+          "line": 356
+        },
+        {
+          "heading": "Tips for Best Results",
+          "level": 2,
+          "line": 376
+        },
+        {
+          "heading": "For PDFs",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "For Web Articles",
+          "level": 3,
+          "line": 383
+        },
+        {
+          "heading": "For Audio",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "For Large Documents",
+          "level": 3,
+          "line": 393
+        },
+        {
+          "heading": "For Organization",
+          "level": 3,
+          "line": 398
+        },
+        {
+          "heading": "What Comes After: Using Your Sources",
+          "level": 2,
+          "line": 405
+        },
+        {
+          "heading": "Summary Checklist",
+          "level": 2,
+          "line": 417
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/api-configuration.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 386,
+      "nonEmptyLines": 267,
+      "sections": [
+        {
+          "heading": "API Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Encryption Setup",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Setting the Encryption Key",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Docker Secrets Support",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Encryption Details",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Accessing Credential Configuration",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Supported Providers",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Cloud Providers",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "Local/Self-Hosted",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Enterprise",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "Creating a Credential",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "Step 1: Add Credential",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Step 2: Test Connection",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Step 3: Discover Models",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "Step 4: Register Models",
+          "level": 3,
+          "line": 144
+        },
+        {
+          "heading": "Multi-Credential Support",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "Creating Multiple Credentials",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "How Models Link to Credentials",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Testing Connections",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Configuring Specific Providers",
+          "level": 2,
+          "line": 190
+        },
+        {
+          "heading": "Simple Providers (API Key Only)",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Ollama (URL-Based)",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "Azure OpenAI",
+          "level": 3,
+          "line": 209
+        },
+        {
+          "heading": "OpenAI-Compatible",
+          "level": 3,
+          "line": 219
+        },
+        {
+          "heading": "Vertex AI",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "Migrating from Environment Variables",
+          "level": 2,
+          "line": 246
+        },
+        {
+          "heading": "Migration Behavior",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "After Migration",
+          "level": 3,
+          "line": 264
+        },
+        {
+          "heading": "Migration Banner Visibility",
+          "level": 3,
+          "line": 270
+        },
+        {
+          "heading": "Migrating from ProviderConfig (v1.1 → v1.2)",
+          "level": 2,
+          "line": 279
+        },
+        {
+          "heading": "Key Storage Security",
+          "level": 2,
+          "line": 290
+        },
+        {
+          "heading": "Encryption",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "Default Credentials",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "Deleting Credentials",
+          "level": 2,
+          "line": 312
+        },
+        {
+          "heading": "Troubleshooting",
+          "level": 2,
+          "line": 320
+        },
+        {
+          "heading": "Credential Not Saving",
+          "level": 3,
+          "line": 322
+        },
+        {
+          "heading": "Test Connection Fails",
+          "level": 3,
+          "line": 330
+        },
+        {
+          "heading": "Migration Issues",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Provider Shows \"Not Configured\"",
+          "level": 3,
+          "line": 347
+        },
+        {
+          "heading": "Provider-Specific Notes",
+          "level": 2,
+          "line": 356
+        },
+        {
+          "heading": "OpenAI",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "Anthropic",
+          "level": 3,
+          "line": 362
+        },
+        {
+          "heading": "Google Gemini",
+          "level": 3,
+          "line": 366
+        },
+        {
+          "heading": "Ollama",
+          "level": 3,
+          "line": 370
+        },
+        {
+          "heading": "Azure OpenAI",
+          "level": 3,
+          "line": 375
+        },
+        {
+          "heading": "Related",
+          "level": 2,
+          "line": 382
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 47
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/chat-effectively.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 554,
+      "nonEmptyLines": 409,
+      "sections": [
+        {
+          "heading": "Chat Effectively - Conversations with Your Research",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick-Start: Your First Chat",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Context Management: The Key to Good Chat",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "The Three Levels Explained",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Setting Context (Step by Step)",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Context Strategies",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Asking Effective Questions",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Good Questions vs. Poor Questions",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Question Patterns That Work",
+          "level": 3,
+          "line": 178
+        },
+        {
+          "heading": "The SPECIFIC Formula",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "Follow-Up Questions (The Real Power of Chat)",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "Building on Responses",
+          "level": 3,
+          "line": 254
+        },
+        {
+          "heading": "Iterating Toward Understanding",
+          "level": 3,
+          "line": 273
+        },
+        {
+          "heading": "Changing Direction",
+          "level": 3,
+          "line": 289
+        },
+        {
+          "heading": "Adjusting Context Between Rounds",
+          "level": 3,
+          "line": 302
+        },
+        {
+          "heading": "Citations and Verification",
+          "level": 2,
+          "line": 316
+        },
+        {
+          "heading": "Understanding Citations",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Requesting Better Citations",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "Verification Workflow",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "Common Chat Patterns",
+          "level": 2,
+          "line": 361
+        },
+        {
+          "heading": "Pattern 1: Deep Dive into One Source",
+          "level": 3,
+          "line": 363
+        },
+        {
+          "heading": "Pattern 2: Comparative Analysis",
+          "level": 3,
+          "line": 376
+        },
+        {
+          "heading": "Pattern 3: Research Exploration",
+          "level": 3,
+          "line": 388
+        },
+        {
+          "heading": "Pattern 4: Problem Solving",
+          "level": 3,
+          "line": 400
+        },
+        {
+          "heading": "Optimizing for Cost",
+          "level": 2,
+          "line": 414
+        },
+        {
+          "heading": "Reduce Token Usage",
+          "level": 3,
+          "line": 418
+        },
+        {
+          "heading": "Budget Strategies",
+          "level": 3,
+          "line": 452
+        },
+        {
+          "heading": "Troubleshooting Chat Issues",
+          "level": 2,
+          "line": 474
+        },
+        {
+          "heading": "Poor Responses",
+          "level": 3,
+          "line": 476
+        },
+        {
+          "heading": "High Costs",
+          "level": 3,
+          "line": 486
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 497
+        },
+        {
+          "heading": "Before You Chat",
+          "level": 3,
+          "line": 499
+        },
+        {
+          "heading": "During Chat",
+          "level": 3,
+          "line": 506
+        },
+        {
+          "heading": "After Chat",
+          "level": 3,
+          "line": 513
+        },
+        {
+          "heading": "When to Use Chat vs. Ask",
+          "level": 2,
+          "line": 522
+        },
+        {
+          "heading": "Summary: Chat as Conversation",
+          "level": 2,
+          "line": 540
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/citations.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 299,
+      "nonEmptyLines": 213,
+      "sections": [
+        {
+          "heading": "Citations - Verify and Trust AI Responses",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Why Citations Matter",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Start: Using Citations",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Reading Citations",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Requesting Better Citations",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "How Citations Work",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Automatic Generation",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Citation Format",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Verifying Citations",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "The Verification Workflow",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "What to Check",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Citations in Different Features",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Chat Citations",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "Ask Feature Citations",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Transformation Citations",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "Saving Citations",
+          "level": 2,
+          "line": 138
+        },
+        {
+          "heading": "In Notes",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "Exporting",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "Citation Quality Tips",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "Get Better Citations",
+          "level": 3,
+          "line": 168
+        },
+        {
+          "heading": "When Citations Are Missing",
+          "level": 3,
+          "line": 188
+        },
+        {
+          "heading": "Common Issues",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "\"Citation doesn't match claim\"",
+          "level": 3,
+          "line": 200
+        },
+        {
+          "heading": "\"Can't find cited section\"",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "\"No citations at all\"",
+          "level": 3,
+          "line": 232
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "For Research Integrity",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "For Academic Work",
+          "level": 3,
+          "line": 259
+        },
+        {
+          "heading": "For Professional Use",
+          "level": 3,
+          "line": 266
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 274
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 30
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/creating-podcasts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 678,
+      "nonEmptyLines": 510,
+      "sections": [
+        {
+          "heading": "Creating Podcasts - Turn Research into Audio",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick-Start: Your First Podcast (5 Minutes)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Step-by-Step: The Complete Workflow",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Step 1: Prepare Your Notebook",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Step 2: Choose Content",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "Step 3: Choose Episode Profile",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Step 4: Customize Episode Profile (Optional)",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Step 5: Create or Select Speakers",
+          "level": 3,
+          "line": 136
+        },
+        {
+          "heading": "Step 6: Generate Podcast",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "Step 7: Review and Download",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "Understanding What Happens Behind the Scenes",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "The Generation Pipeline",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Text-to-Speech Providers",
+          "level": 2,
+          "line": 286
+        },
+        {
+          "heading": "OpenAI (Recommended)",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "Google TTS",
+          "level": 3,
+          "line": 301
+        },
+        {
+          "heading": "ElevenLabs",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "Local TTS (Free)",
+          "level": 3,
+          "line": 323
+        },
+        {
+          "heading": "Which Provider to Choose?",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "Tips for Better Podcasts",
+          "level": 2,
+          "line": 347
+        },
+        {
+          "heading": "Choose Right Profile",
+          "level": 3,
+          "line": 349
+        },
+        {
+          "heading": "Create Good Speakers",
+          "level": 3,
+          "line": 368
+        },
+        {
+          "heading": "Focus Content",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "Optimize Source Selection",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "Quality Troubleshooting",
+          "level": 2,
+          "line": 423
+        },
+        {
+          "heading": "Audio Sounds Robotic",
+          "level": 3,
+          "line": 425
+        },
+        {
+          "heading": "Audio Sounds Unclear",
+          "level": 3,
+          "line": 437
+        },
+        {
+          "heading": "Missing Content",
+          "level": 3,
+          "line": 450
+        },
+        {
+          "heading": "Speakers Don't Match",
+          "level": 3,
+          "line": 462
+        },
+        {
+          "heading": "Generation Failed",
+          "level": 3,
+          "line": 474
+        },
+        {
+          "heading": "Advanced: Multiple Podcasts from Same Research",
+          "level": 2,
+          "line": 489
+        },
+        {
+          "heading": "Exporting and Sharing",
+          "level": 2,
+          "line": 523
+        },
+        {
+          "heading": "Download MP3",
+          "level": 3,
+          "line": 525
+        },
+        {
+          "heading": "Export Transcript",
+          "level": 3,
+          "line": 538
+        },
+        {
+          "heading": "Share Link",
+          "level": 3,
+          "line": 550
+        },
+        {
+          "heading": "Publish to Podcast Platforms",
+          "level": 3,
+          "line": 563
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 575
+        },
+        {
+          "heading": "Before Generation",
+          "level": 3,
+          "line": 577
+        },
+        {
+          "heading": "During Generation",
+          "level": 3,
+          "line": 584
+        },
+        {
+          "heading": "After Generation",
+          "level": 3,
+          "line": 590
+        },
+        {
+          "heading": "Use Cases",
+          "level": 2,
+          "line": 599
+        },
+        {
+          "heading": "Academic Researcher",
+          "level": 3,
+          "line": 601
+        },
+        {
+          "heading": "Content Creator",
+          "level": 3,
+          "line": 609
+        },
+        {
+          "heading": "Team Research",
+          "level": 3,
+          "line": 617
+        },
+        {
+          "heading": "Learning/Teaching",
+          "level": 3,
+          "line": 625
+        },
+        {
+          "heading": "Cost Breakdown Example",
+          "level": 2,
+          "line": 635
+        },
+        {
+          "heading": "Generate 15-minute podcast with ElevenLabs",
+          "level": 3,
+          "line": 637
+        },
+        {
+          "heading": "Summary: Podcasts as Research Tool",
+          "level": 2,
+          "line": 661
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 47
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/index.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 208,
+      "nonEmptyLines": 149,
+      "sections": [
+        {
+          "heading": "User Guide - How to Use Open Notebook",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Start Here",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "[Interface Overview](interface-overview.md)",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Eight Core Features",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "1. [Adding Sources](adding-sources.md)",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. [Working with Notes](working-with-notes.md)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "3. [Chat Effectively](chat-effectively.md)",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "4. [Creating Podcasts](creating-podcasts.md)",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "5. [Search Effectively](search.md)",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "6. [Transformations](transformations.md)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "7. [Citations](citations.md)",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "8. [API Configuration](api-configuration.md)",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Which Feature for Which Task?",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Quick-Start Checklist: First 15 Minutes",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "Common Mistakes to Avoid",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "Next Steps",
+          "level": 2,
+          "line": 189
+        },
+        {
+          "heading": "Getting Help",
+          "level": 2,
+          "line": 198
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/interface-overview.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 377,
+      "nonEmptyLines": 291,
+      "sections": [
+        {
+          "heading": "Interface Overview - Finding Your Way Around",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "The Main Layout",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Navigation Bar",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Left Panel: Sources",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "What You'll See",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Source Card Elements",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Add Source Button",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "Middle Panel: Notes",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "What You'll See",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "Note Card Elements",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Write Note Button",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "Right Panel: Chat",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "What You'll See",
+          "level": 3,
+          "line": 131
+        },
+        {
+          "heading": "Chat Elements",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Context Indicators",
+          "level": 2,
+          "line": 167
+        },
+        {
+          "heading": "Token Counter",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Per-Source Indicators",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "Podcasts Tab",
+          "level": 2,
+          "line": 192
+        },
+        {
+          "heading": "Settings Page",
+          "level": 2,
+          "line": 217
+        },
+        {
+          "heading": "Key Sections",
+          "level": 3,
+          "line": 221
+        },
+        {
+          "heading": "Models Page",
+          "level": 2,
+          "line": 232
+        },
+        {
+          "heading": "Search Page",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "Common Actions",
+          "level": 2,
+          "line": 292
+        },
+        {
+          "heading": "Create a Notebook",
+          "level": 3,
+          "line": 294
+        },
+        {
+          "heading": "Add a Source",
+          "level": 3,
+          "line": 300
+        },
+        {
+          "heading": "Ask a Question",
+          "level": 3,
+          "line": 306
+        },
+        {
+          "heading": "Save AI Response",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "Change Context Level",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "Generate Podcast",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "Keyboard Shortcuts",
+          "level": 2,
+          "line": 332
+        },
+        {
+          "heading": "Mobile View",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "Tips for Efficient Navigation",
+          "level": 2,
+          "line": 367
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 32
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/search.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 475,
+      "nonEmptyLines": 343,
+      "sections": [
+        {
+          "heading": "Search Effectively - Finding What You Need",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quick-Start: Find Something",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Simple Search",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Two Search Modes Explained",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Search Type 1: TEXT SEARCH (Keyword Matching)",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Search Type 2: VECTOR SEARCH (Semantic/Concept Matching)",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "Decision: Text Search vs. Vector Search?",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "Step-by-Step: Using Each Search",
+          "level": 2,
+          "line": 132
+        },
+        {
+          "heading": "Text Search",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "Vector Search",
+          "level": 3,
+          "line": 150
+        },
+        {
+          "heading": "The Ask Feature (Automated Search)",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "How Ask Works",
+          "level": 3,
+          "line": 173
+        },
+        {
+          "heading": "When to Use Ask vs. Simple Search",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "Advanced Search Strategies",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Strategy 1: Simple Search with Follow-Up",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Strategy 2: Ask for Comprehensive, Then Search for Details",
+          "level": 3,
+          "line": 226
+        },
+        {
+          "heading": "Strategy 3: Vector Search for Discovery, Text for Verification",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "Strategy 4: Combine Search with Chat",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "Search Quality Issues & Fixes",
+          "level": 2,
+          "line": 266
+        },
+        {
+          "heading": "Getting No Results",
+          "level": 3,
+          "line": 268
+        },
+        {
+          "heading": "Getting Too Many Results",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "Getting Wrong Results",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "Getting Low Quality Results",
+          "level": 3,
+          "line": 293
+        },
+        {
+          "heading": "Tips for Better Searches",
+          "level": 2,
+          "line": 303
+        },
+        {
+          "heading": "For Text Search",
+          "level": 3,
+          "line": 305
+        },
+        {
+          "heading": "For Vector Search",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "General Tips",
+          "level": 3,
+          "line": 319
+        },
+        {
+          "heading": "Search Examples",
+          "level": 2,
+          "line": 328
+        },
+        {
+          "heading": "Example 1: Finding a Specific Fact",
+          "level": 3,
+          "line": 330
+        },
+        {
+          "heading": "Example 2: Exploring a Concept",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "Example 3: Comprehensive Answer",
+          "level": 3,
+          "line": 364
+        },
+        {
+          "heading": "Example 4: Finding Pattern",
+          "level": 3,
+          "line": 385
+        },
+        {
+          "heading": "Search in the Workflow",
+          "level": 2,
+          "line": 410
+        },
+        {
+          "heading": "Workflow Example",
+          "level": 3,
+          "line": 429
+        },
+        {
+          "heading": "Summary: Know Your Search",
+          "level": 2,
+          "line": 455
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 35
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/transformations.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 402,
+      "nonEmptyLines": 291,
+      "sections": [
+        {
+          "heading": "Transformations - Batch Processing Your Sources",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "When to Use Transformations",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick Start: Your First Transformation",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Built-in Transformations",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Summary",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "Key Concepts",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "Methodology",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Takeaways",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Questions",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Creating Custom Transformations",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "Step-by-Step",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "Prompt Template Tips",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Applying Transformations",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "To a Single Source",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "To Multiple Sources (Batch)",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Processing Time",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "Transformation Examples",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "Literature Review Template",
+          "level": 3,
+          "line": 171
+        },
+        {
+          "heading": "Meeting Notes Template",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "Competitor Analysis Template",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "Technical Documentation Template",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "Managing Transformations",
+          "level": 2,
+          "line": 256
+        },
+        {
+          "heading": "Edit a Transformation",
+          "level": 3,
+          "line": 258
+        },
+        {
+          "heading": "Delete a Transformation",
+          "level": 3,
+          "line": 268
+        },
+        {
+          "heading": "Reorder/Organize",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "Transformation Output",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "Where Results Go",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "Note Naming",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "Editing Output",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 310
+        },
+        {
+          "heading": "Template Design",
+          "level": 3,
+          "line": 312
+        },
+        {
+          "heading": "Source Selection",
+          "level": 3,
+          "line": 320
+        },
+        {
+          "heading": "Quality Control",
+          "level": 3,
+          "line": 326
+        },
+        {
+          "heading": "Common Issues",
+          "level": 2,
+          "line": 334
+        },
+        {
+          "heading": "Generic Output",
+          "level": 3,
+          "line": 336
+        },
+        {
+          "heading": "Missing Information",
+          "level": 3,
+          "line": 341
+        },
+        {
+          "heading": "Inconsistent Format",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "Too Long/Short",
+          "level": 3,
+          "line": 351
+        },
+        {
+          "heading": "Processing Fails",
+          "level": 3,
+          "line": 356
+        },
+        {
+          "heading": "Transformations vs. Chat vs. Ask",
+          "level": 2,
+          "line": 366
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 378
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 41
+      }
+    },
+    {
+      "path": "docs/3-USER-GUIDE/working-with-notes.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 581,
+      "nonEmptyLines": 441,
+      "sections": [
+        {
+          "heading": "Working with Notes - Capturing and Organizing Insights",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "What Are Notes?",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quick-Start: Create Your First Note",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Method 1: Manual Note (Write Yourself)",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Method 2: Save from Chat",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Method 3: Apply Transformation",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "Creating Manual Notes",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Basic Structure",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Markdown Support",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Example Note Structure",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "AI-Generated Notes: Three Sources",
+          "level": 2,
+          "line": 134
+        },
+        {
+          "heading": "1. Save from Chat",
+          "level": 3,
+          "line": 136
+        },
+        {
+          "heading": "2. Save from Ask",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "3. Transformations (Batch Processing)",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "Using Transformations for Batch Insights",
+          "level": 2,
+          "line": 192
+        },
+        {
+          "heading": "Built-in Transformations",
+          "level": 3,
+          "line": 194
+        },
+        {
+          "heading": "How to Apply Transformation",
+          "level": 3,
+          "line": 226
+        },
+        {
+          "heading": "Create Custom Transformation",
+          "level": 3,
+          "line": 238
+        },
+        {
+          "heading": "Organizing Notes",
+          "level": 2,
+          "line": 260
+        },
+        {
+          "heading": "Naming Conventions",
+          "level": 3,
+          "line": 262
+        },
+        {
+          "heading": "Using Tags",
+          "level": 3,
+          "line": 299
+        },
+        {
+          "heading": "Note Linking & References",
+          "level": 3,
+          "line": 319
+        },
+        {
+          "heading": "Editing and Refining Notes",
+          "level": 2,
+          "line": 337
+        },
+        {
+          "heading": "Improving AI-Generated Notes",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "Adding Citations",
+          "level": 3,
+          "line": 357
+        },
+        {
+          "heading": "Searching Your Notes",
+          "level": 2,
+          "line": 372
+        },
+        {
+          "heading": "Text Search",
+          "level": 3,
+          "line": 376
+        },
+        {
+          "heading": "Vector/Semantic Search",
+          "level": 3,
+          "line": 383
+        },
+        {
+          "heading": "Combined Search",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "Exporting and Sharing Notes",
+          "level": 2,
+          "line": 399
+        },
+        {
+          "heading": "Options",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "Organizing Your Notebook's Notes",
+          "level": 2,
+          "line": 430
+        },
+        {
+          "heading": "By Research Phase",
+          "level": 3,
+          "line": 432
+        },
+        {
+          "heading": "By Content Type",
+          "level": 3,
+          "line": 449
+        },
+        {
+          "heading": "Using Notes in Other Features",
+          "level": 2,
+          "line": 473
+        },
+        {
+          "heading": "In Chat",
+          "level": 3,
+          "line": 475
+        },
+        {
+          "heading": "In Transformations",
+          "level": 3,
+          "line": 486
+        },
+        {
+          "heading": "In Podcasts",
+          "level": 3,
+          "line": 497
+        },
+        {
+          "heading": "Best Practices",
+          "level": 2,
+          "line": 508
+        },
+        {
+          "heading": "For Manual Notes",
+          "level": 3,
+          "line": 510
+        },
+        {
+          "heading": "For AI-Generated Notes",
+          "level": 3,
+          "line": 517
+        },
+        {
+          "heading": "For Organization",
+          "level": 3,
+          "line": 524
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 533
+        },
+        {
+          "heading": "Summary: Note Lifecycle",
+          "level": 2,
+          "line": 547
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    }
+  ]
+}
