@@ -24,6 +24,7 @@ import { ConfirmDialog } from '@/components/common/ConfirmDialog'
 import { CollapsibleColumn, createCollapseButton } from '@/components/notebooks/CollapsibleColumn'
 import { useNotebookColumnsStore } from '@/lib/stores/notebook-columns-store'
 import { useTranslation } from '@/lib/hooks/use-translation'
+import { TTSButton } from '@/components/common/TTSButton'
 
 interface NotesColumnProps {
   notes?: NoteResponse[]
@@ -146,6 +147,17 @@ export function NotesColumn({
                               mode={contextSelections[note.id]}
                               hasInsights={false}
                               onChange={(mode) => onContextModeChange(note.id, mode)}
+                            />
+                          </div>
+                        )}
+
+                        {/* TTS play button */}
+                        {note.content && (
+                          <div onClick={(e) => e.stopPropagation()}>
+                            <TTSButton
+                              text={note.content}
+                              size="sm"
+                              className="h-8 w-8 p-0 opacity-0 group-hover:opacity-100 transition-opacity"
                             />
                           </div>
                         )}

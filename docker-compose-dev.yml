@@ -1,4 +1,14 @@
-name: open-notebook-dev
+# Docker Compose with Ollama (Free Local AI)
+#
+# This setup includes Ollama for running local AI models without API costs.
+# Great for privacy-focused deployments or testing without cloud dependencies.
+#
+# Usage:
+#   1. Copy this file to your project folder as docker-compose.yml
+#   2. Change OPEN_NOTEBOOK_ENCRYPTION_KEY below
+#   3. Run: docker compose up -d
+#   4. Pull a model: docker exec open_notebook-ollama-1 ollama pull mistral
+#   5. Configure Ollama in UI: Settings → API Keys → Add Ollama (URL: http://ollama:11434)
 
 services:
   surrealdb:
@@ -10,55 +20,48 @@ services:
     volumes:
       - ./surreal_data:/mydata
     environment:
-      SURREAL_EXPERIMENTAL_GRAPHQL: "true"
-    healthcheck:
-      test: ["CMD", "/surreal", "isready", "--conn", "http://localhost:8000"]
-      interval: 5s
-      timeout: 3s
-      retries: 20
-      start_period: 10s
-    restart: unless-stopped
+      - SURREAL_EXPERIMENTAL_GRAPHQL=true
+    restart: always
+    pull_policy: always
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: always
+    pull_policy: always
 
   open_notebook:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    env_file:
-      - ./docker.env
-    environment:
-      SURREAL_URL: ws://surrealdb:8000/rpc
-      SURREAL_USER: root
-      SURREAL_PASSWORD: root
-      SURREAL_NAMESPACE: open_notebook
-      SURREAL_DATABASE: open_notebook
-      INTERNAL_API_URL: http://localhost:5055
-      NEXT_PUBLIC_API_URL: ""
-      HOSTNAME: 0.0.0.0
-      PORT: "8502"
-      TIKTOKEN_CACHE_DIR: /app/tiktoken-cache
+    image: lfnovo/open_notebook:v1-latest
     ports:
       - "8502:8502"
       - "5055:5055"
+    environment:
+      # REQUIRED: Change this to your own secret string
+      - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-super-secret-key-123
+
+      # Database connection
+      - SURREAL_URL=ws://surrealdb:8000/rpc
+      - SURREAL_USER=root
+      - SURREAL_PASSWORD=root
+      - SURREAL_NAMESPACE=open_notebook
+      - SURREAL_DATABASE=open_notebook
+
+      # Ollama connection
+      - OLLAMA_BASE_URL=http://ollama:11434
     volumes:
-      - .:/app
-      - open_notebook_venv:/app/.venv
-      - open_notebook_node_modules:/app/frontend/node_modules
-      - open_notebook_next:/app/frontend/.next
-      - open_notebook_tiktoken:/app/tiktoken-cache
       - ./notebook_data:/app/data
+      - ./api:/app/api
+      - ./open_notebook:/app/open_notebook
+      - ./commands:/app/commands
     depends_on:
-      surrealdb:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:5055/health"]
-      interval: 10s
-      timeout: 5s
-      retries: 12
-      start_period: 30s
-    restart: unless-stopped
+      - surrealdb
+      - ollama
+    restart: always
+    pull_policy: always
 
 volumes:
-  open_notebook_venv:
-  open_notebook_node_modules:
-  open_notebook_next:
-  open_notebook_tiktoken:
+  ollama_models:
+

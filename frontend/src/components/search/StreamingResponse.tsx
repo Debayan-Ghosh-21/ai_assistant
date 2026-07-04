@@ -12,6 +12,7 @@ import { convertReferencesToMarkdownLinks, createReferenceLinkComponent } from '
 import { useModalManager } from '@/lib/hooks/use-modal-manager'
 import { useTranslation } from '@/lib/hooks/use-translation'
 import { toast } from 'sonner'
+import { TTSButton } from '@/components/common/TTSButton'
 
 interface StrategyData {
   reasoning: string
@@ -133,9 +134,12 @@ export function StreamingResponse({
       {finalAnswer && (
         <Card className="border-primary">
           <CardHeader>
-            <CardTitle className="text-base flex items-center gap-2">
-              <CheckCircle className="h-4 w-4 text-primary" />
-              {t('common.finalAnswer')}
+            <CardTitle className="text-base flex items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4 text-primary" />
+                {t('common.finalAnswer')}
+              </div>
+              <TTSButton text={finalAnswer} />
             </CardTitle>
           </CardHeader>
           <CardContent>

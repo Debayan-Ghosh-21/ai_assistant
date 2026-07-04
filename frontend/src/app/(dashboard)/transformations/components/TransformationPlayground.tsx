@@ -12,6 +12,7 @@ import { Transformation } from '@/lib/types/transformations'
 import { useExecuteTransformation } from '@/lib/hooks/use-transformations'
 import { ModelSelector } from '@/components/common/ModelSelector'
 import { useTranslation } from '@/lib/hooks/use-translation'
+import { TTSButton } from '@/components/common/TTSButton'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
@@ -119,7 +120,10 @@ export function TransformationPlayground({ transformations, selectedTransformati
 
           {output && (
             <div className="space-y-2">
-              <span className="text-sm font-medium leading-none">{t('transformations.outputLabel')}</span>
+              <div className="flex items-center justify-between">
+                <span className="text-sm font-medium leading-none">{t('transformations.outputLabel')}</span>
+                <TTSButton text={output} size="sm" variant="outline" />
+              </div>
               <Card>
                 <ScrollArea className="h-[400px]">
                   <CardContent className="pt-6">
