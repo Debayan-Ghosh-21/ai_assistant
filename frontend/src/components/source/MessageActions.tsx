@@ -8,6 +8,7 @@ import { useCreateNote } from '@/lib/hooks/use-notes'
 import { useCreateAccuracyLog } from '@/lib/hooks/use-accuracy'
 import { toast } from 'sonner'
 import { useTranslation } from '@/lib/hooks/use-translation'
+import { TTSButton } from '@/components/common/TTSButton'
 
 interface MessageActionsProps {
   content: string
@@ -146,6 +147,7 @@ export function MessageActions({ content, notebookId, chatId }: MessageActionsPr
             <p>{t('common.copyToClipboard')}</p>
           </TooltipContent>
         </Tooltip>
+        <TTSButton text={content} size="sm" className="h-7 px-2" />
       </div>
     </TooltipProvider>
   )

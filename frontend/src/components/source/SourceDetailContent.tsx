@@ -13,6 +13,7 @@ import { SourceDetailResponse } from '@/lib/types/api'
 import { Transformation } from '@/lib/types/transformations'
 import { LoadingSpinner } from '@/components/common/LoadingSpinner'
 import { InlineEdit } from '@/components/common/InlineEdit'
+import { TTSButton } from '@/components/common/TTSButton'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -479,9 +480,14 @@ export function SourceDetailContent({
           <TabsContent value="content" className="mt-6">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  {isYouTubeUrl && <Youtube className="h-5 w-5" />}
-                  {t('sources.content')}
+                <CardTitle className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2">
+                    {isYouTubeUrl && <Youtube className="h-5 w-5" />}
+                    {t('sources.content')}
+                  </div>
+                  {source.full_text && (
+                    <TTSButton text={source.full_text} />
+                  )}
                 </CardTitle>
                 {source.asset?.url && !isYouTubeUrl && (
                   <CardDescription className="flex items-center gap-2">

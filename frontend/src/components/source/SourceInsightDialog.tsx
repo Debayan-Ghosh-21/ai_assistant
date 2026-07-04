@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm'
 import { useInsight } from '@/lib/hooks/use-insights'
 import { useModalManager } from '@/lib/hooks/use-modal-manager'
 import { useTranslation } from '@/lib/hooks/use-translation'
+import { TTSButton } from '@/components/common/TTSButton'
 
 interface SourceInsightDialogProps {
   open: boolean
@@ -79,6 +80,9 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
                 <Badge variant="outline" className="text-xs uppercase">
                   {displayInsight.insight_type}
                 </Badge>
+              )}
+              {displayInsight?.content && (
+                <TTSButton text={displayInsight.content} size="sm" variant="outline" />
               )}
               {sourceId && (
                 <Button
