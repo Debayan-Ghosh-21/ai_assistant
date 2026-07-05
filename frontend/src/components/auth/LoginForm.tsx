@@ -98,7 +98,7 @@ export function LoginForm() {
         <div className="grid min-h-[560px] md:grid-cols-[1.08fr_0.92fr]">
           <section className="flex flex-col justify-between bg-[linear-gradient(180deg,oklch(0.992_0.001_95),oklch(0.962_0.003_95))] p-8 sm:p-10">
             <div className="flex items-center justify-between gap-3 text-[11px] text-muted-foreground">
-              <span className="font-medium tracking-normal">Open Notebook</span>
+              <span className="font-medium tracking-normal">Dyslexxy</span>
               <span className="rounded-full border bg-card/80 px-3 py-1 text-foreground">
                 Private AI
               </span>
@@ -119,7 +119,7 @@ export function LoginForm() {
               </p>
             </div>
             <div className="flex items-center justify-between border-t border-border/70 pt-5 text-[11px] text-muted-foreground">
-              <span>{configInfo ? `${t('common.version')} ${configInfo.version}` : 'Ready'}</span>
+              <span>{t('common.version')} 1.0.1</span>
               <span>Local workspace</span>
             </div>
           </section>
