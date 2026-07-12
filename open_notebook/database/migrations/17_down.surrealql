@@ -1,0 +1,2 @@
+-- Removes reasoning field from accuracy_log table
+REMOVE FIELD reasoning ON TABLE accuracy_log;

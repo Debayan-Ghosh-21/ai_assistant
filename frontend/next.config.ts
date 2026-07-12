@@ -10,7 +10,9 @@ const nextConfig: NextConfig = {
     // Increase proxy body size limit for file uploads (default is 10MB)
     // This allows larger files to be uploaded through the /api/* rewrite proxy to FastAPI
     proxyClientMaxBodySize: '100mb',
-  } as NextConfig['experimental'],
+    // Increase proxy timeout for slow LLM generations (120 seconds)
+    proxyTimeout: 120_000,
+  } as any,
 
   // API Rewrites: Proxy /api/* requests to FastAPI backend
   // This simplifies reverse proxy configuration - users only need to proxy to port 8502

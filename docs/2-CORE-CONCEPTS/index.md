@@ -21,8 +21,7 @@ How Open Notebook makes AI aware of your research - two different approaches.
 ### 3. [Chat vs. Transformations](chat-vs-transformations.md)
 Why Open Notebook has different interaction modes and when to use each one.
 
-**Key idea**: Chat is conversational exploration (you control context). Transformations are insight extractions. They reduced content to smaller bits of concentrated/dense information, which is much more suitable for an AI to use. 
-
+**Key idea**: Chat is conversational exploration (you control context). Transformations are insight extractions. They 
 ---
 
 ### 4. [Context Management](chat-vs-transformations.md#context-management-the-control-panel)
@@ -35,7 +34,8 @@ Your control panel for privacy and cost. Decide what data actually reaches AI.
 ### 5. [Podcasts Explained](podcasts-explained.md)
 Why Open Notebook can turn research into audio and why this matters.
 
-**Key idea**: Podcasts transform your research into a different consumption format. Instead of reading, someone can listen and absorb your insights passively.
+**Key idea**: Podcasts transform your research into a different consumption format. Instead of reading, someone can listen and absorb your insights passively.reduced content to smaller bits of concentrated/dense information, which is much more suitable for an AI to use. 
+
 
 ---
 

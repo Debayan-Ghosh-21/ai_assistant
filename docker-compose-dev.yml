@@ -39,6 +39,8 @@ services:
       - "8502:8502"
       - "5055:5055"
     environment:
+      # Bypass Next.js proxy timeout for slow LLMs by pointing browser directly to backend
+      - API_URL=http://localhost:5055
       # REQUIRED: Change this to your own secret string
       - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-super-secret-key-123
 

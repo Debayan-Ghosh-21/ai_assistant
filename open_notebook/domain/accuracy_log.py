@@ -5,8 +5,11 @@ from open_notebook.domain.base import ObjectModel
 
 class AccuracyLog(ObjectModel):
     table_name: ClassVar[str] = "accuracy_log"
-    chat_id: str
+    nullable_fields: ClassVar[set[str]] = {"chat_id", "insight_id", "reasoning"}
+    chat_id: Optional[str] = None
+    insight_id: Optional[str] = None
     accuracy_score: int
+    reasoning: Optional[str] = None
     created_at: Optional[datetime] = None
 
     @field_validator("created_at", mode="before")

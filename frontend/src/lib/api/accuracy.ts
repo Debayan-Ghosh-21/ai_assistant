@@ -2,9 +2,10 @@ import apiClient from './client'
 import type { AccuracyStatsResponse, AccuracyLogResponse } from '@/lib/types/accuracy'
 
 export const accuracyApi = {
-  create: async (chatId: string) => {
+  create: async (params: { chatId?: string; insightId?: string }) => {
     const response = await apiClient.post<AccuracyLogResponse>('/accuracy-logs', {
-      chat_id: chatId,
+      chat_id: params.chatId,
+      insight_id: params.insightId,
     })
     return response.data
   },

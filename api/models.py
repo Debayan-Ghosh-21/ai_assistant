@@ -735,13 +735,16 @@ class QuizResultResponse(BaseModel):
 
 # Accuracy Logs API models
 class AccuracyLogCreate(BaseModel):
-    chat_id: str = Field(..., description="Chat Session ID")
+    chat_id: Optional[str] = Field(None, description="Chat Session ID")
+    insight_id: Optional[str] = Field(None, description="Source Insight ID")
 
 
 class AccuracyLogResponse(BaseModel):
     id: str
-    chat_id: str
+    chat_id: Optional[str] = None
+    insight_id: Optional[str] = None
     accuracy_score: int
+    reasoning: Optional[str] = None
     created_at: str
 
 

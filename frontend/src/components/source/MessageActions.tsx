@@ -27,7 +27,7 @@ export function MessageActions({ content, notebookId, chatId }: MessageActionsPr
       toast.error('No active chat session found to log accuracy.')
       return
     }
-    createAccuracyLog.mutate(chatId)
+    createAccuracyLog.mutate({ chatId })
   }
 
   const handleSaveToNote = () => {

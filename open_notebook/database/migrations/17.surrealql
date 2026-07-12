@@ -1,0 +1,2 @@
+-- Adds reasoning field to accuracy_log table
+DEFINE FIELD reasoning ON TABLE accuracy_log TYPE option<string>;

@@ -1,0 +1,4 @@
+-- Alter accuracy_log table to support insight evaluations
+REMOVE FIELD chat_id ON TABLE accuracy_log;
+DEFINE FIELD chat_id ON TABLE accuracy_log TYPE option<string>;
+DEFINE FIELD insight_id ON TABLE accuracy_log TYPE option<string>;

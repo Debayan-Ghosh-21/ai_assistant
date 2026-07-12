@@ -4,12 +4,14 @@ import { useState, useEffect } from 'react'
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { FileText } from 'lucide-react'
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { FileText, Target, Loader2 } from 'lucide-react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useInsight } from '@/lib/hooks/use-insights'
 import { useModalManager } from '@/lib/hooks/use-modal-manager'
 import { useTranslation } from '@/lib/hooks/use-translation'
+import { useCreateAccuracyLog } from '@/lib/hooks/use-accuracy'
 import { TTSButton } from '@/components/common/TTSButton'
 
 interface SourceInsightDialogProps {
@@ -28,6 +30,7 @@ interface SourceInsightDialogProps {
 export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: SourceInsightDialogProps) {
   const { t } = useTranslation()
   const { openModal } = useModalManager()
+  const createAccuracyLog = useCreateAccuracyLog()
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false)
   const [isDeleting, setIsDeleting] = useState(false)
 
@@ -48,6 +51,11 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
     if (sourceId) {
       openModal('source', sourceId)
     }
+  }
+
+  const handleLogAccuracy = () => {
+    if (!insight?.id) return
+    createAccuracyLog.mutate({ insightId: insight.id })
   }
 
   const handleDelete = async () => {
@@ -82,7 +90,31 @@ export function SourceInsightDialog({ open, onOpenChange, insight, onDelete }: S
                 </Badge>
               )}
               {displayInsight?.content && (
-                <TTSButton text={displayInsight.content} size="sm" variant="outline" />
+                <div className="flex items-center gap-1">
+                  <TooltipProvider>
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="px-2"
+                          onClick={handleLogAccuracy}
+                          disabled={createAccuracyLog.isPending}
+                        >
+                          {createAccuracyLog.isPending ? (
+                            <Loader2 className="h-4 w-4 animate-spin" />
+                          ) : (
+                            <Target className="h-4 w-4" />
+                          )}
+                        </Button>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>Log AI Response Accuracy</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
+                  <TTSButton text={displayInsight.content} size="sm" variant="outline" />
+                </div>
               )}
               {sourceId && (
                 <Button

@@ -101,7 +101,7 @@ export function useCreateSource() {
         const sourceId = result.id
         const sessionTitle = `Chat - ${result.title || 'New Source'}`
         const chatSession = await sourceChatApi.createSession(sourceId, { title: sessionTitle })
-        await accuracyApi.create(chatSession.id)
+        await accuracyApi.create({ chatId: chatSession.id })
         console.log(`Auto-created source chat session and logged accuracy: ${chatSession.id}`)
       } catch (err) {
         console.error('Failed to auto-create source chat and log accuracy:', err)

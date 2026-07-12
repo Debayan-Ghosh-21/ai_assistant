@@ -14,7 +14,7 @@ export function useAccuracyStats() {
 export function useCreateAccuracyLog() {
   const queryClient = useQueryClient()
   return useMutation({
-    mutationFn: (chatId: string) => accuracyApi.create(chatId),
+    mutationFn: (params: { chatId?: string; insightId?: string }) => accuracyApi.create(params),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: [ACCURACY_STATS_KEY] })
       toast.success('AI response accuracy logged successfully!')

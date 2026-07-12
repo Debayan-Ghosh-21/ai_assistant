@@ -1,7 +1,9 @@
 export interface AccuracyLogResponse {
   id: string
-  chat_id: string
+  chat_id?: string
+  insight_id?: string
   accuracy_score: number
+  reasoning?: string
   created_at: string
 }
 
@@ -20,5 +22,6 @@ export interface AccuracyStatsResponse {
 }
 
 export interface CreateAccuracyLogRequest {
-  chat_id: string
+  chat_id?: string
+  insight_id?: string
 }

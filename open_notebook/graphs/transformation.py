@@ -37,6 +37,17 @@ async def run_transformation(state: dict, config: RunnableConfig) -> dict:
 
         transformation_template_text = f"{transformation_template_text}\n\n# INPUT"
 
+        if transformation.title == "dense_summary" or transformation.name == "dense_summary":
+            import os
+            try:
+                prompt_path = os.path.join(os.path.dirname(__file__), "..", "..", "prompts", "dyslexia_friendly_chatbot_system_prompt.md")
+                with open(prompt_path, "r", encoding="utf-8") as f:
+                    dyslexia_rules = f.read()
+                transformation_template_text = f"{transformation_template_text}\n\n{dyslexia_rules}"
+            except Exception as e:
+                import logging
+                logging.warning(f"Could not load dyslexia friendly prompt: {e}")
+
         system_prompt = Prompter(template_text=transformation_template_text).render(
             data=state
         )

@@ -1,0 +1,3 @@
+-- Rollback accuracy_log table insight support
+REMOVE FIELD insight_id ON TABLE accuracy_log;
+DEFINE FIELD chat_id ON TABLE accuracy_log TYPE string;

@@ -64,11 +64,19 @@ def _call_model_with_source_context_inner(
         new_loop = asyncio.new_event_loop()
         try:
             asyncio.set_event_loop(new_loop)
+            from open_notebook.utils.context_builder import ContextBuilder, ContextConfig
+            
+            context_config = ContextConfig(
+                sources={source_id: "full content"},
+                include_insights=True,
+                include_notes=False,
+                max_tokens=50000,
+            )
+            
             context_builder = ContextBuilder(
                 source_id=source_id,
-                include_insights=True,
-                include_notes=False,  # Focus on source-specific content
-                max_tokens=50000,  # Reasonable limit for source context
+                context_config=context_config,
+                max_tokens=50000,
             )
             return new_loop.run_until_complete(context_builder.build())
         finally:

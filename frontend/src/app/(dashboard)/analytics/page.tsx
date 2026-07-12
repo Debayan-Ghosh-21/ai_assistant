@@ -21,8 +21,9 @@ import {
   Tooltip as RechartsTooltip,
   Legend,
 } from 'recharts'
-import { Award, BarChart3, TrendingUp, HelpCircle, Activity, Info } from 'lucide-react'
+import { Award, BarChart3, TrendingUp, HelpCircle, Activity, Info, FileText } from 'lucide-react'
 import { format } from 'date-fns'
+import { Badge } from '@/components/ui/badge'
 
 export default function AnalyticsPage() {
   const { data: stats, isLoading, error } = useAccuracyStats()
@@ -310,6 +311,62 @@ export default function AnalyticsPage() {
                         <Scatter name="Correctness Scores" data={chartData.scatterData} fill="hsl(var(--primary))" />
                       </ScatterChart>
                     </ResponsiveContainer>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Recent Evaluations Table */}
+              <div className="mt-8">
+                <Card className="shadow-sm border border-border bg-card">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-sm font-semibold flex items-center gap-2">
+                      <FileText className="h-4 w-4 text-primary" />
+                      Recent Evaluations
+                    </CardTitle>
+                    <CardDescription className="text-xs">
+                      Detailed log of LLM evaluation reasoning and scores.
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="pt-4 overflow-x-auto">
+                    <table className="w-full text-sm text-left border-collapse">
+                      <thead className="text-xs text-muted-foreground uppercase bg-muted/50 border-b">
+                        <tr>
+                          <th className="px-4 py-3 font-medium">Date</th>
+                          <th className="px-4 py-3 font-medium">Score</th>
+                          <th className="px-4 py-3 font-medium">Type</th>
+                          <th className="px-4 py-3 font-medium">Reasoning</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-border">
+                        {[...records].reverse().map((record) => (
+                          <tr key={record.id} className="hover:bg-muted/50 transition-colors">
+                            <td className="px-4 py-3 whitespace-nowrap text-xs">
+                              {format(new Date(record.created_at), 'MMM dd, HH:mm')}
+                            </td>
+                            <td className="px-4 py-3 whitespace-nowrap">
+                              <Badge variant={
+                                record.accuracy_score >= 90 ? 'default' :
+                                record.accuracy_score >= 75 ? 'secondary' :
+                                'destructive'
+                              } className={
+                                record.accuracy_score >= 90 ? 'bg-green-500 hover:bg-green-600 text-white' :
+                                record.accuracy_score >= 75 ? 'bg-yellow-500 hover:bg-yellow-600 text-white' : ''
+                              }>
+                                {record.accuracy_score}%
+                              </Badge>
+                            </td>
+                            <td className="px-4 py-3 whitespace-nowrap">
+                              <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                                {record.insight_id ? 'Insight' : 'Chat'}
+                              </span>
+                            </td>
+                            <td className="px-4 py-3 text-xs text-muted-foreground max-w-md">
+                              {record.reasoning || 'No reasoning provided.'}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   </CardContent>
                 </Card>
               </div>
