@@ -1,9 +1,0 @@
-{
-  "fixedSectionOk": true,
-  "nodesRecovered": 0,
-  "edgesRestored": 0,
-  "crossBatchEdgesAdded": 0,
-  "typesRemapped": 0,
-  "complexityRemapped": 0,
-  "notes": ["Assembled graph was generated cleanly. Node IDs, complexity values, and edge references were validated programmatically during batch analysis."]
-}
