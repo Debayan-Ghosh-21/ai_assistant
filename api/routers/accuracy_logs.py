@@ -13,9 +13,9 @@ from api.models import (
     AccuracyStatsResponse,
     DailyAverage,
 )
-from open_notebook.domain.accuracy_log import AccuracyLog
-from open_notebook.graphs.chat import graph as chat_graph
-from open_notebook.ai.provision import provision_langchain_model
+from dyslexxy.domain.accuracy_log import AccuracyLog
+from dyslexxy.graphs.chat import graph as chat_graph
+from dyslexxy.ai.provision import provision_langchain_model
 
 router = APIRouter()
 
@@ -35,7 +35,7 @@ async def create_accuracy_log(request: AccuracyLogCreate):
                 if request.insight_id.startswith("source_insight:")
                 else f"source_insight:{request.insight_id}"
             )
-            from open_notebook.domain.notebook import SourceInsight
+            from dyslexxy.domain.notebook import SourceInsight
             insight = await SourceInsight.get(full_insight_id)
             if not insight:
                 raise ValueError("Insight not found")
@@ -112,11 +112,9 @@ Example output:
         content = getattr(response, "content", "")
         
         # Clean potential markdown JSON wrapping
-        if content.startswith("```json"):
-            content = content[7:-3]
-        elif content.startswith("```"):
-            content = content[3:-3]
-            
+        content = content.strip()
+        content = re.sub(r"^```(?:json)?\s*", "", content, flags=re.IGNORECASE)
+        content = re.sub(r"\s*```$", "", content)
         content = content.strip()
         
         score = 0

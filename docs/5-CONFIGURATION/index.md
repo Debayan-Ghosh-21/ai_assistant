@@ -1,6 +1,6 @@
 # Configuration - Essential Settings
 
-Configuration is how you customize Open Notebook for your specific setup. This section covers what you need to know.
+Configuration is how you customize Dyslexxy for your specific setup. This section covers what you need to know.
 
 ---
 
@@ -46,7 +46,7 @@ Use the right file depending on your setup.
 
 ### `.env` (Local Development)
 
-You will only use .env if you are running Open Notebook locally.
+You will only use .env if you are running Dyslexxy locally.
 
 ```
 Located in: project root
@@ -79,8 +79,8 @@ This is the database used by the app.
 SURREAL_URL=ws://surrealdb:8000/rpc
 SURREAL_USER=root
 SURREAL_PASSWORD=root  # Change in production!
-SURREAL_NAMESPACE=open_notebook
-SURREAL_DATABASE=open_notebook
+SURREAL_NAMESPACE=dyslexxy
+SURREAL_DATABASE=dyslexxy
 ```
 
 > The only thing that is critical to not miss is the hostname in the `SURREAL_URL`. Check what URL to use based on your deployment, [here](database.md).
@@ -90,7 +90,7 @@ SURREAL_DATABASE=open_notebook
 
 We need access to LLMs in order for the app to work. AI provider credentials are configured via the **Settings UI**:
 
-1. Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in your environment (required for storing credentials)
+1. Set `DYSLEXXY_ENCRYPTION_KEY` in your environment (required for storing credentials)
 2. Start services
 3. Go to **Settings → API Keys → Add Credential**
 4. Select your provider, paste your API key
@@ -98,7 +98,7 @@ We need access to LLMs in order for the app to work. AI provider credentials are
 
 ```
 # Required in your .env or docker-compose.yml:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 ```
 
 > **Ollama users**: Add an Ollama credential in Settings → API Keys with the correct base URL. See [Ollama Setup](ollama.md) for network configuration help.
@@ -123,7 +123,7 @@ Auto-detection works for most setups.
 ### Scenario 1: Docker on Localhost (Default)
 ```env
 # In docker.env:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 # Everything else uses defaults
 # Then configure AI provider in Settings → API Keys
 ```
@@ -131,14 +131,14 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 ### Scenario 2: Docker on Remote Server
 ```env
 # In docker.env:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 API_URL=http://your-server-ip:5055
 ```
 
 ### Scenario 3: Behind Reverse Proxy (Nginx/Cloudflare)
 ```env
 # In docker.env:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 API_URL=https://your-domain.com
 # The reverse proxy handles HTTPS
 ```
@@ -146,14 +146,14 @@ API_URL=https://your-domain.com
 ### Scenario 4: Using Ollama Locally
 ```env
 # In .env:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 # Then add Ollama credential in Settings → API Keys
 ```
 
 ### Scenario 5: Using Azure OpenAI
 ```env
 # In docker.env:
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 # Then add Azure OpenAI credential in Settings → API Keys
 ```
 
@@ -236,7 +236,7 @@ OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
 The recommended way to configure AI providers:
 
 ```
-1. Open Open Notebook in your browser
+1. Open Dyslexxy in your browser
 2. Go to Settings → API Keys
 3. Click "Add Credential"
 4. Select provider, enter API key
@@ -254,7 +254,7 @@ For database, network, and encryption key settings:
 
 ```bash
 1. Open .env in your editor
-2. Set OPEN_NOTEBOOK_ENCRYPTION_KEY and database vars
+2. Set DYSLEXXY_ENCRYPTION_KEY and database vars
 3. Save
 4. Restart services
 ```
@@ -266,7 +266,7 @@ For database, network, and encryption key settings:
 services:
   api:
     environment:
-      - OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+      - DYSLEXXY_ENCRYPTION_KEY=my-secret-key
       - API_URL=https://your-domain.com
 ```
 
@@ -291,7 +291,7 @@ After configuration, verify it works:
 | Mistake | Problem | Fix |
 |---------|---------|-----|
 | No credential configured | Models not available | Add credential in Settings → API Keys |
-| Missing encryption key | Can't save credentials | Set OPEN_NOTEBOOK_ENCRYPTION_KEY |
+| Missing encryption key | Can't save credentials | Set DYSLEXXY_ENCRYPTION_KEY |
 | Wrong database URL | Can't start API | Check SURREAL_URL format |
 | Expose port 5055 | "Can't connect to server" | Expose 5055 in docker-compose |
 | Typo in env var | Settings ignored | Check spelling (case-sensitive!) |
@@ -320,7 +320,7 @@ Once configured:
 ## Summary
 
 **Minimal configuration to run:**
-1. Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in your environment
+1. Set `DYSLEXXY_ENCRYPTION_KEY` in your environment
 2. Start services
 3. Add AI provider credential in Settings → API Keys
 4. Done!

@@ -1,10 +1,10 @@
 #!/bin/bash
-# Development environment startup for Open Notebook
+# Development environment startup for Dyslexxy
 # Assumes SurrealDB is already running externally (per .env config)
 
 set -e
 
-echo "=== Open Notebook Dev Startup ==="
+echo "=== Dyslexxy Dev Startup ==="
 
 # Check SurrealDB connectivity
 SURREAL_PORT=${SURREAL_PORT:-8018}

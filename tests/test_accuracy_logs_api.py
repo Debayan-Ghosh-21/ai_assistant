@@ -1,4 +1,4 @@
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 from datetime import datetime, timezone
 import pytest
 from fastapi.testclient import TestClient
@@ -14,13 +14,30 @@ def client():
 class TestAccuracyLogsApi:
     """Test suite for Accuracy Logs API endpoints."""
 
+    @patch("api.routers.accuracy_logs.chat_graph")
+    @patch("api.routers.accuracy_logs.provision_langchain_model")
     @patch("api.routers.accuracy_logs.AccuracyLog")
-    def test_create_accuracy_log(self, mock_log_cls, client):
+    def test_create_accuracy_log(self, mock_log_cls, mock_provision, mock_chat_graph, client):
         """Test that creating an accuracy log works and generates a score."""
+        mock_state = MagicMock()
+        mock_ai_msg = MagicMock()
+        mock_ai_msg.type = "ai"
+        mock_ai_msg.content = "Test summary"
+        mock_state.values = {"messages": [mock_ai_msg], "context": "Test context"}
+        mock_chat_graph.get_state.return_value = mock_state
+
+        mock_llm = AsyncMock()
+        mock_resp = MagicMock()
+        mock_resp.content = '{"score": 90, "reasoning": "Looks accurate"}'
+        mock_llm.ainvoke = AsyncMock(return_value=mock_resp)
+        mock_provision.return_value = mock_llm
+
         mock_log = AsyncMock()
         mock_log.id = "accuracy_log:abc123"
         mock_log.chat_id = "chat_session:session123"
         mock_log.accuracy_score = 90
+        mock_log.insight_id = None
+        mock_log.reasoning = "Looks accurate"
         mock_log.created_at = datetime(2026, 6, 22, 12, 0, 0, tzinfo=timezone.utc)
         mock_log.created = datetime(2026, 6, 22, 12, 0, 0, tzinfo=timezone.utc)
         mock_log.save = AsyncMock()
@@ -48,6 +65,8 @@ class TestAccuracyLogsApi:
         log1.accuracy_score = 80
         log1.created_at = datetime(2026, 6, 21, 10, 0, 0, tzinfo=timezone.utc)
         log1.created = datetime(2026, 6, 21, 10, 0, 0, tzinfo=timezone.utc)
+        log1.insight_id = None
+        log1.reasoning = None
 
         log2 = AsyncMock()
         log2.id = "accuracy_log:2"
@@ -55,6 +74,8 @@ class TestAccuracyLogsApi:
         log2.accuracy_score = 90
         log2.created_at = datetime(2026, 6, 21, 14, 0, 0, tzinfo=timezone.utc)
         log2.created = datetime(2026, 6, 21, 14, 0, 0, tzinfo=timezone.utc)
+        log2.insight_id = None
+        log2.reasoning = None
 
         log3 = AsyncMock()
         log3.id = "accuracy_log:3"
@@ -62,6 +83,8 @@ class TestAccuracyLogsApi:
         log3.accuracy_score = 98
         log3.created_at = datetime(2026, 6, 22, 9, 0, 0, tzinfo=timezone.utc)
         log3.created = datetime(2026, 6, 22, 9, 0, 0, tzinfo=timezone.utc)
+        log3.insight_id = None
+        log3.reasoning = None
 
         mock_log_cls.get_all = AsyncMock(return_value=[log1, log2, log3])
 

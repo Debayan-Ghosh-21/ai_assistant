@@ -25,7 +25,7 @@ def run_evaluation():
         "question": [
             "What is SurrealDB?", 
             "How does LangGraph work?",
-            "What is the main use case of Open Notebook?"
+            "What is the main use case of Dyslexxy?"
         ],
         "answer": [
             "SurrealDB is a multi-model database that supports graph and vector search.", 
@@ -35,7 +35,7 @@ def run_evaluation():
         "contexts": [
             ["SurrealDB is a powerful multi-model database.", "It has built-in vector search capabilities."], 
             ["LangGraph allows you to model workflows as graphs.", "It is built on top of LangChain."],
-            ["Open Notebook is an AI-powered research assistant.", "It is inspired by Google NotebookLM."]
+            ["Dyslexxy is an AI-powered research assistant.", "It is inspired by Google NotebookLM."]
         ],
         "ground_truth": [
             "SurrealDB is a multi-model database with vector search.", 

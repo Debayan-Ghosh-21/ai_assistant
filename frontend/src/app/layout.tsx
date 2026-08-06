@@ -28,7 +28,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className} suppressHydrationWarning>
         <ErrorBoundary>
-          <ThemeProvider>
+          <ThemeProvider>"
             <QueryProvider>
               <I18nProvider>
                 <ConnectionGuard>

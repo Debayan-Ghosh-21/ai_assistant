@@ -44,7 +44,7 @@ dependencies = [
 ]
 
 [tool.setuptools]
-package-dir = {"open_notebook" = "open_notebook"}
+package-dir = {"dyslexxy" = "dyslexxy"}
 
 
 [project.optional-dependencies]

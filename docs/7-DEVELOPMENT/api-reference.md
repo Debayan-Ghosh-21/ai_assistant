@@ -1,6 +1,6 @@
 # API Reference
 
-Complete REST API for Open Notebook. All endpoints are served from the API backend (default: `http://localhost:5055`).
+Complete REST API for Dyslexxy. All endpoints are served from the API backend (default: `http://localhost:5055`).
 
 **Base URL**: `http://localhost:5055` (development) or environment-specific production URL
 
@@ -101,7 +101,7 @@ All requests require password header:
 curl -H "Authorization: Bearer your_password" http://localhost:5055/api/notebooks
 ```
 
-Password configured via `OPEN_NOTEBOOK_PASSWORD` environment variable.
+Password configured via `DYSLEXXY_PASSWORD` environment variable.
 
 > **📖 See [Security Configuration](../5-CONFIGURATION/security.md)** for complete authentication setup, API examples, and production hardening.
 

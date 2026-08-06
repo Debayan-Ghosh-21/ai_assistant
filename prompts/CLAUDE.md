@@ -1,6 +1,6 @@
 # Prompts Module
 
-Jinja2 prompt templates for multi-provider AI workflows in Open Notebook.
+Jinja2 prompt templates for multi-provider AI workflows in Dyslexxy.
 
 ## Purpose
 
@@ -32,7 +32,7 @@ model = await provision_langchain_model(system_prompt, ...)
 response = await model.ainvoke(system_prompt)
 ```
 
-See detailed workflow integration in `open_notebook/graphs/CLAUDE.md` for how each template fits into chat.py, ask.py, source_chat.py.
+See detailed workflow integration in `dyslexxy/graphs/CLAUDE.md` for how each template fits into chat.py, ask.py, source_chat.py.
 
 ## Prompt Engineering Patterns
 
@@ -181,10 +181,10 @@ prompt = Prompter(prompt_template="ask/entry", parser=parser).render(
 ```
 
 **Integration test** (invoke full graph):
-See `open_notebook/graphs/ask.py` for how entry.jinja is invoked inside ask_graph workflow.
+See `dyslexxy/graphs/ask.py` for how entry.jinja is invoked inside ask_graph workflow.
 
 ## Reference Documentation
 
 - **Jinja2 syntax guide**: See existing templates for for-loop, if-conditional, variable interpolation patterns
-- **Graph integration**: `open_notebook/graphs/CLAUDE.md` documents which template is used in which workflow
+- **Graph integration**: `dyslexxy/graphs/CLAUDE.md` documents which template is used in which workflow
 - **Sub-directory CLAUDE.md files**: `ask/CLAUDE.md`, `chat/CLAUDE.md`, `podcast/CLAUDE.md` (if created) provide template-specific implementation notes

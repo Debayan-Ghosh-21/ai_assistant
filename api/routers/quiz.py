@@ -9,9 +9,9 @@ from api.models import (
     QuizResultResponse,
     SubmitAnswersRequest,
 )
-from open_notebook.domain.notebook import Source
-from open_notebook.domain.quiz import Quiz
-from open_notebook.graphs.quiz import quiz_graph
+from dyslexxy.domain.notebook import Source
+from dyslexxy.domain.quiz import Quiz
+from dyslexxy.graphs.quiz import quiz_graph
 
 router = APIRouter()
 

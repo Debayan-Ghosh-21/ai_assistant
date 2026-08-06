@@ -98,7 +98,7 @@ RUST_LOG=surrealdb=debug
 LOGLEVEL=langchain:debug
 
 # Only specific module
-RUST_LOG=open_notebook::database=debug
+RUST_LOG=dyslexxy::database=debug
 ```
 
 ### LangSmith Tracing
@@ -133,7 +133,7 @@ Edit `docker-compose.yml`:
 
 ```yaml
 services:
-  open-notebook:
+  dyslexxy:
     ports:
       - "8001:8502"  # Change from 8502 to 8001
 ```
@@ -146,7 +146,7 @@ API auto-detects to: `http://localhost:5055` ✓
 
 ```yaml
 services:
-  open-notebook:
+  dyslexxy:
     ports:
       - "127.0.0.1:8502:8502"  # Frontend
       - "5056:5055"            # Change API from 5055 to 5056
@@ -228,8 +228,8 @@ SURREAL_PASSWORD=$(openssl rand -base64 32)  # Generate secure password
 ### Add Password Protection
 
 ```env
-# Protect your Open Notebook instance
-OPEN_NOTEBOOK_PASSWORD=your_secure_password
+# Protect your Dyslexxy instance
+DYSLEXXY_PASSWORD=your_secure_password
 ```
 
 ### Use HTTPS
@@ -241,7 +241,7 @@ API_URL=https://mynotebook.example.com
 
 ### Firewall Rules
 
-Restrict access to your Open Notebook:
+Restrict access to your Dyslexxy:
 - Port 8502 (frontend): Only from your IP
 - Port 5055 (API): Only from frontend
 - Port 8000 (SurrealDB): Never expose to internet
@@ -250,7 +250,7 @@ Restrict access to your Open Notebook:
 
 ## Web Scraping & Content Extraction
 
-Open Notebook uses multiple services for content extraction:
+Dyslexxy uses multiple services for content extraction:
 
 ### Firecrawl
 
@@ -278,7 +278,7 @@ Get key from: https://jina.ai/
 
 ### Credential Storage (Required)
 ```env
-OPEN_NOTEBOOK_ENCRYPTION_KEY    # Required for storing credentials
+DYSLEXXY_ENCRYPTION_KEY    # Required for storing credentials
 ```
 
 AI provider API keys are configured via **Settings → API Keys** (not environment variables).
@@ -345,7 +345,7 @@ curl -X POST http://localhost:5055/api/chat \
 
 ```bash
 # Check environment variables are set
-env | grep OPEN_NOTEBOOK_ENCRYPTION_KEY
+env | grep DYSLEXXY_ENCRYPTION_KEY
 
 # Verify database connection
 python -c "import os; print(os.getenv('SURREAL_URL'))"
@@ -430,20 +430,20 @@ BACKUP_DIR="/path/to/backups"
 DATE=$(date +%Y%m%d-%H%M%S)
 
 # Create backup
-tar -czf "$BACKUP_DIR/open-notebook-$DATE.tar.gz" \
+tar -czf "$BACKUP_DIR/dyslexxy-$DATE.tar.gz" \
   /path/to/notebook_data \
   /path/to/surreal_data
 
 # Keep only last 7 days
-find "$BACKUP_DIR" -name "open-notebook-*.tar.gz" -mtime +7 -delete
+find "$BACKUP_DIR" -name "dyslexxy-*.tar.gz" -mtime +7 -delete
 
-echo "Backup complete: open-notebook-$DATE.tar.gz"
+echo "Backup complete: dyslexxy-$DATE.tar.gz"
 ```
 
 Add to cron:
 ```bash
 # Daily backup at 2 AM
-0 2 * * * /path/to/backup.sh >> /var/log/open-notebook-backup.log 2>&1
+0 2 * * * /path/to/backup.sh >> /var/log/dyslexxy-backup.log 2>&1
 ```
 
 ### Restore
@@ -467,13 +467,13 @@ docker compose up -d
 ```bash
 # On source server
 docker compose down
-tar -czf open-notebook-migration.tar.gz notebook_data/ surreal_data/
+tar -czf dyslexxy-migration.tar.gz notebook_data/ surreal_data/
 
 # Transfer to new server
-scp open-notebook-migration.tar.gz user@newserver:/path/
+scp dyslexxy-migration.tar.gz user@newserver:/path/
 
 # On new server
-tar -xzf open-notebook-migration.tar.gz
+tar -xzf dyslexxy-migration.tar.gz
 docker compose up -d
 ```
 

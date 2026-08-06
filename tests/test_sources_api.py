@@ -6,8 +6,8 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 from fastapi.testclient import TestClient
 
-from open_notebook.config import UPLOADS_FOLDER
-from open_notebook.domain.notebook import Source
+from dyslexxy.config import UPLOADS_FOLDER
+from dyslexxy.domain.notebook import Source
 
 
 @pytest.fixture

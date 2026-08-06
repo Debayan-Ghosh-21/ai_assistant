@@ -6,10 +6,10 @@ from fastapi.responses import StreamingResponse
 from loguru import logger
 
 from api.models import AskRequest, AskResponse, SearchRequest, SearchResponse
-from open_notebook.ai.models import Model, model_manager
-from open_notebook.domain.notebook import text_search, vector_search
-from open_notebook.exceptions import DatabaseOperationError, InvalidInputError
-from open_notebook.graphs.ask import graph as ask_graph
+from dyslexxy.ai.models import Model, model_manager
+from dyslexxy.domain.notebook import text_search, vector_search
+from dyslexxy.exceptions import DatabaseOperationError, InvalidInputError
+from dyslexxy.graphs.ask import graph as ask_graph
 
 router = APIRouter()
 
@@ -102,7 +102,7 @@ async def stream_ask_response(
         yield f"data: {json.dumps(completion_data)}\n\n"
 
     except Exception as e:
-        from open_notebook.utils.error_classifier import classify_error
+        from dyslexxy.utils.error_classifier import classify_error
 
         _, user_message = classify_error(e)
         logger.error(f"Error in ask streaming: {str(e)}")

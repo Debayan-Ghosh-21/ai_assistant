@@ -7,13 +7,13 @@ from langchain_core.runnables import RunnableConfig
 from loguru import logger
 from pydantic import BaseModel, Field
 
-from open_notebook.database.repository import ensure_record_id, repo_query
-from open_notebook.domain.notebook import ChatSession, Note, Notebook, Source
-from open_notebook.exceptions import (
+from dyslexxy.database.repository import ensure_record_id, repo_query
+from dyslexxy.domain.notebook import ChatSession, Note, Notebook, Source
+from dyslexxy.exceptions import (
     NotFoundError,
 )
-from open_notebook.graphs.chat import graph as chat_graph
-from open_notebook.utils.graph_utils import get_session_message_count
+from dyslexxy.graphs.chat import graph as chat_graph
+from dyslexxy.utils.graph_utils import get_session_message_count
 
 router = APIRouter()
 
@@ -499,7 +499,7 @@ async def build_context(request: BuildContextRequest):
         char_count = len(total_content)
         # Use token count utility if available
         try:
-            from open_notebook.utils import token_count
+            from dyslexxy.utils import token_count
 
             estimated_tokens = token_count(total_content) if total_content else 0
         except ImportError:

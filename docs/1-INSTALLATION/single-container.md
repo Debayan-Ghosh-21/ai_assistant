@@ -6,7 +6,7 @@ All-in-one container setup. **Simpler than Docker Compose, but less flexible.**
 
 **Best for:** PikaPods, Railway, shared hosting, minimal setups
 
-> **Alternative Registry:** Images available on both Docker Hub (`lfnovo/open_notebook:v1-latest-single`) and GitHub Container Registry (`ghcr.io/lfnovo/open-notebook:v1-latest-single`).
+> **Alternative Registry:** Images available on both Docker Hub (`lfnovo/dyslexxy:v1-latest-single`) and GitHub Container Registry (`ghcr.io/lfnovo/dyslexxy:v1-latest-single`).
 
 ## Prerequisites
 
@@ -21,19 +21,19 @@ All-in-one container setup. **Simpler than Docker Compose, but less flexible.**
 ```yaml
 # docker-compose.yml
 services:
-  open_notebook:
-    image: lfnovo/open_notebook:v1-latest-single
+  dyslexxy:
+    image: lfnovo/dyslexxy:v1-latest-single
     pull_policy: always
     ports:
       - "8502:8502"  # Web UI (React frontend)
       - "5055:5055"  # API
     environment:
-      - OPEN_NOTEBOOK_ENCRYPTION_KEY=change-me-to-a-secret-string
+      - DYSLEXXY_ENCRYPTION_KEY=change-me-to-a-secret-string
       - SURREAL_URL=ws://localhost:8000/rpc
       - SURREAL_USER=root
       - SURREAL_PASSWORD=root
-      - SURREAL_NAMESPACE=open_notebook
-      - SURREAL_DATABASE=open_notebook
+      - SURREAL_NAMESPACE=dyslexxy
+      - SURREAL_DATABASE=dyslexxy
     volumes:
       - ./data:/app/data
     restart: always
@@ -57,28 +57,28 @@ Then configure your AI provider:
 **PikaPods:**
 1. Click "New App"
 2. Search "Dyslexxy"
-3. Set environment variables (at minimum: `OPEN_NOTEBOOK_ENCRYPTION_KEY`)
+3. Set environment variables (at minimum: `DYSLEXXY_ENCRYPTION_KEY`)
 4. Click "Deploy"
 5. Open the app → Go to **Settings → API Keys** to configure your AI provider
 
 **Railway:**
 1. Create new project
-2. Add `lfnovo/open_notebook:v1-latest-single`
-3. Set environment variables (at minimum: `OPEN_NOTEBOOK_ENCRYPTION_KEY`)
+2. Add `lfnovo/dyslexxy:v1-latest-single`
+3. Set environment variables (at minimum: `DYSLEXXY_ENCRYPTION_KEY`)
 4. Deploy
 5. Open the app → Go to **Settings → API Keys** to configure your AI provider
 
 **Render:**
 1. Create new Web Service
-2. Use Docker image: `lfnovo/open_notebook:v1-latest-single`
-3. Set environment variables in dashboard (at minimum: `OPEN_NOTEBOOK_ENCRYPTION_KEY`)
+2. Use Docker image: `lfnovo/dyslexxy:v1-latest-single`
+3. Set environment variables in dashboard (at minimum: `DYSLEXXY_ENCRYPTION_KEY`)
 4. Configure persistent disk for `/app/data` and `/mydata`
 
 **DigitalOcean App Platform:**
 1. Create new app from Docker Hub
-2. Use image: `lfnovo/open_notebook:v1-latest-single`
+2. Use image: `lfnovo/dyslexxy:v1-latest-single`
 3. Set port to 8502
-4. Add environment variables (at minimum: `OPEN_NOTEBOOK_ENCRYPTION_KEY`)
+4. Add environment variables (at minimum: `DYSLEXXY_ENCRYPTION_KEY`)
 5. Configure persistent storage
 
 **Heroku:**
@@ -86,14 +86,14 @@ Then configure your AI provider:
 # Using heroku.yml
 heroku container:push web
 heroku container:release web
-heroku config:set OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
+heroku config:set DYSLEXXY_ENCRYPTION_KEY=your-secret-key
 ```
 
 **Coolify:**
 1. Add new service → Docker Image
-2. Image: `lfnovo/open_notebook:v1-latest-single`
+2. Image: `lfnovo/dyslexxy:v1-latest-single`
 3. Port: 8502
-4. Add environment variables (at minimum: `OPEN_NOTEBOOK_ENCRYPTION_KEY`)
+4. Add environment variables (at minimum: `DYSLEXXY_ENCRYPTION_KEY`)
 5. Enable persistent volumes
 6. Coolify handles HTTPS automatically
 
@@ -103,12 +103,12 @@ heroku config:set OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
 
 | Variable | Purpose | Example |
 |----------|---------|---------|
-| `OPEN_NOTEBOOK_ENCRYPTION_KEY` | Encryption key for credentials (required) | `my-secret-key` |
+| `DYSLEXXY_ENCRYPTION_KEY` | Encryption key for credentials (required) | `my-secret-key` |
 | `SURREAL_URL` | Database | `ws://localhost:8000/rpc` |
 | `SURREAL_USER` | DB user | `root` |
 | `SURREAL_PASSWORD` | DB password | `root` |
-| `SURREAL_NAMESPACE` | DB namespace | `open_notebook` |
-| `SURREAL_DATABASE` | DB name | `open_notebook` |
+| `SURREAL_NAMESPACE` | DB namespace | `dyslexxy` |
+| `SURREAL_DATABASE` | DB name | `dyslexxy` |
 | `API_URL` | External URL (for remote access) | `https://myapp.example.com` |
 
 AI provider API keys are configured via the **Settings → API Keys** UI after deployment.

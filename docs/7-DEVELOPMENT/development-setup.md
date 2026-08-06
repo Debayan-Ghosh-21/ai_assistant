@@ -1,6 +1,6 @@
 # Local Development Setup
 
-This guide walks you through setting up Open Notebook for local development. Follow these steps to get the full stack running on your machine.
+This guide walks you through setting up Dyslexxy for local development. Follow these steps to get the full stack running on your machine.
 
 ## Prerequisites
 
@@ -17,11 +17,11 @@ Before you start, ensure you have the following installed:
 
 ```bash
 # Clone the repository
-git clone https://github.com/lfnovo/open-notebook.git
-cd open-notebook
+git clone https://github.com/lfnovo/dyslexxy.git
+cd dyslexxy
 
 # Add upstream remote for keeping your fork updated
-git remote add upstream https://github.com/lfnovo/open-notebook.git
+git remote add upstream https://github.com/lfnovo/dyslexxy.git
 ```
 
 ## Step 2: Install Python Dependencies
@@ -50,11 +50,11 @@ Edit `.env` with your settings:
 SURREAL_URL=ws://localhost:8000/rpc
 SURREAL_USER=root
 SURREAL_PASSWORD=password
-SURREAL_NAMESPACE=open_notebook
+SURREAL_NAMESPACE=dyslexxy
 SURREAL_DATABASE=development
 
 # Credential encryption (required for storing API keys)
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-dev-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-dev-secret-key
 
 # Application
 APP_PASSWORD=  # Optional password protection
@@ -254,7 +254,7 @@ make lint
 uv run pytest
 
 # Run tests with coverage
-uv run pytest --cov=open_notebook
+uv run pytest --cov=dyslexxy
 ```
 
 ## Common Development Tasks
@@ -269,7 +269,7 @@ uv run pytest
 uv run pytest tests/test_notebooks.py
 
 # Run with coverage report
-uv run pytest --cov=open_notebook --cov-report=html
+uv run pytest --cov=dyslexxy --cov-report=html
 ```
 
 ### Creating a Feature Branch

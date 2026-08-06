@@ -1,4 +1,4 @@
-name: open-notebook-dev
+name: dyslexxy-dev
 
 services:
   surrealdb:
@@ -19,7 +19,7 @@ services:
       start_period: 10s
     restart: unless-stopped
 
-  open_notebook:
+  dyslexxy:
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -29,8 +29,8 @@ services:
       SURREAL_URL: ws://surrealdb:8000/rpc
       SURREAL_USER: root
       SURREAL_PASSWORD: root
-      SURREAL_NAMESPACE: open_notebook
-      SURREAL_DATABASE: open_notebook
+      SURREAL_NAMESPACE: dyslexxy
+      SURREAL_DATABASE: dyslexxy
       INTERNAL_API_URL: http://localhost:5055
       NEXT_PUBLIC_API_URL: "http://localhost:5055"
       HOSTNAME: 0.0.0.0
@@ -41,10 +41,10 @@ services:
       - "5055:5055"
     volumes:
       - .:/app
-      - open_notebook_venv:/app/.venv
-      - open_notebook_node_modules:/app/frontend/node_modules
-      - open_notebook_next:/app/frontend/.next
-      - open_notebook_tiktoken:/app/tiktoken-cache
+      - dyslexxy_venv:/app/.venv
+      - dyslexxy_node_modules:/app/frontend/node_modules
+      - dyslexxy_next:/app/frontend/.next
+      - dyslexxy_tiktoken:/app/tiktoken-cache
       - ./notebook_data:/app/data
     depends_on:
       surrealdb:
@@ -58,7 +58,7 @@ services:
     restart: unless-stopped
 
 volumes:
-  open_notebook_venv:
-  open_notebook_node_modules:
-  open_notebook_next:
-  open_notebook_tiktoken:
+  dyslexxy_venv:
+  dyslexxy_node_modules:
+  dyslexxy_next:
+  dyslexxy_tiktoken:

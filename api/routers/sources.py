@@ -29,11 +29,11 @@ from api.models import (
     SourceUpdate,
 )
 from commands.source_commands import SourceProcessingInput
-from open_notebook.config import UPLOADS_FOLDER
-from open_notebook.database.repository import ensure_record_id, repo_query
-from open_notebook.domain.notebook import Asset, Notebook, Source
-from open_notebook.domain.transformation import Transformation
-from open_notebook.exceptions import InvalidInputError
+from dyslexxy.config import UPLOADS_FOLDER
+from dyslexxy.database.repository import ensure_record_id, repo_query
+from dyslexxy.domain.notebook import Asset, Notebook, Source
+from dyslexxy.domain.transformation import Transformation
+from dyslexxy.exceptions import InvalidInputError
 
 router = APIRouter()
 
@@ -405,7 +405,7 @@ async def create_source(
                 )
 
                 command_id = await CommandService.submit_command_job(
-                    "open_notebook",  # app name
+                    "dyslexxy",  # app name
                     "process_source",  # command name
                     command_input.model_dump(),
                 )
@@ -484,7 +484,7 @@ async def create_source(
                 # be called from an already-running event loop (FastAPI)
                 result = await asyncio.to_thread(
                     execute_command_sync,
-                    "open_notebook",  # app name
+                    "dyslexxy",  # app name
                     "process_source",  # command name
                     command_input.model_dump(),
                     timeout=300,  # 5 minute timeout for sync processing
@@ -889,7 +889,7 @@ async def retry_source_processing(source_id: str):
             )
 
             command_id = await CommandService.submit_command_job(
-                "open_notebook",  # app name
+                "dyslexxy",  # app name
                 "process_source",  # command name
                 command_input.model_dump(),
             )
@@ -1016,7 +1016,7 @@ async def create_source_insight(source_id: str, request: CreateSourceInsightRequ
 
         # Submit transformation as background job (fire-and-forget)
         command_id = submit_command(
-            "open_notebook",
+            "dyslexxy",
             "run_transformation",
             {
                 "source_id": source_id,

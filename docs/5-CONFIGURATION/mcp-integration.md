@@ -1,16 +1,16 @@
 # Model Context Protocol (MCP) Integration
 
-Open Notebook can be seamlessly integrated into your AI workflows using the **Model Context Protocol (MCP)**, enabling direct access to your notebooks, sources, and chat functionality from AI assistants like Claude Desktop and VS Code extensions.
+Dyslexxy can be seamlessly integrated into your AI workflows using the **Model Context Protocol (MCP)**, enabling direct access to your notebooks, sources, and chat functionality from AI assistants like Claude Desktop and VS Code extensions.
 
 ## What is MCP?
 
-The [Model Context Protocol](https://modelcontextprotocol.io) is an open standard that allows AI applications to securely connect to external data sources and tools. With the Open Notebook MCP server, you can:
+The [Model Context Protocol](https://modelcontextprotocol.io) is an open standard that allows AI applications to securely connect to external data sources and tools. With the Dyslexxy MCP server, you can:
 
 - 📚 **Access your notebooks** directly from Claude Desktop or VS Code
 - 🔍 **Search your research content** without leaving your AI assistant
 - 💬 **Create and manage chat sessions** with your research as context
 - 📝 **Generate notes** and insights on-the-fly
-- 🤖 **Automate workflows** using the full Open Notebook API
+- 🤖 **Automate workflows** using the full Dyslexxy API
 
 ## Quick Setup
 
@@ -29,12 +29,12 @@ The [Model Context Protocol](https://modelcontextprotocol.io) is an open standar
    ```json
    {
      "mcpServers": {
-       "open-notebook": {
+       "dyslexxy": {
          "command": "uvx",
-         "args": ["open-notebook-mcp"],
+         "args": ["dyslexxy-mcp"],
          "env": {
-           "OPEN_NOTEBOOK_URL": "http://localhost:5055",
-           "OPEN_NOTEBOOK_PASSWORD": "your_password_here"
+           "DYSLEXXY_URL": "http://localhost:5055",
+           "DYSLEXXY_PASSWORD": "your_password_here"
          }
        }
      }
@@ -46,12 +46,12 @@ The [Model Context Protocol](https://modelcontextprotocol.io) is an open standar
    ```json
    {
      "mcpServers": {
-       "open-notebook": {
+       "dyslexxy": {
          "command": "uvx",
-         "args": ["open-notebook-mcp"],
+         "args": ["dyslexxy-mcp"],
          "env": {
-           "OPEN_NOTEBOOK_URL": "http://localhost:5055",
-           "OPEN_NOTEBOOK_PASSWORD": "your_password_here"
+           "DYSLEXXY_URL": "http://localhost:5055",
+           "DYSLEXXY_PASSWORD": "your_password_here"
          }
        }
      }
@@ -67,12 +67,12 @@ Add to your VS Code settings or `.vscode/mcp.json`:
 ```json
 {
   "servers": {
-    "open-notebook": {
+    "dyslexxy": {
       "command": "uvx",
-      "args": ["open-notebook-mcp"],
+      "args": ["dyslexxy-mcp"],
       "env": {
-        "OPEN_NOTEBOOK_URL": "http://localhost:5055",
-        "OPEN_NOTEBOOK_PASSWORD": "your_password_here"
+        "DYSLEXXY_URL": "http://localhost:5055",
+        "DYSLEXXY_PASSWORD": "your_password_here"
       }
     }
   }
@@ -81,21 +81,21 @@ Add to your VS Code settings or `.vscode/mcp.json`:
 
 ## Configuration
 
-- **OPEN_NOTEBOOK_URL**: URL to your Open Notebook API (default: `http://localhost:5055`)
-- **OPEN_NOTEBOOK_PASSWORD**: Optional - only needed if you've enabled password protection
+- **DYSLEXXY_URL**: URL to your Dyslexxy API (default: `http://localhost:5055`)
+- **DYSLEXXY_PASSWORD**: Optional - only needed if you've enabled password protection
 
 ### For Remote Servers
 
-If your Open Notebook instance is running on a remote server, update the URL accordingly:
+If your Dyslexxy instance is running on a remote server, update the URL accordingly:
 
 ```json
-"OPEN_NOTEBOOK_URL": "http://192.168.1.100:5055"
+"DYSLEXXY_URL": "http://192.168.1.100:5055"
 ```
 
 Or with a domain:
 
 ```json
-"OPEN_NOTEBOOK_URL": "https://notebook.yourdomain.com/api"
+"DYSLEXXY_URL": "https://notebook.yourdomain.com/api"
 ```
 
 ## What You Can Do
@@ -110,11 +110,11 @@ Once connected, you can ask Claude or your AI assistant to:
 - _"Add this PDF to my research notebook"_
 - _"Show me all notes in [notebook name]"_
 
-The MCP server provides full access to Open Notebook's capabilities, allowing you to manage your research seamlessly from within your AI assistant.
+The MCP server provides full access to Dyslexxy's capabilities, allowing you to manage your research seamlessly from within your AI assistant.
 
 ## Available Tools
 
-The Open Notebook MCP server exposes these capabilities:
+The Dyslexxy MCP server exposes these capabilities:
 
 ### Notebooks
 
@@ -167,32 +167,32 @@ The Open Notebook MCP server exposes these capabilities:
 
 ## MCP Server Repository
 
-The Open Notebook MCP server is developed and maintained by the Epochal team:
+The Dyslexxy MCP server is developed and maintained by the Epochal team:
 
-**🔗 GitHub**: [Epochal-dev/open-notebook-mcp](https://github.com/Epochal-dev/open-notebook-mcp)
+**🔗 GitHub**: [Epochal-dev/dyslexxy-mcp](https://github.com/Epochal-dev/dyslexxy-mcp)
 
 Contributions, issues, and feature requests are welcome!
 
 ## Finding the Server
 
-The Open Notebook MCP server is published to the official MCP Registry:
+The Dyslexxy MCP server is published to the official MCP Registry:
 
-- **Registry**: Search for "open-notebook" at [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io)
-- **PyPI**: [pypi.org/project/open-notebook-mcp](https://pypi.org/project/open-notebook-mcp)
-- **GitHub**: [Epochal-dev/open-notebook-mcp](https://github.com/Epochal-dev/open-notebook-mcp)
+- **Registry**: Search for "dyslexxy" at [registry.modelcontextprotocol.io](https://registry.modelcontextprotocol.io)
+- **PyPI**: [pypi.org/project/dyslexxy-mcp](https://pypi.org/project/dyslexxy-mcp)
+- **GitHub**: [Epochal-dev/dyslexxy-mcp](https://github.com/Epochal-dev/dyslexxy-mcp)
 
 ## Troubleshooting
 
 ### Connection Errors
 
-1. Verify the `OPEN_NOTEBOOK_URL` is correct and accessible
-2. If using password protection, ensure `OPEN_NOTEBOOK_PASSWORD` is set correctly
+1. Verify the `DYSLEXXY_URL` is correct and accessible
+2. If using password protection, ensure `DYSLEXXY_PASSWORD` is set correctly
 3. For remote servers, make sure port 5055 is accessible from your machine
 4. Check firewall settings if connecting to a remote server
 
 ## Using with Other MCP Clients
 
-The Open Notebook MCP server follows the standard MCP protocol and can be used with any MCP-compatible client. Check your client's documentation for configuration details.
+The Dyslexxy MCP server follows the standard MCP protocol and can be used with any MCP-compatible client. Check your client's documentation for configuration details.
 
 ## Learn More
 

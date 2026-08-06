@@ -7,7 +7,7 @@
 
 ## Summary
 
-Security review of the API key management implementation for Open Notebook. The implementation uses a database-first approach with environment variable fallback.
+Security review of the API key management implementation for Dyslexxy. The implementation uses a database-first approach with environment variable fallback.
 
 ---
 
@@ -15,7 +15,7 @@ Security review of the API key management implementation for Open Notebook. The 
 
 | Item | Status | Notes |
 |------|--------|-------|
-| Fernet encryption implemented | PASS | `open_notebook/utils/encryption.py` uses AES-128-CBC + HMAC-SHA256 |
+| Fernet encryption implemented | PASS | `dyslexxy/utils/encryption.py` uses AES-128-CBC + HMAC-SHA256 |
 | Keys encrypted before DB storage | PASS | `encrypt_value()` applied on save |
 | Keys decrypted only when needed | PASS | `decrypt_value()` called when reading |
 | Encryption key required | PASS | No default key; ValueError if not configured |
@@ -52,7 +52,7 @@ Security review of the API key management implementation for Open Notebook. The 
 | Item | Status | Notes |
 |------|--------|-------|
 | Password protection | PASS | Bearer token authentication |
-| Default password | PASS | "open-notebook-change-me" when not set |
+| Default password | PASS | "dyslexxy-change-me" when not set |
 | Docker secrets support | PASS | `_FILE` suffix for password |
 | Security warnings | PASS | Logged when using defaults |
 
@@ -62,11 +62,11 @@ Security review of the API key management implementation for Open Notebook. The 
 
 | Component | Path | Status |
 |-----------|------|--------|
-| Encryption | `open_notebook/utils/encryption.py` | PASS |
-| Credential model | `open_notebook/domain/credential.py` | PASS |
+| Encryption | `dyslexxy/utils/encryption.py` | PASS |
+| Credential model | `dyslexxy/domain/credential.py` | PASS |
 | Credentials router | `api/routers/credentials.py` | PASS |
-| Key provider | `open_notebook/ai/key_provider.py` | PASS |
-| Connection tester | `open_notebook/ai/connection_tester.py` | PASS |
+| Key provider | `dyslexxy/ai/key_provider.py` | PASS |
+| Connection tester | `dyslexxy/ai/connection_tester.py` | PASS |
 | Auth middleware | `api/auth.py` | PASS |
 | Frontend forms | `frontend/src/components/settings/*.tsx` | PASS |
 | Environment example | `.env.example` | PASS |

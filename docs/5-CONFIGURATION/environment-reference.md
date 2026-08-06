@@ -1,6 +1,6 @@
 # Complete Environment Reference
 
-Comprehensive list of all environment variables available in Open Notebook.
+Comprehensive list of all environment variables available in Dyslexxy.
 
 ---
 
@@ -11,11 +11,11 @@ Comprehensive list of all environment variables available in Open Notebook.
 | `API_URL` | No | Auto-detected | URL where frontend reaches API (e.g., http://localhost:5055) |
 | `INTERNAL_API_URL` | No | http://localhost:5055 | Internal API URL for Next.js server-side proxying |
 | `API_CLIENT_TIMEOUT` | No | 300 | Client timeout in seconds (how long to wait for API response) |
-| `OPEN_NOTEBOOK_PASSWORD` | No | None | Password to protect Open Notebook instance |
-| `OPEN_NOTEBOOK_ENCRYPTION_KEY` | **Yes** | None | Secret string to encrypt credentials stored in database (any string works). **Required** for the credential system. Supports Docker secrets via `_FILE` suffix. |
+| `DYSLEXXY_PASSWORD` | No | None | Password to protect Dyslexxy instance |
+| `DYSLEXXY_ENCRYPTION_KEY` | **Yes** | None | Secret string to encrypt credentials stored in database (any string works). **Required** for the credential system. Supports Docker secrets via `_FILE` suffix. |
 | `HOSTNAME` | No | `0.0.0.0` (in Docker) | Network interface for Next.js to bind to. Default `0.0.0.0` ensures accessibility from reverse proxies |
 
-> **Important**: `OPEN_NOTEBOOK_ENCRYPTION_KEY` is required for storing AI provider credentials via the Settings UI. Without it, you cannot save credentials. If you change or lose this key, all stored credentials become unreadable.
+> **Important**: `DYSLEXXY_ENCRYPTION_KEY` is required for storing AI provider credentials via the Settings UI. Without it, you cannot save credentials. If you change or lose this key, all stored credentials become unreadable.
 
 ---
 
@@ -26,8 +26,8 @@ Comprehensive list of all environment variables available in Open Notebook.
 | `SURREAL_URL` | Yes | ws://surrealdb:8000/rpc | SurrealDB WebSocket connection URL |
 | `SURREAL_USER` | Yes | root | SurrealDB username |
 | `SURREAL_PASSWORD` | Yes | root | SurrealDB password |
-| `SURREAL_NAMESPACE` | Yes | open_notebook | SurrealDB namespace |
-| `SURREAL_DATABASE` | Yes | open_notebook | SurrealDB database name |
+| `SURREAL_NAMESPACE` | Yes | dyslexxy | SurrealDB namespace |
+| `SURREAL_DATABASE` | Yes | dyslexxy | SurrealDB database name |
 
 ---
 
@@ -65,7 +65,7 @@ Comprehensive list of all environment variables available in Open Notebook.
 
 | Variable | Required? | Default | Description |
 |----------|-----------|---------|-------------|
-| `OPEN_NOTEBOOK_EMBEDDING_BATCH_SIZE` | No | 50 | Number of texts sent per embedding batch. Lower this for CPU-only or stricter OpenAI-compatible embedding providers. |
+| `DYSLEXXY_EMBEDDING_BATCH_SIZE` | No | 50 | Number of texts sent per embedding batch. Lower this for CPU-only or stricter OpenAI-compatible embedding providers. |
 
 ---
 
@@ -151,7 +151,7 @@ NO_PROXY=localhost,127.0.0.1,.local
 | `LANGCHAIN_TRACING_V2` | No | false | Enable LangSmith tracing |
 | `LANGCHAIN_ENDPOINT` | No | https://api.smith.langchain.com | LangSmith endpoint |
 | `LANGCHAIN_API_KEY` | No | None | LangSmith API key |
-| `LANGCHAIN_PROJECT` | No | Open Notebook | LangSmith project name |
+| `LANGCHAIN_PROJECT` | No | Dyslexxy | LangSmith project name |
 
 **Setup:** https://smith.langchain.com/
 
@@ -161,19 +161,19 @@ NO_PROXY=localhost,127.0.0.1,.local
 
 ### Minimal Setup (New Installation)
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=my-secret-key
+DYSLEXXY_ENCRYPTION_KEY=my-secret-key
 SURREAL_URL=ws://surrealdb:8000/rpc
 SURREAL_USER=root
 SURREAL_PASSWORD=password
-SURREAL_NAMESPACE=open_notebook
-SURREAL_DATABASE=open_notebook
+SURREAL_NAMESPACE=dyslexxy
+SURREAL_DATABASE=dyslexxy
 ```
 Then configure AI providers via **Settings → API Keys** in the browser.
 
 ### Production Deployment
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=your-strong-secret-key
-OPEN_NOTEBOOK_PASSWORD=your-secure-password
+DYSLEXXY_ENCRYPTION_KEY=your-strong-secret-key
+DYSLEXXY_PASSWORD=your-secure-password
 API_URL=https://mynotebook.example.com
 SURREAL_USER=production_user
 SURREAL_PASSWORD=secure_password
@@ -181,13 +181,13 @@ SURREAL_PASSWORD=secure_password
 
 ### Self-Hosted Behind Reverse Proxy
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
+DYSLEXXY_ENCRYPTION_KEY=your-secret-key
 API_URL=https://mynotebook.example.com
 ```
 
 ### Corporate Environment (Behind Proxy)
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
+DYSLEXXY_ENCRYPTION_KEY=your-secret-key
 HTTP_PROXY=http://proxy.corp.com:8080
 HTTPS_PROXY=http://proxy.corp.com:8080
 NO_PROXY=localhost,127.0.0.1
@@ -195,7 +195,7 @@ NO_PROXY=localhost,127.0.0.1
 
 ### High-Performance Deployment
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
+DYSLEXXY_ENCRYPTION_KEY=your-secret-key
 SURREAL_COMMANDS_MAX_TASKS=10
 TTS_BATCH_SIZE=5
 API_CLIENT_TIMEOUT=600
@@ -203,7 +203,7 @@ API_CLIENT_TIMEOUT=600
 
 ### Debugging
 ```
-OPEN_NOTEBOOK_ENCRYPTION_KEY=your-secret-key
+DYSLEXXY_ENCRYPTION_KEY=your-secret-key
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=your-key
 ```
@@ -216,10 +216,10 @@ Check if a variable is set:
 
 ```bash
 # Check single variable
-echo $OPEN_NOTEBOOK_ENCRYPTION_KEY
+echo $DYSLEXXY_ENCRYPTION_KEY
 
 # Check multiple
-env | grep -E "OPEN_NOTEBOOK|API_URL"
+env | grep -E "DYSLEXXY|API_URL"
 
 # Print all config
 env | grep -E "^[A-Z_]+=" | sort
@@ -229,8 +229,8 @@ env | grep -E "^[A-Z_]+=" | sort
 
 ## Notes
 
-- **Case-sensitive:** `OPEN_NOTEBOOK_ENCRYPTION_KEY` ≠ `open_notebook_encryption_key`
-- **No spaces:** `OPEN_NOTEBOOK_ENCRYPTION_KEY=my-key` not `OPEN_NOTEBOOK_ENCRYPTION_KEY = my-key`
+- **Case-sensitive:** `DYSLEXXY_ENCRYPTION_KEY` ≠ `dyslexxy_encryption_key`
+- **No spaces:** `DYSLEXXY_ENCRYPTION_KEY=my-key` not `DYSLEXXY_ENCRYPTION_KEY = my-key`
 - **Quote values:** Use quotes for values with spaces: `API_URL="http://my server:5055"`
 - **Restart required:** Changes take effect after restarting services
 - **Secrets:** Don't commit encryption keys or passwords to git
@@ -241,7 +241,7 @@ env | grep -E "^[A-Z_]+=" | sort
 
 ## Quick Setup Checklist
 
-- [ ] Set `OPEN_NOTEBOOK_ENCRYPTION_KEY` in docker-compose.yml
+- [ ] Set `DYSLEXXY_ENCRYPTION_KEY` in docker-compose.yml
 - [ ] Set database credentials (`SURREAL_*`)
 - [ ] Start services
 - [ ] Open browser → Go to **Settings → API Keys**
